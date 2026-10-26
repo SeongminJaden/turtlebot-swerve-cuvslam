@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "tile_pages": 16,
+  "grid": [
+    4,
+    4
+  ],
+  "scale": "1:5",
+  "maze_on_paper_mm": [
+    892.8,
+    1272.8
+  ],
+  "poster_with_margins_mm": [
+    1078,
+    1570
+  ],
+  "overlap_mm": 10,
+  "font_pt": {
+    "node": 13,
+    "panel": 14,
+    "dimension": 16
+  },
+  "physical_print": "NOT_EVALUATED"
+}

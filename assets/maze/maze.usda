@@ -1,0 +1,1310 @@
+#usda 1.0
+(defaultPrim = "Maze"
+ metersPerUnit = 1
+ upAxis = "Z")
+def Xform "Maze" {
+def Cube "W01" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.367, 0.0, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W02" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.367, 0.788, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W03" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.367, 2.364, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W04" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.367, 3.152, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W05" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 0.0, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W06" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 0.788, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W07" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 1.576, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W08" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 2.364, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W09" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 3.152, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W10" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.835, 0.0, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W11" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.835, 0.788, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W12" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.835, 1.576, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W13" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.835, 3.152, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W14" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.569, 0.0, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W15" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.569, 0.788, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W16" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.569, 2.364, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W17" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.569, 3.152, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W18" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.303, 0.0, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W19" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.303, 2.364, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W20" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.303, 3.152, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W21" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.037, 0.0, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W22" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.037, 0.788, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W23" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.037, 3.152, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W24" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 0.197, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W25" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 0.591, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W26" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 0.985, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W27" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 1.379, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W28" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 1.7730000000000001, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W29" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 2.167, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W30" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 2.561, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W31" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 2.955, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W32" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.936, 0.985, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W33" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.936, 1.379, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W34" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.67, 0.985, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W35" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.67, 1.379, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W36" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 0.197, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W37" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 0.591, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W38" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 0.985, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W39" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 1.379, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W40" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 1.7730000000000001, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W41" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 2.167, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W42" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 2.561, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W43" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 2.955, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W44" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.367, 3.94, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W45" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.367, 5.516, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W46" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.367, 6.304, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W47" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 3.94, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W48" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 4.728, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W49" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 5.516, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W50" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.101, 6.304, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W51" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.835, 3.94, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W52" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.835, 4.728, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W53" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (1.835, 6.304, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W54" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.569, 3.94, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W55" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.569, 5.516, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W56" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.569, 6.304, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W57" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.303, 5.516, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W58" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.303, 6.304, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W59" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.037, 3.94, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W60" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.037, 6.304, 0.2)
+ float xformOp:rotateZ = 0.0
+ double3 xformOp:scale = (0.72, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W61" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 3.349, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W62" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 3.743, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W63" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 4.137, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W64" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 4.531, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W65" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 4.925, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W66" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 5.319, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W67" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 5.713, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W68" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (0.0, 6.107, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W69" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.936, 4.137, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W70" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (2.936, 4.531, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W71" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.67, 4.137, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W72" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (3.67, 4.531, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W73" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 3.349, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W74" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 3.743, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W75" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 4.137, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W76" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 4.531, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W77" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 4.925, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W78" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 5.319, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W79" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 5.713, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cube "W80" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double size = 1
+ double3 xformOp:translate = (4.404, 6.107, 0.2)
+ float xformOp:rotateZ = 90.0
+ double3 xformOp:scale = (0.38, 0.003, 0.38)
+ uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ", "xformOp:scale"]
+ color3f[] primvars:displayColor = [(0.32, 0.46, 0.62)]
+}
+def Cylinder "Post_A_G0_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 0.0, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G1_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 0.0, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G0_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 0.788, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G1_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 0.788, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G0_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 2.364, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G1_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 2.364, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_C_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 3.152, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_C_734" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 3.152, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G2_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 0.0, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G2_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 0.788, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G1_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 1.576, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G2_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 1.576, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G2_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 2.364, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_C_1468" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 3.152, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G3_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 0.0, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G3_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 0.788, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G3_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 1.576, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_C_2202" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 3.152, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G4_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 0.0, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G4_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 0.788, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G3_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 2.364, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G4_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 2.364, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_C_2936" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 3.152, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G5_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 0.0, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G5_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 2.364, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_C_3670" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 3.152, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G6_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 0.0, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G5_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 0.788, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G6_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 0.788, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_C_4404" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 3.152, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M0_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 0.394, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M0_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 1.182, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G0_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 1.576, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M0_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 1.97, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M0_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 2.758, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M4_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 1.182, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G4_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 1.576, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M5_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 1.182, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G5_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 1.576, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M6_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 0.394, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M6_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 1.182, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G6_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 1.576, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M6_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 1.97, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_G6_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 2.364, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_A_M6_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 2.758, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G0_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 3.94, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G1_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 3.94, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G0_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 5.516, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G1_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 5.516, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G0_4" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 6.304, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G1_4" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 6.304, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G2_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 3.94, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G1_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.734, 4.728, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G2_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 4.728, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G2_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 5.516, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G2_4" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (1.468, 6.304, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G3_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 3.94, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G3_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 4.728, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G3_4" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 6.304, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G4_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 3.94, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G3_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.202, 5.516, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G4_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 5.516, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G4_4" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 6.304, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G5_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 5.516, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G5_4" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 6.304, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G5_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 3.94, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G6_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 3.94, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G6_4" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 6.304, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M0_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 3.546, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M0_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 4.334, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G0_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 4.728, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M0_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 5.122, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M0_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (0.0, 5.91, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M4_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 4.334, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G4_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (2.936, 4.728, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M5_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 4.334, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G5_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (3.67, 4.728, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M6_0" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 3.546, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M6_1" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 4.334, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G6_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 4.728, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M6_2" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 5.122, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_G6_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 5.516, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+def Cylinder "Post_B_M6_3" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+ double radius = 0.03
+ double height = 0.39
+ uniform token axis = "Z"
+ double3 xformOp:translate = (4.404, 5.91, 0.195)
+ uniform token[] xformOpOrder = ["xformOp:translate"]
+ color3f[] primvars:displayColor = [(0.16, 0.18, 0.2)]
+}
+}

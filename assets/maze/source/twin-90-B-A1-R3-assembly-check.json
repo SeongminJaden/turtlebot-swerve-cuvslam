@@ -1,0 +1,1963 @@
+{
+  "status": "PASS",
+  "document": "Twin Closed Maze B - A1 R3 Printed Splices",
+  "counts": {
+    "Panel_380x380x3": 40,
+    "Panel_720x380x3": 40,
+    "Bracket_4way_D60_socket30p6": 166,
+    "Profile_DNF3030_6_L380": 30,
+    "Splice_R3_A_L199p7": 106,
+    "Splice_R3_B_L180": 106,
+    "ISO4762_M3x16": 318,
+    "ISO4032_M3": 318,
+    "ISO7089_M4": 318,
+    "ISO7089_M3": 318
+  },
+  "solid_bodies": 1760,
+  "bbox_cm": [
+    [
+      -3.0,
+      0.0,
+      -3.0
+    ],
+    [
+      443.4,
+      39.0,
+      633.4
+    ]
+  ],
+  "size_mm": [
+    4464.0,
+    390.0,
+    6364.0
+  ],
+  "boolean_controls": {
+    "positive_cm3": 0.5,
+    "negative_faces": 0
+  },
+  "panel_holes_checked": 320,
+  "max_hole_axis_error_mm": 1.1396955786807513e-12,
+  "tested_candidate_pairs": 2660,
+  "interference_threshold_mm3": 0.001,
+  "clashes": [],
+  "proxy_mismatches": [],
+  "placement_sha256": "14250d13e9f5132bea6a04e3feba82ee29716d4ca2ce843b6a52b2fa299d90c3",
+  "limitations": [
+    "Nominal geometry only; physical fit and print tolerances not tested.",
+    "DNF 3030-6, 380 mm; section simplified from supplier drawing",
+    "Fasteners, floor anchoring and structural loads not evaluated.",
+    "R3 split splice print envelope checked separately; physical fit, slicing and strength require validation."
+  ],
+  "intentional_library_thread_contacts": [
+    {
+      "a": "A_G1_0_splice_bolt1",
+      "b": "A_G1_0_splice_nut1",
+      "volume_mm3": 1.0507505846472347,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_0_splice_bolt2",
+      "b": "A_G1_0_splice_nut2",
+      "volume_mm3": 1.0507505846470189,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_0_splice_bolt3",
+      "b": "A_G1_0_splice_nut3",
+      "volume_mm3": 1.050750584645958,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_0_splice_bolt4",
+      "b": "A_G1_0_splice_nut4",
+      "volume_mm3": 1.0507505846454228,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_0_splice_bolt5",
+      "b": "A_G1_0_splice_nut5",
+      "volume_mm3": 1.0507505846460012,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_0_splice_bolt6",
+      "b": "A_G1_0_splice_nut6",
+      "volume_mm3": 1.0507505846487561,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_1_splice_bolt1",
+      "b": "A_G1_1_splice_nut1",
+      "volume_mm3": 1.0507505846469476,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_1_splice_bolt2",
+      "b": "A_G1_1_splice_nut2",
+      "volume_mm3": 1.0507505846460439,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_1_splice_bolt3",
+      "b": "A_G1_1_splice_nut3",
+      "volume_mm3": 1.050750584645101,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_1_splice_bolt4",
+      "b": "A_G1_1_splice_nut4",
+      "volume_mm3": 1.050750584645455,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_1_splice_bolt5",
+      "b": "A_G1_1_splice_nut5",
+      "volume_mm3": 1.0507505846452987,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_1_splice_bolt6",
+      "b": "A_G1_1_splice_nut6",
+      "volume_mm3": 1.0507505846462823,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_3_splice_bolt1",
+      "b": "A_G1_3_splice_nut1",
+      "volume_mm3": 1.0507505846443108,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_3_splice_bolt2",
+      "b": "A_G1_3_splice_nut2",
+      "volume_mm3": 1.050750584644623,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_3_splice_bolt3",
+      "b": "A_G1_3_splice_nut3",
+      "volume_mm3": 1.0507505846457517,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_3_splice_bolt4",
+      "b": "A_G1_3_splice_nut4",
+      "volume_mm3": 1.0507505846454688,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_3_splice_bolt5",
+      "b": "A_G1_3_splice_nut5",
+      "volume_mm3": 1.0507505846451617,
+      "faces": 12
+    },
+    {
+      "a": "A_G1_3_splice_bolt6",
+      "b": "A_G1_3_splice_nut6",
+      "volume_mm3": 1.0507505846444105,
+      "faces": 12
+    },
+    {
+      "a": "C_734_splice_bolt1",
+      "b": "C_734_splice_nut1",
+      "volume_mm3": 1.0507505846473717,
+      "faces": 12
+    },
+    {
+      "a": "C_734_splice_bolt2",
+      "b": "C_734_splice_nut2",
+      "volume_mm3": 1.0507505846481489,
+      "faces": 12
+    },
+    {
+      "a": "C_734_splice_bolt3",
+      "b": "C_734_splice_nut3",
+      "volume_mm3": 1.050750584648703,
+      "faces": 12
+    },
+    {
+      "a": "C_734_splice_bolt4",
+      "b": "C_734_splice_nut4",
+      "volume_mm3": 1.050750584648757,
+      "faces": 12
+    },
+    {
+      "a": "C_734_splice_bolt5",
+      "b": "C_734_splice_nut5",
+      "volume_mm3": 1.0507505846483536,
+      "faces": 12
+    },
+    {
+      "a": "C_734_splice_bolt6",
+      "b": "C_734_splice_nut6",
+      "volume_mm3": 1.0507505846491048,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_0_splice_bolt1",
+      "b": "A_G2_0_splice_nut1",
+      "volume_mm3": 1.0507505846439267,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_0_splice_bolt2",
+      "b": "A_G2_0_splice_nut2",
+      "volume_mm3": 1.0507505846470344,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_0_splice_bolt3",
+      "b": "A_G2_0_splice_nut3",
+      "volume_mm3": 1.0507505846466345,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_0_splice_bolt4",
+      "b": "A_G2_0_splice_nut4",
+      "volume_mm3": 1.0507505846449796,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_0_splice_bolt5",
+      "b": "A_G2_0_splice_nut5",
+      "volume_mm3": 1.0507505846450333,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_0_splice_bolt6",
+      "b": "A_G2_0_splice_nut6",
+      "volume_mm3": 1.0507505846477396,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_1_splice_bolt1",
+      "b": "A_G2_1_splice_nut1",
+      "volume_mm3": 1.050750584644768,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_1_splice_bolt2",
+      "b": "A_G2_1_splice_nut2",
+      "volume_mm3": 1.0507505846452658,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_1_splice_bolt3",
+      "b": "A_G2_1_splice_nut3",
+      "volume_mm3": 1.0507505846434184,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_1_splice_bolt4",
+      "b": "A_G2_1_splice_nut4",
+      "volume_mm3": 1.0507505846446579,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_1_splice_bolt5",
+      "b": "A_G2_1_splice_nut5",
+      "volume_mm3": 1.050750584645133,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_1_splice_bolt6",
+      "b": "A_G2_1_splice_nut6",
+      "volume_mm3": 1.050750584646245,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_2_splice_bolt1",
+      "b": "A_G2_2_splice_nut1",
+      "volume_mm3": 1.0507505846461913,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_2_splice_bolt2",
+      "b": "A_G2_2_splice_nut2",
+      "volume_mm3": 1.050750584646167,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_2_splice_bolt3",
+      "b": "A_G2_2_splice_nut3",
+      "volume_mm3": 1.0507505846439562,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_2_splice_bolt4",
+      "b": "A_G2_2_splice_nut4",
+      "volume_mm3": 1.0507505846451435,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_2_splice_bolt5",
+      "b": "A_G2_2_splice_nut5",
+      "volume_mm3": 1.050750584644401,
+      "faces": 12
+    },
+    {
+      "a": "A_G2_2_splice_bolt6",
+      "b": "A_G2_2_splice_nut6",
+      "volume_mm3": 1.0507505846459606,
+      "faces": 12
+    },
+    {
+      "a": "C_1468_splice_bolt1",
+      "b": "C_1468_splice_nut1",
+      "volume_mm3": 1.050750584650209,
+      "faces": 12
+    },
+    {
+      "a": "C_1468_splice_bolt2",
+      "b": "C_1468_splice_nut2",
+      "volume_mm3": 1.050750584649483,
+      "faces": 12
+    },
+    {
+      "a": "C_1468_splice_bolt3",
+      "b": "C_1468_splice_nut3",
+      "volume_mm3": 1.0507505846484066,
+      "faces": 12
+    },
+    {
+      "a": "C_1468_splice_bolt4",
+      "b": "C_1468_splice_nut4",
+      "volume_mm3": 1.0507505846480354,
+      "faces": 12
+    },
+    {
+      "a": "C_1468_splice_bolt5",
+      "b": "C_1468_splice_nut5",
+      "volume_mm3": 1.0507505846488212,
+      "faces": 12
+    },
+    {
+      "a": "C_1468_splice_bolt6",
+      "b": "C_1468_splice_nut6",
+      "volume_mm3": 1.0507505846499747,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_0_splice_bolt1",
+      "b": "A_G3_0_splice_nut1",
+      "volume_mm3": 1.050750584647312,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_0_splice_bolt2",
+      "b": "A_G3_0_splice_nut2",
+      "volume_mm3": 1.050750584650594,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_0_splice_bolt3",
+      "b": "A_G3_0_splice_nut3",
+      "volume_mm3": 1.050750584647998,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_0_splice_bolt4",
+      "b": "A_G3_0_splice_nut4",
+      "volume_mm3": 1.0507505846442466,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_0_splice_bolt5",
+      "b": "A_G3_0_splice_nut5",
+      "volume_mm3": 1.0507505846489114,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_0_splice_bolt6",
+      "b": "A_G3_0_splice_nut6",
+      "volume_mm3": 1.0507505846455625,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_1_splice_bolt1",
+      "b": "A_G3_1_splice_nut1",
+      "volume_mm3": 1.0507505846432978,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_1_splice_bolt2",
+      "b": "A_G3_1_splice_nut2",
+      "volume_mm3": 1.0507505846478142,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_1_splice_bolt3",
+      "b": "A_G3_1_splice_nut3",
+      "volume_mm3": 1.050750584645088,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_1_splice_bolt4",
+      "b": "A_G3_1_splice_nut4",
+      "volume_mm3": 1.0507505846462086,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_1_splice_bolt5",
+      "b": "A_G3_1_splice_nut5",
+      "volume_mm3": 1.0507505846451226,
+      "faces": 12
+    },
+    {
+      "a": "A_G3_1_splice_bolt6",
+      "b": "A_G3_1_splice_nut6",
+      "volume_mm3": 1.0507505846474507,
+      "faces": 12
+    },
+    {
+      "a": "C_2202_splice_bolt1",
+      "b": "C_2202_splice_nut1",
+      "volume_mm3": 1.0507505846501681,
+      "faces": 12
+    },
+    {
+      "a": "C_2202_splice_bolt2",
+      "b": "C_2202_splice_nut2",
+      "volume_mm3": 1.0507505846489287,
+      "faces": 12
+    },
+    {
+      "a": "C_2202_splice_bolt3",
+      "b": "C_2202_splice_nut3",
+      "volume_mm3": 1.0507505846466432,
+      "faces": 12
+    },
+    {
+      "a": "C_2202_splice_bolt4",
+      "b": "C_2202_splice_nut4",
+      "volume_mm3": 1.0507505846496321,
+      "faces": 12
+    },
+    {
+      "a": "C_2202_splice_bolt5",
+      "b": "C_2202_splice_nut5",
+      "volume_mm3": 1.0507505846498664,
+      "faces": 12
+    },
+    {
+      "a": "C_2202_splice_bolt6",
+      "b": "C_2202_splice_nut6",
+      "volume_mm3": 1.0507505846471472,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_0_splice_bolt1",
+      "b": "A_G4_0_splice_nut1",
+      "volume_mm3": 1.0507505846440768,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_0_splice_bolt2",
+      "b": "A_G4_0_splice_nut2",
+      "volume_mm3": 1.050750584642519,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_0_splice_bolt3",
+      "b": "A_G4_0_splice_nut3",
+      "volume_mm3": 1.0507505846427088,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_0_splice_bolt4",
+      "b": "A_G4_0_splice_nut4",
+      "volume_mm3": 1.050750584647829,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_0_splice_bolt5",
+      "b": "A_G4_0_splice_nut5",
+      "volume_mm3": 1.0507505846443344,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_0_splice_bolt6",
+      "b": "A_G4_0_splice_nut6",
+      "volume_mm3": 1.0507505846447966,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_3_splice_bolt1",
+      "b": "A_G4_3_splice_nut1",
+      "volume_mm3": 1.050750584644631,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_3_splice_bolt2",
+      "b": "A_G4_3_splice_nut2",
+      "volume_mm3": 1.0507505846426681,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_3_splice_bolt3",
+      "b": "A_G4_3_splice_nut3",
+      "volume_mm3": 1.0507505846445069,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_3_splice_bolt4",
+      "b": "A_G4_3_splice_nut4",
+      "volume_mm3": 1.0507505846420713,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_3_splice_bolt5",
+      "b": "A_G4_3_splice_nut5",
+      "volume_mm3": 1.050750584645343,
+      "faces": 12
+    },
+    {
+      "a": "A_G4_3_splice_bolt6",
+      "b": "A_G4_3_splice_nut6",
+      "volume_mm3": 1.0507505846430854,
+      "faces": 12
+    },
+    {
+      "a": "C_2936_splice_bolt1",
+      "b": "C_2936_splice_nut1",
+      "volume_mm3": 1.050750584648266,
+      "faces": 12
+    },
+    {
+      "a": "C_2936_splice_bolt2",
+      "b": "C_2936_splice_nut2",
+      "volume_mm3": 1.0507505846463032,
+      "faces": 12
+    },
+    {
+      "a": "C_2936_splice_bolt3",
+      "b": "C_2936_splice_nut3",
+      "volume_mm3": 1.050750584652465,
+      "faces": 12
+    },
+    {
+      "a": "C_2936_splice_bolt4",
+      "b": "C_2936_splice_nut4",
+      "volume_mm3": 1.0507505846481888,
+      "faces": 12
+    },
+    {
+      "a": "C_2936_splice_bolt5",
+      "b": "C_2936_splice_nut5",
+      "volume_mm3": 1.0507505846496121,
+      "faces": 12
+    },
+    {
+      "a": "C_2936_splice_bolt6",
+      "b": "C_2936_splice_nut6",
+      "volume_mm3": 1.0507505846517928,
+      "faces": 12
+    },
+    {
+      "a": "A_G5_0_splice_bolt1",
+      "b": "A_G5_0_splice_nut1",
+      "volume_mm3": 1.0507505846414242,
+      "faces": 12
+    },
+    {
+      "a": "A_G5_0_splice_bolt2",
+      "b": "A_G5_0_splice_nut2",
+      "volume_mm3": 1.0507505846486374,
+      "faces": 12
+    },
+    {
+      "a": "A_G5_0_splice_bolt3",
+      "b": "A_G5_0_splice_nut3",
+      "volume_mm3": 1.0507505846443463,
+      "faces": 12
+    },
+    {
+      "a": "A_G5_0_splice_bolt4",
+      "b": "A_G5_0_splice_nut4",
+      "volume_mm3": 1.0507505846409082,
+      "faces": 12
+    },
+    {
+      "a": "A_G5_0_splice_bolt5",
+      "b": "A_G5_0_splice_nut5",
+      "volume_mm3": 1.0507505846401752,
+      "faces": 12
+    },
+    {
+      "a": "A_G5_0_splice_bolt6",
+      "b": "A_G5_0_splice_nut6",
+      "volume_mm3": 1.050750584642047,
+      "faces": 12
+    },
+    {
+      "a": "C_3670_splice_bolt1",
+      "b": "C_3670_splice_nut1",
+      "volume_mm3": 1.0507505846510745,
+      "faces": 12
+    },
+    {
+      "a": "C_3670_splice_bolt2",
+      "b": "C_3670_splice_nut2",
+      "volume_mm3": 1.0507505846420435,
+      "faces": 12
+    },
+    {
+      "a": "C_3670_splice_bolt3",
+      "b": "C_3670_splice_nut3",
+      "volume_mm3": 1.0507505846525456,
+      "faces": 12
+    },
+    {
+      "a": "C_3670_splice_bolt4",
+      "b": "C_3670_splice_nut4",
+      "volume_mm3": 1.0507505846521241,
+      "faces": 12
+    },
+    {
+      "a": "C_3670_splice_bolt5",
+      "b": "C_3670_splice_nut5",
+      "volume_mm3": 1.0507505846532932,
+      "faces": 12
+    },
+    {
+      "a": "C_3670_splice_bolt6",
+      "b": "C_3670_splice_nut6",
+      "volume_mm3": 1.0507505846522924,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_0_splice_bolt1",
+      "b": "A_M0_0_splice_nut1",
+      "volume_mm3": 1.0507505846460221,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_0_splice_bolt2",
+      "b": "A_M0_0_splice_nut2",
+      "volume_mm3": 1.0507505846463978,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_0_splice_bolt3",
+      "b": "A_M0_0_splice_nut3",
+      "volume_mm3": 1.0507505846468306,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_0_splice_bolt4",
+      "b": "A_M0_0_splice_nut4",
+      "volume_mm3": 1.0507505846465512,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_0_splice_bolt5",
+      "b": "A_M0_0_splice_nut5",
+      "volume_mm3": 1.0507505846462044,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_0_splice_bolt6",
+      "b": "A_M0_0_splice_nut6",
+      "volume_mm3": 1.0507505846460707,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_1_splice_bolt1",
+      "b": "A_M0_1_splice_nut1",
+      "volume_mm3": 1.0507505846459633,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_1_splice_bolt2",
+      "b": "A_M0_1_splice_nut2",
+      "volume_mm3": 1.0507505846455303,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_1_splice_bolt3",
+      "b": "A_M0_1_splice_nut3",
+      "volume_mm3": 1.0507505846445564,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_1_splice_bolt4",
+      "b": "A_M0_1_splice_nut4",
+      "volume_mm3": 1.0507505846437792,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_1_splice_bolt5",
+      "b": "A_M0_1_splice_nut5",
+      "volume_mm3": 1.0507505846453813,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_1_splice_bolt6",
+      "b": "A_M0_1_splice_nut6",
+      "volume_mm3": 1.0507505846457463,
+      "faces": 12
+    },
+    {
+      "a": "A_G0_2_splice_bolt1",
+      "b": "A_G0_2_splice_nut1",
+      "volume_mm3": 1.0507505846454055,
+      "faces": 12
+    },
+    {
+      "a": "A_G0_2_splice_bolt2",
+      "b": "A_G0_2_splice_nut2",
+      "volume_mm3": 1.0507505846456744,
+      "faces": 12
+    },
+    {
+      "a": "A_G0_2_splice_bolt3",
+      "b": "A_G0_2_splice_nut3",
+      "volume_mm3": 1.050750584646528,
+      "faces": 12
+    },
+    {
+      "a": "A_G0_2_splice_bolt4",
+      "b": "A_G0_2_splice_nut4",
+      "volume_mm3": 1.0507505846474066,
+      "faces": 12
+    },
+    {
+      "a": "A_G0_2_splice_bolt5",
+      "b": "A_G0_2_splice_nut5",
+      "volume_mm3": 1.0507505846463725,
+      "faces": 12
+    },
+    {
+      "a": "A_G0_2_splice_bolt6",
+      "b": "A_G0_2_splice_nut6",
+      "volume_mm3": 1.0507505846481524,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_2_splice_bolt1",
+      "b": "A_M0_2_splice_nut1",
+      "volume_mm3": 1.0507505846448044,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_2_splice_bolt2",
+      "b": "A_M0_2_splice_nut2",
+      "volume_mm3": 1.0507505846452034,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_2_splice_bolt3",
+      "b": "A_M0_2_splice_nut3",
+      "volume_mm3": 1.0507505846452554,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_2_splice_bolt4",
+      "b": "A_M0_2_splice_nut4",
+      "volume_mm3": 1.0507505846466336,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_2_splice_bolt5",
+      "b": "A_M0_2_splice_nut5",
+      "volume_mm3": 1.0507505846477456,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_2_splice_bolt6",
+      "b": "A_M0_2_splice_nut6",
+      "volume_mm3": 1.0507505846462781,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_3_splice_bolt1",
+      "b": "A_M0_3_splice_nut1",
+      "volume_mm3": 1.0507505846462728,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_3_splice_bolt2",
+      "b": "A_M0_3_splice_nut2",
+      "volume_mm3": 1.0507505846425613,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_3_splice_bolt3",
+      "b": "A_M0_3_splice_nut3",
+      "volume_mm3": 1.0507505846450307,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_3_splice_bolt4",
+      "b": "A_M0_3_splice_nut4",
+      "volume_mm3": 1.0507505846473224,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_3_splice_bolt5",
+      "b": "A_M0_3_splice_nut5",
+      "volume_mm3": 1.050750584648103,
+      "faces": 12
+    },
+    {
+      "a": "A_M0_3_splice_bolt6",
+      "b": "A_M0_3_splice_nut6",
+      "volume_mm3": 1.0507505846486789,
+      "faces": 12
+    },
+    {
+      "a": "A_M4_1_splice_bolt1",
+      "b": "A_M4_1_splice_nut1",
+      "volume_mm3": 1.0507505846497267,
+      "faces": 12
+    },
+    {
+      "a": "A_M4_1_splice_bolt2",
+      "b": "A_M4_1_splice_nut2",
+      "volume_mm3": 1.0507505846482852,
+      "faces": 12
+    },
+    {
+      "a": "A_M4_1_splice_bolt3",
+      "b": "A_M4_1_splice_nut3",
+      "volume_mm3": 1.050750584648522,
+      "faces": 12
+    },
+    {
+      "a": "A_M4_1_splice_bolt4",
+      "b": "A_M4_1_splice_nut4",
+      "volume_mm3": 1.0507505846488627,
+      "faces": 12
+    },
+    {
+      "a": "A_M4_1_splice_bolt5",
+      "b": "A_M4_1_splice_nut5",
+      "volume_mm3": 1.0507505846480059,
+      "faces": 12
+    },
+    {
+      "a": "A_M4_1_splice_bolt6",
+      "b": "A_M4_1_splice_nut6",
+      "volume_mm3": 1.0507505846495115,
+      "faces": 12
+    },
+    {
+      "a": "A_M5_1_splice_bolt1",
+      "b": "A_M5_1_splice_nut1",
+      "volume_mm3": 1.050750584649299,
+      "faces": 12
+    },
+    {
+      "a": "A_M5_1_splice_bolt2",
+      "b": "A_M5_1_splice_nut2",
+      "volume_mm3": 1.0507505846507892,
+      "faces": 12
+    },
+    {
+      "a": "A_M5_1_splice_bolt3",
+      "b": "A_M5_1_splice_nut3",
+      "volume_mm3": 1.0507505846490224,
+      "faces": 12
+    },
+    {
+      "a": "A_M5_1_splice_bolt4",
+      "b": "A_M5_1_splice_nut4",
+      "volume_mm3": 1.0507505846479277,
+      "faces": 12
+    },
+    {
+      "a": "A_M5_1_splice_bolt5",
+      "b": "A_M5_1_splice_nut5",
+      "volume_mm3": 1.0507505846475444,
+      "faces": 12
+    },
+    {
+      "a": "A_M5_1_splice_bolt6",
+      "b": "A_M5_1_splice_nut6",
+      "volume_mm3": 1.0507505846502487,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_0_splice_bolt1",
+      "b": "A_M6_0_splice_nut1",
+      "volume_mm3": 1.0507505846485818,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_0_splice_bolt2",
+      "b": "A_M6_0_splice_nut2",
+      "volume_mm3": 1.0507505846504812,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_0_splice_bolt3",
+      "b": "A_M6_0_splice_nut3",
+      "volume_mm3": 1.0507505846496807,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_0_splice_bolt4",
+      "b": "A_M6_0_splice_nut4",
+      "volume_mm3": 1.05075058464977,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_0_splice_bolt5",
+      "b": "A_M6_0_splice_nut5",
+      "volume_mm3": 1.0507505846494518,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_0_splice_bolt6",
+      "b": "A_M6_0_splice_nut6",
+      "volume_mm3": 1.0507505846502487,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_1_splice_bolt1",
+      "b": "A_M6_1_splice_nut1",
+      "volume_mm3": 1.0507505846498941,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_1_splice_bolt2",
+      "b": "A_M6_1_splice_nut2",
+      "volume_mm3": 1.0507505846486287,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_1_splice_bolt3",
+      "b": "A_M6_1_splice_nut3",
+      "volume_mm3": 1.0507505846491465,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_1_splice_bolt4",
+      "b": "A_M6_1_splice_nut4",
+      "volume_mm3": 1.0507505846492418,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_1_splice_bolt5",
+      "b": "A_M6_1_splice_nut5",
+      "volume_mm3": 1.050750584648855,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_1_splice_bolt6",
+      "b": "A_M6_1_splice_nut6",
+      "volume_mm3": 1.0507505846498013,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_2_splice_bolt1",
+      "b": "A_G6_2_splice_nut1",
+      "volume_mm3": 1.0507505846441592,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_2_splice_bolt2",
+      "b": "A_G6_2_splice_nut2",
+      "volume_mm3": 1.0507505846455694,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_2_splice_bolt3",
+      "b": "A_G6_2_splice_nut3",
+      "volume_mm3": 1.0507505846468175,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_2_splice_bolt4",
+      "b": "A_G6_2_splice_nut4",
+      "volume_mm3": 1.0507505846451748,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_2_splice_bolt5",
+      "b": "A_G6_2_splice_nut5",
+      "volume_mm3": 1.0507505846445884,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_2_splice_bolt6",
+      "b": "A_G6_2_splice_nut6",
+      "volume_mm3": 1.0507505846484786,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_2_splice_bolt1",
+      "b": "A_M6_2_splice_nut1",
+      "volume_mm3": 1.050750584647398,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_2_splice_bolt2",
+      "b": "A_M6_2_splice_nut2",
+      "volume_mm3": 1.0507505846467213,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_2_splice_bolt3",
+      "b": "A_M6_2_splice_nut3",
+      "volume_mm3": 1.0507505846472824,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_2_splice_bolt4",
+      "b": "A_M6_2_splice_nut4",
+      "volume_mm3": 1.0507505846486398,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_2_splice_bolt5",
+      "b": "A_M6_2_splice_nut5",
+      "volume_mm3": 1.050750584649816,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_2_splice_bolt6",
+      "b": "A_M6_2_splice_nut6",
+      "volume_mm3": 1.0507505846472052,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_3_splice_bolt1",
+      "b": "A_G6_3_splice_nut1",
+      "volume_mm3": 1.0507505846460379,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_3_splice_bolt2",
+      "b": "A_G6_3_splice_nut2",
+      "volume_mm3": 1.0507505846501282,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_3_splice_bolt3",
+      "b": "A_G6_3_splice_nut3",
+      "volume_mm3": 1.0507505846476675,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_3_splice_bolt4",
+      "b": "A_G6_3_splice_nut4",
+      "volume_mm3": 1.0507505846479062,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_3_splice_bolt5",
+      "b": "A_G6_3_splice_nut5",
+      "volume_mm3": 1.050750584645553,
+      "faces": 12
+    },
+    {
+      "a": "A_G6_3_splice_bolt6",
+      "b": "A_G6_3_splice_nut6",
+      "volume_mm3": 1.050750584646815,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_3_splice_bolt1",
+      "b": "A_M6_3_splice_nut1",
+      "volume_mm3": 1.050750584648365,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_3_splice_bolt2",
+      "b": "A_M6_3_splice_nut2",
+      "volume_mm3": 1.050750584646481,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_3_splice_bolt3",
+      "b": "A_M6_3_splice_nut3",
+      "volume_mm3": 1.0507505846457863,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_3_splice_bolt4",
+      "b": "A_M6_3_splice_nut4",
+      "volume_mm3": 1.050750584644708,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_3_splice_bolt5",
+      "b": "A_M6_3_splice_nut5",
+      "volume_mm3": 1.0507505846421814,
+      "faces": 12
+    },
+    {
+      "a": "A_M6_3_splice_bolt6",
+      "b": "A_M6_3_splice_nut6",
+      "volume_mm3": 1.0507505846469685,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_1_splice_bolt1",
+      "b": "B_G1_1_splice_nut1",
+      "volume_mm3": 1.0507505846503078,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_1_splice_bolt2",
+      "b": "B_G1_1_splice_nut2",
+      "volume_mm3": 1.0507505846479417,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_1_splice_bolt3",
+      "b": "B_G1_1_splice_nut3",
+      "volume_mm3": 1.050750584649541,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_1_splice_bolt4",
+      "b": "B_G1_1_splice_nut4",
+      "volume_mm3": 1.0507505846486547,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_1_splice_bolt5",
+      "b": "B_G1_1_splice_nut5",
+      "volume_mm3": 1.0507505846481766,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_1_splice_bolt6",
+      "b": "B_G1_1_splice_nut6",
+      "volume_mm3": 1.0507505846490042,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_3_splice_bolt1",
+      "b": "B_G1_3_splice_nut1",
+      "volume_mm3": 1.0507505846434193,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_3_splice_bolt2",
+      "b": "B_G1_3_splice_nut2",
+      "volume_mm3": 1.0507505846435683,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_3_splice_bolt3",
+      "b": "B_G1_3_splice_nut3",
+      "volume_mm3": 1.0507505846435572,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_3_splice_bolt4",
+      "b": "B_G1_3_splice_nut4",
+      "volume_mm3": 1.05075058464295,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_3_splice_bolt5",
+      "b": "B_G1_3_splice_nut5",
+      "volume_mm3": 1.0507505846432155,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_3_splice_bolt6",
+      "b": "B_G1_3_splice_nut6",
+      "volume_mm3": 1.050750584641989,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_4_splice_bolt1",
+      "b": "B_G1_4_splice_nut1",
+      "volume_mm3": 1.0507505846429221,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_4_splice_bolt2",
+      "b": "B_G1_4_splice_nut2",
+      "volume_mm3": 1.0507505846431893,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_4_splice_bolt3",
+      "b": "B_G1_4_splice_nut3",
+      "volume_mm3": 1.0507505846438825,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_4_splice_bolt4",
+      "b": "B_G1_4_splice_nut4",
+      "volume_mm3": 1.0507505846432883,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_4_splice_bolt5",
+      "b": "B_G1_4_splice_nut5",
+      "volume_mm3": 1.0507505846420513,
+      "faces": 12
+    },
+    {
+      "a": "B_G1_4_splice_bolt6",
+      "b": "B_G1_4_splice_nut6",
+      "volume_mm3": 1.0507505846429404,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_1_splice_bolt1",
+      "b": "B_G2_1_splice_nut1",
+      "volume_mm3": 1.0507505846493026,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_1_splice_bolt2",
+      "b": "B_G2_1_splice_nut2",
+      "volume_mm3": 1.0507505846490934,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_1_splice_bolt3",
+      "b": "B_G2_1_splice_nut3",
+      "volume_mm3": 1.0507505846482765,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_1_splice_bolt4",
+      "b": "B_G2_1_splice_nut4",
+      "volume_mm3": 1.0507505846495306,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_1_splice_bolt5",
+      "b": "B_G2_1_splice_nut5",
+      "volume_mm3": 1.0507505846479563,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_1_splice_bolt6",
+      "b": "B_G2_1_splice_nut6",
+      "volume_mm3": 1.0507505846505099,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_2_splice_bolt1",
+      "b": "B_G2_2_splice_nut1",
+      "volume_mm3": 1.050750584650543,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_2_splice_bolt2",
+      "b": "B_G2_2_splice_nut2",
+      "volume_mm3": 1.05075058465015,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_2_splice_bolt3",
+      "b": "B_G2_2_splice_nut3",
+      "volume_mm3": 1.0507505846482963,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_2_splice_bolt4",
+      "b": "B_G2_2_splice_nut4",
+      "volume_mm3": 1.050750584647423,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_2_splice_bolt5",
+      "b": "B_G2_2_splice_nut5",
+      "volume_mm3": 1.050750584648181,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_2_splice_bolt6",
+      "b": "B_G2_2_splice_nut6",
+      "volume_mm3": 1.0507505846486893,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_4_splice_bolt1",
+      "b": "B_G2_4_splice_nut1",
+      "volume_mm3": 1.050750584642715,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_4_splice_bolt2",
+      "b": "B_G2_4_splice_nut2",
+      "volume_mm3": 1.0507505846428624,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_4_splice_bolt3",
+      "b": "B_G2_4_splice_nut3",
+      "volume_mm3": 1.050750584646697,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_4_splice_bolt4",
+      "b": "B_G2_4_splice_nut4",
+      "volume_mm3": 1.0507505846411294,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_4_splice_bolt5",
+      "b": "B_G2_4_splice_nut5",
+      "volume_mm3": 1.0507505846421485,
+      "faces": 12
+    },
+    {
+      "a": "B_G2_4_splice_bolt6",
+      "b": "B_G2_4_splice_nut6",
+      "volume_mm3": 1.0507505846418996,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_1_splice_bolt1",
+      "b": "B_G3_1_splice_nut1",
+      "volume_mm3": 1.0507505846492955,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_1_splice_bolt2",
+      "b": "B_G3_1_splice_nut2",
+      "volume_mm3": 1.0507505846508187,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_1_splice_bolt3",
+      "b": "B_G3_1_splice_nut3",
+      "volume_mm3": 1.0507505846487353,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_1_splice_bolt4",
+      "b": "B_G3_1_splice_nut4",
+      "volume_mm3": 1.0507505846491907,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_1_splice_bolt5",
+      "b": "B_G3_1_splice_nut5",
+      "volume_mm3": 1.0507505846482565,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_1_splice_bolt6",
+      "b": "B_G3_1_splice_nut6",
+      "volume_mm3": 1.0507505846505134,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_4_splice_bolt1",
+      "b": "B_G3_4_splice_nut1",
+      "volume_mm3": 1.0507505846389913,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_4_splice_bolt2",
+      "b": "B_G3_4_splice_nut2",
+      "volume_mm3": 1.0507505846392662,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_4_splice_bolt3",
+      "b": "B_G3_4_splice_nut3",
+      "volume_mm3": 1.050750584641119,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_4_splice_bolt4",
+      "b": "B_G3_4_splice_nut4",
+      "volume_mm3": 1.0507505846427487,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_4_splice_bolt5",
+      "b": "B_G3_4_splice_nut5",
+      "volume_mm3": 1.0507505846422995,
+      "faces": 12
+    },
+    {
+      "a": "B_G3_4_splice_bolt6",
+      "b": "B_G3_4_splice_nut6",
+      "volume_mm3": 1.0507505846446414,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_3_splice_bolt1",
+      "b": "B_G4_3_splice_nut1",
+      "volume_mm3": 1.0507505846393852,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_3_splice_bolt2",
+      "b": "B_G4_3_splice_nut2",
+      "volume_mm3": 1.0507505846427834,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_3_splice_bolt3",
+      "b": "B_G4_3_splice_nut3",
+      "volume_mm3": 1.0507505846463379,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_3_splice_bolt4",
+      "b": "B_G4_3_splice_nut4",
+      "volume_mm3": 1.0507505846490839,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_3_splice_bolt5",
+      "b": "B_G4_3_splice_nut5",
+      "volume_mm3": 1.0507505846445693,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_3_splice_bolt6",
+      "b": "B_G4_3_splice_nut6",
+      "volume_mm3": 1.0507505846450411,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_4_splice_bolt1",
+      "b": "B_G4_4_splice_nut1",
+      "volume_mm3": 1.050750584639503,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_4_splice_bolt2",
+      "b": "B_G4_4_splice_nut2",
+      "volume_mm3": 1.050750584642807,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_4_splice_bolt3",
+      "b": "B_G4_4_splice_nut3",
+      "volume_mm3": 1.0507505846455676,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_4_splice_bolt4",
+      "b": "B_G4_4_splice_nut4",
+      "volume_mm3": 1.0507505846475973,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_4_splice_bolt5",
+      "b": "B_G4_4_splice_nut5",
+      "volume_mm3": 1.050750584643125,
+      "faces": 12
+    },
+    {
+      "a": "B_G4_4_splice_bolt6",
+      "b": "B_G4_4_splice_nut6",
+      "volume_mm3": 1.0507505846447385,
+      "faces": 12
+    },
+    {
+      "a": "B_G5_4_splice_bolt1",
+      "b": "B_G5_4_splice_nut1",
+      "volume_mm3": 1.050750584644866,
+      "faces": 12
+    },
+    {
+      "a": "B_G5_4_splice_bolt2",
+      "b": "B_G5_4_splice_nut2",
+      "volume_mm3": 1.0507505846430845,
+      "faces": 12
+    },
+    {
+      "a": "B_G5_4_splice_bolt3",
+      "b": "B_G5_4_splice_nut3",
+      "volume_mm3": 1.0507505846462104,
+      "faces": 12
+    },
+    {
+      "a": "B_G5_4_splice_bolt4",
+      "b": "B_G5_4_splice_nut4",
+      "volume_mm3": 1.050750584641845,
+      "faces": 12
+    },
+    {
+      "a": "B_G5_4_splice_bolt5",
+      "b": "B_G5_4_splice_nut5",
+      "volume_mm3": 1.050750584638999,
+      "faces": 12
+    },
+    {
+      "a": "B_G5_4_splice_bolt6",
+      "b": "B_G5_4_splice_nut6",
+      "volume_mm3": 1.0507505846440672,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_0_splice_bolt1",
+      "b": "B_M0_0_splice_nut1",
+      "volume_mm3": 1.0507505846443448,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_0_splice_bolt2",
+      "b": "B_M0_0_splice_nut2",
+      "volume_mm3": 1.05075058464242,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_0_splice_bolt3",
+      "b": "B_M0_0_splice_nut3",
+      "volume_mm3": 1.0507505846425294,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_0_splice_bolt4",
+      "b": "B_M0_0_splice_nut4",
+      "volume_mm3": 1.0507505846419698,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_0_splice_bolt5",
+      "b": "B_M0_0_splice_nut5",
+      "volume_mm3": 1.050750584646848,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_0_splice_bolt6",
+      "b": "B_M0_0_splice_nut6",
+      "volume_mm3": 1.0507505846450411,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_1_splice_bolt1",
+      "b": "B_M0_1_splice_nut1",
+      "volume_mm3": 1.0507505846473615,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_1_splice_bolt2",
+      "b": "B_M0_1_splice_nut2",
+      "volume_mm3": 1.0507505846455676,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_1_splice_bolt3",
+      "b": "B_M0_1_splice_nut3",
+      "volume_mm3": 1.050750584642964,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_1_splice_bolt4",
+      "b": "B_M0_1_splice_nut4",
+      "volume_mm3": 1.0507505846491916,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_1_splice_bolt5",
+      "b": "B_M0_1_splice_nut5",
+      "volume_mm3": 1.0507505846418597,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_1_splice_bolt6",
+      "b": "B_M0_1_splice_nut6",
+      "volume_mm3": 1.0507505846490015,
+      "faces": 12
+    },
+    {
+      "a": "B_G0_2_splice_bolt1",
+      "b": "B_G0_2_splice_nut1",
+      "volume_mm3": 1.050750584645486,
+      "faces": 12
+    },
+    {
+      "a": "B_G0_2_splice_bolt2",
+      "b": "B_G0_2_splice_nut2",
+      "volume_mm3": 1.050750584639183,
+      "faces": 12
+    },
+    {
+      "a": "B_G0_2_splice_bolt3",
+      "b": "B_G0_2_splice_nut3",
+      "volume_mm3": 1.0507505846470777,
+      "faces": 12
+    },
+    {
+      "a": "B_G0_2_splice_bolt4",
+      "b": "B_G0_2_splice_nut4",
+      "volume_mm3": 1.0507505846458929,
+      "faces": 12
+    },
+    {
+      "a": "B_G0_2_splice_bolt5",
+      "b": "B_G0_2_splice_nut5",
+      "volume_mm3": 1.0507505846447627,
+      "faces": 12
+    },
+    {
+      "a": "B_G0_2_splice_bolt6",
+      "b": "B_G0_2_splice_nut6",
+      "volume_mm3": 1.050750584643565,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_2_splice_bolt1",
+      "b": "B_M0_2_splice_nut1",
+      "volume_mm3": 1.0507505846488758,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_2_splice_bolt2",
+      "b": "B_M0_2_splice_nut2",
+      "volume_mm3": 1.0507505846508647,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_2_splice_bolt3",
+      "b": "B_M0_2_splice_nut3",
+      "volume_mm3": 1.0507505846523089,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_2_splice_bolt4",
+      "b": "B_M0_2_splice_nut4",
+      "volume_mm3": 1.0507505846519263,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_2_splice_bolt5",
+      "b": "B_M0_2_splice_nut5",
+      "volume_mm3": 1.0507505846474308,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_2_splice_bolt6",
+      "b": "B_M0_2_splice_nut6",
+      "volume_mm3": 1.050750584655898,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_3_splice_bolt1",
+      "b": "B_M0_3_splice_nut1",
+      "volume_mm3": 1.0507505846519245,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_3_splice_bolt2",
+      "b": "B_M0_3_splice_nut2",
+      "volume_mm3": 1.0507505846512533,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_3_splice_bolt3",
+      "b": "B_M0_3_splice_nut3",
+      "volume_mm3": 1.050750584651261,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_3_splice_bolt4",
+      "b": "B_M0_3_splice_nut4",
+      "volume_mm3": 1.050750584652838,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_3_splice_bolt5",
+      "b": "B_M0_3_splice_nut5",
+      "volume_mm3": 1.0507505846479208,
+      "faces": 12
+    },
+    {
+      "a": "B_M0_3_splice_bolt6",
+      "b": "B_M0_3_splice_nut6",
+      "volume_mm3": 1.050750584650987,
+      "faces": 12
+    },
+    {
+      "a": "B_M4_1_splice_bolt1",
+      "b": "B_M4_1_splice_nut1",
+      "volume_mm3": 1.0507505846518794,
+      "faces": 12
+    },
+    {
+      "a": "B_M4_1_splice_bolt2",
+      "b": "B_M4_1_splice_nut2",
+      "volume_mm3": 1.0507505846528058,
+      "faces": 12
+    },
+    {
+      "a": "B_M4_1_splice_bolt3",
+      "b": "B_M4_1_splice_nut3",
+      "volume_mm3": 1.0507505846529663,
+      "faces": 12
+    },
+    {
+      "a": "B_M4_1_splice_bolt4",
+      "b": "B_M4_1_splice_nut4",
+      "volume_mm3": 1.0507505846526357,
+      "faces": 12
+    },
+    {
+      "a": "B_M4_1_splice_bolt5",
+      "b": "B_M4_1_splice_nut5",
+      "volume_mm3": 1.0507505846490839,
+      "faces": 12
+    },
+    {
+      "a": "B_M4_1_splice_bolt6",
+      "b": "B_M4_1_splice_nut6",
+      "volume_mm3": 1.0507505846533705,
+      "faces": 12
+    },
+    {
+      "a": "B_M5_1_splice_bolt1",
+      "b": "B_M5_1_splice_nut1",
+      "volume_mm3": 1.05075058464408,
+      "faces": 12
+    },
+    {
+      "a": "B_M5_1_splice_bolt2",
+      "b": "B_M5_1_splice_nut2",
+      "volume_mm3": 1.0507505846491838,
+      "faces": 12
+    },
+    {
+      "a": "B_M5_1_splice_bolt3",
+      "b": "B_M5_1_splice_nut3",
+      "volume_mm3": 1.0507505846437792,
+      "faces": 12
+    },
+    {
+      "a": "B_M5_1_splice_bolt4",
+      "b": "B_M5_1_splice_nut4",
+      "volume_mm3": 1.050750584649685,
+      "faces": 12
+    },
+    {
+      "a": "B_M5_1_splice_bolt5",
+      "b": "B_M5_1_splice_nut5",
+      "volume_mm3": 1.0507505846534,
+      "faces": 12
+    },
+    {
+      "a": "B_M5_1_splice_bolt6",
+      "b": "B_M5_1_splice_nut6",
+      "volume_mm3": 1.050750584645422,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_0_splice_bolt1",
+      "b": "B_M6_0_splice_nut1",
+      "volume_mm3": 1.0507505846447498,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_0_splice_bolt2",
+      "b": "B_M6_0_splice_nut2",
+      "volume_mm3": 1.0507505846464265,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_0_splice_bolt3",
+      "b": "B_M6_0_splice_nut3",
+      "volume_mm3": 1.0507505846476095,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_0_splice_bolt4",
+      "b": "B_M6_0_splice_nut4",
+      "volume_mm3": 1.0507505846516132,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_0_splice_bolt5",
+      "b": "B_M6_0_splice_nut5",
+      "volume_mm3": 1.0507505846522065,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_0_splice_bolt6",
+      "b": "B_M6_0_splice_nut6",
+      "volume_mm3": 1.0507505846474985,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_1_splice_bolt1",
+      "b": "B_M6_1_splice_nut1",
+      "volume_mm3": 1.050750584647351,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_1_splice_bolt2",
+      "b": "B_M6_1_splice_nut2",
+      "volume_mm3": 1.0507505846421945,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_1_splice_bolt3",
+      "b": "B_M6_1_splice_nut3",
+      "volume_mm3": 1.0507505846453906,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_1_splice_bolt4",
+      "b": "B_M6_1_splice_nut4",
+      "volume_mm3": 1.0507505846488792,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_1_splice_bolt5",
+      "b": "B_M6_1_splice_nut5",
+      "volume_mm3": 1.0507505846506175,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_1_splice_bolt6",
+      "b": "B_M6_1_splice_nut6",
+      "volume_mm3": 1.050750584647095,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_2_splice_bolt1",
+      "b": "B_G6_2_splice_nut1",
+      "volume_mm3": 1.0507505846366885,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_2_splice_bolt2",
+      "b": "B_G6_2_splice_nut2",
+      "volume_mm3": 1.0507505846486485,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_2_splice_bolt3",
+      "b": "B_G6_2_splice_nut3",
+      "volume_mm3": 1.050750584641792,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_2_splice_bolt4",
+      "b": "B_G6_2_splice_nut4",
+      "volume_mm3": 1.0507505846424374,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_2_splice_bolt5",
+      "b": "B_G6_2_splice_nut5",
+      "volume_mm3": 1.0507505846480214,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_2_splice_bolt6",
+      "b": "B_G6_2_splice_nut6",
+      "volume_mm3": 1.0507505846504779,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_2_splice_bolt1",
+      "b": "B_M6_2_splice_nut1",
+      "volume_mm3": 1.0507505846603944,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_2_splice_bolt2",
+      "b": "B_M6_2_splice_nut2",
+      "volume_mm3": 1.0507505846558547,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_2_splice_bolt3",
+      "b": "B_M6_2_splice_nut3",
+      "volume_mm3": 1.0507505846390435,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_2_splice_bolt4",
+      "b": "B_M6_2_splice_nut4",
+      "volume_mm3": 1.050750584657224,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_2_splice_bolt5",
+      "b": "B_M6_2_splice_nut5",
+      "volume_mm3": 1.0507505846607117,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_2_splice_bolt6",
+      "b": "B_M6_2_splice_nut6",
+      "volume_mm3": 1.0507505846460248,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_3_splice_bolt1",
+      "b": "B_G6_3_splice_nut1",
+      "volume_mm3": 1.0507505846557756,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_3_splice_bolt2",
+      "b": "B_G6_3_splice_nut2",
+      "volume_mm3": 1.0507505846577827,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_3_splice_bolt3",
+      "b": "B_G6_3_splice_nut3",
+      "volume_mm3": 1.0507505846397285,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_3_splice_bolt4",
+      "b": "B_G6_3_splice_nut4",
+      "volume_mm3": 1.050750584645199,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_3_splice_bolt5",
+      "b": "B_G6_3_splice_nut5",
+      "volume_mm3": 1.0507505846458305,
+      "faces": 12
+    },
+    {
+      "a": "B_G6_3_splice_bolt6",
+      "b": "B_G6_3_splice_nut6",
+      "volume_mm3": 1.050750584654336,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_3_splice_bolt1",
+      "b": "B_M6_3_splice_nut1",
+      "volume_mm3": 1.0507505846496807,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_3_splice_bolt2",
+      "b": "B_M6_3_splice_nut2",
+      "volume_mm3": 1.0507505846541112,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_3_splice_bolt3",
+      "b": "B_M6_3_splice_nut3",
+      "volume_mm3": 1.0507505846592018,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_3_splice_bolt4",
+      "b": "B_M6_3_splice_nut4",
+      "volume_mm3": 1.0507505846424998,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_3_splice_bolt5",
+      "b": "B_M6_3_splice_nut5",
+      "volume_mm3": 1.0507505846570004,
+      "faces": 12
+    },
+    {
+      "a": "B_M6_3_splice_bolt6",
+      "b": "B_M6_3_splice_nut6",
+      "volume_mm3": 1.0507505846460785,
+      "faces": 12
+    }
+  ],
+  "splice_revision": "R3-A1",
+  "fasteners_modelled": true
+}
