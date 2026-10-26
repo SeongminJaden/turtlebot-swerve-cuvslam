@@ -52,8 +52,9 @@ ROS_DOMAIN_ID=87 python3 scripts/check_ros_controller.py
 ros2 launch turtlebot_swerve swerve_control.launch.py
 ```
 
-- [설치·Git·코드·원리 실습 가이드](teaching/LAB_GUIDE.md)
+- [팀별 로봇 공통 실습 가이드](teaching/TEAM_LAB.md)
+- [강사용 M38 구현·시연 가이드](teaching/LAB_GUIDE.md)
 - [실행 증거와 캡처](evidence/2026-10-26/README.md)
-- [강의 슬라이드](teaching/output/M38_개발실습01.pptx)
+- [강의 슬라이드](teaching/output/팀별로봇_개발실습01.pptx)
 
 측정 joint_states가 없거나 오래되면 바퀴 명령은 0입니다. 현재 출력은 명령 토픽이며 물리 어댑터와 cuVSLAM 연결은 후속 구현입니다.
