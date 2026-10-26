@@ -1,0 +1,1358 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="m38_swerve_4kg">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0.216499975" rpy="0 0 0" />
+      <mass value="0.77" />
+      <inertia ixx="0.01647292908510598" iyy="0.01647292908510598" izz="0.020533333945274356" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/base_link.stl" />
+      </geometry>
+      <material name="frame">
+        <color rgba="0.25 0.48 0.62 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="0 0 0.1245" rpy="0 0 0" />
+      <geometry>
+        <box size="0.040294372 0.092 0.127" />
+      </geometry>
+    </collision>
+    <collision name="proxy_1">
+      <origin xyz="0 0 0.2025" rpy="0 0 0" />
+      <geometry>
+        <box size="0.14 0.13 0.013" />
+      </geometry>
+    </collision>
+    <collision name="proxy_2">
+      <origin xyz="-0.0561 0.025 0.2085" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0118 0.008 0.003" />
+      </geometry>
+    </collision>
+    <collision name="proxy_3">
+      <origin xyz="-0.05085 0.025 0.20675" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0013 0.008 0.0005" />
+      </geometry>
+    </collision>
+    <collision name="proxy_4">
+      <origin xyz="0.0561 0.025 0.2085" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0118 0.008 0.003" />
+      </geometry>
+    </collision>
+    <collision name="proxy_5">
+      <origin xyz="0.05085 0.025 0.20675" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0013 0.008 0.0005" />
+      </geometry>
+    </collision>
+    <collision name="proxy_6">
+      <origin xyz="-0.0561 -0.025 0.2085" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0118 0.008 0.003" />
+      </geometry>
+    </collision>
+    <collision name="proxy_7">
+      <origin xyz="-0.05085 -0.025 0.20675" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0013 0.008 0.0005" />
+      </geometry>
+    </collision>
+    <collision name="proxy_8">
+      <origin xyz="0.0561 -0.025 0.2085" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0118 0.008 0.003" />
+      </geometry>
+    </collision>
+    <collision name="proxy_9">
+      <origin xyz="0.05085 -0.025 0.20675" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0013 0.008 0.0005" />
+      </geometry>
+    </collision>
+    <collision name="proxy_10">
+      <origin xyz="-0.105 0.033 0.16596" rpy="0 0 0" />
+      <geometry>
+        <box size="0.006 0.006 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_11">
+      <origin xyz="-0.009 0.033 0.16596" rpy="0 0 0" />
+      <geometry>
+        <box size="0.006 0.006 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_12">
+      <origin xyz="0.009 0.033 0.16596" rpy="0 0 0" />
+      <geometry>
+        <box size="0.006 0.006 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_13">
+      <origin xyz="0.105 0.033 0.16596" rpy="0 0 0" />
+      <geometry>
+        <box size="0.006 0.006 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_14">
+      <origin xyz="-0.105 -0.033 0.16596" rpy="0 0 0" />
+      <geometry>
+        <box size="0.006 0.006 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_15">
+      <origin xyz="-0.009 -0.033 0.16596" rpy="0 0 0" />
+      <geometry>
+        <box size="0.006 0.006 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_16">
+      <origin xyz="0.009 -0.033 0.16596" rpy="0 0 0" />
+      <geometry>
+        <box size="0.006 0.006 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_17">
+      <origin xyz="0.105 -0.033 0.16596" rpy="0 0 0" />
+      <geometry>
+        <box size="0.006 0.006 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_18">
+      <origin xyz="0 0.02 0.0645" rpy="0 0 0" />
+      <geometry>
+        <box size="0.026 0.035 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_19">
+      <origin xyz="0 -0.02 0.0645" rpy="0 0 0" />
+      <geometry>
+        <box size="0.026 0.035 0.001" />
+      </geometry>
+    </collision>
+    <collision name="proxy_20">
+      <origin xyz="-0.0151 0 0.09" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0042 0.075 0.02" />
+      </geometry>
+    </collision>
+    <collision name="proxy_21">
+      <origin xyz="0.0151 0 0.09" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0042 0.075 0.02" />
+      </geometry>
+    </collision>
+    <collision name="proxy_22">
+      <origin xyz="-0.0151 0 0.13" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0042 0.075 0.02" />
+      </geometry>
+    </collision>
+    <collision name="proxy_23">
+      <origin xyz="0.0151 0 0.13" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0042 0.075 0.02" />
+      </geometry>
+    </collision>
+    <collision name="proxy_24">
+      <origin xyz="0.057 0 0.17325" rpy="0 0 0" />
+      <geometry>
+        <box size="0.104 0.086 0.0295" />
+      </geometry>
+    </collision>
+    <collision name="proxy_25">
+      <origin xyz="-0.057 1.387778781e-17 0.17325" rpy="0 0 0" />
+      <geometry>
+        <box size="0.104 0.086 0.0295" />
+      </geometry>
+    </collision>
+    <collision name="proxy_26">
+      <origin xyz="-0.1815 -0.0555 0.21" rpy="0 0 0" />
+      <geometry>
+        <box size="0.027 0.151 0.078" />
+      </geometry>
+    </collision>
+    <collision name="proxy_27">
+      <origin xyz="-0.1815 0.0555 0.21" rpy="0 0 0" />
+      <geometry>
+        <box size="0.027 0.151 0.078" />
+      </geometry>
+    </collision>
+    <collision name="proxy_31">
+      <origin xyz="0.04949747468 -0.04949747468 0.18985" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1472893219 0.1472893219 0.0123" />
+      </geometry>
+    </collision>
+    <collision name="proxy_32">
+      <origin xyz="0.04949747468 0.04949747468 0.18985" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1472893219 0.1472893219 0.0123" />
+      </geometry>
+    </collision>
+    <collision name="proxy_33">
+      <origin xyz="-0.04949747468 0.04949747468 0.18985" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1472893219 0.1472893219 0.0123" />
+      </geometry>
+    </collision>
+    <collision name="proxy_34">
+      <origin xyz="-0.04949747468 -0.04949747468 0.18985" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1472893219 0.1472893219 0.0123" />
+      </geometry>
+    </collision>
+    <collision name="proxy_35">
+      <origin xyz="-0.087 0.01514718626 0.221" rpy="0 0 0" />
+      <geometry>
+        <box size="0.026 0.016 0.05" />
+      </geometry>
+    </collision>
+    <collision name="proxy_36">
+      <origin xyz="0.087 0.01514718626 0.221" rpy="0 0 0" />
+      <geometry>
+        <box size="0.026 0.016 0.05" />
+      </geometry>
+    </collision>
+    <collision name="proxy_37">
+      <origin xyz="-0.087 -0.01514718626 0.221" rpy="0 0 0" />
+      <geometry>
+        <box size="0.026 0.016 0.05" />
+      </geometry>
+    </collision>
+    <collision name="proxy_38">
+      <origin xyz="0.087 -0.01514718626 0.221" rpy="0 0 0" />
+      <geometry>
+        <box size="0.026 0.016 0.05" />
+      </geometry>
+    </collision>
+    <collision name="proxy_39">
+      <origin xyz="0 0 0.266" rpy="0 0 0" />
+      <geometry>
+        <box size="0.186 0.06 0.04" />
+      </geometry>
+    </collision>
+    <collision name="proxy_40">
+      <origin xyz="0.0555 -0.1513210678 0.2255" rpy="0 0 0" />
+      <geometry>
+        <box size="0.151 0.08735786438 0.109" />
+      </geometry>
+    </collision>
+    <collision name="proxy_41">
+      <origin xyz="-0.0555 -0.1513210678 0.2255" rpy="0 0 0" />
+      <geometry>
+        <box size="0.151 0.08735786438 0.109" />
+      </geometry>
+    </collision>
+    <collision name="proxy_42">
+      <origin xyz="-0.0555 0.1513210678 0.2255" rpy="0 0 0" />
+      <geometry>
+        <box size="0.151 0.08735786438 0.109" />
+      </geometry>
+    </collision>
+    <collision name="proxy_43">
+      <origin xyz="0.0555 0.1513210678 0.2255" rpy="0 0 0" />
+      <geometry>
+        <box size="0.151 0.08735786438 0.109" />
+      </geometry>
+    </collision>
+    <collision name="proxy_44">
+      <origin xyz="0.108475 0 0.27375" rpy="0 0 0" />
+      <geometry>
+        <box size="0.11695 0.06 0.0315" />
+      </geometry>
+    </collision>
+    <collision name="proxy_45">
+      <origin xyz="0.1725 0.0555 0.2145" rpy="0 0 0" />
+      <geometry>
+        <box size="0.045 0.151 0.087" />
+      </geometry>
+    </collision>
+    <collision name="proxy_46">
+      <origin xyz="0.1725 -0.0555 0.2145" rpy="0 0 0" />
+      <geometry>
+        <box size="0.045 0.151 0.087" />
+      </geometry>
+    </collision>
+    <collision name="proxy_47">
+      <origin xyz="0.045 -0.1515 0.326" rpy="0 0 0" />
+      <geometry>
+        <box size="0.065 0.085 0.092" />
+      </geometry>
+    </collision>
+    <collision name="proxy_48">
+      <origin xyz="-0.045 -0.1515 0.326" rpy="0 0 0" />
+      <geometry>
+        <box size="0.065 0.085 0.092" />
+      </geometry>
+    </collision>
+    <collision name="proxy_49">
+      <origin xyz="-0.045 0.1515 0.326" rpy="0 0 0" />
+      <geometry>
+        <box size="0.065 0.085 0.092" />
+      </geometry>
+    </collision>
+    <collision name="proxy_50">
+      <origin xyz="0.045 0.1515 0.326" rpy="0 0 0" />
+      <geometry>
+        <box size="0.065 0.085 0.092" />
+      </geometry>
+    </collision>
+    <collision name="proxy_51">
+      <origin xyz="0.1 0.1 0.1922" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1018233765 0.1018233765 0.004" />
+      </geometry>
+    </collision>
+    <collision name="proxy_52">
+      <origin xyz="0.1 0.1 0.178" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07353910524 0.07353910524 0.01" />
+      </geometry>
+    </collision>
+    <collision name="proxy_53">
+      <origin xyz="0.09962359313 0.09962359313 0.18185" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1809528137 0.1809528137 0.0123" />
+      </geometry>
+    </collision>
+    <collision name="proxy_54">
+      <origin xyz="0.09998894065 0.09998894065 0.2756" rpy="0 0 0" />
+      <geometry>
+        <box size="0.04523271529 0.04523271529 0.005" />
+      </geometry>
+    </collision>
+    <collision name="proxy_55">
+      <origin xyz="0.1452409318 0.1452409318 0.21875" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08466759496 0.08466759496 0.0027" />
+      </geometry>
+    </collision>
+    <collision name="proxy_56">
+      <origin xyz="0.1479871572 0.1479871572 0.2779" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1336431816 0.1336431816 0.015" />
+      </geometry>
+    </collision>
+    <collision name="proxy_57">
+      <origin xyz="0.1511691377 0.1511691377 0.2845" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1159655121 0.1159655121 0.0098" />
+      </geometry>
+    </collision>
+    <collision name="proxy_58">
+      <origin xyz="0.1161434629 0.1161434629 0.17185" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1642869259 0.1642869259 0.0397" />
+      </geometry>
+    </collision>
+    <collision name="proxy_59">
+      <origin xyz="0.1097873647 0.1097873647 0.2032" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1555747293 0.1555747293 0.0304" />
+      </geometry>
+    </collision>
+    <collision name="proxy_60">
+      <origin xyz="0.1511691377 0.1511691377 0.2816" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.004" />
+      </geometry>
+    </collision>
+    <collision name="proxy_61">
+      <origin xyz="0.1511691377 0.1511691377 0.2063" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.0078" />
+      </geometry>
+    </collision>
+    <collision name="proxy_62">
+      <origin xyz="0.1511691377 0.1511691377 0.24015" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07610729055 0.07610729055 0.0789" />
+      </geometry>
+    </collision>
+    <collision name="proxy_63">
+      <origin xyz="0.1 -0.1 0.1922" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1018233765 0.1018233765 0.004" />
+      </geometry>
+    </collision>
+    <collision name="proxy_64">
+      <origin xyz="0.1 -0.1 0.178" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07353910524 0.07353910524 0.01" />
+      </geometry>
+    </collision>
+    <collision name="proxy_65">
+      <origin xyz="0.09962359313 -0.09962359313 0.18185" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1809528137 0.1809528137 0.0123" />
+      </geometry>
+    </collision>
+    <collision name="proxy_66">
+      <origin xyz="0.09998894065 -0.09998894065 0.2756" rpy="0 0 0" />
+      <geometry>
+        <box size="0.04523271529 0.04523271529 0.005" />
+      </geometry>
+    </collision>
+    <collision name="proxy_67">
+      <origin xyz="0.1452409318 -0.1452409318 0.21875" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08466759496 0.08466759496 0.0027" />
+      </geometry>
+    </collision>
+    <collision name="proxy_68">
+      <origin xyz="0.1479871572 -0.1479871572 0.2779" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1336431816 0.1336431816 0.015" />
+      </geometry>
+    </collision>
+    <collision name="proxy_69">
+      <origin xyz="0.1511691377 -0.1511691377 0.2845" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1159655121 0.1159655121 0.0098" />
+      </geometry>
+    </collision>
+    <collision name="proxy_70">
+      <origin xyz="0.1161434629 -0.1161434629 0.17185" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1642869259 0.1642869259 0.0397" />
+      </geometry>
+    </collision>
+    <collision name="proxy_71">
+      <origin xyz="0.1097873647 -0.1097873647 0.2032" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1555747293 0.1555747293 0.0304" />
+      </geometry>
+    </collision>
+    <collision name="proxy_72">
+      <origin xyz="0.1511691377 -0.1511691377 0.24015" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07610729055 0.07610729055 0.0789" />
+      </geometry>
+    </collision>
+    <collision name="proxy_73">
+      <origin xyz="0.1511691377 -0.1511691377 0.2816" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.004" />
+      </geometry>
+    </collision>
+    <collision name="proxy_74">
+      <origin xyz="0.1511691377 -0.1511691377 0.2063" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.0078" />
+      </geometry>
+    </collision>
+    <collision name="proxy_75">
+      <origin xyz="-0.1 0.1 0.1922" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1018233765 0.1018233765 0.004" />
+      </geometry>
+    </collision>
+    <collision name="proxy_76">
+      <origin xyz="-0.1 0.1 0.178" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07353910524 0.07353910524 0.01" />
+      </geometry>
+    </collision>
+    <collision name="proxy_77">
+      <origin xyz="-0.09962359313 0.09962359313 0.18185" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1809528137 0.1809528137 0.0123" />
+      </geometry>
+    </collision>
+    <collision name="proxy_78">
+      <origin xyz="-0.09998894065 0.09998894065 0.2756" rpy="0 0 0" />
+      <geometry>
+        <box size="0.04523271529 0.04523271529 0.005" />
+      </geometry>
+    </collision>
+    <collision name="proxy_79">
+      <origin xyz="-0.1452409318 0.1452409318 0.21875" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08466759496 0.08466759496 0.0027" />
+      </geometry>
+    </collision>
+    <collision name="proxy_80">
+      <origin xyz="-0.1479871572 0.1479871572 0.2779" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1336431816 0.1336431816 0.015" />
+      </geometry>
+    </collision>
+    <collision name="proxy_81">
+      <origin xyz="-0.1511691377 0.1511691377 0.2845" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1159655121 0.1159655121 0.0098" />
+      </geometry>
+    </collision>
+    <collision name="proxy_82">
+      <origin xyz="-0.1161434629 0.1161434629 0.17185" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1642869259 0.1642869259 0.0397" />
+      </geometry>
+    </collision>
+    <collision name="proxy_83">
+      <origin xyz="-0.1097873647 0.1097873647 0.2032" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1555747293 0.1555747293 0.0304" />
+      </geometry>
+    </collision>
+    <collision name="proxy_84">
+      <origin xyz="-0.1511691377 0.1511691377 0.2816" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.004" />
+      </geometry>
+    </collision>
+    <collision name="proxy_85">
+      <origin xyz="-0.1511691377 0.1511691377 0.2063" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.0078" />
+      </geometry>
+    </collision>
+    <collision name="proxy_86">
+      <origin xyz="-0.1511691377 0.1511691377 0.24015" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07610729055 0.07610729055 0.0789" />
+      </geometry>
+    </collision>
+    <collision name="proxy_87">
+      <origin xyz="-0.1 -0.1 0.1922" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1018233765 0.1018233765 0.004" />
+      </geometry>
+    </collision>
+    <collision name="proxy_88">
+      <origin xyz="-0.1 -0.1 0.178" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07353910524 0.07353910524 0.01" />
+      </geometry>
+    </collision>
+    <collision name="proxy_89">
+      <origin xyz="-0.09962359313 -0.09962359313 0.18185" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1809528137 0.1809528137 0.0123" />
+      </geometry>
+    </collision>
+    <collision name="proxy_90">
+      <origin xyz="-0.09998894065 -0.09998894065 0.2756" rpy="0 0 0" />
+      <geometry>
+        <box size="0.04523271529 0.04523271529 0.005" />
+      </geometry>
+    </collision>
+    <collision name="proxy_91">
+      <origin xyz="-0.1452409318 -0.1452409318 0.21875" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08466759496 0.08466759496 0.0027" />
+      </geometry>
+    </collision>
+    <collision name="proxy_92">
+      <origin xyz="-0.1479871572 -0.1479871572 0.2779" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1336431816 0.1336431816 0.015" />
+      </geometry>
+    </collision>
+    <collision name="proxy_93">
+      <origin xyz="-0.1511691377 -0.1511691377 0.2845" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1159655121 0.1159655121 0.0098" />
+      </geometry>
+    </collision>
+    <collision name="proxy_94">
+      <origin xyz="-0.1161434629 -0.1161434629 0.17185" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1642869259 0.1642869259 0.0397" />
+      </geometry>
+    </collision>
+    <collision name="proxy_95">
+      <origin xyz="-0.1097873647 -0.1097873647 0.2032" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1555747293 0.1555747293 0.0304" />
+      </geometry>
+    </collision>
+    <collision name="proxy_96">
+      <origin xyz="-0.1511691377 -0.1511691377 0.24015" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07610729055 0.07610729055 0.0789" />
+      </geometry>
+    </collision>
+    <collision name="proxy_97">
+      <origin xyz="-0.1511691377 -0.1511691377 0.2816" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.004" />
+      </geometry>
+    </collision>
+    <collision name="proxy_98">
+      <origin xyz="-0.1511691377 -0.1511691377 0.2063" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.0078" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="lh1_wheel">
+    <inertial>
+      <origin xyz="-0.006750000641 -9.313225746e-10 0.03495613299" rpy="0 0 0" />
+      <mass value="0.15" />
+      <inertia ixx="0.00026254470730395653" iyy="0.00024670721278894806" izz="7.833749637765363e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/lh1_wheel.stl" />
+      </geometry>
+      <material name="wheel">
+        <color rgba="0.12 0.13 0.15 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="0 0 0" rpy="-0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.03068719889482" length="0.0175" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="lh1_steer">
+    <inertial>
+      <origin xyz="0.00127905421 0.01927986182 -0.0384674482" rpy="0 0 0" />
+      <mass value="0.4" />
+      <inertia ixx="0.0031576251163941533" iyy="0.0028590974988865004" izz="0.0011734316839510696" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/lh1_steer.stl" />
+      </geometry>
+      <material name="frame">
+        <color rgba="0.25 0.48 0.62 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="-0.008 3.497202528e-15 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.044 0.07699244407 0.07699244407" />
+      </geometry>
+    </collision>
+    <collision name="proxy_1">
+      <origin xyz="0.0385 0.05175 -0.09509033347" rpy="0 0 0" />
+      <geometry>
+        <box size="0.04 0.0835 0.03398066695" />
+      </geometry>
+    </collision>
+    <collision name="proxy_2">
+      <origin xyz="0.0011 0.04788799976 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0038 0.01 0.01" />
+      </geometry>
+    </collision>
+    <collision name="proxy_3">
+      <origin xyz="-0.0078 0.04788799976 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0016 0.038 0.038" />
+      </geometry>
+    </collision>
+    <collision name="proxy_4">
+      <origin xyz="0.00335 0.04788799976 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0207 0.06635066635 0.06635066635" />
+      </geometry>
+    </collision>
+    <collision name="proxy_5">
+      <origin xyz="-0.0256 0.0435 -0.06316533347" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0368 0.039 0.06213066695" />
+      </geometry>
+    </collision>
+    <collision name="proxy_6">
+      <origin xyz="-0.03695 0 -0.0891" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0235 0.1 0.126" />
+      </geometry>
+    </collision>
+    <collision name="proxy_7">
+      <origin xyz="0.0263 0 -0.0891" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0342 0.1 0.126" />
+      </geometry>
+    </collision>
+    <collision name="proxy_8">
+      <origin xyz="-0.0286 0.005 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0068 0.0396 0.04424101615" />
+      </geometry>
+    </collision>
+    <collision name="proxy_9">
+      <origin xyz="0.0126 0.005 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0068 0.0396 0.04424101615" />
+      </geometry>
+    </collision>
+    <collision name="proxy_10">
+      <origin xyz="0 0 0.0049" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.0096" />
+      </geometry>
+    </collision>
+    <collision name="proxy_11">
+      <origin xyz="0 0 -2.775557562e-17" rpy="0 0 0" />
+      <geometry>
+        <box size="0.068 0.068 0.0342" />
+      </geometry>
+    </collision>
+    <collision name="proxy_12">
+      <origin xyz="-0.004 0.012 -0.0302" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08 0.092 0.0342" />
+      </geometry>
+    </collision>
+    <collision name="proxy_13">
+      <origin xyz="-0.0211 0.014 -0.0951" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0662 0.138 0.138" />
+      </geometry>
+    </collision>
+    <collision name="proxy_14">
+      <origin xyz="0.0356 0.059 -0.0804" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0432 0.0664 0.031" />
+      </geometry>
+    </collision>
+    <collision name="proxy_15">
+      <origin xyz="-2.025127288e-11 -2.997602166e-15 0.0567" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08462072652 0.08462072607 0.0792" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="rh1_wheel">
+    <inertial>
+      <origin xyz="-0.006750000641 9.313225746e-10 0.03495613299" rpy="0 0 0" />
+      <mass value="0.15" />
+      <inertia ixx="0.00026254470730395653" iyy="0.00024670721278894806" izz="7.833749637765363e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/rh1_wheel.stl" />
+      </geometry>
+      <material name="wheel">
+        <color rgba="0.12 0.13 0.15 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="0 0 0" rpy="-0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.03068719889482" length="0.0175" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="rh1_steer">
+    <inertial>
+      <origin xyz="0.00127905421 -0.01927793585 -0.03846554458" rpy="0 0 0" />
+      <mass value="0.4" />
+      <inertia ixx="0.0031576553721389977" iyy="0.002859165911902003" izz="0.0011733935266804117" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/rh1_steer.stl" />
+      </geometry>
+      <material name="frame">
+        <color rgba="0.25 0.48 0.62 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="-0.008 -3.497202528e-15 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.044 0.07699244407 0.07699244407" />
+      </geometry>
+    </collision>
+    <collision name="proxy_1">
+      <origin xyz="0.0385 -0.05175 -0.09509033347" rpy="0 0 0" />
+      <geometry>
+        <box size="0.04 0.0835 0.03398066695" />
+      </geometry>
+    </collision>
+    <collision name="proxy_2">
+      <origin xyz="0.0011 -0.04788799976 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0038 0.01 0.01" />
+      </geometry>
+    </collision>
+    <collision name="proxy_3">
+      <origin xyz="-0.0078 -0.04788799976 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0016 0.038 0.038" />
+      </geometry>
+    </collision>
+    <collision name="proxy_4">
+      <origin xyz="0.00335 -0.04788799976 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0207 0.06635066635 0.06635066635" />
+      </geometry>
+    </collision>
+    <collision name="proxy_5">
+      <origin xyz="-0.0256 -0.0435 -0.06316533347" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0368 0.039 0.06213066695" />
+      </geometry>
+    </collision>
+    <collision name="proxy_6">
+      <origin xyz="-0.03695 0 -0.0891" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0235 0.1 0.126" />
+      </geometry>
+    </collision>
+    <collision name="proxy_7">
+      <origin xyz="0.0263 0 -0.0891" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0342 0.1 0.126" />
+      </geometry>
+    </collision>
+    <collision name="proxy_8">
+      <origin xyz="-0.0286 -0.005 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0068 0.0396 0.04424101615" />
+      </geometry>
+    </collision>
+    <collision name="proxy_9">
+      <origin xyz="0.0126 -0.005 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0068 0.0396 0.04424101615" />
+      </geometry>
+    </collision>
+    <collision name="proxy_10">
+      <origin xyz="0 0 0.0049" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.0096" />
+      </geometry>
+    </collision>
+    <collision name="proxy_11">
+      <origin xyz="0 0 -2.775557562e-17" rpy="0 0 0" />
+      <geometry>
+        <box size="0.068 0.068 0.0342" />
+      </geometry>
+    </collision>
+    <collision name="proxy_12">
+      <origin xyz="-0.004 -0.012 -0.0302" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08 0.092 0.0342" />
+      </geometry>
+    </collision>
+    <collision name="proxy_13">
+      <origin xyz="-0.0211 -0.014 -0.0951" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0662 0.138 0.138" />
+      </geometry>
+    </collision>
+    <collision name="proxy_14">
+      <origin xyz="0.0356 -0.059 -0.0804" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0432 0.0664 0.031" />
+      </geometry>
+    </collision>
+    <collision name="proxy_15">
+      <origin xyz="-2.025127288e-11 2.997602166e-15 0.0567" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08462072652 0.08462072607 0.0792" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="lh2_wheel">
+    <inertial>
+      <origin xyz="9.313225746e-10 -0.006750000641 0.03495613299" rpy="0 0 0" />
+      <mass value="0.15" />
+      <inertia ixx="0.00024670721278894806" iyy="0.00026254470730395653" izz="7.833749637765363e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/lh2_wheel.stl" />
+      </geometry>
+      <material name="wheel">
+        <color rgba="0.12 0.13 0.15 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="0 0 0" rpy="-1.570796327 0 0" />
+      <geometry>
+        <cylinder radius="0.03068719889482" length="0.01750000000000003" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="lh2_steer">
+    <inertial>
+      <origin xyz="-0.01927986182 0.00127905421 -0.03846749663" rpy="0 0 0" />
+      <mass value="0.4" />
+      <inertia ixx="0.00285909575845057" iyy="0.0031576233759582225" izz="0.0011734316839510696" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/lh2_steer.stl" />
+      </geometry>
+      <material name="frame">
+        <color rgba="0.25 0.48 0.62 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="-3.497202528e-15 -0.008 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07699244407 0.044 0.07699244407" />
+      </geometry>
+    </collision>
+    <collision name="proxy_1">
+      <origin xyz="-0.05175 0.0385 -0.09509033347" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0835 0.04 0.03398066695" />
+      </geometry>
+    </collision>
+    <collision name="proxy_2">
+      <origin xyz="-0.04788799976 0.0011 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.0038 0.01" />
+      </geometry>
+    </collision>
+    <collision name="proxy_3">
+      <origin xyz="-0.04788799976 -0.0078 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.038 0.0016 0.038" />
+      </geometry>
+    </collision>
+    <collision name="proxy_4">
+      <origin xyz="-0.04788799976 0.00335 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.06635066635 0.0207 0.06635066635" />
+      </geometry>
+    </collision>
+    <collision name="proxy_5">
+      <origin xyz="-0.0435 -0.0256 -0.06316533347" rpy="0 0 0" />
+      <geometry>
+        <box size="0.039 0.0368 0.06213066695" />
+      </geometry>
+    </collision>
+    <collision name="proxy_6">
+      <origin xyz="2.775557562e-17 -0.03695 -0.0891" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1 0.0235 0.126" />
+      </geometry>
+    </collision>
+    <collision name="proxy_7">
+      <origin xyz="0 0.0263 -0.0891" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1 0.0342 0.126" />
+      </geometry>
+    </collision>
+    <collision name="proxy_8">
+      <origin xyz="-0.005 -0.0286 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0396 0.0068 0.04424101615" />
+      </geometry>
+    </collision>
+    <collision name="proxy_9">
+      <origin xyz="-0.005 0.0126 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0396 0.0068 0.04424101615" />
+      </geometry>
+    </collision>
+    <collision name="proxy_10">
+      <origin xyz="0 0 0.0049" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.0096" />
+      </geometry>
+    </collision>
+    <collision name="proxy_11">
+      <origin xyz="0 0 -2.775557562e-17" rpy="0 0 0" />
+      <geometry>
+        <box size="0.068 0.068 0.0342" />
+      </geometry>
+    </collision>
+    <collision name="proxy_12">
+      <origin xyz="-0.012 -0.004 -0.0302" rpy="0 0 0" />
+      <geometry>
+        <box size="0.092 0.08 0.0342" />
+      </geometry>
+    </collision>
+    <collision name="proxy_13">
+      <origin xyz="-0.014 -0.0211 -0.0951" rpy="0 0 0" />
+      <geometry>
+        <box size="0.138 0.0662 0.138" />
+      </geometry>
+    </collision>
+    <collision name="proxy_14">
+      <origin xyz="-0.059 0.0356 -0.0804" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0664 0.0432 0.031" />
+      </geometry>
+    </collision>
+    <collision name="proxy_15">
+      <origin xyz="3.011479954e-15 -2.0251259e-11 0.0567" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08462072607 0.08462072652 0.0792" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="rh2_wheel">
+    <inertial>
+      <origin xyz="9.313225746e-10 0.006750000641 0.03495613299" rpy="0 0 0" />
+      <mass value="0.15" />
+      <inertia ixx="0.00024670721278894806" iyy="0.00026254470730395653" izz="7.833749637765363e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/rh2_wheel.stl" />
+      </geometry>
+      <material name="wheel">
+        <color rgba="0.12 0.13 0.15 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="0 0 0" rpy="1.570796327 0 0" />
+      <geometry>
+        <cylinder radius="0.03068719889482" length="0.01750000000000003" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="rh2_steer">
+    <inertial>
+      <origin xyz="-0.01927793585 -0.00127905421 -0.03846554458" rpy="0 0 0" />
+      <mass value="0.4" />
+      <inertia ixx="0.002859165911902003" iyy="0.0031576553721389977" izz="0.0011733935266804117" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/rh2_steer.stl" />
+      </geometry>
+      <material name="frame">
+        <color rgba="0.25 0.48 0.62 1" />
+      </material>
+    </visual>
+    <collision name="proxy_0">
+      <origin xyz="-3.497202528e-15 0.008 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07699244407 0.044 0.07699244407" />
+      </geometry>
+    </collision>
+    <collision name="proxy_1">
+      <origin xyz="-0.05175 -0.0385 -0.09509033347" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0835 0.04 0.03398066695" />
+      </geometry>
+    </collision>
+    <collision name="proxy_2">
+      <origin xyz="-0.04788799976 -0.0011 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.0038 0.01" />
+      </geometry>
+    </collision>
+    <collision name="proxy_3">
+      <origin xyz="-0.04788799976 0.0078 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.038 0.0016 0.038" />
+      </geometry>
+    </collision>
+    <collision name="proxy_4">
+      <origin xyz="-0.04788799976 -0.00335 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.06635066635 0.0207 0.06635066635" />
+      </geometry>
+    </collision>
+    <collision name="proxy_5">
+      <origin xyz="-0.0435 0.0256 -0.06316533347" rpy="0 0 0" />
+      <geometry>
+        <box size="0.039 0.0368 0.06213066695" />
+      </geometry>
+    </collision>
+    <collision name="proxy_6">
+      <origin xyz="2.775557562e-17 0.03695 -0.0891" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1 0.0235 0.126" />
+      </geometry>
+    </collision>
+    <collision name="proxy_7">
+      <origin xyz="0 -0.0263 -0.0891" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1 0.0342 0.126" />
+      </geometry>
+    </collision>
+    <collision name="proxy_8">
+      <origin xyz="-0.005 0.0286 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0396 0.0068 0.04424101615" />
+      </geometry>
+    </collision>
+    <collision name="proxy_9">
+      <origin xyz="-0.005 -0.0126 -0.08423066695" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0396 0.0068 0.04424101615" />
+      </geometry>
+    </collision>
+    <collision name="proxy_10">
+      <origin xyz="0 0 0.0049" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0422 0.0422 0.0096" />
+      </geometry>
+    </collision>
+    <collision name="proxy_11">
+      <origin xyz="0 0 -2.775557562e-17" rpy="0 0 0" />
+      <geometry>
+        <box size="0.068 0.068 0.0342" />
+      </geometry>
+    </collision>
+    <collision name="proxy_12">
+      <origin xyz="-0.012 0.004 -0.0302" rpy="0 0 0" />
+      <geometry>
+        <box size="0.092 0.08 0.0342" />
+      </geometry>
+    </collision>
+    <collision name="proxy_13">
+      <origin xyz="-0.014 0.0211 -0.0951" rpy="0 0 0" />
+      <geometry>
+        <box size="0.138 0.0662 0.138" />
+      </geometry>
+    </collision>
+    <collision name="proxy_14">
+      <origin xyz="-0.059 -0.0356 -0.0804" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0664 0.0432 0.031" />
+      </geometry>
+    </collision>
+    <collision name="proxy_15">
+      <origin xyz="3.011479954e-15 2.0251259e-11 0.0567" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08462072607 0.08462072652 0.0792" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lh1_steer_joint" type="revolute">
+    <parent link="base_link" />
+    <child link="lh1_steer" />
+    <origin xyz="0.1 0.1 0.1731" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="1.0" velocity="1.0" lower="-1.5707963267948966" upper="1.5707963267948966" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="lh1_wheel_joint" type="continuous">
+    <parent link="lh1_steer" />
+    <child link="lh1_wheel" />
+    <origin xyz="-0.00025 0 -0.1401" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="1.0" velocity="10.0" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="rh1_steer_joint" type="revolute">
+    <parent link="base_link" />
+    <child link="rh1_steer" />
+    <origin xyz="0.1 -0.1 0.1731" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="1.0" velocity="1.0" lower="-1.5707963267948966" upper="1.5707963267948966" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="rh1_wheel_joint" type="continuous">
+    <parent link="rh1_steer" />
+    <child link="rh1_wheel" />
+    <origin xyz="-0.00025 0 -0.1401" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit effort="1.0" velocity="10.0" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="lh2_steer_joint" type="revolute">
+    <parent link="base_link" />
+    <child link="lh2_steer" />
+    <origin xyz="-0.1 0.1 0.1731" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="1.0" velocity="1.0" lower="-1.5707963267948966" upper="1.5707963267948966" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="lh2_wheel_joint" type="continuous">
+    <parent link="lh2_steer" />
+    <child link="lh2_wheel" />
+    <origin xyz="0 -0.00025 -0.1401" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="1.0" velocity="10.0" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="rh2_steer_joint" type="revolute">
+    <parent link="base_link" />
+    <child link="rh2_steer" />
+    <origin xyz="-0.1 -0.1 0.1731" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="1.0" velocity="1.0" lower="-1.5707963267948966" upper="1.5707963267948966" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <joint name="rh2_wheel_joint" type="continuous">
+    <parent link="rh2_steer" />
+    <child link="rh2_wheel" />
+    <origin xyz="0 0.00025 -0.1401" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="1.0" velocity="10.0" />
+    <dynamics damping="0.05" friction="0" />
+  </joint>
+  <gazebo reference="base_link">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="lh1_wheel">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="lh1_steer">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="rh1_wheel">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="rh1_steer">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="lh2_wheel">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="lh2_steer">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="rh2_wheel">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <gazebo reference="rh2_steer">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <link name="arm_link1">
+    <inertial>
+      <origin xyz="0 0.002199999988 0.04487499874" rpy="0 0 0" />
+      <mass value="0.12" />
+      <inertia ixx="4.4758222601839936e-05" iyy="3.490312366671862e-05" izz="2.6100098952108637e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/arm_link1.stl" />
+      </geometry>
+      <material name="arm">
+        <color rgba="0.7 0.72 0.75 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.002199999988 0.04487499874" rpy="0 0 0" />
+      <geometry>
+        <box size="0.02850000001 0.04239999875 0.0517499987" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="arm_joint1" type="revolute">
+    <parent link="base_link" />
+    <child link="arm_link1" />
+    <origin xyz="0 0 0.275" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-0.35" upper="0.35" effort="2" velocity="0.5" />
+    <dynamics damping="0.1" friction="0" />
+  </joint>
+  <link name="arm_link2">
+    <inertial>
+      <origin xyz="0.01137500023 0.001199999824 0.09857500973" rpy="0 0 0" />
+      <mass value="0.25" />
+      <inertia ixx="0.0008924164633803753" iyy="0.0008988477688369062" izz="8.857130206025829e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/arm_link2.stl" />
+      </geometry>
+      <material name="arm">
+        <color rgba="0.7 0.72 0.75 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.01137500023 0.001199999824 0.09857500973" rpy="0 0 0" />
+      <geometry>
+        <box size="0.04775000084 0.04439999908 0.2021500194" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="arm_joint2" type="revolute">
+    <parent link="arm_link1" />
+    <child link="arm_link2" />
+    <origin xyz="0 0 0.0595" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.35" upper="0.35" effort="2" velocity="0.5" />
+    <dynamics damping="0.1" friction="0" />
+  </joint>
+  <link name="arm_link3">
+    <inertial>
+      <origin xyz="0.07887499663 0.001199999824 8.847564459e-09" rpy="0 0 0" />
+      <mass value="0.2" />
+      <inertia ixx="4.639352785262552e-05" iyy="0.0004549968670454973" izz="0.0004743153364758537" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/arm_link3.stl" />
+      </geometry>
+      <material name="arm">
+        <color rgba="0.7 0.72 0.75 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.07887499663 0.001199999824 8.847564459e-09" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1627499931 0.04439999908 0.02850003075" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="arm_joint3" type="revolute">
+    <parent link="arm_link2" />
+    <child link="arm_link3" />
+    <origin xyz="0.024 0 0.1854" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.35" upper="0.35" effort="2" velocity="0.5" />
+    <dynamics damping="0.1" friction="0" />
+  </joint>
+  <link name="arm_link4">
+    <inertial>
+      <origin xyz="0.03294999781 0 0.01200000849" rpy="0 0 0" />
+      <mass value="0.16" />
+      <inertia ixx="5.124337058406208e-05" iyy="9.585416085590282e-05" izz="8.943745941488175e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/arm_link4.stl" />
+      </geometry>
+      <material name="arm">
+        <color rgba="0.7 0.72 0.75 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.03294999781 0 0.01200000849" rpy="0 0 0" />
+      <geometry>
+        <box size="0.07089999551 0.04100000113 0.04650002904" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="arm_joint4" type="revolute">
+    <parent link="arm_link3" />
+    <child link="arm_link4" />
+    <origin xyz="0.149 0 0" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.35" upper="0.35" effort="2" velocity="0.5" />
+    <dynamics damping="0.1" friction="0" />
+  </joint>
+  <link name="arm_link5">
+    <inertial>
+      <origin xyz="0.06120000163 0 0.02412766218" rpy="0 0 0" />
+      <mass value="0.3" />
+      <inertia ixx="0.0006957039277756537" iyy="0.0006861151894297684" izz="0.000817309278824067" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/arm_link5.stl" />
+      </geometry>
+      <material name="arm">
+        <color rgba="0.7 0.72 0.75 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.06120000163 0 0.02412766218" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1271000032 0.1286000013 0.1062553376" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="arm_joint5" type="revolute">
+    <parent link="arm_link4" />
+    <child link="arm_link5" />
+    <origin xyz="0.06635 0 0" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.35" upper="0.35" effort="2" velocity="0.5" />
+    <dynamics damping="0.1" friction="0" />
+  </joint>
+<link name="sim_left_optical" /><joint name="sim_left_optical_fixed" type="fixed"><parent link="base_link" /><child link="sim_left_optical" /><origin xyz=".25 0.025 .25" rpy="-1.5707963267948966 0 -1.5707963267948966" /></joint><link name="sim_right_optical" /><joint name="sim_right_optical_fixed" type="fixed"><parent link="base_link" /><child link="sim_right_optical" /><origin xyz=".25 -0.025 .25" rpy="-1.5707963267948966 0 -1.5707963267948966" /></joint></robot>

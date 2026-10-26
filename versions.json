@@ -1,0 +1,13 @@
+{
+  "isaac_sim": "6.1.0.0",
+  "isaac_ros_branch": "release-5.0",
+  "isaac_ros_package": "isaac_ros_cuvslam",
+  "ros_distro": "lyrical",
+  "ubuntu": "24.04",
+  "python": "3.12",
+  "isaac_lab_tag": "v3.0.0-EA",
+  "cuda_minimum_for_isaac_ros": "13.2",
+  "nvidia_driver_minimum_for_isaac_ros": "595",
+  "asset_revision": "CAD136 / R36_M38 with synthetic stereo frames",
+  "runtime_verified_on_target": false
+}

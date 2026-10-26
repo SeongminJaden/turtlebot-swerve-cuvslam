@@ -1,0 +1,26 @@
+{
+  "status": "PASS_STATIC_ONLY",
+  "links": 16,
+  "joints": 15,
+  "movable_joints": 13,
+  "meshes": 14,
+  "unresolved_usd_assets": [],
+  "checks": [
+    "URDF tree",
+    "relative mesh files",
+    "USD reference resolution",
+    "meter and Z-up",
+    "stereo baseline",
+    "optical axis",
+    "URDF/USD camera position",
+    "synthetic intrinsics"
+  ],
+  "not_checked": [
+    "Ubuntu runtime",
+    "Isaac Sim 6.1 rendering",
+    "Isaac ROS 5.0 tracking",
+    "Isaac Lab 3 training",
+    "real camera calibration",
+    "full joint/collision equivalence"
+  ]
+}

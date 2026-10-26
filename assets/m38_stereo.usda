@@ -1,0 +1,39 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Xform "Robot" (
+        prepend references = @./m38_arm_description/usd/m38_arm.usdc@
+    )
+    {
+        over "base_link"
+        {
+            def Camera "sim_left_optical"
+            {
+                float2 clippingRange = (0.05, 30)
+                float focalLength = 2.4
+                float horizontalAperture = 3.84
+                float verticalAperture = 2.88
+                quatf xformOp:orient = (0.5, 0.5, -0.5, -0.5)
+                double3 xformOp:translate = (0.25, 0.025, 0.25)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+            }
+
+            def Camera "sim_right_optical"
+            {
+                float2 clippingRange = (0.05, 30)
+                float focalLength = 2.4
+                float horizontalAperture = 3.84
+                float verticalAperture = 2.88
+                quatf xformOp:orient = (0.5, 0.5, -0.5, -0.5)
+                double3 xformOp:translate = (0.25, -0.025, 0.25)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+            }
+        }
+    }
+}

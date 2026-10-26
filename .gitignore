@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv*/
+vendor/
+logs/
+recordings/
+build/
+install/
+log/
+*.bag
+*.db3
+*.mcap
+checks/*
+!checks/model_validation.json
