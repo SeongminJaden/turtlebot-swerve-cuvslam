@@ -1,0 +1,31 @@
+{
+  "result": "stalled",
+  "success": false,
+  "steps": 1095,
+  "simulated_s": 73.0,
+  "route_points": 169,
+  "last_waypoint": 131,
+  "checkpoint_iteration": 316,
+  "checkpoint_sha256": "a1c4a35d60028ca491f831f88004e2c5032aac85b5488aedcada570a5badf6e6",
+  "policy": "PPO deterministic mean",
+  "pose_source": "simulator ground truth; not cuVSLAM",
+  "physics": "Isaac Sim PhysX via Isaac Lab",
+  "final_goal_error_m": 2.068199634552002,
+  "body_names": [
+    "base_link",
+    "lh1_steer",
+    "rh1_steer",
+    "lh2_steer",
+    "rh2_steer",
+    "arm_link1",
+    "lh1_wheel",
+    "rh1_wheel",
+    "lh2_wheel",
+    "rh2_wheel",
+    "arm_link2",
+    "arm_link3",
+    "arm_link4",
+    "arm_link5"
+  ],
+  "max_abs_height_m": 0.011118918657302856
+}

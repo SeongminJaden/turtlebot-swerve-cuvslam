@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "rl/train_ppo.py",
+    "--resume",
+    "runs/maze_ppo_bidirectional/policy.pt",
+    "--iterations",
+    "25",
+    "--num-envs",
+    "8",
+    "--visualizer",
+    "none",
+    "--output",
+    "runs/maze_ppo_final"
+  ],
+  "seed": 7,
+  "num_envs": 8,
+  "rollout_steps": 64,
+  "physics": "Isaac Sim PhysX",
+  "physics_dt": 0.016666666666666666,
+  "decimation": 4,
+  "source_hashes": {
+    "maze_env.py": "c3b31335e3f5785fdb38beae379c1227299779f69cf666df9078662172c66a45",
+    "policy.py": "46fb1f10abea02934b0e1807810f006220525bc0c2afc2b365564c2f7dcdc1c7",
+    "train_ppo.py": "61b537ed1802ee8073a9f7ffc3da2a55fe29896bbea93bcd64dc0c061ee90cff"
+  },
+  "git_commit": "4da321909061d74d59a0ed3c5a46adaf24ad4892",
+  "resume_checkpoint": "runs/maze_ppo_bidirectional/policy.pt",
+  "resume_iteration": 521,
+  "final_iteration": 546,
+  "steering_endstop_hysteresis_in_training": true,
+  "hysteresis_rad": 0.06
+}

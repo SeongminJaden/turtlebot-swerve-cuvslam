@@ -1,0 +1,11 @@
+{
+  "scope": "Isaac Sim rendering of measured PhysX body poses, recorded-state playback; no fabricated trajectory",
+  "recording": "evidence/2026-10-26/maze-eval-100",
+  "frame_indices": [
+    0
+  ],
+  "simulated_times_s": [
+    0.0
+  ],
+  "gif_frame_duration_ms": 160
+}
