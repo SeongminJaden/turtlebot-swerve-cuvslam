@@ -12,13 +12,19 @@ import omni.usd
 import omni.replicator.core as rep
 import numpy as np
 from PIL import Image
-from pxr import UsdGeom,UsdLux,Gf
+from pxr import UsdGeom,UsdLux,UsdPhysics,Gf
 ROOT=Path(__file__).resolve().parents[1]
 (ROOT/'checks').mkdir(exist_ok=True)
 try:
     omni.usd.get_context().open_stage(str(ROOT/'assets/m38_stereo.usda'))
     for _ in range(10): app.update()
     stage=omni.usd.get_context().get_stage()
+    stage.SetStartTimeCode(0)
+    stage.SetEndTimeCode(120)
+    # A render-only test must not let the robot free-fall between frames.
+    for prim in stage.Traverse():
+        if prim.HasAPI(UsdPhysics.RigidBodyAPI):
+            UsdPhysics.RigidBodyAPI(prim).CreateRigidBodyEnabledAttr(False)
     UsdLux.DomeLight.Define(stage,'/World/Light').CreateIntensityAttr(1800.)
     for i in range(35):
         cube=UsdGeom.Cube.Define(stage,f'/World/Marker{i}')
@@ -39,5 +45,9 @@ try:
         Image.fromarray(pixels).save(ROOT/f'checks/sim61_{side}.png')
         results.append(dict(side=side,shape=list(pixels.shape)))
     (ROOT/'checks/sim61.json').write_text(json.dumps(dict(status='PASS_STEREO_RENDER',version=version('isaacsim'),cameras=results,scope='render only; no dynamics or ROS tracking'),indent=2))
+except Exception:
+    import traceback
+    traceback.print_exc()
+    raise
 finally:
     app.close()

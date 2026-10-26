@@ -30,13 +30,15 @@ class SwerveController(Node):
 
     def command(self, msg):
         values = (msg.linear.x, msg.linear.y, msg.angular.z)
-        if all(math.isfinite(x) for x in values):
-            self.twist = values
-            self.last_command = time.monotonic()
-        else:
+        try:
+            solve(self.modules, *values)
+        except ValueError:
             self.twist = (0., 0., 0.)
             self.last_command = -math.inf
-            self.get_logger().warning('Nonfinite cmd_vel rejected; stopping wheels')
+            self.get_logger().warning('Invalid cmd_vel rejected; stopping wheels')
+        else:
+            self.twist = values
+            self.last_command = time.monotonic()
 
     def state(self, msg):
         positions = dict(zip(msg.name, msg.position))

@@ -42,7 +42,7 @@ class KinematicsTests(unittest.TestCase):
             self.assertEqual((t.steering, t.velocity), (.4, 0))
 
     def test_nonfinite_rejected(self):
-        for value in [float('nan'), float('inf'), -float('inf')]:
+        for value in [float('nan'), float('inf'), -float('inf'), 1e308]:
             with self.assertRaises(ValueError):
                 solve(self.modules, value, 0, 0)
 

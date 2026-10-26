@@ -1,8 +1,8 @@
-# TurtleBot 기반 스워브 로봇 — Ubuntu cuVSLAM 준비 패키지
+# TurtleBot 기반 스워브 로봇 — 개발과 강의 실습
 
 Isaac Sim **6.1.0.0**, Isaac ROS **release-5.0**, Isaac Lab **v3.0.0-EA** 기준.
 Jetson이나 실제 카메라 없이 Ubuntu PC에서 시뮬레이션을 준비하기 위한 URDF·USD와 가이드입니다.
-**완성된 자율주행 시스템이나 Ubuntu에서 실행 검증을 마친 환경이 아닙니다.**
+**Ubuntu에서 정적 렌더, 제어 통신, 저장 영상 cuVSLAM 초기화까지 검증했습니다. 물리 주행과 실시간 SLAM은 아직 미완료입니다.**
 
 ## 파일
 

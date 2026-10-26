@@ -44,10 +44,15 @@ try:
     assert any(m.velocity and max(map(abs,m.velocity)) > 0 for m in commands)
     print('PASS aligned measured feedback enables wheel commands')
     commands.clear()
-    run(.8)
+    run(.8, False, True)
     wheels = [m for m in commands if m.velocity]
     assert wheels and max(map(abs,wheels[-1].velocity)) == 0
-    print('PASS stale command/feedback stops all wheels')
+    print('PASS stale command stops wheels while feedback continues')
+    commands.clear()
+    run(.8, True, False)
+    wheels = [m for m in commands if m.velocity]
+    assert wheels and max(map(abs, wheels[-1].velocity)) == 0
+    print('PASS stale feedback stops wheels while commands continue')
 finally:
     executor.shutdown()
     controller.destroy_node()

@@ -18,7 +18,7 @@ ros2 pkg prefix rclpy
 ros2 pkg prefix isaac_ros_cuvslam
 ```
 
-마지막 명령은 현재 실패합니다. cuVSLAM은 아직 설치되지 않았습니다. 설치판과 요구 사항은 `docs/UBUNTU_SETUP.md`의 공식 링크를 확인합니다. 기존 Sim 환경에 별도 usd-core를 덮어 설치하지 않습니다.
+cuVSLAM 패키지 설치와 노드 로드를 확인했습니다. 저장 영상 재생으로 tracker 초기화도 확인했지만, 실제 이동 추적은 아직 검증하지 않았습니다. 설치판과 요구 사항은 `docs/UBUNTU_SETUP.md`의 공식 링크를 확인합니다. 기존 Sim 환경에 별도 usd-core를 덮어 설치하지 않습니다.
 
 프로젝트 제어 노드 의존성 설치(시스템에 없을 때):
 

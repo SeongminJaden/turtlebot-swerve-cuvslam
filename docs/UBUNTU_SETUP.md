@@ -91,3 +91,17 @@ uv run isaaclab --help
 - https://nvidia-isaac-ros.github.io/v/release-5.0/getting_started/index.html
 - https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam/tree/release-5.0
 - https://github.com/isaac-sim/IsaacLab/releases/tag/v3.0.0-EA
+
+## 2026-10-26 로컬 환경 재구성
+
+현재 드라이버는 595.91.07입니다. 위의 592.01 기록은 이전 조사 PC에 해당합니다.
+
+```bash
+bash scripts/setup_sim.sh
+source /opt/ros/lyrical/setup.bash
+python3 scripts/preflight.py
+```
+
+Sim 6.1 공식 문서에서 정식 권장 bridge 배포판은 Humble/Jazzy이고, 다른 native 배포판 로딩은 실험적 경로입니다. 따라서 Lyrical 패키지 설치 및 Python 버전 일치만으로 bridge 호환성을 검증했다고 보지 않습니다. ROS 제어 노드 자체의 Lyrical 실행과 Sim bridge의 호환성은 별도로 시험합니다.
+
+공식 확인: https://docs.isaacsim.omniverse.nvidia.com/6.1.0/installation/install_ros.html

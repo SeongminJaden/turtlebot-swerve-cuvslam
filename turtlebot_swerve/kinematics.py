@@ -68,7 +68,10 @@ def solve(modules: tuple[Module, ...], vx: float, vy: float, wz: float,
         elif angle < -pi/2:
             angle += pi
             sign = -1.0
-        targets[m.name] = Target(angle, sign * speed / m.radius)
+        rate = sign * speed / m.radius
+        if not isfinite(rate):
+            raise ValueError('Twist exceeds finite wheel-speed range')
+        targets[m.name] = Target(angle, rate)
     # One scale preserves the commanded body twist direction under saturation.
     scale = max([1.0] + [abs(targets[m.name].velocity)/m.max_speed for m in modules])
     return {name: Target(t.steering, t.velocity/scale) for name, t in targets.items()}
