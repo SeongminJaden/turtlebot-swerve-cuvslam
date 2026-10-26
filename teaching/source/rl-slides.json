@@ -1,0 +1,445 @@
+[
+  {
+    "title": "미로 주행 프로젝트 전체 구조",
+    "kind": "flow",
+    "body": [
+      "팀별 URDF·USD\n축·단위·물성 검증",
+      "Isaac Sim\n미로·로봇·접촉 물리",
+      "Isaac Lab\n관측·행동·보상",
+      "PPO 정책\n학습·저장·평가"
+    ],
+    "notes": "학습 단계에서는 Isaac Lab이 Isaac Sim의 PhysX 상태를 읽고 관절 목표를 전달한다. 현재 정책은 시뮬레이터 위치를 사용한다. 실제 센서 기반 주행은 cuVSLAM 위치추정과 별도로 연결·검증한다. 정책이 월드 XY 이동 명령을 출력하고 로봇별 구동기가 관절 명령으로 변환한다.",
+    "caption": "공통: 환경·학습 루프 / 팀별: 관절 매핑과 운동학 / 시연: M38"
+  },
+  {
+    "title": "제공 미로의 치수와 시뮬레이션",
+    "kind": "image",
+    "body": [
+      "바닥 4.464 × 6.364 m\n높이 0.39 m",
+      "벽 80개와 지지대 83개",
+      "벽 패널은 치수를 유지하고 지지대는 지름 60 mm로 단순화"
+    ],
+    "notes": "원본 ZIP의 R3 배치 JSON을 기준으로 구성한다. CAD의 바닥 X,Z를 Sim의 X,Y로 변환하고 mm를 m로 나눈다. 볼트와 브래킷의 세부 형상은 모두 재현한 것이 아니다. USD에는 두 미로를 넣었고 평가 경로는 첫 번째 닫힌 미로에 한정한다.",
+    "image": "assets/maze/source/twin-90-B-A1-R3-assembly.png"
+  },
+  {
+    "title": "미로 생성과 경로 준비",
+    "kind": "flow",
+    "body": [
+      "배치 JSON\n좌표 mm",
+      "단위·축 변환\n좌표 m",
+      "정적 충돌체\n벽·지지대",
+      "여유 공간 탐색\n시연 경로 8.4 m"
+    ],
+    "notes": "python scripts/build_maze.py\nassets/maze/maze.usda는 정적 충돌체이고 ground plane은 Lab 장면에서 생성한다. 경로 생성에는 5 cm 격자와 중심 여유 반경 30 cm를 사용했다. 경로가 존재한다는 기하학적 확인과 로봇이 실제로 완주했다는 검증을 구분한다. 로봇의 실제 footprint는 팀마다 확인한다.",
+    "caption": "경로 준비 단계는 알려진 지도를 사용한다. 미지의 미로 탐험은 추가 과제다."
+  },
+  {
+    "title": "강화학습이 결정하는 값",
+    "kind": "flow",
+    "body": [
+      "목표까지 거리\n현재 로봇 상태",
+      "정책 신경망\nPPO로 파라미터 학습",
+      "평면 이동 명령\nvx, vy",
+      "로봇별 변환기\n관절 목표"
+    ],
+    "notes": "현재 구현은 navigation 정책과 해석적 운동학의 결합이다. M38은 2차원 이동 명령을 4개 조향각과 바퀴 속도로 분배한다. 보행 로봇이나 차동구동 로봇은 action 및 저수준 구동기를 새로 정의해야 한다. 직접 토크를 학습하는 과제와는 관측·행동 차원 및 보상 설계가 다르다.",
+    "caption": "시연 정책 출력은 2개 값이다. 모터 구동 구조는 각 팀 로봇에 맞게 작성한다."
+  },
+  {
+    "title": "학습과 실행의 차이",
+    "kind": "flow",
+    "body": [
+      "학습\n행동을 샘플링",
+      "시뮬레이션\n보상·다음 상태",
+      "PPO 업데이트\n가중치 변경",
+      "실행\n고정 정책의 평균 행동"
+    ],
+    "notes": "학습에는 탐색 노이즈가 포함된다. 평가는 model.eval()과 torch.no_grad()를 사용하고 Normal 분포의 mean을 행동으로 사용한다. 평가 중 optimizer.step을 호출하지 않는다. 저장된 policy.pt와 해시를 결과에 남긴다.",
+    "caption": "평가에서는 학습에 사용한 관측 순서, 단위, 행동 스케일을 그대로 유지한다."
+  },
+  {
+    "title": "환경 설치와 버전 고정",
+    "kind": "code",
+    "body": [
+      "python3 -m venv ~/isaacsim6_venv",
+      "~/isaacsim6_venv/bin/python -m pip install --no-cache-dir \\\n  \"isaacsim[all,extscache]==6.1.0.0\" \\\n  --extra-index-url https://pypi.nvidia.com",
+      "git -C ~/IsaacLab rev-parse HEAD\nnvidia-smi"
+    ],
+    "notes": "실제 검증 환경: Ubuntu 24.04, Python 3.12, Isaac Sim 6.1.0.0, RTX 5060 Laptop 8 GB. Lab 소스 커밋 78b12aed1d2a56439493b8ea6d3538e6e379e2e5. 설치 명령은 다운로드 및 임시 압축해제 여유 공간을 요구한다. 검증된 환경의 freeze 파일을 보관하고 수업 중 무조건 최신으로 업그레이드하지 않는다. NVIDIA 약관을 읽고 동의한 사용자만 OMNI_KIT_ACCEPT_EULA=YES를 사용한다."
+  },
+  {
+    "title": "Isaac Lab 실행 환경",
+    "kind": "code",
+    "body": [
+      "git clone https://github.com/isaac-sim/IsaacLab.git ~/IsaacLab",
+      "LAB_REV=78b12aed1d2a56439493b8ea6d3538e6e379e2e5\ngit -C ~/IsaacLab checkout \"$LAB_REV\"",
+      "cd ~/IsaacLab\nuv sync --frozen\ncd <프로젝트_폴더>"
+    ],
+    "notes": "기존 검증 환경의 Lab venv와 별도 Sim 설치를 사용한다. 신규 PC 설치는 docs/ISAAC_LAB_SETUP.md의 의존성 설치 절차를 따른다. 래퍼는 ISAAC_SIM_SITE 환경변수 또는 시연 PC의 기본 Sim site-packages를 추가한다. 이 Lab 스냅샷에서는 --headless 대신 --visualizer none을 쓴다. 다른 릴리스의 CLI를 섞지 않는다.\nuv 설치: curl -LsSf https://astral.sh/uv/install.sh | sh\nsource \"$HOME/.local/bin/env\"\n설치 근거: 고정한 소스 docs/source/setup/installation/index.rst. 새 PC 전체 설치 재실행은 미검증."
+  },
+  {
+    "title": "학습 코드 파일 구조",
+    "kind": "flow",
+    "body": [
+      "maze_env.py\n장면·보상·리셋",
+      "policy.py\nActor와 Critic",
+      "train_ppo.py\n수집·PPO 업데이트",
+      "evaluate.py\n고정 정책·결과 저장"
+    ],
+    "notes": "assets/maze는 미로 USD와 경로 데이터, assets/m38_runtime.usda는 원본 참조 위에 articulation root 수정만 넣는 레이어다. scripts/lab_python.py는 실행 환경, scripts/build_maze.py는 미로 생성 담당이다. 팀 모델을 바꿀 때 USD 경로, 구동기, joint mapping, 관측 차원을 함께 점검한다.",
+    "caption": "모델, 환경, 알고리즘, 평가를 분리하면 오류 위치를 좁힐 수 있다."
+  },
+  {
+    "title": "팀별 로봇 적용 항목",
+    "kind": "flow",
+    "body": [
+      "URDF·USD\n루트와 충돌체",
+      "관절 매핑\n이름·축·영점",
+      "구동기\n노력·속도·이득",
+      "행동 정의\n관절 또는 이동 명령"
+    ],
+    "notes": "M38의 바퀴 반경 0.030687 m, 모듈 위치 ±0.1 m, 관절 이름은 시연 전용 수치다. 차동 로봇에 M38의 좌우 횡이동 행동을 그대로 주면 실행 불가능하다. 팀별 관절 목록을 표로 만들고 원하는 모션이 가능한지 손 명령으로 먼저 검증한다.",
+    "caption": "학습 횟수를 늘리기 전에 로봇이 해당 행동을 물리적으로 실행할 수 있는지 확인한다."
+  },
+  {
+    "title": "학습 전 물리 검증",
+    "kind": "flow",
+    "body": [
+      "정지 상태\n바닥에 안정",
+      "관절 하나씩\n방향과 제한",
+      "저속 이동\n실제 변위",
+      "미로 접촉\n통과·끼임 확인"
+    ],
+    "notes": "시연 모델의 articulation root가 arm_link1로 잡히는 문제를 발견했다. scripts/prepare_runtime_asset.py에서 base_link에 articulation root를 적용한 별도 USD 레이어를 만들었다. 수정 후 root 높이와 관절 데이터를 검사했다. 로봇이 넘어지거나 관절이 뒤집히면 RL 보상을 조정하기 전에 모델을 고친다.",
+    "caption": "실행 로그: lab-physics-probe-root.log, lab-maze-smoke.log"
+  },
+  {
+    "title": "환경 클래스의 실행 순서",
+    "kind": "flow",
+    "body": [
+      "reset\n초기 상태 지정",
+      "관측 계산\n정책 입력",
+      "step(action)\n물리 4회",
+      "보상·종료\n다음 관측"
+    ],
+    "notes": "DirectRLEnv의 _pre_physics_step에서 정책 행동을 변환하고 _apply_action에서 관절 목표를 쓴다. _get_observations, _get_rewards, _get_dones, _reset_idx의 역할을 나눠 구현한다. 한 환경에서 shape과 finite 값을 확인한 뒤 병렬 환경 수를 늘린다.",
+    "caption": "physics dt = 1/60 s, decimation = 4, policy step = 1/15 s"
+  },
+  {
+    "title": "관측 벡터 12차원",
+    "kind": "flow",
+    "body": [
+      "목표 오차 2\n월드 Δx, Δy",
+      "실제 속도 2\n월드 vx, vy",
+      "방향 2\nsin(yaw), cos(yaw)",
+      "관절·이전 행동 6\n조향 4 + 행동 2"
+    ],
+    "notes": "torch.cat 순서: goal delta(2), root velocity XY(2), sin yaw(1), cos yaw(1), steering positions divided by π/2(4), previous actions(2). 목표 오차는 [-1,1]로 clamp한다. 현재 관측은 simulator ground truth이며 카메라 관측 정책이 아니다. 배포할 때 얻을 수 없는 정보를 사용하면 그 차이를 별도로 해결해야 한다.",
+    "caption": "순서·차원·단위가 바뀌면 저장된 정책도 다시 검증해야 한다."
+  },
+  {
+    "title": "관측 코드 작성",
+    "kind": "code",
+    "body": [
+      "delta = (self.goal - self.xy()).clamp(-1, 1)",
+      "obs = torch.cat([delta, vel[:, :2],\n    yaw.sin()[:, None], yaw.cos()[:, None],\n    steer_pos / (math.pi / 2), self.actions], dim=1)",
+      "return {'policy': obs}  # [num_envs, 12]"
+    ],
+    "notes": "rl/maze_env.py의 _get_observations와 대응한다. reset 직후 첫 관측부터 torch.isfinite로 검사한다. root quaternion은 이 Lab API에서 XYZW이며 구버전 WXYZ 예제를 그대로 복사하면 yaw가 틀릴 수 있다. 학습과 평가가 같은 관측 생성 함수를 쓰도록 한다."
+  },
+  {
+    "title": "행동과 관절 명령",
+    "kind": "flow",
+    "body": [
+      "정책 행동\n범위 −1…1",
+      "속도 스케일\n축당 최대 0.18 m/s",
+      "스워브 운동학\n4개 모듈 분배",
+      "목표 제한\n조향 변화·바퀴 속도"
+    ],
+    "notes": "정책 두 축을 각각 clamp하고 0.18을 곱한다. 대각선 합성 속도는 약0.255 m/s까지 가능하다. 로봇 yaw에 따라 월드 명령을 body로 회전한다. M38 시연은 yaw를 0으로 유지하는 보정기를 사용한다. 조향각을 ±90도로 접을 때 바퀴 회전 부호도 뒤집는다. 조향이 정렬되지 않았으면 바퀴 속도를 낮춘다.",
+    "caption": "정책 명령, 목표 관절값, 실제 관절값을 별도로 기록한다."
+  },
+  {
+    "title": "보상 함수의 구성",
+    "kind": "flow",
+    "body": [
+      "거리 감소\n4 × Δ거리 / Δt",
+      "매 스텝 비용\n−0.02",
+      "행동 크기 비용\n−0.01 × ‖a‖²",
+      "목표 도달\n거리 < 0.12 m, +2"
+    ],
+    "notes": "현재 시연 보상식은 진행률, 시간비용, 행동크기, 도달보너스다. 접촉력이나 벽 거리 관측은 아직 포함하지 않았으므로 충돌 회피를 학습했다고 주장하지 않는다. 목표점 간 경로는 알려진 미로 지도에서 미리 계산한다. 보상을 바꿀 때 각 항의 평균과 최대값도 남겨 한 항이 다른 항을 압도하는지 확인한다.",
+    "caption": "총 보상 상승만으로 완주를 판정하지 않는다. 실제 평가 궤적을 함께 본다."
+  },
+  {
+    "title": "보상 코드와 단위",
+    "kind": "code",
+    "body": [
+      "dist = (self.goal - self.xy()).norm(dim=1)",
+      "progress = (self.previous_distance - dist) / self.step_dt\nreward = 4 * progress - .02 - .01 * (self.actions**2).sum(1)",
+      "reward += 2 * (dist < .12).float()\nself.previous_distance = dist.detach().clone()"
+    ],
+    "notes": "progress는 m/s 단위로 정규화한다. 목표가 바뀌는 reset에서 previous_distance도 새 목표 거리로 초기화해야 한다. 이를 놓치면 리셋 순간 가짜 보상이 생긴다. 평가 중 lookahead 목표가 바뀌면 학습용 총 보상은 전체 주행 성능 지표로 사용하지 않는다."
+  },
+  {
+    "title": "리셋과 종료 조건",
+    "kind": "flow",
+    "body": [
+      "경로의 임의 위치\n초기 자세·속도 설정",
+      "가까운 목표\n전방 또는 후방 12점",
+      "도달 또는 실패\n높이·기울기·NaN",
+      "시간 제한\n8초 에피소드"
+    ],
+    "notes": "학습은 경로 중 임의 위치에서 시작하고 12개 점 뒤를 목표로 둔다. 5cm 샘플 기준 약0.6m 경로 길이다. 높이 범위 [-0.08,0.25]m, quaternion XY 성분 norm >0.3, finite 여부로 기본 실패를 잡는다. 넘어짐 기준은 일반적인 roll/pitch 한계로 바꾸어 팀별 모델에 맞게 검증하는 것이 좋다. 시간 제한은 terminated와 truncated를 분리해서 기록한다.\n현재 수정본은 양방향 목표와 시작 XY ±0.05m 오차를 사용한다. 초기100회 정책은 단방향 reset을 사용했다.",
+    "caption": "리셋은 학습 에피소드 경계에서만 실행한다. 평가 주행 중 위치를 옮기지 않는다."
+  },
+  {
+    "title": "PPO 학습 루프",
+    "kind": "flow",
+    "body": [
+      "64 step 수집\n행동·보상·가치",
+      "GAE 계산\n유리함 추정",
+      "미니배치 업데이트\n비율 clip",
+      "체크포인트\n평가·재현"
+    ],
+    "notes": "Actor는 행동 분포, Critic은 상태 가치 추정이다. old log probability를 수집할 때 저장하고 업데이트에서는 새 log probability와 비율을 비교한다. GAE는 γ=0.99, λ=0.95를 사용한다. 단순 교육용 구현은 timeout도 terminal로 처리하므로 시간제한 bootstrap을 정교하게 처리하는 표준 라이브러리와 차이가 있다.",
+    "caption": "rollout 수집에는 no_grad, PPO 업데이트에는 역전파를 사용한다."
+  },
+  {
+    "title": "Actor와 Critic 네트워크",
+    "kind": "flow",
+    "body": [
+      "관측 12",
+      "은닉층 64\nTanh",
+      "은닉층 64\nTanh",
+      "Actor 2 / Critic 1"
+    ],
+    "notes": "Actor와 Critic은 별도 MLP다. Actor 출력은 Normal 평균, logstd는 학습 가능한 두 개의 파라미터다. 초기 logstd=-0.7, 초기 표준편차≈0.497. Critic은 scalar V(s)를 출력한다. 네트워크를 크게 하기 전에 입력 스케일과 행동 실행을 검증한다.",
+    "caption": "시연: 작은 MLP로 이동 정책을 학습한다. 영상 입력은 별도 인코더가 필요하다."
+  },
+  {
+    "title": "PPO 핵심 계산",
+    "kind": "code",
+    "body": [
+      "ratio = (new_log_prob - old_log_prob).exp()",
+      "surrogate = torch.minimum(\n    ratio * advantage, ratio.clamp(.8, 1.2) * advantage)",
+      "loss = -surrogate.mean() + .5 * value_error - .005 * entropy"
+    ],
+    "notes": "clip epsilon=0.2, value coefficient=0.5, entropy coefficient=0.005. Advantage를 배치 내 평균0·표준편차1로 정규화한다. Adam 학습률3e-4, gradient norm1.0. 교육용 코드는 알고리즘 흐름을 드러내기 위해 간결하게 작성했다. 실험 규모를 늘릴 때 KL·clip fraction·value loss와 성공률 로그를 보강한다."
+  },
+  {
+    "title": "실행 파라미터와 샘플 수",
+    "kind": "flow",
+    "body": [
+      "병렬 환경 8",
+      "환경당 64 step",
+      "반복당 512 transition",
+      "100회 = 51,200 transition"
+    ],
+    "notes": "PPO epoch4, minibatch256, seed7. num_envs를 바꾸면 반복당 샘플 수와 메모리 사용이 함께 바뀐다. iteration 수만으로 서로 다른 실험을 비교하지 않는다. 이 시연의8초 에피소드는 정책120step에 해당한다. RTX8GB에서도 렌더링·카메라를 켜면 여유메모리가 달라진다.",
+    "caption": "비교 기준에 transition 수, 실제 경과 시간, 환경 수를 함께 적는다."
+  },
+  {
+    "title": "학습 실행 명령",
+    "kind": "code",
+    "body": [
+      "export OMNI_KIT_ACCEPT_EULA=YES\nPY=~/IsaacLab/.venv/bin/python\nmkdir -p runs",
+      "$PY scripts/lab_python.py rl/train_ppo.py \\\n  --iterations 100 --num-envs 8 --seed 7 \\\n  --output runs/maze_ppo --visualizer none \\\n  > runs/train.log 2>&1",
+      "tail -f runs/train.log"
+    ],
+    "notes": "약관 동의 후 실행한다. 로그를 파일로 남길 때 명령 끝에 > evidence/2026-10-26/ppo-training.log 2>&1를 붙인다. 출력 디렉터리는 실험마다 새로 정해 덮어쓰기를 피한다. 종료코드와 TRAINING_COMPLETE, policy.pt, training.json을 함께 확인한다. 로그파일 이름은 실행일에 맞게 바꾼다.\\n먼저 mkdir -p runs를 실행한다."
+  },
+  {
+    "title": "실제 학습 곡선",
+    "kind": "chart",
+    "body": [
+      "100회 학습의 rollout 평균 보상",
+      "학습 중 탐색 행동을 포함한 값",
+      "완주 성공률과 별도로 해석"
+    ],
+    "notes": "데이터 출처: runs/maze_ppo/training.json. 각 iteration의64×8 transition 평균 reward다. 에피소드 return이나 성공률과 다르다. 보상이 올라가도 벽 접촉과 정체가 생길 수 있어 저장 정책 평가가 필요하다."
+  },
+  {
+    "title": "로그를 읽는 순서",
+    "kind": "flow",
+    "body": [
+      "NaN·폭발\n수치와 물리 상태",
+      "행동 분포\n포화·표준편차",
+      "보상 항별 변화\n의도한 행동 확인",
+      "고정 정책 평가\n완주·정체·접촉"
+    ],
+    "notes": "첫 run에서는 로그의 mean_reward와 mean_action_std를 읽고 실제 변위를 함께 본다. 추가 로그 권장: success rate, collision rate, average episode length, KL, value loss, clip fraction, FPS, GPU memory. 현재 코드에 없는 로그를 이미 기록한 것처럼 해석하지 않는다.",
+    "caption": "짧은 시연 영상과 수치 로그를 같은 체크포인트로 묶는다."
+  },
+  {
+    "title": "체크포인트 저장과 이어 학습",
+    "kind": "code",
+    "body": [
+      "runs/maze_ppo/policy.pt\nruns/maze_ppo/training.json",
+      "$PY scripts/lab_python.py rl/train_ppo.py \\\n  --resume runs/maze_ppo/policy.pt --iterations 300 \\\n  --output runs/maze_ppo_extended --visualizer none",
+      "sha256sum runs/maze_ppo_extended/policy.pt"
+    ],
+    "notes": "새 체크포인트에는 model, optimizer, iteration, seed를 저장한다. 초기100회 파일에는 optimizer가 없어서 가중치만 복원한다. RNG 상태와 환경 상태까지 저장하는 완전 동일 재개는 아직 구현하지 않았다. seed만 같다고 GPU 물리의 비트 단위 동일성을 보장하지 않는다.\n최신 파일을 자동으로 최선의 정책이라고 판단하지 않는다. 고정한 여러 평가 시작점에서완주율·충돌·정체시간을측정하고 best checkpoint를 선택한다. 현재비교는각1회실행으로일반화성공률을측정한것은아니다."
+  },
+  {
+    "title": "정책 평가 실행",
+    "kind": "code",
+    "body": [
+      "$PY scripts/lab_python.py rl/evaluate.py \\\n  --checkpoint runs/maze_ppo/policy.pt \\\n  --output evidence/maze-eval --visualizer none",
+      "cat evidence/maze-eval/report.json\nhead evidence/maze-eval/trajectory.csv",
+      "평가 시작 위치는 한 번만 설정한다.\n주행 중 포즈는 PhysX가 계산한다."
+    ],
+    "notes": "evaluate.py는 첫 미로의 경로를 따라 lookahead 목표를 갱신한다. 정책은 deterministic mean을 사용한다. 입력 pose는 Sim ground truth다. report에는 checkpoint hash와 iteration, 목표 오차, 마지막 waypoint, simulated seconds를 넣는다. poses.npz에는 실제 body pose와 joint position을 기록한다."
+  },
+  {
+    "title": "첫 정책의 주행 결과",
+    "kind": "evaluation",
+    "body": [
+      "평가 결과는 report.json의 실제 값으로 표시",
+      "학습 보상과 주행 성공을 구분",
+      "실패 사례도 튜닝 자료로 보관"
+    ],
+    "notes": "자동 평가 결과를 슬라이드에 반영한다. 완주하지 않은 경우 원인과 관측 결과를 명시한다. 현재 평가 한 번으로 모든 시작점과 로봇에 대한 성능을 보장하지 않는다."
+  },
+  {
+    "title": "시뮬레이션 주행 화면",
+    "kind": "capture",
+    "body": [
+      "Isaac Sim PhysX 실행 기록",
+      "실제 이동 궤적과 관절 상태",
+      "화면 재생 방식과 정책 버전을 명시"
+    ],
+    "notes": "이미지는 실제 시뮬레이터 출력만 사용한다. 기록된 body pose를 Isaac Sim으로 재생 렌더링한 경우 그렇게 표시한다. 직접 렌더 캡처와 물리 평가를 구분한다."
+  },
+  {
+    "title": "정체 현상의 진단 흐름",
+    "kind": "flow",
+    "body": [
+      "목표 오차 감소?",
+      "실제 바퀴 회전?",
+      "벽 접촉·조향 지연?",
+      "관측·행동·보상 수정"
+    ],
+    "notes": "거리 감소가 없으면 action과 실제 velocity를 비교한다. action≈0이면 보상·입력·정책 업데이트를 검사한다. action이 크지만 움직이지 않으면 접촉·관절 매핑·구동기 한계를 검사한다. 벽에 밀착하면 경로 여유, 로봇 footprint, 목표 lookahead와 장애물 관측을 점검한다.",
+    "caption": "관찰한 원인에 맞춰 한 항목씩 바꾸고 같은 평가 조건으로 비교한다."
+  },
+  {
+    "title": "학습이 안 될 때 점검 순서",
+    "kind": "flow",
+    "body": [
+      "1환경\n정지·축·부호",
+      "고정 명령\n방향·변위",
+      "짧은 목표\n보상 부호",
+      "여러 시작점\n일반화"
+    ],
+    "notes": "학습률을 즉시 바꾸기 전에 수동 고정 명령이 정확한 방향으로 실행되는지 본다. 목표 방향 이동 시 reward가 실제로 커지는지 수치로 확인한다. 목표가 벽 뒤로 잡혀있는지, reset 직후 previous_distance가 정상인지 검사한다. 한 번에 여러 하이퍼파라미터를 바꾸지 않는다.",
+    "caption": "순서: 모델 문제, 환경 문제, 알고리즘 문제를 차례로 좁힌다."
+  },
+  {
+    "title": "보상 설계 실수와 수정",
+    "kind": "flow",
+    "body": [
+      "정지로 손실 회피\n진행률·시간비용 확인",
+      "벽에 계속 밀기\n접촉·거리 관측 검토",
+      "목표 주변 진동\n도달·감속 조건",
+      "순간이동 보상\nreset 거리 초기화"
+    ],
+    "notes": "충돌 패널티만 크게 주면 로봇이 정지할 수 있다. 양의 진행률과 시간비용을 비교해 정책이 움직일 이유를 남긴다. 장애물 관측 없이 충돌 패널티만 넣으면 충분한 행동 구분이 어려울 수 있다. 보상 변경 실험에서는 성공률과 정체시간을 같은 조건으로 측정한다.",
+    "caption": "제안한 변경은 실험 전 가설이다. 개선 여부는 재평가로 확인한다."
+  },
+  {
+    "title": "커리큘럼 설계",
+    "kind": "flow",
+    "body": [
+      "빈 공간\n짧은 직선 목표",
+      "넓은 통로\n방향 전환",
+      "제공 미로\n연속 waypoint",
+      "조건 변화\n시작점·물성"
+    ],
+    "notes": "시연 구현은 미로 경로 위 임의 위치의 짧은 목표를 학습한다. 빈 공간부터 시작하는 단계적 커리큘럼은 확장 실습 제안이다. 다음 단계 진입 기준은 예를 들어 고정 seed별 성공률과 충돌 횟수로 정한다. 기준 수치는 팀이 사전에 정하고 실험 결과로 기록한다.",
+    "caption": "처음부터 복잡한 미로 전체 성공 보상 하나만 주면 탐색이 어려워진다."
+  },
+  {
+    "title": "GPU 메모리와 학습 속도 팁",
+    "kind": "flow",
+    "body": [
+      "환경 수 조절\n8에서 측정",
+      "학습 렌더 끄기\n카메라 비용 확인",
+      "짧은 영상 기록\n평가 시 촬영",
+      "성능 비교\ntransition/s"
+    ],
+    "notes": "nvidia-smi로 메모리를 본다. OOM이면 num_envs, 카메라 해상도, 동시 실행 프로세스를 먼저 확인한다. 모든 환경의 영상을 매 step 저장하면 렌더와 디스크가 병목이 된다. dt를 크게 해서 속도를 올리면 접촉 안정성과 정책 행동이 바뀔 수 있으므로 같은 실험으로 취급하지 않는다.",
+    "caption": "환경 수 증가는 GPU 사용량만이 아니라 CPU·메모리 병목도 함께 측정한다."
+  },
+  {
+    "title": "재현 가능한 실험 기록",
+    "kind": "flow",
+    "body": [
+      "Git commit\n코드 버전",
+      "설정·seed\n환경·보상",
+      "checkpoint hash\n정책 버전",
+      "결과·영상\n동일 실행 증거"
+    ],
+    "notes": "실험 폴더마다 명령, 버전, 모델 해시, 미로 원본 해시를 보관한다. 수정 전후 같은 시작점에서 비교한다. 실패한 로그도 삭제하지 않고 실패 조건을 적는다. 큰 checkpoint와 mp4는 별도 저장 또는Git LFS를 사용하고 README에서 위치를 연결한다.",
+    "caption": "학습 횟수만 적은 결과는 다른 팀이 재현하기 어렵다."
+  },
+  {
+    "title": "Git 실습: 학습 실험 비교",
+    "kind": "code",
+    "body": [
+      "git switch -c experiment/maze-reward-v2\ngit diff -- rl/maze_env.py",
+      "git add rl/maze_env.py docs\ngit commit -m \"experiment: adjust waypoint reward\"",
+      "git log --oneline -5\ngit show <commit> -- rl/maze_env.py"
+    ],
+    "notes": "한 커밋에 모델 수정과 보상 변경을 섞지 않는다. 학습 실행 결과와 비교표를 변경 설명에 남긴다. 이미 공유한 실험을 취소할 때는 git revert를 사용한다. restore는 미커밋 수정을 버릴 수 있으므로 diff와 백업을 확인한다. 대용량 학습중 산출물은git status가 아닌실험manifest로 추적한다."
+  },
+  {
+    "title": "SLAM과 정책 연결 구조",
+    "kind": "flow",
+    "body": [
+      "Sim 스테레오\n좌우 영상·보정",
+      "cuVSLAM\n위치·자세 추정",
+      "좌표·시간 정렬\n목표 오차 계산",
+      "저장 정책\n관절 명령"
+    ],
+    "notes": "현재 PPO 관측은 ground truth이고 cuVSLAM은 저장영상 tracker 초기화까지만 확인했다. 실제 이동 영상으로 추정한 pose를 정책 입력에 넣는 폐루프 주행은 별도 미완료 항목이다. 연결 시 world/map/odom/base 좌표변환, timestamp, 지연, tracking loss와 정지 처리를 검증한다.",
+    "caption": "추정 pose를 사용할 때 지연·노이즈·tracking loss에 대한 평가가 추가된다."
+  },
+  {
+    "title": "시연 실험: 학습 조건 수정",
+    "kind": "flow",
+    "body": [
+      "첫 정책\n단방향 목표",
+      "평가 실패\n중간 정체",
+      "학습 분포 수정\n양방향·위치 오차",
+      "재평가\n같은 미로 경로"
+    ],
+    "caption": "조향 분기 유지도 별도로 검증한다. 각 변경의 결과를 실행 기록에 남긴다.",
+    "notes": "100회 정책은51,200transition을 사용했다. 이어 학습은221회 체크포인트까지 실행 후 중단했다. 다음 실험은221회 가중치에서 양방향 목표·시작점 오차를 사용했다. 조향 ±90도 경계의 분기 유지 처리는 기존 양방향 학습 실행 중 소스를 고친 것으로, 해당 학습 프로세스에는 반영되지 않았고 이후 평가에서 사용했다. 실제 체크포인트와 실행 환경 차이를 평가 보고서에 명시한다.\n양방향 조건으로521회까지 학습하고, 분기 유지가 포함된 현재 환경에서25회를 추가해546회 체크포인트를 만들었다. 최종 정책은52.47초 평가에서정체해실패했다. 학습횟수증가가성공을보장하지않는사례로사용한다."
+  },
+  {
+    "title": "시연: 미로 주행 움짤",
+    "kind": "gif",
+    "body": [],
+    "notes": "실제 Isaac Sim PhysX body pose 기록을 Isaac Sim으로 재생 렌더링했다. 최초100회 정책의0~40초를36장으로 샘플링한 GIF다. 프레임당160ms로 재생하여 약7배 빠르게 보인다. 모델이 전진한 뒤 벽 부근에서 정체하는 실패 사례다. PowerPoint 슬라이드 쇼에서 GIF를 재생하고, 호환되지 않는 뷰어에서는 함께 제공한 원본 GIF를 사용한다."
+  },
+  {
+    "title": "실행 결과 비교",
+    "kind": "comparison",
+    "body": [],
+    "notes": "각 행은 실제 Isaac Sim PhysX 실행 1회 결과다. 동일 첫 미로 경로에서 평가했지만 정책·조향 분기 처리·정체 종료 규칙이 변경되었으므로 단일 변수 실험으로 해석하지 않는다. 비교 제어기는 PPO가 아닌 고정 비례 제어기다. 초기100회와316회 정책은 각각 시간 제한과 정체로 실패했다. 최종 정책 결과는 report.json에서 읽는다. ground truth 위치 사용 및 알려진 경로 전제는 모든 행에 동일하다."
+  },
+  {
+    "title": "팀별 검증과 제출",
+    "kind": "flow",
+    "body": [
+      "모델 검증\nURDF·USD 참조",
+      "학습 기록\n설정·곡선",
+      "실제 평가\n성공·실패·궤적",
+      "재현 자료\nGit·PNG·GIF"
+    ],
+    "notes": "제출물에는 설치법과 모델 구조, 관측/행동 차원, 보상 항별 설명, 실행 명령, 체크포인트, 고정 조건 평가 결과를 포함한다. 미완료 조건을 명시한다. 팀별 URDF/USD가 다르므로 시연 결과를 자기 팀 로봇의 성공으로 재사용하지 않는다.",
+    "caption": "모든 팀은 자기 로봇으로 같은 검증 절차를 실행한다."
+  }
+]
