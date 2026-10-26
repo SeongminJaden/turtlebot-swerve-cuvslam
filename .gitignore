@@ -13,3 +13,6 @@ log/
 checks/*
 !checks/model_validation.json
 *.egg-info/
+
+# Keep selected captures and GIFs; per-frame intermediates stay local.
+evidence/**/frames/

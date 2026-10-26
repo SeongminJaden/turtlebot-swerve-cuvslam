@@ -1,8 +1,8 @@
 # TurtleBot 기반 스워브 로봇 — 개발과 강의 실습
 
-Isaac Sim **6.1.0.0**, Isaac ROS **release-5.0**, Isaac Lab **v3.0.0-EA** 기준.
+Isaac Sim **6.1.0.0**, Isaac ROS **release-5.0**, Isaac Lab **3.0 계열 소스 스냅샷(78b12ae)** 기준.
 Jetson이나 실제 카메라 없이 Ubuntu PC에서 시뮬레이션을 준비하기 위한 URDF·USD와 가이드입니다.
-**Ubuntu에서 정적 렌더, 제어 통신, 저장 영상 cuVSLAM 초기화까지 검증했습니다. 물리 주행과 실시간 SLAM은 아직 미완료입니다.**
+**제공 미로를 Isaac Sim PhysX로 구성하고 물리 주행, Isaac Lab PPO 학습·정책 평가를 실행했습니다. 결과는 실행별 보고서로 구분합니다. 실시간 cuVSLAM 폐루프 주행은 아직 미완료입니다.**
 
 ## 파일
 
@@ -35,7 +35,7 @@ Jetson이나 실제 카메라 없이 Ubuntu PC에서 시뮬레이션을 준비�
 - 그리퍼는 잠금 상태이고, 원본의 내부 충돌 비활성화가 유지됩니다.
 - 팔 시험 범위는 임시 범위입니다. 실물 기계 한계·배선·자기충돌을 보증하지 않습니다.
 - 카메라 위치·내부 파라미터는 **시뮬레이션용 가정**입니다. 실물 D435 보정값이나 CAD 정렬 완료를 뜻하지 않습니다.
-- Sim/ROS 전체 연결, cuVSLAM 정확도, Lab 3 학습은 아직 검증되지 않았습니다.
+- Sim/ROS 센서·명령 전체 연결과 이동 cuVSLAM 정확도는 별도 검증이 필요합니다. Lab PPO 학습·평가는 `rl/`에 구현했습니다.
 
 CAD 유래 메시의 제3자 부품 형상은 원 제공자의 권리가 적용될 수 있습니다. 이 저장소는 비공개 검토용이며 임의의 오픈소스 라이선스를 부여하지 않았습니다.
 
@@ -53,8 +53,20 @@ ros2 launch turtlebot_swerve swerve_control.launch.py
 ```
 
 - [팀별 로봇 공통 실습 가이드](teaching/TEAM_LAB.md)
-- [강사용 M38 구현·시연 가이드](teaching/LAB_GUIDE.md)
+- [M38 구현·시연 가이드](teaching/LAB_GUIDE.md)
 - [실행 증거와 캡처](evidence/2026-10-26/README.md)
 - [강의 슬라이드](teaching/output/팀별로봇_개발실습01.pptx)
 
 측정 joint_states가 없거나 오래되면 바퀴 명령은 0입니다. 현재 출력은 명령 토픽이며 물리 어댑터와 cuVSLAM 연결은 후속 구현입니다.
+
+## 제공 미로와 강화학습 실습
+
+- [Sim·Lab 환경 설치](docs/ISAAC_LAB_SETUP.md)
+- [학습 과정·명령·튜닝 팁](teaching/RL_WORKSHOP.md)
+- `assets/maze/maze.usda`: 제공 배치 기반 두 미로, 벽80개·지지대83개
+- `rl/maze_env.py`: PhysX 환경, 관측12·행동2, 로봇별 운동학
+- `rl/train_ppo.py`: PPO 수집·업데이트·저장·재개
+- `rl/evaluate.py`: 정책 고정 평가와 실제 body pose 기록
+- `scripts/render_trajectory.py`: 기록된 물리 상태의 Isaac Sim 재생 렌더
+
+팀별 로봇은 관절 이름·축·운동학·action 정의를 교체해야 합니다. 시연 정책은 ground-truth 위치를 이용한 알려진 지도 waypoint 추종입니다.
