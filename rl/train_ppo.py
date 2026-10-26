@@ -1,5 +1,5 @@
 """Small reproducible PPO trainer on actual Isaac Lab / PhysX maze transitions."""
-import argparse,json,time,traceback
+import argparse,json,time,traceback,sys,hashlib,subprocess
 from pathlib import Path
 from isaaclab.app import add_launcher_args,launch_simulation
 p=argparse.ArgumentParser();p.add_argument('--iterations',type=int,default=100);p.add_argument('--num-envs',type=int,default=8);p.add_argument('--resume',type=Path);p.add_argument('--seed',type=int,default=7);p.add_argument('--output',type=Path,default=Path('runs/maze_ppo'));add_launcher_args(p);args=p.parse_args()
@@ -10,6 +10,16 @@ from maze_env import MazeEnv,MazeEnvCfg
 from policy import Policy
 cfg=MazeEnvCfg();cfg.scene.num_envs=args.num_envs;cfg.seed=args.seed
 torch.manual_seed(args.seed)
+args.output.mkdir(parents=True,exist_ok=True)
+source_dir=Path(__file__).resolve().parent
+metadata={'argv':sys.argv,'seed':args.seed,'num_envs':args.num_envs,'rollout_steps':64,
+          'physics':'Isaac Sim PhysX','physics_dt':cfg.sim.dt,'decimation':cfg.decimation,
+          'source_hashes':{},'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=source_dir,text=True).strip()}
+for name in ('maze_env.py','policy.py','train_ppo.py'):
+    content=(source_dir/name).read_bytes();metadata['source_hashes'][name]=hashlib.sha256(content).hexdigest()
+    (args.output/(name+'.snapshot')).write_bytes(content)
+(args.output/'metadata.json').write_text(json.dumps(metadata,indent=2))
+completed=False
 with launch_simulation(cfg.sim,args):
     try:
         env=MazeEnv(cfg);obs,_=env.reset();obs=obs['policy']
@@ -53,7 +63,10 @@ with launch_simulation(cfg.sim,args):
                 torch.save({'model':model.state_dict(),'optimizer':optimizer.state_dict(),'iteration':iteration+1,'seed':args.seed,
                             'observation':'goal relative XY, world velocity XY, sin/cos yaw, four steering joints, previous actions',
                             'action':'world planar command scaled 0.18 m/s; inverse kinematics allocation',
-                            'scope':'privileged-pose local waypoint navigation in source maze','reset_distribution':'bidirectional +/-12 route samples, start XY jitter +/-0.05m'},args.output/'policy.pt')
+                            'scope':'privileged-pose local waypoint navigation in source maze','reset_distribution':'bidirectional +/-12 route samples, start XY jitter +/-0.05m'},args.output/'policy.pt.tmp')
+                (args.output/'policy.pt.tmp').replace(args.output/'policy.pt')
                 (args.output/'training.json').write_text(json.dumps(history,indent=2))
-        print('TRAINING_COMPLETE',flush=True);env.close()
+        print('TRAINING_COMPLETE',flush=True);completed=True;env.close()
     except BaseException:traceback.print_exc();raise
+
+if not completed:raise SystemExit(1)
