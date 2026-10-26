@@ -9,7 +9,7 @@
 
 현재 검증 호스트: Ubuntu 24.04.5, ROS 2 Lyrical, NVIDIA 595.91.07, RTX 5060 Laptop 8GB.
 `nvidia-smi`의 CUDA 13.2는 드라이버 지원 수준이며 CUDA Toolkit 설치 여부와 다릅니다.
-Isaac Sim 6.1.0.0으로 스테레오 렌더를 실행했습니다. 이후 기존 venv가 외부에서 사라져 재실행 경로를 확인해야 합니다.
+Isaac Sim 6.1.0.0으로 스테레오 렌더를 실행했습니다. 이후 기존 venv가 외부에서 사라져 같은 경로에 재설치를 완료했습니다. 새 환경 첫 실행은 NVIDIA EULA 동의 대기 상태입니다.
 
 ```bash
 cat /etc/os-release
@@ -121,7 +121,7 @@ python scripts/render_stereo.py --headless
 python scripts/capture_model.py
 ```
 
-현재 확보된 `model-overview.png`는 USD 모델의 실제 렌더 캡처입니다. `sim61_left.png`, `sim61_right.png`는 각 센서의 실제 렌더 결과입니다. 좌우 비교 GIF는 같은 정적 장면의 두 카메라 영상을 번갈아 보여줍니다. 주행 동영상이나 SLAM 성공 증거가 아닙니다. 모델 공전 GIF 생성은 환경 소실로 완료되지 않았습니다.
+현재 확보된 `model-overview.png`는 USD 모델의 실제 렌더 캡처입니다. `sim61_left.png`, `sim61_right.png`는 각 센서의 실제 렌더 결과입니다. 좌우 비교 GIF는 같은 정적 장면의 두 카메라 영상을 번갈아 보여줍니다. 주행 동영상이나 SLAM 성공 증거가 아닙니다. 모델 공전 GIF 생성은 환경 소실로 중단됐으며 재설치 후 라이선스 동의를 기다립니다.
 
 ## 7. 스테레오와 SLAM 데이터 흐름
 

@@ -1,0 +1,33 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-26-14-55-46-152341-ros-18446
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-1]: process started with pid [18466]
+[component_container-1] [INFO] [1792994146.516949157] [cuvslam_container]: Load Library: /opt/ros/lyrical/lib/libisaac_ros_cuvslam_node.so
+[component_container-1] [INFO] [1792994146.558607188] [cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1792994146.558652347] [cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1792994146.806686810] [visual_slam_node]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1792994146.806730640] [visual_slam_node]: Tracking mode: Multicamera
+[component_container-1] [INFO] [1792994146.809559326] [visual_slam_node]: Time taken by cuvslam::WarmUpGPU(): 0.002826
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/visual_slam_node' in container '/cuvslam_container'
+[component_container-1] [INFO] [1792994147.859168299] [visual_slam_node]: Initializing cuVSLAM.
+[component_container-1] [INFO] [1792994147.859236832] [visual_slam_node]: Use use_gpu: true
+[component_container-1] [INFO] [1792994147.859239723] [visual_slam_node]: Enable IMU Fusion: false
+[component_container-1] [INFO] [1792994147.876422644] [visual_slam_node]: Time taken by cuvslam::Odometry::Odometry(): 0.017181
+[component_container-1] [INFO] [1792994147.879382655] [visual_slam_node]: Time taken by cuvslam::Slam::Slam(): 0.002934
+[component_container-1] [INFO] [1792994147.879503369] [visual_slam_node]: cuVSLAM tracker was successfully initialized.
+[component_container-1] [WARN] [1792994148.192466259] [visual_slam_node]: Delta between current and previous frame [66.666667 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994152.825836651] [visual_slam_node]: Delta between current and previous frame [4633.333333 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994153.225472209] [visual_slam_node]: Delta between current and previous frame [400.000000 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994153.291955977] [visual_slam_node]: Delta between current and previous frame [66.666667 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994153.391936291] [visual_slam_node]: Delta between current and previous frame [100.000000 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994154.592406704] [visual_slam_node]: Delta between current and previous frame [1200.000000 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994155.292018911] [visual_slam_node]: Delta between current and previous frame [700.000000 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994155.791959566] [visual_slam_node]: Delta between current and previous frame [500.000000 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994155.892026251] [visual_slam_node]: Delta between current and previous frame [100.000000 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994157.058916521] [visual_slam_node]: Delta between current and previous frame [1166.666666 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994158.892077837] [visual_slam_node]: Delta between current and previous frame [1833.333334 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994159.191961996] [visual_slam_node]: Delta between current and previous frame [300.000000 ms] is above threshold [34.000000 ms]
+[component_container-1] [WARN] [1792994159.492080249] [visual_slam_node]: Delta between current and previous frame [300.000000 ms] is above threshold [34.000000 ms]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [component_container-1]: sending signal 'SIGINT' to process[component_container-1]
+[component_container-1] [INFO] [1792994165.968560112] [rclcpp]: signal_handler(signum=2)
+[ERROR] [component_container-1]: process has died [pid 18466, exit code -2, cmd '/opt/ros/lyrical/lib/rclcpp_components/component_container --ros-args -r __node:=cuvslam_container -r __ns:=/'].

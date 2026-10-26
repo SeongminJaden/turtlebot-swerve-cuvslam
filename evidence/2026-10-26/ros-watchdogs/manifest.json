@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-10-26T05:53:41.603852+00:00",
+  "cwd": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam",
+  "command": [
+    "python3",
+    "scripts/check_ros_controller.py"
+  ],
+  "exit_code": 0,
+  "output_sha256": "d78312f88cf0cfb60d2f656a54d8c9d15fb8f5f0f5ff9d1481d0d284590634ba",
+  "git_commit": "6ef3aba6cd7fa9c4aeab07856a13a4e396bc0b4c",
+  "git_status": " M docs/UBUNTU_SETUP.md\n M scripts/check_ros_controller.py\n?? evidence/\n?? scripts/preflight.py\n"
+}

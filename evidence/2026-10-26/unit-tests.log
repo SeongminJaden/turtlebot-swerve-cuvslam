@@ -1,0 +1,10 @@
+test_axes_are_not_assumed_identical (test_kinematics.KinematicsTests.test_axes_are_not_assumed_identical) ... ok
+test_body_twists_reconstruct_at_every_contact (test_kinematics.KinematicsTests.test_body_twists_reconstruct_at_every_contact) ... ok
+test_nonfinite_rejected (test_kinematics.KinematicsTests.test_nonfinite_rejected) ... ok
+test_saturation_keeps_common_scale (test_kinematics.KinematicsTests.test_saturation_keeps_common_scale) ... ok
+test_stop_keeps_steering (test_kinematics.KinematicsTests.test_stop_keeps_steering) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK
