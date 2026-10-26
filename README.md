@@ -38,3 +38,22 @@ Jetson이나 실제 카메라 없이 Ubuntu PC에서 시뮬레이션을 준비�
 - Sim/ROS 전체 연결, cuVSLAM 정확도, Lab 3 학습은 아직 검증되지 않았습니다.
 
 CAD 유래 메시의 제3자 부품 형상은 원 제공자의 권리가 적용될 수 있습니다. 이 저장소는 비공개 검토용이며 임의의 오픈소스 라이선스를 부여하지 않았습니다.
+
+## 개발 실습 01 (2026-10-26)
+
+URDF의 서로 다른 바퀴 축을 반영한 스워브 역기구학과 ROS 제어 노드를 추가했습니다.
+
+```bash
+source /opt/ros/lyrical/setup.bash
+colcon build --base-paths . --packages-select turtlebot_swerve
+source install/setup.bash
+python3 -m unittest discover -s tests -v
+ROS_DOMAIN_ID=87 python3 scripts/check_ros_controller.py
+ros2 launch turtlebot_swerve swerve_control.launch.py
+```
+
+- [설치·Git·코드·원리 실습 가이드](teaching/LAB_GUIDE.md)
+- [실행 증거와 캡처](evidence/2026-10-26/README.md)
+- [강의 슬라이드](teaching/output/M38_개발실습01.pptx)
+
+측정 joint_states가 없거나 오래되면 바퀴 명령은 0입니다. 현재 출력은 명령 토픽이며 물리 어댑터와 cuVSLAM 연결은 후속 구현입니다.

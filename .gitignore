@@ -12,3 +12,4 @@ log/
 *.mcap
 checks/*
 !checks/model_validation.json
+*.egg-info/
