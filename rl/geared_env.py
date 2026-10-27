@@ -17,7 +17,7 @@ class GearedMaze(MazeEnv):
   # unclamped equivalent computation below (wheel-side quantities throughout).
   y=self.yaw() if not hasattr(self,'measured_yaw') else self.measured_yaw;c,s=y.cos(),y.sin();wx,wy=self.velocity[:,0],self.velocity[:,1]
   vx,vy=c*wx+s*wy,-s*wx+c*wy;yaw_error=torch.atan2(torch.sin(y-getattr(self,'hold_yaw',0.)),torch.cos(y-getattr(self,'hold_yaw',0.)));wz=(-2*yaw_error).clamp(-.5,.5) if self.drive else torch.zeros_like(y)
-  if guarded and bool(((torch.sqrt(wx*wx+wy*wy)<.02)&(yaw_error.abs()<.1)).all()):
+  if guarded and bool(((torch.sqrt(wx*wx+wy*wy)<.02)&(yaw_error.abs()<.02)).all()):
    delta=self.wheel_acceleration_limit*self.step_dt/R
    self.wheel_target+=(-self.wheel_target).clamp(-delta,delta)
    return
@@ -27,7 +27,7 @@ class GearedMaze(MazeEnv):
   raw=(torch.atan2(v,u)-beta+math.pi)%(2*math.pi)-math.pi;sign=torch.where(raw.abs()>math.pi/2,-1.,1.);angle=torch.where(raw>math.pi/2,raw-math.pi,raw);angle=torch.where(angle< -math.pi/2,angle+math.pi,angle)
   hold=((raw.abs()-math.pi/2).abs()<.06)&(self.steering_target.abs()>.7);held=self.steering_target.sign()*(math.pi/2);angle=torch.where(hold,held,angle);sign=torch.where(hold,torch.cos(raw-held).sign(),sign)
   steer_position=self.robot.data.joint_pos.torch[:,self.steer] if not hasattr(self,'measured_steer') else self.measured_steer
-  if guarded:
+  if guarded and not getattr(self,'continuous_steering',False):
    if not hasattr(self,'steering_phase'):
     self.steering_phase=torch.zeros(self.num_envs,dtype=torch.long,device=self.device);self.reorient_angle=angle.clone()
    wheel_velocity=self.robot.data.joint_vel.torch[:,self.wheel] if not hasattr(self,'measured_wheel') else self.measured_wheel
@@ -38,7 +38,11 @@ class GearedMaze(MazeEnv):
    advance=(angle-self.steering_target).clamp(-self.step_dt,self.step_dt)
    self.steering_target+=torch.where((self.steering_phase==1)[:,None],torch.zeros_like(advance),advance)
    aligned=(self.steering_phase==2)&((angle-steer_position).abs().amax(1)<.08);self.steering_phase[aligned]=0
-  else:self.steering_target+=(angle-self.steering_target).clamp(-self.step_dt,self.step_dt)
+  else:
+   self.steering_target+=(angle-self.steering_target).clamp(-self.step_dt,self.step_dt)
+   if guarded:
+    self.steering_phase=torch.zeros(self.num_envs,dtype=torch.long,device=self.device)
+    aligned=torch.zeros(self.num_envs,dtype=torch.bool,device=self.device)
   error=angle-steer_position;speed=torch.sqrt(u*u+v*v)/R*sign
   desired=(speed*torch.cos(error).clamp(min=0)).clamp(-self.wheel_speed_limit,self.wheel_speed_limit) if self.drive else torch.zeros_like(speed)
   if guarded:

@@ -30,7 +30,7 @@ global_costmap:
         plugin: nvblox::nav2::NvbloxCostmapLayer
         enabled: true
         nav2_costmap_global_frame: map
-        nvblox_map_slice_topic: /nvblox_node/static_map_slice
+        nvblox_map_slice_topic: /navigation/map_slice
         convert_to_binary_costmap: true
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer

@@ -2,6 +2,7 @@
 from pathlib import Path
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import ExecuteProcess
 
 def generate_launch_description():
     root=Path(__file__).resolve().parents[1]
@@ -10,6 +11,7 @@ def generate_launch_description():
              parameters=[str(root/'config/nvblox_arm.yaml')],
              remappings=[('/camera_0/depth/image','/arm_stereo/left/depth'),
                          ('/camera_0/depth/camera_info','/arm_stereo/left/camera_info')],output='screen'),
+        ExecuteProcess(cmd=['/usr/bin/python3', str(root/'scripts/nvblox_map_slice.py')], output='screen'),
         Node(package='nav2_planner',executable='planner_server',name='planner_server',
              parameters=[str(root/'config/nav2_nvblox.yaml')],output='screen'),
         Node(package='nav2_lifecycle_manager',executable='lifecycle_manager',

@@ -29,7 +29,7 @@ def on_costmap(m):
     data={'stamp_ns':m.header.stamp.sec*10**9+m.header.stamp.nanosec,'frame_id':m.header.frame_id,'resolution':m.info.resolution,'width':m.info.width,'height':m.info.height,'origin':[m.info.origin.position.x,m.info.origin.position.y],'data':list(m.data)}
     f=a.directory/'costmap.tmp';f.write_text(json.dumps(data));f.replace(a.directory/'latest-costmap.json')
 n.create_subscription(OccupancyGrid,'/global_costmap/costmap',on_costmap,10)
-n.create_subscription(DistanceMapSlice,'/nvblox_node/static_map_slice',on_slice,10)
+n.create_subscription(DistanceMapSlice,'/navigation/map_slice',on_slice,10)
 def finished(f):
     global busy,revision,successes
     busy=False

@@ -7,7 +7,7 @@ nvblox_node:
     use_depth: true
     use_color: false
     use_lidar: false
-    voxel_size: 0.025
+    voxel_size: 0.0125
     mapping_type: static_tsdf
     esdf_mode: 2d
     integrate_depth_rate_hz: 15.0

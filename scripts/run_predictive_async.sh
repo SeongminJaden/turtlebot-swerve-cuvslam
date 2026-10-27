@@ -25,6 +25,8 @@ cleanup(){
  done
 }
 trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
 setsid ros2 launch ./launch/cuvslam_arm_camera.launch.py > "$out/cuvslam.log" 2>&1 & children+=("$!")
 setsid /usr/bin/python3 scripts/active_camera_bridge.py --directory "$out" --external-clock "${bridge_args[@]}" --pose-quality-gate --width "${CAMERA_WIDTH:-640}" > "$out/bridge.log" 2>&1 & children+=("$!")
 setsid /home/seongmin/isaacsim6_venv/bin/python scripts/active_camera_renderer.py --directory "$out" --async-mode --textured-floor --width "${CAMERA_WIDTH:-640}" "${renderer_args[@]}" > "$out/renderer.log" 2>&1 & children+=("$!")
@@ -62,6 +64,7 @@ if [[ "${CAPTURE_BARRIER:-0}" == "1" ]]; then
  done
  [[ -f "$out/gui/isaac.armed" && -f "$out/gui/rviz.armed" ]]
 fi
-/home/seongmin/IsaacLab/.venv/bin/python scripts/lab_python.py rl/run_predictive_async.py --output "$out" --seconds "${DURATION:-240}" --checkpoint "${CHECKPOINT:-runs/predictive_checkpoints/v5-final.pt}" --visualizer none "${extra_args[@]}" > "$out/evaluation.log" 2>&1
+setsid /home/seongmin/IsaacLab/.venv/bin/python scripts/lab_python.py rl/run_predictive_async.py --output "$out" --seconds "${DURATION:-240}" --checkpoint "${CHECKPOINT:-runs/predictive_checkpoints/v5-final.pt}" --visualizer none "${extra_args[@]}" > "$out/evaluation.log" 2>&1 & evaluator=$!; children+=("$evaluator")
+wait "$evaluator"
 if [[ "${GUI:-0}" == "1" ]]; then sleep 8; fi
 cat "$out/report.json"

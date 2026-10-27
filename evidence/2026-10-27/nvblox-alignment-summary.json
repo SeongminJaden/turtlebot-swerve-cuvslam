@@ -1,0 +1,57 @@
+[
+  {
+    "run": "nvblox-map-frame-v4",
+    "outcome": "timeout",
+    "sim_seconds": 89.96000000000001,
+    "real_time_factor": 0.9999990499453149,
+    "path_revision": -1,
+    "max_speed_m_s": 0.001045702025294304,
+    "peak_nonwheel_contact_force_N": 0.0,
+    "actual_goal_error_m": 2.3499980914728864,
+    "validated_success": false
+  },
+  {
+    "run": "nvblox-resolution-v5",
+    "outcome": "timeout",
+    "sim_seconds": 99.97,
+    "real_time_factor": 0.9999992563574615,
+    "path_revision": 66,
+    "max_speed_m_s": 0.4646144509315491,
+    "peak_nonwheel_contact_force_N": 0.0,
+    "actual_goal_error_m": 2.970431849861885,
+    "validated_success": false
+  },
+  {
+    "run": "nvblox-body-aligned-v8",
+    "outcome": "timeout",
+    "sim_seconds": 89.96000000000001,
+    "real_time_factor": 0.9999991057366864,
+    "path_revision": 88,
+    "max_speed_m_s": 0.4232349395751953,
+    "peak_nonwheel_contact_force_N": 0.0,
+    "actual_goal_error_m": 2.6066936857219756,
+    "validated_success": false
+  },
+  {
+    "run": "nvblox-progress-v9",
+    "outcome": "timeout",
+    "sim_seconds": 99.97,
+    "real_time_factor": 0.9999982334031479,
+    "path_revision": 95,
+    "max_speed_m_s": 0.42890751361846924,
+    "peak_nonwheel_contact_force_N": 0.0,
+    "actual_goal_error_m": 2.676443810183287,
+    "validated_success": false
+  },
+  {
+    "run": "nvblox-continuous-v10",
+    "outcome": "timeout",
+    "sim_seconds": 99.97,
+    "real_time_factor": 0.9999992773137097,
+    "path_revision": 91,
+    "max_speed_m_s": 0.36451390385627747,
+    "peak_nonwheel_contact_force_N": 0.0,
+    "actual_goal_error_m": 2.576604074454251,
+    "validated_success": false
+  }
+]

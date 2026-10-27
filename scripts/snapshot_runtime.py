@@ -5,7 +5,7 @@ root=Path(__file__).resolve().parents[1]
 def snapshot(destination):
  destination=Path(destination);source=destination/'source';source.mkdir(parents=True,exist_ok=True)
  files=list((root/'turtlebot_swerve').glob('*.py'))+list((root/'rl').glob('*.py'))
- files += [root/'scripts'/name for name in ('active_camera_bridge.py','active_camera_renderer.py','isaac_sensor_bridge.py','robot_observation_adapter.py','depth_clearance.py','pose_quality.py','pose_covariance.py','pose_math.py','tracking_recovery.py','activate_localization.py','run_predictive_async.sh')]
+ files += [root/'scripts'/name for name in ('active_camera_bridge.py','active_camera_renderer.py','isaac_sensor_bridge.py','robot_observation_adapter.py','depth_clearance.py','pose_quality.py','pose_covariance.py','pose_math.py','tracking_recovery.py','activate_localization.py','run_predictive_async.sh','nav2_policy_path.py','nvblox_map_slice.py')]
  files += list((root/'config').glob('*.yaml'))+list((root/'launch').glob('*.py'))
  hashes={}
  for path in files:

@@ -3,11 +3,13 @@
 Physics runs in Lab, rendering in Kit, tracking in cuVSLAM. No recorded pose
 playback is used here. Separate processes avoid Python/ROS ABI conflicts.
 """
-import argparse,json,socket,time
+import argparse,json,socket,time,sys
 from pathlib import Path
 import numpy as np
 from PIL import Image
 from depth_clearance import obstacle_points
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from turtlebot_swerve.camera_quality import camera_quality
 from pose_math import matrix as pose_matrix
 p=argparse.ArgumentParser();p.add_argument('--port',type=int,default=18766);p.add_argument('--directory',type=Path,required=True);p.add_argument('--headless',action='store_true');p.add_argument('--textured-floor',action='store_true');p.add_argument('--async-mode',action='store_true');p.add_argument('--width',type=int,default=640);a=p.parse_args();a.directory.mkdir(parents=True,exist_ok=True)
 from isaacsim import SimulationApp
@@ -76,11 +78,13 @@ try:
   camera_base=np.asarray(req['encoder_left_camera_matrix']) if 'encoder_left_camera_matrix' in req else np.linalg.inv(pose_matrix(req['base_pose']))@camera_world
   points=obstacle_points(depth,camera_base,a.width*400/640)
   pixels=np.stack([ann.get_data().copy()[:,:,:3] for ann in anns]);np.save(a.directory/'stereo.npy',pixels)
+  quality=camera_quality(pixels[0],depth)
+  with (a.directory/'camera-quality.jsonl').open('a') as quality_log:quality_log.write(json.dumps({'stamp_ns':req['stamp_ns'],**quality})+'\n')
   if index%30==0:
    Image.fromarray(pixels[0]).save(a.directory/f'left-{index:05}.png')
   rig=UsdGeom.Xformable(s.GetPrimAtPath('/World/Robot/arm_link5/camera_rig')).ComputeLocalToWorldTransform(0);rot=rig.ExtractRotationQuat();xyz=rig.ExtractTranslation();imag=rot.GetImaginary();req['rig_pose']=[*map(float,xyz),*map(float,imag),float(rot.GetReal())]
   req['depth_obstacles_base']=points.round(4).tolist()
-  ros.sendall((json.dumps({k:req[k] for k in ['stamp_ns','base_pose','rig_pose','encoder_rig_matrix','depth_obstacles_base','drop_images'] if k in req})+'\n').encode());response=json.loads(rr.readline());response['camera_forward_base']=(-camera_base[:3,2]).tolist();response['depth_obstacles_base']=points.round(4).tolist();response['depth_valid_fraction']=float(np.isfinite(depth).mean());response['depth_forward_valid_fraction']=float(np.isfinite(depth[depth.shape[0]//2:,depth.shape[1]*2//5:depth.shape[1]*3//5]).mean());response['rig_pose']=req['rig_pose'];response['source_stamp_ns']=req['stamp_ns'];response['received_wall']=time.monotonic()
+  ros.sendall((json.dumps({k:req[k] for k in ['stamp_ns','base_pose','rig_pose','encoder_rig_matrix','depth_obstacles_base','drop_images'] if k in req})+'\n').encode());response=json.loads(rr.readline());response['camera_forward_base']=(-camera_base[:3,2]).tolist();response['depth_obstacles_base']=points.round(4).tolist();response['depth_valid_fraction']=float(np.isfinite(depth).mean());response['depth_forward_valid_fraction']=float(np.isfinite(depth[depth.shape[0]//2:,depth.shape[1]*2//5:depth.shape[1]*3//5]).mean());response['rig_pose']=req['rig_pose'];response['source_stamp_ns']=req['stamp_ns'];response['received_wall']=time.monotonic();response['camera_quality']=quality
   if a.async_mode:
    tmp=a.directory/'latest-tracking.tmp';tmp.write_text(json.dumps(response));tmp.replace(a.directory/'latest-tracking.json')
   else:conn.sendall((json.dumps(response)+'\n').encode())

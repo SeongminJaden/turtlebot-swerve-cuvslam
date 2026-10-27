@@ -21,3 +21,12 @@ def accept_path(packet,now_ns,goal,max_age=2.5):
     p=resample_path(packet['points'])
     if np.linalg.norm(p[-1]-goal)>.1:raise ValueError('wrong goal')
     return p
+
+
+def mission_progress(arc,index,initial_length):
+    """Keep PPO progress meaningful when a replan removes the travelled prefix."""
+    arc=np.asarray(arc,dtype=float)
+    if initial_length<=0 or len(arc)<2 or not np.isfinite(arc).all():
+        raise ValueError('invalid mission length')
+    remaining=max(0.,float(arc[-1]-arc[int(index)]))
+    return float(np.clip(1.-remaining/initial_length,0.,1.))
