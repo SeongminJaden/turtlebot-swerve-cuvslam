@@ -2,7 +2,7 @@
 
 Isaac Sim **6.1.0.0**, Isaac ROS **release-5.0**, Isaac Lab **3.0 계열 소스 스냅샷(78b12ae)** 기준.
 Jetson이나 실제 카메라 없이 Ubuntu PC에서 시뮬레이션을 준비하기 위한 URDF·USD와 가이드입니다.
-**제공 미로를 Isaac Sim PhysX로 구성하고 물리 주행, Isaac Lab PPO 학습·정책 평가를 실행했습니다. 결과는 실행별 보고서로 구분합니다. 실시간 cuVSLAM 폐루프 주행은 아직 미완료입니다.**
+**제공 미로를 Isaac Sim PhysX로 구성하고 물리 주행, Isaac Lab PPO 학습·정책 평가를 실행했습니다. 결과는 실행별 보고서로 구분합니다. 최종 v5 정책 + 측정 센서 + RGBD cuVSLAM + EKF·AMCL 폐루프로 두 미로의 지정 경로를 완주했습니다. 최신 판정과 재현 명령은 docs/VALIDATION.md를 따릅니다.**
 
 ## 파일
 
@@ -55,18 +55,29 @@ ros2 launch turtlebot_swerve swerve_control.launch.py
 - [팀별 로봇 공통 실습 가이드](teaching/TEAM_LAB.md)
 - [M38 구현·시연 가이드](teaching/LAB_GUIDE.md)
 - [실행 증거와 캡처](evidence/2026-10-26/README.md)
-- [통합 강의 슬라이드 — 57장](teaching/output/팀별로봇_미로_RL_통합실습.pptx)
+- [최신 Google Slides — 145장](https://docs.google.com/presentation/d/19UfjZpjlP2RR7iLeboQTa_h0JFBVk2P_-Yz-u_tQ-eA/edit)
+- [최신 슬라이드 PDF](teaching/output/team-maze-145.pdf): 정적 열람용. 영상은 Google Slides에서 재생합니다.
+- 기존 `teaching/output/팀별로봇_미로_RL_통합실습.pptx`는 78장 이전 버전입니다. 최신 145장 PPTX 내보내기는 연결 도구 403 및 브라우저 시간 초과로 완료되지 않았습니다.
 
-측정 joint_states가 없거나 오래되면 바퀴 명령은 0입니다. 현재 출력은 명령 토픽이며 물리 어댑터와 cuVSLAM 연결은 후속 구현입니다.
+팔 카메라 정렬 정책은 yaw 1축/128조건 평가를 마쳤다. 실제 Sim 영상→cuVSLAM→동시각 팔 FK 환산도 네 방향 짧은 이동에서 검증했다. 원본 무늬에서는 추적 상태 성공과 달리 위치 오차가 크게 발생했고, 합성 바닥 무늬를 추가한 비교 조건에서 오차가 줄었다. 전체 미로의 센서 기반 자율주행 성공과 구분한다. 기존 정지→시야 확보 게이트는 비교 기준이며 새 목표는 이동 중 경로를 예측하는 가감속+팔 yaw 공동 PPO이다.
 
-## 제공 미로와 강화학습 실습
+새 정책: `rl/predictive_env.py`, `rl/train_predictive.py`, `rl/evaluate_predictive.py`, `rl/run_predictive_async.py`.
+입력24개(경로·속도·시야·차체 기울기/각속도), 출력2개(가속도·팔 yaw 속도).
+학습 거리 입력은 FOV 제한 CAD ray 모형이고 실제 영상 특징점 정책은 아니다.
+중간 전체경로 평가에서 기울기 종료가 발생했으므로 완주 완료로 표시하지 않는다.
+최대속도는 **기어 적용 후 0.95 m/s**; 48T→12T 속도4배, 바퀴30.9575 rad/s, 모터출력축7.7394 rad/s.
+모터토크1Nm·효율1은 시뮬레이션 가정이며 실물 연속정격이 아니다.
 
-- [Sim·Lab 환경 설치](docs/ISAAC_LAB_SETUP.md)
-- [학습 과정·명령·튜닝 팁](teaching/RL_WORKSHOP.md)
-- `assets/maze/maze.usda`: 제공 배치 기반 두 미로, 벽80개·지지대83개
-- `rl/maze_env.py`: PhysX 환경, 관측12·행동2, 로봇별 운동학
-- `rl/train_ppo.py`: PPO 수집·업데이트·저장·재개
-- `rl/evaluate.py`: 정책 고정 평가와 실제 body pose 기록
-- `scripts/render_trajectory.py`: 기록된 물리 상태의 Isaac Sim 재생 렌더
+## 두 OpenCR IMU
 
-팀별 로봇은 관절 이름·축·운동학·action 정의를 교체해야 합니다. 시연 정책은 ground-truth 위치를 이용한 알려진 지도 waypoint 추종입니다.
+공식 ROBOTIS cIMU(MPU9250/ICM20648) 기반 USB 펌웨어와 ROS2 드라이버:
+
+- `firmware/opencr_dual_imu/opencr_dual_imu.ino`: 공식 core1.5.3 컴파일 통과. 기존 보드에 플래시하지 않음.
+- `turtlebot_swerve/opencr_imu_driver.py`: 보드별 `/opencr_1/imu`, `/opencr_2/imu` 발행.
+- `turtlebot_swerve/dual_imu_node.py`: 시각 보간·축 변환·lever arm 보정 후 `/imu/base/data_raw` 평균.
+- `config/dual_imu.yaml`: 위치·방향·바이어스·불일치 한계. 실물 장착 TF 확인 전 geometry_verified=false.
+- [데이터 규약·실행법·공식 근거](docs/CAMERA_AND_TF.md): 가속도±2g, 자이로±2000deg/s, WXYZ→XYZW, 중력 포함.
+
+단위/물리/통신검사29개 통과. 실제 ROS2와 두 PTY USB 에뮬레이터 연결에서도 평균·CRC오류·오래된 데이터 차단을 검증했다.
+실물 센서 수신이나 실물 시각 동기 정확도 검증은 아직 아니다. 독립 AHRS yaw를 평균하지 않으며, 출력 orientation은 미제공(-1)이다.
+차체 IMU를 움직이는 팔 카메라 cuVSLAM의 고정 IMU처럼 연결하지 않는다.

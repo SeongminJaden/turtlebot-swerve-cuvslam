@@ -1,15 +1,15 @@
 {
   "schemaVersion": "presentation-finalization.v1",
-  "finalSha256": "1878ae699405917ef49bf3a213ed64688b4909c48130a4ddf46cb8766358ef54",
-  "byteCount": 10267703,
+  "finalSha256": "f002589e817048c416c37fade268d421044f9b4aaadf66acafd719328cc98a9a",
+  "byteCount": 10349173,
   "packageIntegrity": {
     "chart_count": 2,
     "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
     "finding_count": 0,
     "findings": [],
-    "notes_parts_skipped": 57,
-    "relationship_part_count": 129,
-    "slide_count": 57,
+    "notes_parts_skipped": 78,
+    "relationship_part_count": 171,
+    "slide_count": 78,
     "status": "pass",
     "exitCode": 0,
     "findingCount": 0,
@@ -19,20 +19,20 @@
     "finding_count": 0,
     "findings": [],
     "font_policy": {
-      "checked_text_script_count": 887,
+      "checked_text_script_count": 1235,
       "native_font_rendering_verified": false,
       "observed_font_families": [
         "Pretendard",
         "맑은 고딕"
       ],
       "observed_font_use_counts": {
-        "Pretendard": 305,
-        "맑은 고딕": 582
+        "Pretendard": 418,
+        "맑은 고딕": 817
       },
       "passed": true,
       "performed": true
     },
-    "slide_count": 57,
+    "slide_count": 78,
     "slide_size_in": [
       10,
       5.625
@@ -42,15 +42,15 @@
     "exitCode": 0,
     "findingCount": 0,
     "fontPolicy": {
-      "checked_text_script_count": 887,
+      "checked_text_script_count": 1235,
       "native_font_rendering_verified": false,
       "observed_font_families": [
         "Pretendard",
         "맑은 고딕"
       ],
       "observed_font_use_counts": {
-        "Pretendard": 305,
-        "맑은 고딕": 582
+        "Pretendard": 418,
+        "맑은 고딕": 817
       },
       "passed": true,
       "performed": true
@@ -65,15 +65,15 @@
     "scriptFonts": {},
     "referenceSha256": "6062eead24bac9c7b88be23936ec66cc1d1b84b194e0339a8b84d8e5199ae2d9",
     "referenceFontsVerifiedInEncodedText": true,
-    "checked_text_script_count": 887,
+    "checked_text_script_count": 1235,
     "native_font_rendering_verified": false,
     "observed_font_families": [
       "Pretendard",
       "맑은 고딕"
     ],
     "observed_font_use_counts": {
-      "Pretendard": 305,
-      "맑은 고딕": 582
+      "Pretendard": 418,
+      "맑은 고딕": 817
     },
     "passed": true,
     "performed": true
@@ -81,8 +81,8 @@
   "firstPartyImport": {
     "performed": true,
     "passed": true,
-    "slideCount": 57,
-    "sha256": "1878ae699405917ef49bf3a213ed64688b4909c48130a4ddf46cb8766358ef54",
+    "slideCount": 78,
+    "sha256": "f002589e817048c416c37fade268d421044f9b4aaadf66acafd719328cc98a9a",
     "runtimeNodeModules": "/home/seongmin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules",
     "nodeExecutable": "/home/seongmin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
   },
@@ -109,7 +109,7 @@
         "table": 1
       }
     ],
-    "slide_count": 57,
+    "slide_count": 78,
     "warning_count": 0,
     "warnings": []
   },
@@ -132,9 +132,9 @@
     "native_chart_count": 2,
     "native_powerpoint_verified": false,
     "passed": true,
-    "presentation_sha256": "1878ae699405917ef49bf3a213ed64688b4909c48130a4ddf46cb8766358ef54",
+    "presentation_sha256": "f002589e817048c416c37fade268d421044f9b4aaadf66acafd719328cc98a9a",
     "schema_version": "presentation-native-chart-titles.v1",
-    "slide_count": 57,
+    "slide_count": 78,
     "source_text_emitted": false,
     "unresolved_linked_title_count": 0
   },
@@ -176,7 +176,7 @@
       "failed_slides": [],
       "formal_human_reviewed": false,
       "native_application_open_verified": false,
-      "package_sha256": "1878ae699405917ef49bf3a213ed64688b4909c48130a4ddf46cb8766358ef54",
+      "package_sha256": "f002589e817048c416c37fade268d421044f9b4aaadf66acafd719328cc98a9a",
       "passed": true,
       "required_embedded_workbook_slides": [],
       "results": [
@@ -228,7 +228,7 @@
         }
       ],
       "schema_version": "owner-private.quantitative-chart-native-gate.v1",
-      "slide_count": 57,
+      "slide_count": 78,
       "source_attachments_accessed": false,
       "target_application": "powerpoint",
       "validated_slide_count": 2

@@ -1,3 +1,5 @@
+> 2026-10-26 최종 통합 업데이트: 아래 기초 실습과 과거 실험은 단계별 기록입니다. 최신 v5·이중 IMU·엔코더·RGBD cuVSLAM·EKF·AMCL 실행은 `scripts/run_predictive_async.sh evidence/repeat-first`이며, 두 번째 구역은 `ROUTE_FILE=assets/maze/route_clearance_second.json`을 앞에 붙입니다. 최종 판정은 `docs/VALIDATION.md`, 54장 최신 교안은 `teaching/output/google-slides.json`의 Google Slides를 사용합니다. 기존 로컬 PPTX는 이전 버전이며 이번 native PPTX 내보내기는 403으로 완료되지 않았습니다.
+
 # 강사용 M38 스워브 시연 가이드
 
 이 문서는 강사가 M38로 시연할 때 쓰는 구현 예시입니다. 학생 공통 교안은 TEAM_LAB.md이며 각 팀은 자기 URDF·USD를 사용합니다.

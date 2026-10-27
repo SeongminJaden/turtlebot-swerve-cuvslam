@@ -1,0 +1,35 @@
+{
+  "isaac_video_drive_id": "1cJDqJ6f17_6uS1MGqfIBAd3YN9DRZIUI",
+  "rviz_video_drive_id": "1DTkIZoH81ssvKS4CDR_tzWnWRNLJ--MT",
+  "source_run": "evidence/2026-10-26/predictive-qualified-gui",
+  "full_capture_start_stamp_ns": 1000000000,
+  "gif_scope": "8 seconds from the same actual GUI recording, starting at 18 seconds",
+  "native_slides": 165,
+  "video_playback": {
+    "isaac": {
+      "current_time_s": 11.431236,
+      "paused": false,
+      "ready_state": 4
+    },
+    "rviz": {
+      "current_time_s": 15.230274,
+      "paused": false,
+      "ready_state": 4
+    }
+  },
+  "gif_frame_differences": {
+    "isaac": [
+      208,
+      591,
+      545,
+      808
+    ],
+    "rviz": [
+      239,
+      616,
+      672,
+      880
+    ]
+  },
+  "pptx_export": "API 403; browser download timed out; native deck is authoritative"
+}

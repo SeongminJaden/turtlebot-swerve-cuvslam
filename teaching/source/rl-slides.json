@@ -64,19 +64,19 @@
     "body": [
       "python3 -m venv ~/isaacsim6_venv",
       "~/isaacsim6_venv/bin/python -m pip install --no-cache-dir \\\n  \"isaacsim[all,extscache]==6.1.0.0\" \\\n  --extra-index-url https://pypi.nvidia.com",
-      "git -C ~/IsaacLab rev-parse HEAD\nnvidia-smi"
+      "nvidia-smi\n~/isaacsim6_venv/bin/python -m pip show isaacsim"
     ],
-    "notes": "실제 검증 환경: Ubuntu 24.04, Python 3.12, Isaac Sim 6.1.0.0, RTX 5060 Laptop 8 GB. Lab 소스 커밋 78b12aed1d2a56439493b8ea6d3538e6e379e2e5. 설치 명령은 다운로드 및 임시 압축해제 여유 공간을 요구한다. 검증된 환경의 freeze 파일을 보관하고 수업 중 무조건 최신으로 업그레이드하지 않는다. NVIDIA 약관을 읽고 동의한 사용자만 OMNI_KIT_ACCEPT_EULA=YES를 사용한다."
+    "notes": "실제 검증 환경: Ubuntu 24.04, Python 3.12, Isaac Sim 6.1.0.0, RTX 5060 Laptop 8 GB. Lab 소스 버전 78b12aed1d2a56439493b8ea6d3538e6e379e2e5. 설치 명령은 다운로드 및 임시 압축해제 여유 공간을 요구한다. 검증된 환경의 freeze 파일을 보관하고 수업 중 무조건 최신으로 업그레이드하지 않는다. NVIDIA 약관을 읽고 동의한 사용자만 OMNI_KIT_ACCEPT_EULA=YES를 사용한다."
   },
   {
     "title": "Isaac Lab 실행 환경",
     "kind": "code",
     "body": [
-      "git clone https://github.com/isaac-sim/IsaacLab.git ~/IsaacLab",
-      "LAB_REV=78b12aed1d2a56439493b8ea6d3538e6e379e2e5\ngit -C ~/IsaacLab checkout \"$LAB_REV\"",
+      "수업에서 지정한 Isaac Lab 소스 압축파일을 내려받는다.",
+      "압축을 풀어 ~/IsaacLab에 배치한다.\npyproject.toml과 uv.lock이 있는지 확인한다.",
       "cd ~/IsaacLab\nuv sync --frozen\ncd <프로젝트_폴더>"
     ],
-    "notes": "기존 검증 환경의 Lab venv와 별도 Sim 설치를 사용한다. 신규 PC 설치는 docs/ISAAC_LAB_SETUP.md의 의존성 설치 절차를 따른다. 래퍼는 ISAAC_SIM_SITE 환경변수 또는 시연 PC의 기본 Sim site-packages를 추가한다. 이 Lab 스냅샷에서는 --headless 대신 --visualizer none을 쓴다. 다른 릴리스의 CLI를 섞지 않는다.\nuv 설치: curl -LsSf https://astral.sh/uv/install.sh | sh\nsource \"$HOME/.local/bin/env\"\n설치 근거: 고정한 소스 docs/source/setup/installation/index.rst. 새 PC 전체 설치 재실행은 미검증."
+    "notes": "기존 검증 환경의 Lab venv와 별도 Sim 설치를 사용한다. 신규 PC 설치는 docs/ISAAC_LAB_SETUP.md의 의존성 설치 절차를 따른다. 래퍼는 ISAAC_SIM_SITE 환경변수 또는 시연 PC의 기본 Sim site-packages를 추가한다. 이 Lab 스냅샷에서는 --headless 대신 --visualizer none을 쓴다. 다른 릴리스의 CLI를 섞지 않는다.\nuv 설치: curl -LsSf https://astral.sh/uv/install.sh | sh\nsource \"$HOME/.local/bin/env\"\n설치 근거: 고정한 소스 docs/source/setup/installation/index.rst. 새 PC 전체 설치 재실행은 미검증.\n소스 다운로드: https://github.com/isaac-sim/IsaacLab/archive/78b12aed1d2a56439493b8ea6d3538e6e379e2e5.zip"
   },
   {
     "title": "학습 코드 파일 구조",
@@ -376,23 +376,25 @@
     "title": "재현 가능한 실험 기록",
     "kind": "flow",
     "body": [
-      "Git commit\n코드 버전",
+      "소스 사본\n코드 버전",
       "설정·seed\n환경·보상",
       "checkpoint hash\n정책 버전",
       "결과·영상\n동일 실행 증거"
     ],
-    "notes": "실험 폴더마다 명령, 버전, 모델 해시, 미로 원본 해시를 보관한다. 수정 전후 같은 시작점에서 비교한다. 실패한 로그도 삭제하지 않고 실패 조건을 적는다. 큰 checkpoint와 mp4는 별도 저장 또는Git LFS를 사용하고 README에서 위치를 연결한다.",
+    "notes": "실험마다 소스 사본, 설정, seed, 모델 및 정책 해시, 명령과 결과를 보관한다. 실패 조건도 기록한다.",
     "caption": "학습 횟수만 적은 결과는 다른 팀이 재현하기 어렵다."
   },
   {
-    "title": "Git 실습: 학습 실험 비교",
-    "kind": "code",
+    "title": "보상 가중치 실험 순서",
+    "kind": "flow",
     "body": [
-      "git switch -c experiment/maze-reward-v2\ngit diff -- rl/maze_env.py",
-      "git add rl/maze_env.py docs\ngit commit -m \"experiment: adjust waypoint reward\"",
-      "git log --oneline -5\ngit show <commit> -- rl/maze_env.py"
+      "기준 보상\n같은 평가 경로",
+      "항 하나 수정\n가중치 0.5·1·2배",
+      "여러 seed 평가\n완주·충돌·정체",
+      "최선 설정 선택\n새 시작점 검증"
     ],
-    "notes": "한 커밋에 모델 수정과 보상 변경을 섞지 않는다. 학습 실행 결과와 비교표를 변경 설명에 남긴다. 이미 공유한 실험을 취소할 때는 git revert를 사용한다. restore는 미커밋 수정을 버릴 수 있으므로 diff와 백업을 확인한다. 대용량 학습중 산출물은git status가 아닌실험manifest로 추적한다."
+    "notes": "새 학습 실행마다 출력 폴더를 분리한다. 가중치와 환경을 동시에 바꾸지 않는다. 동일 샘플 수와 평가 시작점으로 비교한다. 0.5·1·2배는 탐색 예시이며 검증된 최적값이 아니다.",
+    "caption": "최고 학습 보상보다 완주율·충돌·소요시간으로 설정을 선택한다."
   },
   {
     "title": "SLAM과 정책 연결 구조",
@@ -431,13 +433,247 @@
     "notes": "각 행은 실제 Isaac Sim PhysX 실행 1회 결과다. 동일 첫 미로 경로에서 평가했지만 정책·조향 분기 처리·정체 종료 규칙이 변경되었으므로 단일 변수 실험으로 해석하지 않는다. 비교 제어기는 PPO가 아닌 고정 비례 제어기다. 초기100회와316회 정책은 각각 시간 제한과 정체로 실패했다. 최종 정책 결과는 report.json에서 읽는다. ground truth 위치 사용 및 알려진 경로 전제는 모든 행에 동일하다."
   },
   {
+    "title": "보상 설계: 원하는 행동부터 정의",
+    "kind": "flow",
+    "body": [
+      "목표 접근\n거리 감소",
+      "충돌 회피\n벽 거리·접촉",
+      "안정적 이동\n급가속·전복 억제",
+      "성공 판정\n도착·시간 제한"
+    ],
+    "notes": "진행률은 동일 목표에 대한 이전 거리와 현재 거리 차이로 계산한다. 미로 벽을 가로지르는 직선 목표 대신 도달 가능한 waypoint 또는 경로 진행률을 사용한다. 장애물을 구분할 거리·접촉 관측도 함께 설계한다.",
+    "caption": "먼저 행동과 측정값을 정한 뒤 보상 항과 가중치를 정한다."
+  },
+  {
+    "title": "보상 크기를 숫자로 비교하기",
+    "kind": "code",
+    "body": [
+      "현재 구현: r = 4 × (d_prev − d) / dt − 0.02\n                     − 0.01 × ‖a‖² + 2 × I[도달]",
+      "dt = 1/15 s, 1 cm 접근 → 진행 보상 +0.60\n1 cm 후퇴 → −0.60 / 정지·행동 0 → −0.02",
+      "‖a‖² ≤ 2 → 행동 비용은 최대 −0.02 / step"
+    ],
+    "notes": "코드 rl/maze_env.py의 실제 계수다. 1cm 접근 계산은 예시다. 매 step 진행률에 1/dt를 쓰면 같은 물리시간의 누적 보상도 제어주기에 의존한다. dt를 바꾸면 가중치와 할인율을 다시 검토한다. 현재 식은 충돌 항이 없는 기준 보상이다."
+  },
+  {
+    "title": "충돌·부드러움 항을 추가하는 법",
+    "kind": "code",
+    "body": [
+      "r = r_base − w_hit × I[충돌]\n    − w_near × max(0, d_safe − d_wall)²\n    − w_smooth × ‖a_t − a_prev‖²",
+      "d_wall: 로봇 외곽부터 벽까지의 거리\n충돌: 바닥 접촉을 제외한 차체·벽 접촉",
+      "추가 제안: 센서와 항별 로그를 구현한 뒤 재학습"
+    ],
+    "notes": "확장 의사코드이며 현재 정책에 구현·검증된 항이 아니다. ContactSensor 또는 geometry/raycast 거리 센서를 추가하고 벽 접촉만 필터한다. 조향·바퀴 명령의 부드러움을 목표로 한다면 실제 관절 속도와 변화량도 평가한다. 처음부터 큰 충돌 비용을 넣으면 정지로 회피할 수 있으므로 진행 항과 함께 크기를 측정한다."
+  },
+  {
+    "title": "보상 구현에서 놓치기 쉬운 상태",
+    "kind": "flow",
+    "body": [
+      "step 전\na_prev 보관",
+      "물리 실행 후\n거리·접촉 측정",
+      "항별 보상 계산\n각 평균 기록",
+      "종료·reset\n기준 거리 초기화"
+    ],
+    "notes": "확장 시 이전 행동을 현재 행동으로 덮어쓰기 전에 보관한다. reset은 해당 env_ids의 previous_distance와 previous_action을 초기화한다. 도달 보너스는 성공 종료 또는 최초 도달 이벤트에서 한 번만 지급한다. 목표 교체 전후 거리 비교로 가짜 진행률이 생기지 않도록 한다.",
+    "caption": "보상 항의 부호·단위·스케일을 작은 수치 예제로 먼저 검증한다."
+  },
+  {
+    "title": "cuVSLAM 입력과 출력",
+    "kind": "flow",
+    "body": [
+      "Isaac Sim\n동기화 스테레오",
+      "CameraInfo·TF\n보정·장착 위치",
+      "cuVSLAM 노드\n추적·위치추정",
+      "Odometry·TF\n주행 모듈 입력"
+    ],
+    "notes": "설치된 /opt/ros/lyrical/share/isaac_ros_cuvslam/launch 및 프로젝트 launch/cuvslam_sim.launch.py 기준. 좌우 image_0/1, camera_info_0/1의 실제 remapping을 확인한다. 초기화 성공은 이동 중 추정 정확도 합격이 아니다. 출력 토픽은 ros2 node info로 확인한다.",
+    "caption": "cuVSLAM의 위치추정 결과와 장애물 지도는 서로 다른 데이터다."
+  },
+  {
+    "title": "cuVSLAM 필수 파라미터",
+    "kind": "code",
+    "body": [
+      "use_sim_time: true\nrectified_images: true\nenable_imu_fusion: false",
+      "base_frame: base_link\nodom_frame: odom\nmap_frame: map",
+      "camera_optical_frames:\n  [sim_left_optical, sim_right_optical]"
+    ],
+    "notes": "프로젝트 launch/cuvslam_sim.launch.py의 현재 값. rectified_images=true는 실제로 정렬된 영상에만 쓴다. Sim 이상적 핀홀 스테레오를 기준으로 한다. IMU는 발행·보정·시간 정렬을 완료한 후 enable_imu_fusion을 켠다. 시각화 플래그는 디버그용이며 정확도를 보장하지 않는다."
+  },
+  {
+    "title": "카메라 보정: 무엇을 맞추나",
+    "kind": "flow",
+    "body": [
+      "해상도·내부값\nK: fx, fy, cx, cy",
+      "왜곡·정렬\nD, R",
+      "스테레오 투영\nP와 기준선",
+      "외부 변환\nbase → optical"
+    ],
+    "notes": "현재 가상 센서 예: 640×480, fx=fy=400, cx=320, cy=240, baseline=0.05m. 우측 P의 Tx=-fx×baseline=-20이다. 렌더러 실제 값과 CameraInfo가 일치해야 한다. 다른 팀·실물 카메라는 해당 보정값을 사용하며 예시 수치를 복사하지 않는다. 출처 docs/CAMERA_AND_TF.md.",
+    "caption": "카메라를 옮기거나 해상도를 바꾸면 CameraInfo와 TF도 함께 갱신한다."
+  },
+  {
+    "title": "cuVSLAM 토픽 연결과 확인",
+    "kind": "code",
+    "body": [
+      "source /opt/ros/lyrical/setup.bash\nros2 launch ./launch/cuvslam_sim.launch.py",
+      "ros2 node info /visual_slam_node\nros2 topic hz /front_stereo_camera/left/image_rect_color\nros2 topic hz /front_stereo_camera/right/image_rect_color",
+      "ros2 topic echo /clock --once\nros2 run tf2_ros tf2_echo base_link sim_left_optical"
+    ],
+    "notes": "launch는 입력 영상을 만들어주지 않는다. 먼저 Sim ROS 2 bridge가 좌우 영상, CameraInfo, clock, TF를 발행해야 한다. image_0은 left/image_rect_color, image_1은 right/image_rect_color로 매핑한다. CameraInfo도 좌우 각각 연결한다. 실제 움직이는 Sim bridge 폐루프는 아직 미검증이다."
+  },
+  {
+    "title": "시간·좌표·추적 손실 점검",
+    "kind": "flow",
+    "body": [
+      "같은 시각\n좌우 영상·보정",
+      "연속 odom\n로컬 주행 좌표",
+      "map 보정\n전역 위치 정렬",
+      "추적 손실\n명령 차단·정지"
+    ],
+    "notes": "모든 ROS 노드 use_sim_time=true와 /clock을 확인한다. map→odom→base_link→camera optical TF를 구성하되 한 변환에 발행자는 하나만 둔다. AMCL 또는 별도 EKF와 TF 발행을 중복하지 않는다. 실시간 pose timestamp가 오래되거나 추적이 끊기면 유효한 명령으로 취급하지 않는다. 임계시간은 센서 주기와 지연을 측정해 정한다.",
+    "caption": "원점·축·회전·지연을 검증한 뒤 Sim 정답 위치를 추정 위치로 교체한다."
+  },
+  {
+    "title": "자율주행 패키지 역할 분담",
+    "kind": "flow",
+    "body": [
+      "위치추정\ncuVSLAM",
+      "장애물 지도\nmap_server\ncostmap",
+      "경로·목표 관리\nNav2 planner·BT",
+      "이동 실행\n학습 정책·구동기"
+    ],
+    "notes": "Nav2 역할은 경로계획과 작업 관리, 구동 정책은 Isaac Lab에서 학습하는 방향으로 구성한다. 현재는 알려진 경로+Sim pose+PPO waypoint 정책이 구현되어 있다. Nav2 custom controller와 실시간 cuVSLAM 입력 어댑터는 추가 구현 대상이다. Nav2 기본 제어기 검증 모드는 학습 정책 모드와 구분한다.",
+    "caption": "경로계획, 위치추정, 모터 제어를 하나의 패키지가 모두 해결하지 않는다."
+  },
+  {
+    "title": "자율주행에 필요한 지도 만들기",
+    "kind": "flow",
+    "body": [
+      "제공 미로 CAD\n알려진 형상",
+      "OccupancyGrid\n해상도·원점",
+      "map_server\nmap.yaml + 이미지",
+      "costmap\n장애물·여유 거리"
+    ],
+    "notes": "권장 첫 실습은 제공 미로의 정적 점유지도를 만든 뒤 map_server로 발행하는 것이다. 현재 maze.json 경로 격자는 Nav2 map.yaml로 자동 변환된 상태가 아니다. X/Y 방향, 이미지 행 방향, origin, resolution을 변환해 RViz에서 USD 벽과 겹쳐 검증한다. cuVSLAM의 특징점 지도는 바로 주행용 2D 점유지도가 아니다.",
+    "caption": "미지 환경 확장: 깊이 센서 + nvblox 또는 2D LiDAR + slam_toolbox."
+  },
+  {
+    "title": "장애물 센서는 무엇을 쓰나",
+    "kind": "sensorchoice",
+    "body": [
+      "2D LiDAR\nLaserScan",
+      "깊이 카메라\nPointCloud2",
+      "costmap 장애물층\nmarking·clearing",
+      "InflationLayer\n로봇 주변 여유"
+    ],
+    "notes": "입력 대안이다. LiDAR를 고르면 Sim 센서→/scan→ObstacleLayer로 연결한다. 깊이는 Sim depth와 CameraInfo를 point cloud로 변환하거나 nvblox+nvblox_nav2 통합을 사용한다. RGB 두 장만 cuVSLAM에 전달해도 장애물 costmap이 자동 생성되지는 않는다. 현재 프로젝트에는 이러한 동적 장애물 파이프라인이 없다.\n출처: https://docs.nav2.org/rolling/configuration_and_development/configuration_guide/core_servers/costmap_2d/",
+    "caption": "정적 지도만으로 시작할 수 있지만, 움직이는 장애물에는 실시간 센서가 필요하다."
+  },
+  {
+    "title": "Nav2 설치와 설정 파일 준비",
+    "kind": "code",
+    "body": [
+      "sudo apt install ros-lyrical-navigation2 \\\n  ros-lyrical-nav2-bringup",
+      "source /opt/ros/lyrical/setup.bash\nNAV2_SHARE=$(ros2 pkg prefix nav2_bringup)/share/nav2_bringup",
+      "mkdir -p config\ncp \"$NAV2_SHARE/params/nav2_params.yaml\" config/nav2.yaml"
+    ],
+    "notes": "설치 및 연결 실습 명령이며 이 PC의 Nav2 주행 완료를 의미하지 않는다. 현재 시스템에서 cuVSLAM은 설치 확인했으나 Nav2는 설치되어 있지 않았다. 배포판 기본 설정 전체를 출발점으로 삼고 아래 슬라이드의 발췌 설정을 병합한다. sudo 설치는 학생 PC 관리자 권한으로 실행한다."
+  },
+  {
+    "title": "Nav2에서 팀별로 바꿀 설정",
+    "kind": "flow",
+    "body": [
+      "TF·시간\nmap, odom, base",
+      "로봇 크기\nfootprint·padding",
+      "이동 한계\n속도·가속도",
+      "지도·센서\n해상도·관측 토픽"
+    ],
+    "notes": "global_costmap은 map, local_costmap은 odom 기준으로 구성한다. robot_base_frame은 실제 base_link, odom_topic은 cuVSLAM이 출력한 실제 Odometry 토픽으로 지정한다. footprint는 팔과 부착물을 포함한 충돌 외곽을 사용한다. inflation_radius와 cost_scaling_factor는 통로 폭 및 실제 여유 거리를 함께 보며 조정한다.",
+    "caption": "M38 치수·횡이동 제한을 다른 팀 로봇에 그대로 적용하지 않는다."
+  },
+  {
+    "title": "Nav2 기본 제어기로 먼저 확인",
+    "kind": "code",
+    "body": [
+      "planner: nav2_navfn_planner::NavfnPlanner\ncontroller: nav2_mppi_controller::MPPIController",
+      "FollowPath:\n  plugin: \"nav2_mppi_controller::MPPIController\"\n  motion_model: \"omni\"\n  omni:\n    plugin: \"mppi::OmniMotionModel\"",
+      "발췌 예시: 실제 설치 버전의 기본 설정과 병합"
+    ],
+    "notes": "이 코드는 Lyrical의 plugin 기반 motion model 문법 예시다. NavFn의 실제 plugin type은 설치본에서 확인한다. 차동구동은 DiffDriveMotionModel, 조향차는 AckermannMotionModel을 선택한다. 전방/횡/각속도 및 가속도 제한을 실제 로봇 구동 한계와 맞춘다. 기본 MPPI 검증 모드는 강화학습 주행 성공으로 보고하지 않는다.\n출처: https://ros-navigation.github.io/mkdocs.nav2.org/rolling/configuration_and_development/migration_guides/kilted/Kilted/\nhttps://github.com/ros-navigation/navigation2/blob/main/nav2_mppi_controller/README.md"
+  },
+  {
+    "title": "학습 정책을 Nav2에 연결하는 법",
+    "kind": "flow",
+    "body": [
+      "Nav2 전역 경로\nPath + 목표",
+      "정책 어댑터\n좌표·관측 12차원",
+      "PPO 추론\n주행 명령 2차원",
+      "로봇 구동기\n관절·속도 제한"
+    ],
+    "notes": "두 구현 방식 중 하나를 택한다. 1) ComputePathToPose 액션으로 경로를 받고 별도 PPO 노드가 waypoint 추종. 2) nav2_core Controller 인터페이스를 구현한 사용자 플러그인이 저장 정책 추론. 두 번째는 Lyrical 설치본의 controller API를 따라야 하며 controller_server 및 progress/goal checker와 연결한다. 현재 프로젝트는 둘 다 아직 구현되지 않았다. 학습에서 사용하는 world XY와 배포 map/odom 좌표를 정렬하고 loop closure 영향을 다룬다.",
+    "caption": "MPPI와 PPO를 동시에 cmd_vel에 발행하지 않는다. 실행 모드는 하나를 선택한다."
+  },
+  {
+    "title": "현재 정책을 연결할 때 남은 작업",
+    "kind": "flow",
+    "body": [
+      "위치 입력 교체\nSim → cuVSLAM",
+      "관측 일치\n속도·yaw·관절",
+      "행동 좌표 변환\nworld XY → body",
+      "정지 조건\n지연·목표·충돌"
+    ],
+    "notes": "현재 PPO는 world XY 이동과 yaw=0 유지 조건으로 학습했다. Nav2 일반 목표는 목표 yaw와 장애물 회피를 포함하므로 그대로 drop-in 대체할 수 없다. 최종 방향 목표와 장애물 관측을 확장하거나 과제를 동일하게 제한해 다시 평가한다. 정책 입력에 추정 노이즈·지연을 추가해 재학습하고 정체·tracking loss를 검사한다.",
+    "caption": "현재 2차원 정책은 모든 로봇·모든 Nav2 목표에 바로 적용되는 제어기가 아니다."
+  },
+  {
+    "title": "Nav2 실행 순서와 목표 보내기",
+    "kind": "code",
+    "body": [
+      "1. Sim 센서·관절 → TF·clock → cuVSLAM 추적 확인\n2. map_server를 시작하고 지도 원점 정렬·활성화",
+      "ros2 launch nav2_bringup navigation_launch.py \\\n  use_sim_time:=true params_file:=$PWD/config/nav2.yaml",
+      "3. RViz에서 map·TF·costmap·경로 확인\n4. Nav2 Goal 지정 → 실제 변위·도착 결과 확인"
+    ],
+    "notes": "사전 조건: 정적 map_server는 별도 실행 및 lifecycle configure/activate, 또는 사용자 launch에서 lifecycle_manager로 관리한다. navigation_launch만으로 map_server와 localization이 모두 켜진다고 가정하지 않는다. AMCL은 cuVSLAM 대신 사용할 대안이며 같은 TF를 동시에 발행하지 않는다. 로봇 브리지 cmd_vel 메시지 타입은 ros2 topic type으로 확인한다. Twist와 TwistStamped가 다르면 어댑터 또는 지원 파라미터를 맞춘다."
+  },
+  {
+    "title": "자동 주행 검증 체크포인트",
+    "kind": "flow",
+    "body": [
+      "센서 단독\n동기·보정·지연",
+      "추정 단독\n직선·회전 오차",
+      "경로·구동\n코너·정체·정지",
+      "통합 평가\n완주·충돌·재현"
+    ],
+    "notes": "Sim ground truth는 평가 기준으로 별도 기록하고 추정 TF와 섞지 않는다. 여러 시작점과 목표에서 완주율, 충돌 횟수, 정체 시간, 목표 오차, 추적 손실을 측정한다. 현재 완료 범위는 PhysX 이동과 PPO 학습·평가이며 실시간 cuVSLAM+Nav2+PPO 통합은 미완료다.",
+    "caption": "패키지가 실행되는 것과 실제 폐루프 자율주행 성공은 각각 확인한다."
+  },
+  {
+    "title": "costmap 설정 예시: LiDAR 입력",
+    "kind": "code",
+    "body": [
+      "obstacle_layer:\n  plugin: \"nav2_costmap_2d::ObstacleLayer\"\n  observation_sources: scan",
+      "  scan:\n    topic: /scan\n    data_type: \"LaserScan\"\n    marking: true\n    clearing: true",
+      "local/global_costmap의 plugins 목록에도 등록한다."
+    ],
+    "notes": "기본 nav2.yaml의 costmap ros__parameters 아래에 병합할 발췌 예시다. 실제로 /scan이 발행될 때만 사용한다. 센서 range와 raytrace 범위, 장애물 최대/최소 높이를 USD 벽과 센서 장착 높이에 맞게 조정한다. footprint·inflation_layer는 별도 설정이다. 아직 실행 검증되지 않은 구성 예시.\n출처: https://docs.nav2.org/rolling/configuration_and_development/configuration_guide/core_servers/costmap_2d/"
+  },
+  {
+    "title": "정적 지도 서버 활성화",
+    "kind": "code",
+    "body": [
+      "ros2 run nav2_map_server map_server --ros-args \\\n  -p use_sim_time:=true -p yaml_filename:=$PWD/maps/maze.yaml",
+      "별도 터미널에서:\nros2 lifecycle set /map_server configure\nros2 lifecycle set /map_server activate",
+      "ros2 topic info /map\nRViz: 지도 벽과 Sim 좌표·로봇 위치가 일치하는지 확인"
+    ],
+    "notes": "maps/maze.yaml과 PGM/PNG를 먼저 생성해야 한다. 현재 저장소에는 Nav2 점유지도 변환 산출물이 아직 없다. YAML의 image, resolution, origin, negate, occupied_thresh, free_thresh를 지정한다. map origin과 cuVSLAM map frame의 시작 위치 차이를 보정해야 한다. 별도 map_server를 수동 활성화하는 실습 예시이며 통합 launch에서는 lifecycle_manager로 관리한다."
+  },
+  {
     "title": "팀별 검증과 제출",
     "kind": "flow",
     "body": [
       "모델 검증\nURDF·USD 참조",
       "학습 기록\n설정·곡선",
       "실제 평가\n성공·실패·궤적",
-      "재현 자료\nGit·PNG·GIF"
+      "재현 자료\n설정·PNG·GIF"
     ],
     "notes": "제출물에는 설치법과 모델 구조, 관측/행동 차원, 보상 항별 설명, 실행 명령, 체크포인트, 고정 조건 평가 결과를 포함한다. 미완료 조건을 명시한다. 팀별 URDF/USD가 다르므로 시연 결과를 자기 팀 로봇의 성공으로 재사용하지 않는다.",
     "caption": "모든 팀은 자기 로봇으로 같은 검증 절차를 실행한다."

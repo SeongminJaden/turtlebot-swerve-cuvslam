@@ -1,0 +1,19 @@
+{
+  "id": "19UfjZpjlP2RR7iLeboQTa_h0JFBVk2P_-Yz-u_tQ-eA",
+  "url": "https://docs.google.com/presentation/d/19UfjZpjlP2RR7iLeboQTa_h0JFBVk2P_-Yz-u_tQ-eA",
+  "slide_count": 54,
+  "status": "simulation qualified; native videos and GIF playback verified",
+  "results": "evidence/2026-10-26/predictive-final-summary.json",
+  "native_readback_sha256": "e722b6ed0be85c98bbe7ffad90e698755ae995e902e42e2402ea9bbef5e965d2",
+  "local_pptx": "older version; final native PPTX export unavailable (403)",
+  "scope": "two specified maze routes, nominal geometry/noise; physical robot not qualified",
+  "updated_date": "2026-10-27",
+  "edit": "질문형 문구 10곳 정리; 전체 표 27개 검정 헤더·흰 글씨 및 흰색/연회색 본문 적용",
+  "local_pdf": "teaching/output/팀별로봇_미로_RL_핵심교안_54장.pdf",
+  "official_video_verified": {
+    "id": "Eq4dH7VEGHA",
+    "currentTime": 25.652755,
+    "paused": false,
+    "readyState": 4
+  }
+}

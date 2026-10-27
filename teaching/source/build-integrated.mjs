@@ -21,8 +21,8 @@ p.slides.items[0].shapes.items[3].text.replace(p.slides.items[0].shapes.items[3]
 p.slides.items[0].shapes.items[4].text.replace(p.slides.items[0].shapes.items[4].text.toString(),'팀별 URDF·USD로 실습 / 시연: M38');
 title(p.slides.items[16],'기초 실습 체크포인트',17);
 const originals={
-  4:['Git 실습: 팀 모델의 출발점',['작업 브랜치\ngit switch -c','모델 추가\ngit add assets','변경 검토\ngit diff --cached','기록\ngit commit'],'작업 시작 전 git status로 기존 수정사항을 확인한다.'],
-  5:['Git 실습: 구현과 검증 이력',['모델 커밋','제어 커밋','학습 설정 커밋','평가 결과 기록'],'git log --oneline, git show로 변경 원인과 실행 결과를 연결한다.'],
+  4:['자율주행 실습의 네 단계',['모델 검증\nURDF·USD','위치추정\ncuVSLAM','주행 정책\nIsaac Lab','통합 평가\nIsaac Sim'],'센서·위치·행동·물리 결과를 단계별로 확인한다.'],
+  5:['위치추정과 자율주행의 차이',['내 위치는?\ncuVSLAM','어디로 갈까?\n경로계획','어떻게 움직일까?\n정책·구동기','실제로 도착했나?\n평가'],'위치추정만 실행해도 자율주행이 완성되는 것은 아니다.'],
   6:['팀별 프로젝트 구조',['assets/\nURDF·USD·미로','rl/\n환경·정책·학습','scripts/\n변환·실행·촬영','evidence/\n로그·포즈·영상'],'공통 학습 흐름과 로봇 고유 설정을 분리한다.'],
   7:['URDF와 USD 모델 검증',['트리·참조\n모델 로드','단위·축\n관절 비교','물성·충돌\n정지 상태','구동 검증\n방향·제한'],'겉모습이 정상이어도 articulation root와 충돌 설정은 별도 확인한다.'],
   9:['코드 작성과 검증 순서',['모델 정보\n이름·축·치수','입력 변환\n로봇별 운동학','단위 테스트\n부호·포화','물리 실행\n변위·접촉'],'시연의 스워브 운동학은 다른 구조의 로봇에 맞게 바꾼다.'],
@@ -36,6 +36,9 @@ for(let i=0;i<lessons.length;i++){
  s.speakerNotes.text=d.notes+'\n\n구현 출처: rl/maze_env.py, rl/policy.py, rl/train_ppo.py, rl/evaluate.py. 시연 데이터: evidence/2026-10-26.\nIsaac Lab 소스: https://github.com/isaac-sim/IsaacLab/tree/78b12aed1d2a56439493b8ea6d3538e6e379e2e5\nPPO 원 논문: https://arxiv.org/abs/1707.06347';
  if(d.kind==='flow')flow(s,d.body,d.caption,['환경 클래스의 실행 순서','PPO 학습 루프','학습과 실행의 차이','정체 현상의 진단 흐름','학습이 안 될 때 점검 순서'].includes(d.title));
  if(d.kind==='gif'){await image(s,'evidence/2026-10-26/maze-eval-100/render/isaacsim-recorded-motion.gif',180,140,600,340);text(s,'실제 PhysX 기록 재생 / 0~40초 구간 / 약 7배속 / 초기 정책의 정체 사례',65,477,830,32,18);}
+ if(d.kind==='sensorchoice'){
+ const l=box(s,'2D LiDAR\nLaserScan',65,170,260,80),dep=box(s,'깊이 카메라\nPointCloud2',65,345,260,80),cm=box(s,'costmap 장애물층\nmarking·clearing',400,245,245,100),inf=box(s,'InflationLayer\n주변 여유 거리',715,245,180,100);connect(s,l,cm);connect(s,dep,cm);connect(s,cm,inf);text(s,'센서 대안 중 하나를 선택하거나 함께 사용한다.',65,460,830,35,20);
+ }
  if(d.kind==='code'){text(s,d.body.join('\n\n'),65,160,830,310,22);}
  if(d.kind==='image'){await image(s,d.image,65,155,500,315);text(s,d.body.join('\n\n'),590,165,300,300,23);}
  if(d.kind==='chart'){
@@ -80,6 +83,10 @@ redrawAt('보상 설계 실수와 수정',s=>{const values=[['관찰한 현상',
 {const j=lessons.findIndex(x=>x.title==='체크포인트 저장과 이어 학습');text(p.slides.items[17+j],'최신 파일보다 고정 조건 평가 결과를 기준으로 정책을 선택한다.',65,465,830,35,20);}
 // Replace old static captures with current maze evidence when available.
 try{const s=p.slides.items[12];clear(s);title(s,'시연: 제공 미로와 로봇',13);await image(s,'evidence/2026-10-26/maze-eval-100/render/maze-overview.png',150,140,660,340);}catch{}
+for(const sl of p.slides.items){
+ for(const sh of sl.shapes.items){const old=sh.text.toString();const val=old.replaceAll('Git 이력, 로그, 캡처','설정, 로그, 캡처').replaceAll('Git 커밋 / 재현 명령 / 테스트 로그','설정 파일 / 재현 명령 / 테스트 로그');if(val!==old)sh.text.replace(old,val);}
+ if(sl.speakerNotes?.text)sl.speakerNotes.text=sl.speakerNotes.text.split('\n').filter(v=>!(/\bgit\b|커밋|브랜치/i.test(v))).join('\n');
+}
 const {applyPresentationChartFont}=await import('/home/seongmin/.codex/plugins/cache/openai-primary-runtime/presentations/26.1025.11240/skills/presentations/container_tools/artifact_tool_utils.mjs');
 for(const sl of p.slides.items)for(const ch of sl.charts.items)applyPresentationChartFont(ch,{fontFamily:FONT});
 await fs.writeFile('build/lecture/outline.json',JSON.stringify(p.slides.items.map((s,i)=>({slide:i+1,text:s.shapes.items.map(x=>x.text.toString())})),null,2));
