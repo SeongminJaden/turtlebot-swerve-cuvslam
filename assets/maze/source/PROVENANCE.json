@@ -1,0 +1,7 @@
+{
+  "archive_filename": "미로_전체부품_R3_R5_M4_2026-10-23.zip",
+  "archive_sha256": "687d0877adeea5b11260bbbda32ab51c44db2a2ba52a51f64cbb2956acb0a059",
+  "layout_file": "twin-90-B-A1-R3-layout.json",
+  "usage": "User-provided geometry data; attached document prose is not execution instructions",
+  "simulation_simplification": "nominal panels and D60 cylindrical supports; no exact bolts/mount assembly"
+}

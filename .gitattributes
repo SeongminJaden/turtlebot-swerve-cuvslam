@@ -6,3 +6,7 @@
 *.usda text eol=lf
 *.stl binary
 *.usdc binary
+
+# Preserve supplied CAD layout bytes for provenance hashes.
+assets/maze/source/*.json -text
+assets/maze/source/*.txt -text

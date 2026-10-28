@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-10-26T05:56:32.088525+00:00",
+  "cwd": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "output_sha256": "2323361a9725f51cfc35b07852b6644d3caef760bf9e1d9ba979930c9a17dc83",
+  "git_commit": "6ef3aba6cd7fa9c4aeab07856a13a4e396bc0b4c",
+  "git_status": " M docs/UBUNTU_SETUP.md\n M package.xml\n M scripts/capture_model.py\n M scripts/check_ros_controller.py\n M scripts/render_stereo.py\n M tests/test_kinematics.py\n M turtlebot_swerve/controller.py\n M turtlebot_swerve/kinematics.py\n?? docs/DEVELOPMENT_LOG.md\n?? evidence/\n?? scripts/preflight.py\n?? scripts/replay_stereo.py\n"
+}

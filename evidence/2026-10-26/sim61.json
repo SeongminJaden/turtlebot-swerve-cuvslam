@@ -1,0 +1,23 @@
+{
+  "status": "PASS_STEREO_RENDER",
+  "version": "6.1.0.0",
+  "cameras": [
+    {
+      "side": "left",
+      "shape": [
+        480,
+        640,
+        4
+      ]
+    },
+    {
+      "side": "right",
+      "shape": [
+        480,
+        640,
+        4
+      ]
+    }
+  ],
+  "scope": "render only; no dynamics or ROS tracking"
+}

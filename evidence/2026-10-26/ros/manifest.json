@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-10-26T05:49:31.653290+00:00",
+  "cwd": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam",
+  "command": [
+    "python3",
+    "scripts/check_ros_controller.py"
+  ],
+  "exit_code": 0,
+  "output_sha256": "90a2add4cc28e9723abc4358b45c56e5bbeacb67ee5c1e3aaa2fe2296d93c489",
+  "git_commit": "ff09d94cb87c3d5419999ddd491a4b715ecb372a",
+  "git_status": "?? evidence/\n?? launch/swerve_control.launch.py\n?? package.xml\n?? resource/\n?? scripts/capture_model.py\n?? scripts/check_ros_controller.py\n?? scripts/record_command.py\n?? setup.cfg\n?? setup.py\n?? tests/\n?? turtlebot_swerve/\n"
+}

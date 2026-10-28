@@ -1,0 +1,48 @@
+#usda 1.0
+(
+    "Uniform cylinder collision-proxy wheel inertias. Mass remains an assumed scenario, not measured hardware calibration."
+    defaultPrim = "Robot"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Robot" (
+    prepend references = @./m38_active_camera_demo.usda@
+)
+{
+    over "lh1_wheel" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float3 physics:diagonalInertia = (0.000070627815, 0.000039142033, 0.000039142033)
+        quatf physics:principalAxes = (1, 0, 0, 0)
+    }
+
+    over "rh1_wheel" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float3 physics:diagonalInertia = (0.000070627815, 0.000039142033, 0.000039142033)
+        quatf physics:principalAxes = (1, 0, 0, 0)
+    }
+
+    over "lh2_wheel" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float3 physics:diagonalInertia = (0.000039142033, 0.000070627815, 0.000039142033)
+        quatf physics:principalAxes = (1, 0, 0, 0)
+    }
+
+    over "rh2_wheel" (
+        prepend apiSchemas = ["PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float3 physics:diagonalInertia = (0.000039142033, 0.000070627815, 0.000039142033)
+        quatf physics:principalAxes = (1, 0, 0, 0)
+    }
+}

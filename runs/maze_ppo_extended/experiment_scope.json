@@ -1,0 +1,10 @@
+{
+  "reset_distribution": "forward route +12 only",
+  "steering_endstop_hysteresis_in_training": false,
+  "observations": "12D simulator ground truth; no SLAM pose",
+  "actions": "PPO world vx/vy, analytic joint allocation",
+  "num_envs": 8,
+  "rollout_steps": 64,
+  "seed": 7,
+  "physics": "Isaac Sim 6.1 PhysX via Isaac Lab 78b12ae"
+}

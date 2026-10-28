@@ -1,0 +1,177 @@
+[
+  {
+    "iteration": 522,
+    "transitions": 267264,
+    "mean_reward": 0.14023829996585846,
+    "mean_action_std": 0.4553752541542053,
+    "elapsed_s": 2.249552818999746
+  },
+  {
+    "iteration": 523,
+    "transitions": 267776,
+    "mean_reward": 0.15872833132743835,
+    "mean_action_std": 0.4553605318069458,
+    "elapsed_s": 4.109969633999754
+  },
+  {
+    "iteration": 524,
+    "transitions": 268288,
+    "mean_reward": 0.2173953801393509,
+    "mean_action_std": 0.45526114106178284,
+    "elapsed_s": 5.978544534999855
+  },
+  {
+    "iteration": 525,
+    "transitions": 268800,
+    "mean_reward": 0.18903768062591553,
+    "mean_action_std": 0.45512741804122925,
+    "elapsed_s": 7.789573179999934
+  },
+  {
+    "iteration": 526,
+    "transitions": 269312,
+    "mean_reward": 0.16673529148101807,
+    "mean_action_std": 0.45491528511047363,
+    "elapsed_s": 9.622640804999719
+  },
+  {
+    "iteration": 527,
+    "transitions": 269824,
+    "mean_reward": 0.18037822842597961,
+    "mean_action_std": 0.45461851358413696,
+    "elapsed_s": 11.515515209000114
+  },
+  {
+    "iteration": 528,
+    "transitions": 270336,
+    "mean_reward": 0.18755997717380524,
+    "mean_action_std": 0.4547519087791443,
+    "elapsed_s": 13.313724415999786
+  },
+  {
+    "iteration": 529,
+    "transitions": 270848,
+    "mean_reward": 0.22789250314235687,
+    "mean_action_std": 0.4549325108528137,
+    "elapsed_s": 15.109555613999873
+  },
+  {
+    "iteration": 530,
+    "transitions": 271360,
+    "mean_reward": 0.19144853949546814,
+    "mean_action_std": 0.4545823633670807,
+    "elapsed_s": 16.9918308299998
+  },
+  {
+    "iteration": 531,
+    "transitions": 271872,
+    "mean_reward": 0.12659874558448792,
+    "mean_action_std": 0.4543045163154602,
+    "elapsed_s": 18.74739704800004
+  },
+  {
+    "iteration": 532,
+    "transitions": 272384,
+    "mean_reward": 0.20819559693336487,
+    "mean_action_std": 0.45431703329086304,
+    "elapsed_s": 20.518708080000124
+  },
+  {
+    "iteration": 533,
+    "transitions": 272896,
+    "mean_reward": 0.22159966826438904,
+    "mean_action_std": 0.4542105495929718,
+    "elapsed_s": 22.53329520999978
+  },
+  {
+    "iteration": 534,
+    "transitions": 273408,
+    "mean_reward": 0.19856083393096924,
+    "mean_action_std": 0.4540039598941803,
+    "elapsed_s": 24.495465903999957
+  },
+  {
+    "iteration": 535,
+    "transitions": 273920,
+    "mean_reward": 0.1890694797039032,
+    "mean_action_std": 0.45386117696762085,
+    "elapsed_s": 26.302863552999952
+  },
+  {
+    "iteration": 536,
+    "transitions": 274432,
+    "mean_reward": 0.13049852848052979,
+    "mean_action_std": 0.4539937376976013,
+    "elapsed_s": 28.342302412999743
+  },
+  {
+    "iteration": 537,
+    "transitions": 274944,
+    "mean_reward": 0.19300439953804016,
+    "mean_action_std": 0.45454514026641846,
+    "elapsed_s": 30.262450953000098
+  },
+  {
+    "iteration": 538,
+    "transitions": 275456,
+    "mean_reward": 0.16782033443450928,
+    "mean_action_std": 0.45535901188850403,
+    "elapsed_s": 32.172857957999895
+  },
+  {
+    "iteration": 539,
+    "transitions": 275968,
+    "mean_reward": 0.10225870460271835,
+    "mean_action_std": 0.455988347530365,
+    "elapsed_s": 34.01188882999986
+  },
+  {
+    "iteration": 540,
+    "transitions": 276480,
+    "mean_reward": 0.1473199427127838,
+    "mean_action_std": 0.4564818739891052,
+    "elapsed_s": 35.77899839800011
+  },
+  {
+    "iteration": 541,
+    "transitions": 276992,
+    "mean_reward": 0.10910267382860184,
+    "mean_action_std": 0.4570332169532776,
+    "elapsed_s": 37.743713279000076
+  },
+  {
+    "iteration": 542,
+    "transitions": 277504,
+    "mean_reward": 0.1461869478225708,
+    "mean_action_std": 0.4575374126434326,
+    "elapsed_s": 39.53241296199985
+  },
+  {
+    "iteration": 543,
+    "transitions": 278016,
+    "mean_reward": 0.1639660745859146,
+    "mean_action_std": 0.45770764350891113,
+    "elapsed_s": 41.357523624999885
+  },
+  {
+    "iteration": 544,
+    "transitions": 278528,
+    "mean_reward": 0.19173729419708252,
+    "mean_action_std": 0.4577363431453705,
+    "elapsed_s": 43.1049279089998
+  },
+  {
+    "iteration": 545,
+    "transitions": 279040,
+    "mean_reward": 0.17073704302310944,
+    "mean_action_std": 0.4580335021018982,
+    "elapsed_s": 44.94260832000009
+  },
+  {
+    "iteration": 546,
+    "transitions": 279552,
+    "mean_reward": 0.16719003021717072,
+    "mean_action_std": 0.45832759141921997,
+    "elapsed_s": 46.87473918900014
+  }
+]

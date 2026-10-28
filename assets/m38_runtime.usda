@@ -1,0 +1,19 @@
+#usda 1.0
+(
+    defaultPrim = "Robot"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Robot" (
+    delete apiSchemas = ["PhysicsArticulationRootAPI"]
+    prepend references = @./m38_arm_description/usd/m38_arm.usdc@
+)
+{
+    over "base_link" (
+        prepend apiSchemas = ["PhysicsArticulationRootAPI"]
+    )
+    {
+    }
+}
+

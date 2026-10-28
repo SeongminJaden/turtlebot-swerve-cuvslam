@@ -9,5 +9,13 @@
   "cuda_minimum_for_isaac_ros": "13.2",
   "nvidia_driver_minimum_for_isaac_ros": "595",
   "asset_revision": "CAD136 / R36_M38 with synthetic stereo frames",
-  "runtime_verified_on_target": false
+  "runtime_verified_on_target": false,
+  "validation_scopes": {
+    "swerve_kinematics": "passed",
+    "ros_controller_synthetic_feedback": "passed",
+    "static_stereo_render": "passed_before_environment_rebuild",
+    "cuvslam_recorded_stereo_initialization": "passed_with_frame_delay_warnings",
+    "physical_driving": "not_verified",
+    "live_slam": "not_verified"
+  }
 }

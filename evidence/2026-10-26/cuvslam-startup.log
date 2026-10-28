@@ -1,0 +1,14 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-26-14-54-54-388602-ros-18104
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-1]: process started with pid [18124]
+[component_container-1] [INFO] [1792994094.772004339] [cuvslam_container]: Load Library: /opt/ros/lyrical/lib/libisaac_ros_cuvslam_node.so
+[component_container-1] [INFO] [1792994095.365189906] [cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1792994095.365246386] [cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1792994095.677555853] [visual_slam_node]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1792994095.677604176] [visual_slam_node]: Tracking mode: Multicamera
+[component_container-1] [INFO] [1792994095.708306922] [visual_slam_node]: Time taken by cuvslam::WarmUpGPU(): 0.030700
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/visual_slam_node' in container '/cuvslam_container'
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [component_container-1]: sending signal 'SIGINT' to process[component_container-1]
+[component_container-1] [INFO] [1792994106.159837393] [rclcpp]: signal_handler(signum=2)
+[ERROR] [component_container-1]: process has died [pid 18124, exit code -2, cmd '/opt/ros/lyrical/lib/rclcpp_components/component_container --ros-args -r __node:=cuvslam_container -r __ns:=/'].

@@ -1,0 +1,163 @@
+[
+  {
+    "id": "tune_reward_base",
+    "after": "p60",
+    "role": "보상 설계",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_reward_scale",
+    "after": "p60",
+    "role": "보상 설계",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_reward_collision",
+    "after": "p60",
+    "role": "보상 설계",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_reward_corner",
+    "after": "p60",
+    "role": "보상 설계",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_reward_smooth",
+    "after": "p60",
+    "role": "보상 설계",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_reward_goal",
+    "after": "p60",
+    "role": "보상 설계",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_reward_observation",
+    "after": "p60",
+    "role": "보상 설계",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_ppo_lr",
+    "after": "p38",
+    "role": "PPO 튜닝",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_ppo_explore",
+    "after": "p38",
+    "role": "PPO 튜닝",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_ppo_horizon",
+    "after": "p38",
+    "role": "PPO 튜닝",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_ppo_checks",
+    "after": "p38",
+    "role": "PPO 튜닝",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_env_train",
+    "after": "p49",
+    "role": "학습 환경",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_ablation",
+    "after": "p52",
+    "role": "실험 비교",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_cuvslam_tune",
+    "after": "p65",
+    "role": "센서 설정",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_nav2_tune",
+    "after": "p70",
+    "role": "Nav2 설정",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_nav2_mppi",
+    "after": "p71",
+    "role": "Nav2 설정",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_swerve_geom",
+    "after": "append",
+    "role": "스워브 부록",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_swerve_math",
+    "after": "append",
+    "role": "스워브 부록",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_swerve_flip",
+    "after": "append",
+    "role": "스워브 부록",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_swerve_lab",
+    "after": "append",
+    "role": "스워브 부록",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_swerve_lab_env",
+    "after": "append",
+    "role": "스워브 부록",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_swerve_nav2",
+    "after": "append",
+    "role": "스워브 부록",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  },
+  {
+    "id": "tune_swerve_debug",
+    "after": "append",
+    "role": "스워브 부록",
+    "exemplar": "p56",
+    "method": "duplicateObject"
+  }
+]

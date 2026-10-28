@@ -1,0 +1,53 @@
+{
+  "scope": "Package availability only, not runtime or tracking success",
+  "ros_distro": "lyrical",
+  "free_bytes": 11896524800,
+  "checks": [
+    {
+      "name": "GPU driver",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total",
+        "--format=csv"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "output": "name, driver_version, memory.total [MiB]\nNVIDIA GeForce RTX 5060 Laptop GPU, 595.91.07, 8151 MiB\n"
+    },
+    {
+      "name": "Pinned Isaac Sim package",
+      "command": [
+        "/home/seongmin/isaacsim6_venv/bin/python",
+        "-c",
+        "from importlib.metadata import version; v=version(\"isaacsim\"); print(v); assert v==\"6.1.0.0\""
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "output": "6.1.0.0\n"
+    },
+    {
+      "name": "ROS environment",
+      "command": [
+        "ros2",
+        "pkg",
+        "prefix",
+        "rclpy"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "output": "/opt/ros/lyrical\n"
+    },
+    {
+      "name": "cuVSLAM package",
+      "command": [
+        "ros2",
+        "pkg",
+        "prefix",
+        "isaac_ros_cuvslam"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "output": "/opt/ros/lyrical\n"
+    }
+  ]
+}

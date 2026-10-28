@@ -1,0 +1,79 @@
+[
+  {
+    "run": "predictive-v5-amcl",
+    "outcome": "success",
+    "validated_success": false,
+    "sim_seconds": 41.34,
+    "real_time_factor": 0.9993142770214825,
+    "physics_peak_speed_m_s": 0.9495384693145752,
+    "peak_nonwheel_contact_force_N": 53.11518096923828,
+    "actual_goal_error_m": 0.14000781910690063,
+    "simultaneous_motion_fraction": 0.5062893081761006
+  },
+  {
+    "run": "predictive-v5-curvature",
+    "outcome": "success",
+    "validated_success": false,
+    "sim_seconds": 58.89,
+    "real_time_factor": 1.0005701748036797,
+    "physics_peak_speed_m_s": 0.9099946618080139,
+    "peak_nonwheel_contact_force_N": 18.089920043945312,
+    "actual_goal_error_m": 0.03100478904995662,
+    "simultaneous_motion_fraction": 0.5320088300220751
+  },
+  {
+    "run": "predictive-v5-ekf-curvature",
+    "outcome": "tracking_quality_fault",
+    "validated_success": false,
+    "sim_seconds": 9.49,
+    "real_time_factor": 1.0025685207553796,
+    "physics_peak_speed_m_s": 0.3728916049003601,
+    "peak_nonwheel_contact_force_N": 0.0,
+    "actual_goal_error_m": 2.4334239601811425,
+    "simultaneous_motion_fraction": 0.3013698630136986
+  },
+  {
+    "run": "predictive-v5-gui-repeat",
+    "outcome": "tracking_quality_fault",
+    "validated_success": false,
+    "sim_seconds": 61.49,
+    "real_time_factor": 1.0002136979745035,
+    "physics_peak_speed_m_s": 0.5526784062385559,
+    "peak_nonwheel_contact_force_N": 259.71356201171875,
+    "actual_goal_error_m": 3.248666457151999,
+    "simultaneous_motion_fraction": 0.46511627906976744
+  },
+  {
+    "run": "predictive-v5-level-frame",
+    "outcome": "tracking_quality_fault",
+    "validated_success": false,
+    "sim_seconds": 49.660000000000004,
+    "real_time_factor": 1.0005345022738494,
+    "physics_peak_speed_m_s": 0.9799980521202087,
+    "peak_nonwheel_contact_force_N": 162.5357208251953,
+    "actual_goal_error_m": 3.192220452814068,
+    "simultaneous_motion_fraction": 0.46335078534031415
+  },
+  {
+    "run": "predictive-v5-near-field",
+    "outcome": "success",
+    "validated_success": true,
+    "sim_seconds": 64.415,
+    "real_time_factor": 1.0003155449614154,
+    "physics_peak_speed_m_s": 0.8999167680740356,
+    "peak_nonwheel_contact_force_N": 0.0,
+    "actual_goal_error_m": 0.03706484779732514,
+    "simultaneous_motion_fraction": 0.5247225025227044
+  },
+  {
+    "run": "predictive-v5-slew",
+    "outcome": "success",
+    "validated_success": false,
+    "sim_seconds": 102.31,
+    "real_time_factor": 1.0002779301901905,
+    "physics_peak_speed_m_s": 0.7780139446258545,
+    "peak_nonwheel_contact_force_N": 33.97536849975586,
+    "actual_goal_error_m": 0.055527346528702705,
+    "simultaneous_motion_fraction": 0.42249047013977126
+  }
+]

@@ -1,0 +1,380 @@
+{
+  "robot": "m38_swerve_4kg",
+  "source": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/urdf/m38_arm.urdf",
+  "scope": "URDF names, graph and mesh paths only; USD equivalence, axes, inertia and dynamics need separate checks",
+  "status": "PASS_STRUCTURE_ONLY",
+  "roots": [
+    "base_link"
+  ],
+  "links": [
+    "base_link",
+    "lh1_wheel",
+    "lh1_steer",
+    "rh1_wheel",
+    "rh1_steer",
+    "lh2_wheel",
+    "lh2_steer",
+    "rh2_wheel",
+    "rh2_steer",
+    "arm_link1",
+    "arm_link2",
+    "arm_link3",
+    "arm_link4",
+    "arm_link5",
+    "sim_left_optical",
+    "sim_right_optical"
+  ],
+  "joints": [
+    {
+      "name": "lh1_steer_joint",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "lh1_steer",
+      "origin": {
+        "xyz": "0.1 0.1 0.1731",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 0 1"
+      },
+      "limit": {
+        "effort": "1.0",
+        "velocity": "1.0",
+        "lower": "-1.5707963267948966",
+        "upper": "1.5707963267948966"
+      },
+      "mimic": null
+    },
+    {
+      "name": "lh1_wheel_joint",
+      "type": "continuous",
+      "parent": "lh1_steer",
+      "child": "lh1_wheel",
+      "origin": {
+        "xyz": "-0.00025 0 -0.1401",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "1 0 0"
+      },
+      "limit": {
+        "effort": "1.0",
+        "velocity": "10.0"
+      },
+      "mimic": null
+    },
+    {
+      "name": "rh1_steer_joint",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "rh1_steer",
+      "origin": {
+        "xyz": "0.1 -0.1 0.1731",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 0 1"
+      },
+      "limit": {
+        "effort": "1.0",
+        "velocity": "1.0",
+        "lower": "-1.5707963267948966",
+        "upper": "1.5707963267948966"
+      },
+      "mimic": null
+    },
+    {
+      "name": "rh1_wheel_joint",
+      "type": "continuous",
+      "parent": "rh1_steer",
+      "child": "rh1_wheel",
+      "origin": {
+        "xyz": "-0.00025 0 -0.1401",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "1 0 0"
+      },
+      "limit": {
+        "effort": "1.0",
+        "velocity": "10.0"
+      },
+      "mimic": null
+    },
+    {
+      "name": "lh2_steer_joint",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "lh2_steer",
+      "origin": {
+        "xyz": "-0.1 0.1 0.1731",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 0 1"
+      },
+      "limit": {
+        "effort": "1.0",
+        "velocity": "1.0",
+        "lower": "-1.5707963267948966",
+        "upper": "1.5707963267948966"
+      },
+      "mimic": null
+    },
+    {
+      "name": "lh2_wheel_joint",
+      "type": "continuous",
+      "parent": "lh2_steer",
+      "child": "lh2_wheel",
+      "origin": {
+        "xyz": "0 -0.00025 -0.1401",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 1 0"
+      },
+      "limit": {
+        "effort": "1.0",
+        "velocity": "10.0"
+      },
+      "mimic": null
+    },
+    {
+      "name": "rh2_steer_joint",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "rh2_steer",
+      "origin": {
+        "xyz": "-0.1 -0.1 0.1731",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 0 1"
+      },
+      "limit": {
+        "effort": "1.0",
+        "velocity": "1.0",
+        "lower": "-1.5707963267948966",
+        "upper": "1.5707963267948966"
+      },
+      "mimic": null
+    },
+    {
+      "name": "rh2_wheel_joint",
+      "type": "continuous",
+      "parent": "rh2_steer",
+      "child": "rh2_wheel",
+      "origin": {
+        "xyz": "0 0.00025 -0.1401",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 -1 0"
+      },
+      "limit": {
+        "effort": "1.0",
+        "velocity": "10.0"
+      },
+      "mimic": null
+    },
+    {
+      "name": "arm_joint1",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "arm_link1",
+      "origin": {
+        "xyz": "0 0 0.275",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 0 1"
+      },
+      "limit": {
+        "lower": "-0.35",
+        "upper": "0.35",
+        "effort": "2",
+        "velocity": "0.5"
+      },
+      "mimic": null
+    },
+    {
+      "name": "arm_joint2",
+      "type": "revolute",
+      "parent": "arm_link1",
+      "child": "arm_link2",
+      "origin": {
+        "xyz": "0 0 0.0595",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 -1 0"
+      },
+      "limit": {
+        "lower": "-0.35",
+        "upper": "0.35",
+        "effort": "2",
+        "velocity": "0.5"
+      },
+      "mimic": null
+    },
+    {
+      "name": "arm_joint3",
+      "type": "revolute",
+      "parent": "arm_link2",
+      "child": "arm_link3",
+      "origin": {
+        "xyz": "0.024 0 0.1854",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 -1 0"
+      },
+      "limit": {
+        "lower": "-0.35",
+        "upper": "0.35",
+        "effort": "2",
+        "velocity": "0.5"
+      },
+      "mimic": null
+    },
+    {
+      "name": "arm_joint4",
+      "type": "revolute",
+      "parent": "arm_link3",
+      "child": "arm_link4",
+      "origin": {
+        "xyz": "0.149 0 0",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 -1 0"
+      },
+      "limit": {
+        "lower": "-0.35",
+        "upper": "0.35",
+        "effort": "2",
+        "velocity": "0.5"
+      },
+      "mimic": null
+    },
+    {
+      "name": "arm_joint5",
+      "type": "revolute",
+      "parent": "arm_link4",
+      "child": "arm_link5",
+      "origin": {
+        "xyz": "0.06635 0 0",
+        "rpy": "0 0 0"
+      },
+      "axis": {
+        "xyz": "1 0 0"
+      },
+      "limit": {
+        "lower": "-0.35",
+        "upper": "0.35",
+        "effort": "2",
+        "velocity": "0.5"
+      },
+      "mimic": null
+    },
+    {
+      "name": "sim_left_optical_fixed",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "sim_left_optical",
+      "origin": {
+        "xyz": ".25 0.025 .25",
+        "rpy": "-1.5707963267948966 0 -1.5707963267948966"
+      },
+      "axis": null,
+      "limit": null,
+      "mimic": null
+    },
+    {
+      "name": "sim_right_optical_fixed",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "sim_right_optical",
+      "origin": {
+        "xyz": ".25 -0.025 .25",
+        "rpy": "-1.5707963267948966 0 -1.5707963267948966"
+      },
+      "axis": null,
+      "limit": null,
+      "mimic": null
+    }
+  ],
+  "meshes": [
+    {
+      "uri": "../meshes/base_link.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/base_link.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/lh1_wheel.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/lh1_wheel.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/lh1_steer.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/lh1_steer.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/rh1_wheel.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/rh1_wheel.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/rh1_steer.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/rh1_steer.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/lh2_wheel.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/lh2_wheel.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/lh2_steer.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/lh2_steer.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/rh2_wheel.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/rh2_wheel.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/rh2_steer.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/rh2_steer.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/arm_link1.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/arm_link1.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/arm_link2.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/arm_link2.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/arm_link3.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/arm_link3.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/arm_link4.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/arm_link4.stl",
+      "exists": true
+    },
+    {
+      "uri": "../meshes/arm_link5.stl",
+      "resolved": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_arm_description/meshes/arm_link5.stl",
+      "exists": true
+    }
+  ],
+  "errors": []
+}
