@@ -1,0 +1,457 @@
+#usda 1.0
+(
+    endTimeCode = 1000000
+    metersPerUnit = 1
+    startTimeCode = 0
+    timeCodesPerSecond = 30
+    upAxis = "Z"
+)
+
+def "Render" (
+    hide_in_stage_window = true
+    no_delete = true
+)
+{
+    def "OmniverseKit"
+    {
+        def "HydraTextures" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            def RenderProduct "omni_kit_widget_viewport_ViewportTexture_0" (
+                prepend apiSchemas = ["OmniRtxSettingsCommonAdvancedAPI_1", "OmniRtxSettingsRtAdvancedAPI_1", "OmniRtxSettingsPtAdvancedAPI_1", "OmniRtxSettingsParticleFieldAPI_1", "OmniRtxPostColorGradingAPI_1", "OmniRtxPostChromaticAberrationAPI_1", "OmniRtxPostBloomPhysicalAPI_1", "OmniRtxPostMatteObjectAPI_1", "OmniRtxPostCompositingAPI_1", "OmniRtxPostDofAPI_1", "OmniRtxPostMotionBlurAPI_1", "OmniRtxPostTvNoiseAPI_1", "OmniRtxPostTonemapIrayReinhardAPI_1", "OmniRtxPostDebugSettingsAPI_1", "OmniRtxDebugSettingsAPI_1"]
+                hide_in_stage_window = true
+                no_delete = true
+            )
+            {
+                rel camera = </OmniverseKit_Persp>
+                token omni:rtx:ambientOcclusion:denoiserMode = "none"
+                token omni:rtx:background:source:texture:textureMode = "repeatMirrored"
+                token omni:rtx:background:source:type = "domeLight"
+                bool omni:rtx:debug:view:pixelDebug:enableFixedTextPos = 1
+                token omni:rtx:directLighting:sampledLighting:denoisingTechnique = "None"
+                bool omni:rtx:dlss:frameGeneration = 0
+                bool omni:rtx:indirectDiffuse:denoiser:enabled = 0
+                bool omni:rtx:material:db:syncLoads = 1
+                token omni:rtx:post:dlss:execMode = "performance"
+                bool omni:rtx:post:registeredCompositing:invertColorCorrection = 1
+                bool omni:rtx:post:registeredCompositing:invertToneMap = 1
+                bool omni:rtx:pt:adaptiveSampling:filterError = 0
+                uint omni:rtx:pt:adaptiveSampling:fixedSppIterations = 2
+                int omni:rtx:pt:clampSpp = 64
+                uint omni:rtx:pt:limits:maxBounces = 3
+                uint omni:rtx:pt:limits:maxGlossyBounces = 3
+                uint omni:rtx:pt:maxSamplesPerLaunch = 2073600
+                uint omni:rtx:pt:mgpu:maxPixelsPerRegionExponent = 12
+                int omni:rtx:pt:samplesPerIteration = 64
+                uint omni:rtx:pt:samplesPerPixel = 64
+                bool omni:rtx:reflections:denoiser:enabled = 0
+                token omni:rtx:rendermode = "RealTimePathTracing"
+                color3f omni:rtx:rt:ambientLight:color = (0.1, 0.1, 0.1)
+                bool omni:rtx:rt:demoire = 0
+                bool omni:rtx:rt:lightcache:spatialCache:dontResolveConflicts = 1
+                int omni:rtx:rt:sss:samples = 1
+                uint omni:rtx:rtpt:maxVolumeBounces = 15
+                float omni:rtx:rtpt:modulatingRoughnessThreshold = 0.08
+                bool omni:rtx:scene:hydra:materialSyncLoads = 1
+                bool omni:rtx:scene:hydra:mdlMaterialWarmup = 1
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (640, 480)
+            }
+        }
+    }
+
+    def RenderSettings "OmniverseGlobalRenderSettings" (
+        prepend apiSchemas = ["OmniRtxSettingsGlobalRtAdvancedAPI_1", "OmniRtxSettingsGlobalPtAdvancedAPI_1"]
+        no_delete = true
+    )
+    {
+        rel products = </Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0>
+    }
+
+    def "Vars" (
+        hide_in_stage_window = true
+        no_delete = true
+    )
+    {
+        def RenderVar "LdrColor" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            uniform string sourceName = "LdrColor"
+            uniform token sourceType = "raw"
+        }
+    }
+}
+
+over "OmniverseKit_Persp"
+{
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+}
+
+def PhysicsScene "physicsScene" (
+    prepend apiSchemas = ["NewtonSceneAPI", "PhysxSceneAPI"]
+)
+{
+    vector3f physics:gravityDirection = (0, 0, -1)
+    float physics:gravityMagnitude = 9.81
+    uniform token physxScene:broadphaseType = "MBP"
+    bool physxScene:enableCCD = 1
+    bool physxScene:enableGPUDynamics = 0
+    bool physxScene:enableStabilization = 0
+    uniform token physxScene:solverType = "TGS"
+    uint physxScene:timeStepsPerSecond = 120
+}
+
+def "World"
+{
+    def Xform "defaultGroundPlane" (
+        prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.1/Isaac/Environments/Grid/default_environment.usd@
+    )
+    {
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "GroundPlane"
+        {
+            over "CollisionPlane" (
+                prepend apiSchemas = ["PhysicsMeshCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding:physics = </World/Physics_Materials/physics_material> (
+                    bindMaterialAs = "strongerThanDescendants"
+                )
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+        }
+    }
+
+    def "Physics_Materials"
+    {
+        def Material "physics_material" (
+            prepend apiSchemas = ["PhysicsMaterialAPI"]
+        )
+        {
+            float physics:dynamicFriction = 0.5
+            float physics:restitution = 0.8
+            float physics:staticFriction = 0.5
+        }
+    }
+
+    def Xform "Maze"
+    {
+        double3 xformOp:translate = (2.2345244884490967, 3.213563919067383, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def "Asset" (
+            prepend references = @/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/mission/maze/maze.usda@
+        )
+        {
+        }
+    }
+
+    def Xform "Robot"
+    {
+        float xformOp:rotateZ = 180
+        double3 xformOp:translate = (0.734, 0.95, 0.015)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+
+        def "Asset" (
+            prepend references = @/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/mission/R12_NO_USB_URDF_USD/usd/r12_no_usb.usdc@
+        )
+        {
+        }
+    }
+
+    def "Tables"
+    {
+        def Cube "Start1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.205, 0.205, 0.07)
+            double3 xformOp:translate = (1.468, 0.95, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Start2" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.205, 0.205, 0.07)
+            double3 xformOp:translate = (3.67, 3.152, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Start3" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.205, 0.205, 0.07)
+            double3 xformOp:translate = (2.936, 5.354, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Start4" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.205, 0.205, 0.07)
+            double3 xformOp:translate = (0.734, 5.354, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Start5" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.205, 0.205, 0.07)
+            double3 xformOp:translate = (2.202, 5.354, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Start6" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.205, 0.205, 0.07)
+            double3 xformOp:translate = (3.67, 3.886, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "L1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.3, 0.6, 0.5)]
+            double size = 1
+            float3 xformOp:scale = (0.205, 0.205, 0.07)
+            double3 xformOp:translate = (3.67, 0.95, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "L3" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.3, 0.6, 0.5)]
+            double size = 1
+            float3 xformOp:scale = (0.205, 0.205, 0.07)
+            double3 xformOp:translate = (3.67, 5.354, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Central0" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.41, 0.41, 0.07)
+            double3 xformOp:translate = (1.9969999999999999, 3.292, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Central1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.41, 0.41, 0.07)
+            double3 xformOp:translate = (1.9969999999999999, 3.702, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Central2" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.41, 0.41, 0.07)
+            double3 xformOp:translate = (2.407, 3.292, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Central3" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.5, 0.3)]
+            double size = 1
+            float3 xformOp:scale = (0.41, 0.41, 0.07)
+            double3 xformOp:translate = (2.407, 3.702, 0.035)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+
+    def "Pucks"
+    {
+        def Cylinder "Puck0" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            double height = 0.06
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.8, 0.03, 0.03)]
+            double radius = 0.015
+            double3 xformOp:translate = (1.428, 0.95, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cube "Puck1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.8, 0.03, 0.03)]
+            double size = 1
+            float3 xformOp:scale = (0.03, 0.03, 0.06)
+            double3 xformOp:translate = (1.508, 0.95, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cylinder "Puck2" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            double height = 0.06
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.8, 0.03, 0.03)]
+            double radius = 0.015
+            double3 xformOp:translate = (3.63, 3.152, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cube "Puck3" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.8, 0.03, 0.03)]
+            double size = 1
+            float3 xformOp:scale = (0.03, 0.03, 0.06)
+            double3 xformOp:translate = (3.71, 3.152, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cylinder "Puck4" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            double height = 0.06
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.8, 0.03, 0.03)]
+            double radius = 0.015
+            double3 xformOp:translate = (2.896, 5.354, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cube "Puck5" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.8, 0.03, 0.03)]
+            double size = 1
+            float3 xformOp:scale = (0.03, 0.03, 0.06)
+            double3 xformOp:translate = (2.976, 5.354, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cylinder "Puck6" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            double height = 0.06
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.03, 0.8, 0.03)]
+            double radius = 0.015
+            double3 xformOp:translate = (0.694, 5.354, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cube "Puck7" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.03, 0.8, 0.03)]
+            double size = 1
+            float3 xformOp:scale = (0.03, 0.03, 0.06)
+            double3 xformOp:translate = (0.774, 5.354, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cylinder "Puck8" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            double height = 0.06
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.03, 0.8, 0.03)]
+            double radius = 0.015
+            double3 xformOp:translate = (2.162, 5.354, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cube "Puck9" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.03, 0.8, 0.03)]
+            double size = 1
+            float3 xformOp:scale = (0.03, 0.03, 0.06)
+            double3 xformOp:translate = (2.242, 5.354, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cylinder "Puck10" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            double height = 0.06
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.03, 0.8, 0.03)]
+            double radius = 0.015
+            double3 xformOp:translate = (3.63, 3.886, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cube "Puck11" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.03
+            color3f[] primvars:displayColor = [(0.03, 0.8, 0.03)]
+            double size = 1
+            float3 xformOp:scale = (0.03, 0.03, 0.06)
+            double3 xformOp:translate = (3.71, 3.886, 0.101)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+}
+

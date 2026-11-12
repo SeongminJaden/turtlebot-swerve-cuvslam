@@ -1,0 +1,16 @@
+[INFO] [1793010618.956111020] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1793010618.956196696] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1793010618.969257417] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1793010619.693538644] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1793010634.640735387] [rviz2]: Trying to create a map of size 501 x 691 using 1 swatches
+[ERROR] [1793010634.705061515] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+rviz/glsl120/indexed_8bit_image.frag
+ GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1793010675.653600368] [rviz]: Message Filter dropping message: frame 'base_link' at time 1.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1793010675.653748675] [rviz]: Message Filter dropping message: frame 'odom' at time 1.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1793010675.653773293] [rviz]: Message Filter dropping message: frame 'odom' at time 1.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1793010675.975307744] [rviz]: Message Filter dropping message: frame 'odom' at time 1.380 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+ICE default IO error handler doing an exit(), pid = 124076, errno = 11
+Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+         at line 127 in ./src/class_loader.cpp

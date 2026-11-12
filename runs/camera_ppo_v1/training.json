@@ -1,0 +1,1442 @@
+[
+  {
+    "iteration": 1,
+    "transitions": 2048,
+    "mean_reward": 0.00036522187292575836,
+    "mean_action_std": 0.4947497248649597,
+    "success_count": 1,
+    "episode_count": 17,
+    "elapsed_s": 2.5845042479995755
+  },
+  {
+    "iteration": 2,
+    "transitions": 4096,
+    "mean_reward": 0.004642304033041,
+    "mean_action_std": 0.4921260476112366,
+    "success_count": 2,
+    "episode_count": 18,
+    "elapsed_s": 4.761719629999789
+  },
+  {
+    "iteration": 3,
+    "transitions": 6144,
+    "mean_reward": 0.004317082930356264,
+    "mean_action_std": 0.48799219727516174,
+    "success_count": 2,
+    "episode_count": 33,
+    "elapsed_s": 6.932042755999646
+  },
+  {
+    "iteration": 4,
+    "transitions": 8192,
+    "mean_reward": 0.008381027728319168,
+    "mean_action_std": 0.4840494692325592,
+    "success_count": 2,
+    "episode_count": 34,
+    "elapsed_s": 9.115052950999598
+  },
+  {
+    "iteration": 5,
+    "transitions": 10240,
+    "mean_reward": 0.011456968262791634,
+    "mean_action_std": 0.48088517785072327,
+    "success_count": 2,
+    "episode_count": 49,
+    "elapsed_s": 11.289154317999419
+  },
+  {
+    "iteration": 6,
+    "transitions": 12288,
+    "mean_reward": 0.011273736134171486,
+    "mean_action_std": 0.4791164994239807,
+    "success_count": 2,
+    "episode_count": 50,
+    "elapsed_s": 13.437387598999521
+  },
+  {
+    "iteration": 7,
+    "transitions": 14336,
+    "mean_reward": 0.01056897547096014,
+    "mean_action_std": 0.4780828654766083,
+    "success_count": 2,
+    "episode_count": 65,
+    "elapsed_s": 15.633763630999965
+  },
+  {
+    "iteration": 8,
+    "transitions": 16384,
+    "mean_reward": 0.01430419273674488,
+    "mean_action_std": 0.4756694734096527,
+    "success_count": 3,
+    "episode_count": 67,
+    "elapsed_s": 17.81079769200005
+  },
+  {
+    "iteration": 9,
+    "transitions": 18432,
+    "mean_reward": 0.018445758149027824,
+    "mean_action_std": 0.47181329131126404,
+    "success_count": 3,
+    "episode_count": 81,
+    "elapsed_s": 20.005895153999518
+  },
+  {
+    "iteration": 10,
+    "transitions": 20480,
+    "mean_reward": 0.01730695739388466,
+    "mean_action_std": 0.4660857915878296,
+    "success_count": 3,
+    "episode_count": 83,
+    "elapsed_s": 22.183442792999813
+  },
+  {
+    "iteration": 11,
+    "transitions": 22528,
+    "mean_reward": 0.020110687240958214,
+    "mean_action_std": 0.4620330333709717,
+    "success_count": 4,
+    "episode_count": 97,
+    "elapsed_s": 24.396502969999347
+  },
+  {
+    "iteration": 12,
+    "transitions": 24576,
+    "mean_reward": 0.017587099224328995,
+    "mean_action_std": 0.4600641131401062,
+    "success_count": 4,
+    "episode_count": 99,
+    "elapsed_s": 26.622146658999554
+  },
+  {
+    "iteration": 13,
+    "transitions": 26624,
+    "mean_reward": 0.023469746112823486,
+    "mean_action_std": 0.4578973948955536,
+    "success_count": 5,
+    "episode_count": 113,
+    "elapsed_s": 28.81570626699977
+  },
+  {
+    "iteration": 14,
+    "transitions": 28672,
+    "mean_reward": 0.029443558305501938,
+    "mean_action_std": 0.4560060203075409,
+    "success_count": 7,
+    "episode_count": 117,
+    "elapsed_s": 31.081326513000022
+  },
+  {
+    "iteration": 15,
+    "transitions": 30720,
+    "mean_reward": 0.028373677283525467,
+    "mean_action_std": 0.45281684398651123,
+    "success_count": 9,
+    "episode_count": 129,
+    "elapsed_s": 33.270266685000024
+  },
+  {
+    "iteration": 16,
+    "transitions": 32768,
+    "mean_reward": 0.030032820999622345,
+    "mean_action_std": 0.4500219225883484,
+    "success_count": 11,
+    "episode_count": 135,
+    "elapsed_s": 35.46911214800002
+  },
+  {
+    "iteration": 17,
+    "transitions": 34816,
+    "mean_reward": 0.02654232084751129,
+    "mean_action_std": 0.4472086429595947,
+    "success_count": 13,
+    "episode_count": 146,
+    "elapsed_s": 37.662890855000114
+  },
+  {
+    "iteration": 18,
+    "transitions": 36864,
+    "mean_reward": 0.025147780776023865,
+    "mean_action_std": 0.4455951452255249,
+    "success_count": 13,
+    "episode_count": 150,
+    "elapsed_s": 39.81757441899936
+  },
+  {
+    "iteration": 19,
+    "transitions": 38912,
+    "mean_reward": 0.02539490908384323,
+    "mean_action_std": 0.4430322051048279,
+    "success_count": 14,
+    "episode_count": 162,
+    "elapsed_s": 42.000845749999826
+  },
+  {
+    "iteration": 20,
+    "transitions": 40960,
+    "mean_reward": 0.03410961478948593,
+    "mean_action_std": 0.4411717355251312,
+    "success_count": 15,
+    "episode_count": 165,
+    "elapsed_s": 44.20099709199985
+  },
+  {
+    "iteration": 21,
+    "transitions": 43008,
+    "mean_reward": 0.028674952685832977,
+    "mean_action_std": 0.43864473700523376,
+    "success_count": 17,
+    "episode_count": 175,
+    "elapsed_s": 46.44488156999978
+  },
+  {
+    "iteration": 22,
+    "transitions": 45056,
+    "mean_reward": 0.030129941180348396,
+    "mean_action_std": 0.4360366761684418,
+    "success_count": 18,
+    "episode_count": 183,
+    "elapsed_s": 48.66809873300008
+  },
+  {
+    "iteration": 23,
+    "transitions": 47104,
+    "mean_reward": 0.025421252474188805,
+    "mean_action_std": 0.4323718547821045,
+    "success_count": 19,
+    "episode_count": 189,
+    "elapsed_s": 50.87002017699979
+  },
+  {
+    "iteration": 24,
+    "transitions": 49152,
+    "mean_reward": 0.03638698160648346,
+    "mean_action_std": 0.43053725361824036,
+    "success_count": 21,
+    "episode_count": 199,
+    "elapsed_s": 53.1704174839997
+  },
+  {
+    "iteration": 25,
+    "transitions": 51200,
+    "mean_reward": 0.024153219535946846,
+    "mean_action_std": 0.4282263219356537,
+    "success_count": 22,
+    "episode_count": 206,
+    "elapsed_s": 55.42366751499958
+  },
+  {
+    "iteration": 26,
+    "transitions": 53248,
+    "mean_reward": 0.04707964509725571,
+    "mean_action_std": 0.4234407842159271,
+    "success_count": 28,
+    "episode_count": 218,
+    "elapsed_s": 57.65653609899982
+  },
+  {
+    "iteration": 27,
+    "transitions": 55296,
+    "mean_reward": 0.042807675898075104,
+    "mean_action_std": 0.4207209050655365,
+    "success_count": 34,
+    "episode_count": 227,
+    "elapsed_s": 59.83891851599947
+  },
+  {
+    "iteration": 28,
+    "transitions": 57344,
+    "mean_reward": 0.04127702862024307,
+    "mean_action_std": 0.41873112320899963,
+    "success_count": 37,
+    "episode_count": 235,
+    "elapsed_s": 62.05397190900021
+  },
+  {
+    "iteration": 29,
+    "transitions": 59392,
+    "mean_reward": 0.044894829392433167,
+    "mean_action_std": 0.4152836799621582,
+    "success_count": 44,
+    "episode_count": 246,
+    "elapsed_s": 64.26992334999977
+  },
+  {
+    "iteration": 30,
+    "transitions": 61440,
+    "mean_reward": 0.04424488544464111,
+    "mean_action_std": 0.41070857644081116,
+    "success_count": 49,
+    "episode_count": 256,
+    "elapsed_s": 66.50730984099937
+  },
+  {
+    "iteration": 31,
+    "transitions": 63488,
+    "mean_reward": 0.038038432598114014,
+    "mean_action_std": 0.4071402847766876,
+    "success_count": 52,
+    "episode_count": 265,
+    "elapsed_s": 68.79249004600024
+  },
+  {
+    "iteration": 32,
+    "transitions": 65536,
+    "mean_reward": 0.03643346577882767,
+    "mean_action_std": 0.4047493040561676,
+    "success_count": 55,
+    "episode_count": 274,
+    "elapsed_s": 71.06040809899969
+  },
+  {
+    "iteration": 33,
+    "transitions": 67584,
+    "mean_reward": 0.04149630665779114,
+    "mean_action_std": 0.40189534425735474,
+    "success_count": 58,
+    "episode_count": 283,
+    "elapsed_s": 73.3029485649995
+  },
+  {
+    "iteration": 34,
+    "transitions": 69632,
+    "mean_reward": 0.04909157752990723,
+    "mean_action_std": 0.3981819450855255,
+    "success_count": 67,
+    "episode_count": 294,
+    "elapsed_s": 75.54437118799979
+  },
+  {
+    "iteration": 35,
+    "transitions": 71680,
+    "mean_reward": 0.04835816100239754,
+    "mean_action_std": 0.39367160201072693,
+    "success_count": 73,
+    "episode_count": 304,
+    "elapsed_s": 77.80239685499964
+  },
+  {
+    "iteration": 36,
+    "transitions": 73728,
+    "mean_reward": 0.052633047103881836,
+    "mean_action_std": 0.3908952474594116,
+    "success_count": 81,
+    "episode_count": 316,
+    "elapsed_s": 80.03279880599985
+  },
+  {
+    "iteration": 37,
+    "transitions": 75776,
+    "mean_reward": 0.0580974742770195,
+    "mean_action_std": 0.38825398683547974,
+    "success_count": 91,
+    "episode_count": 329,
+    "elapsed_s": 82.27710507899974
+  },
+  {
+    "iteration": 38,
+    "transitions": 77824,
+    "mean_reward": 0.0543949231505394,
+    "mean_action_std": 0.3852304518222809,
+    "success_count": 97,
+    "episode_count": 338,
+    "elapsed_s": 84.40959458699945
+  },
+  {
+    "iteration": 39,
+    "transitions": 79872,
+    "mean_reward": 0.0565652921795845,
+    "mean_action_std": 0.3817662298679352,
+    "success_count": 107,
+    "episode_count": 350,
+    "elapsed_s": 86.62676892299987
+  },
+  {
+    "iteration": 40,
+    "transitions": 81920,
+    "mean_reward": 0.05017610639333725,
+    "mean_action_std": 0.3790852129459381,
+    "success_count": 116,
+    "episode_count": 362,
+    "elapsed_s": 88.83631957899979
+  },
+  {
+    "iteration": 41,
+    "transitions": 83968,
+    "mean_reward": 0.054911352694034576,
+    "mean_action_std": 0.3756329417228699,
+    "success_count": 122,
+    "episode_count": 370,
+    "elapsed_s": 91.05459865800003
+  },
+  {
+    "iteration": 42,
+    "transitions": 86016,
+    "mean_reward": 0.058647867292165756,
+    "mean_action_std": 0.3723432719707489,
+    "success_count": 134,
+    "episode_count": 385,
+    "elapsed_s": 93.26022932900014
+  },
+  {
+    "iteration": 43,
+    "transitions": 88064,
+    "mean_reward": 0.0602087527513504,
+    "mean_action_std": 0.36990201473236084,
+    "success_count": 143,
+    "episode_count": 394,
+    "elapsed_s": 95.45084528899952
+  },
+  {
+    "iteration": 44,
+    "transitions": 90112,
+    "mean_reward": 0.07278385758399963,
+    "mean_action_std": 0.3665664494037628,
+    "success_count": 158,
+    "episode_count": 410,
+    "elapsed_s": 97.65600388599978
+  },
+  {
+    "iteration": 45,
+    "transitions": 92160,
+    "mean_reward": 0.07650179415941238,
+    "mean_action_std": 0.3628840446472168,
+    "success_count": 170,
+    "episode_count": 422,
+    "elapsed_s": 99.84003757400023
+  },
+  {
+    "iteration": 46,
+    "transitions": 94208,
+    "mean_reward": 0.056482043117284775,
+    "mean_action_std": 0.3607967793941498,
+    "success_count": 178,
+    "episode_count": 432,
+    "elapsed_s": 102.0505139500001
+  },
+  {
+    "iteration": 47,
+    "transitions": 96256,
+    "mean_reward": 0.07227180898189545,
+    "mean_action_std": 0.3581618368625641,
+    "success_count": 190,
+    "episode_count": 447,
+    "elapsed_s": 104.25100980200023
+  },
+  {
+    "iteration": 48,
+    "transitions": 98304,
+    "mean_reward": 0.0643087774515152,
+    "mean_action_std": 0.3557153344154358,
+    "success_count": 200,
+    "episode_count": 457,
+    "elapsed_s": 106.4140008079994
+  },
+  {
+    "iteration": 49,
+    "transitions": 100352,
+    "mean_reward": 0.06343169510364532,
+    "mean_action_std": 0.3526741564273834,
+    "success_count": 208,
+    "episode_count": 469,
+    "elapsed_s": 108.62543395299963
+  },
+  {
+    "iteration": 50,
+    "transitions": 102400,
+    "mean_reward": 0.06513652205467224,
+    "mean_action_std": 0.35027995705604553,
+    "success_count": 218,
+    "episode_count": 482,
+    "elapsed_s": 110.82662432100005
+  },
+  {
+    "iteration": 51,
+    "transitions": 104448,
+    "mean_reward": 0.06734080612659454,
+    "mean_action_std": 0.3466150760650635,
+    "success_count": 231,
+    "episode_count": 496,
+    "elapsed_s": 112.99462135700014
+  },
+  {
+    "iteration": 52,
+    "transitions": 106496,
+    "mean_reward": 0.08478225767612457,
+    "mean_action_std": 0.3431348502635956,
+    "success_count": 248,
+    "episode_count": 514,
+    "elapsed_s": 115.24427314599961
+  },
+  {
+    "iteration": 53,
+    "transitions": 108544,
+    "mean_reward": 0.07043194770812988,
+    "mean_action_std": 0.3406708240509033,
+    "success_count": 258,
+    "episode_count": 526,
+    "elapsed_s": 117.42568768099954
+  },
+  {
+    "iteration": 54,
+    "transitions": 110592,
+    "mean_reward": 0.07069997489452362,
+    "mean_action_std": 0.3384854793548584,
+    "success_count": 272,
+    "episode_count": 542,
+    "elapsed_s": 119.62628953700005
+  },
+  {
+    "iteration": 55,
+    "transitions": 112640,
+    "mean_reward": 0.06848713755607605,
+    "mean_action_std": 0.33614256978034973,
+    "success_count": 282,
+    "episode_count": 554,
+    "elapsed_s": 121.83316193900009
+  },
+  {
+    "iteration": 56,
+    "transitions": 114688,
+    "mean_reward": 0.06436765938997269,
+    "mean_action_std": 0.3339708745479584,
+    "success_count": 291,
+    "episode_count": 566,
+    "elapsed_s": 124.03832760499972
+  },
+  {
+    "iteration": 57,
+    "transitions": 116736,
+    "mean_reward": 0.08706207573413849,
+    "mean_action_std": 0.33094245195388794,
+    "success_count": 309,
+    "episode_count": 585,
+    "elapsed_s": 126.27600738799993
+  },
+  {
+    "iteration": 58,
+    "transitions": 118784,
+    "mean_reward": 0.07865400612354279,
+    "mean_action_std": 0.3273659944534302,
+    "success_count": 321,
+    "episode_count": 597,
+    "elapsed_s": 128.481774977
+  },
+  {
+    "iteration": 59,
+    "transitions": 120832,
+    "mean_reward": 0.07276058942079544,
+    "mean_action_std": 0.3243240714073181,
+    "success_count": 331,
+    "episode_count": 608,
+    "elapsed_s": 130.81030389999978
+  },
+  {
+    "iteration": 60,
+    "transitions": 122880,
+    "mean_reward": 0.06551336497068405,
+    "mean_action_std": 0.32266324758529663,
+    "success_count": 341,
+    "episode_count": 622,
+    "elapsed_s": 133.06294059299944
+  },
+  {
+    "iteration": 61,
+    "transitions": 124928,
+    "mean_reward": 0.09222698956727982,
+    "mean_action_std": 0.32092273235321045,
+    "success_count": 359,
+    "episode_count": 640,
+    "elapsed_s": 135.31397799000024
+  },
+  {
+    "iteration": 62,
+    "transitions": 126976,
+    "mean_reward": 0.08564190566539764,
+    "mean_action_std": 0.31833216547966003,
+    "success_count": 376,
+    "episode_count": 657,
+    "elapsed_s": 137.52779677099988
+  },
+  {
+    "iteration": 63,
+    "transitions": 129024,
+    "mean_reward": 0.05949427932500839,
+    "mean_action_std": 0.31699493527412415,
+    "success_count": 383,
+    "episode_count": 667,
+    "elapsed_s": 139.7440333429995
+  },
+  {
+    "iteration": 64,
+    "transitions": 131072,
+    "mean_reward": 0.09203161299228668,
+    "mean_action_std": 0.31461793184280396,
+    "success_count": 402,
+    "episode_count": 687,
+    "elapsed_s": 141.97081833599987
+  },
+  {
+    "iteration": 65,
+    "transitions": 133120,
+    "mean_reward": 0.0856482982635498,
+    "mean_action_std": 0.31119415163993835,
+    "success_count": 421,
+    "episode_count": 706,
+    "elapsed_s": 144.1851154649994
+  },
+  {
+    "iteration": 66,
+    "transitions": 135168,
+    "mean_reward": 0.08104788511991501,
+    "mean_action_std": 0.3085617423057556,
+    "success_count": 435,
+    "episode_count": 720,
+    "elapsed_s": 146.40181386099994
+  },
+  {
+    "iteration": 67,
+    "transitions": 137216,
+    "mean_reward": 0.08454059809446335,
+    "mean_action_std": 0.3061617314815521,
+    "success_count": 451,
+    "episode_count": 736,
+    "elapsed_s": 148.6245133960001
+  },
+  {
+    "iteration": 68,
+    "transitions": 139264,
+    "mean_reward": 0.09480441361665726,
+    "mean_action_std": 0.30337435007095337,
+    "success_count": 471,
+    "episode_count": 756,
+    "elapsed_s": 150.8323260420002
+  },
+  {
+    "iteration": 69,
+    "transitions": 141312,
+    "mean_reward": 0.08842470496892929,
+    "mean_action_std": 0.3001761734485626,
+    "success_count": 488,
+    "episode_count": 775,
+    "elapsed_s": 153.0638646489997
+  },
+  {
+    "iteration": 70,
+    "transitions": 143360,
+    "mean_reward": 0.08833695203065872,
+    "mean_action_std": 0.2974720597267151,
+    "success_count": 505,
+    "episode_count": 792,
+    "elapsed_s": 155.3141739089997
+  },
+  {
+    "iteration": 71,
+    "transitions": 145408,
+    "mean_reward": 0.09292662143707275,
+    "mean_action_std": 0.294490784406662,
+    "success_count": 524,
+    "episode_count": 811,
+    "elapsed_s": 157.56583501000023
+  },
+  {
+    "iteration": 72,
+    "transitions": 147456,
+    "mean_reward": 0.08585724979639053,
+    "mean_action_std": 0.2918184697628021,
+    "success_count": 538,
+    "episode_count": 825,
+    "elapsed_s": 159.8502969000001
+  },
+  {
+    "iteration": 73,
+    "transitions": 149504,
+    "mean_reward": 0.09539172798395157,
+    "mean_action_std": 0.2895865738391876,
+    "success_count": 557,
+    "episode_count": 844,
+    "elapsed_s": 162.08540559999983
+  },
+  {
+    "iteration": 74,
+    "transitions": 151552,
+    "mean_reward": 0.08503066003322601,
+    "mean_action_std": 0.2876197397708893,
+    "success_count": 572,
+    "episode_count": 859,
+    "elapsed_s": 164.2727414659994
+  },
+  {
+    "iteration": 75,
+    "transitions": 153600,
+    "mean_reward": 0.08857773244380951,
+    "mean_action_std": 0.2862075865268707,
+    "success_count": 589,
+    "episode_count": 877,
+    "elapsed_s": 166.46171352599958
+  },
+  {
+    "iteration": 76,
+    "transitions": 155648,
+    "mean_reward": 0.08980497717857361,
+    "mean_action_std": 0.28401923179626465,
+    "success_count": 604,
+    "episode_count": 892,
+    "elapsed_s": 168.67733026799942
+  },
+  {
+    "iteration": 77,
+    "transitions": 157696,
+    "mean_reward": 0.10054072737693787,
+    "mean_action_std": 0.2816944718360901,
+    "success_count": 625,
+    "episode_count": 913,
+    "elapsed_s": 170.8566759790001
+  },
+  {
+    "iteration": 78,
+    "transitions": 159744,
+    "mean_reward": 0.09028588235378265,
+    "mean_action_std": 0.2801935076713562,
+    "success_count": 642,
+    "episode_count": 932,
+    "elapsed_s": 173.04437983499975
+  },
+  {
+    "iteration": 79,
+    "transitions": 161792,
+    "mean_reward": 0.09495647996664047,
+    "mean_action_std": 0.27784404158592224,
+    "success_count": 660,
+    "episode_count": 950,
+    "elapsed_s": 175.23897258599936
+  },
+  {
+    "iteration": 80,
+    "transitions": 163840,
+    "mean_reward": 0.09470919519662857,
+    "mean_action_std": 0.2754782736301422,
+    "success_count": 678,
+    "episode_count": 968,
+    "elapsed_s": 177.4784738469998
+  },
+  {
+    "iteration": 81,
+    "transitions": 165888,
+    "mean_reward": 0.10173585265874863,
+    "mean_action_std": 0.27362704277038574,
+    "success_count": 698,
+    "episode_count": 988,
+    "elapsed_s": 179.7204567839999
+  },
+  {
+    "iteration": 82,
+    "transitions": 167936,
+    "mean_reward": 0.0892643928527832,
+    "mean_action_std": 0.27109333872795105,
+    "success_count": 712,
+    "episode_count": 1002,
+    "elapsed_s": 181.98269501100003
+  },
+  {
+    "iteration": 83,
+    "transitions": 169984,
+    "mean_reward": 0.10404697805643082,
+    "mean_action_std": 0.2682032883167267,
+    "success_count": 733,
+    "episode_count": 1023,
+    "elapsed_s": 184.1819221429996
+  },
+  {
+    "iteration": 84,
+    "transitions": 172032,
+    "mean_reward": 0.08985787630081177,
+    "mean_action_std": 0.2664622366428375,
+    "success_count": 747,
+    "episode_count": 1037,
+    "elapsed_s": 186.41157974999987
+  },
+  {
+    "iteration": 85,
+    "transitions": 174080,
+    "mean_reward": 0.08845680952072144,
+    "mean_action_std": 0.26507189869880676,
+    "success_count": 762,
+    "episode_count": 1053,
+    "elapsed_s": 188.5674958210002
+  },
+  {
+    "iteration": 86,
+    "transitions": 176128,
+    "mean_reward": 0.09986948221921921,
+    "mean_action_std": 0.263166606426239,
+    "success_count": 781,
+    "episode_count": 1073,
+    "elapsed_s": 190.76085789199988
+  },
+  {
+    "iteration": 87,
+    "transitions": 178176,
+    "mean_reward": 0.09209169447422028,
+    "mean_action_std": 0.2611859142780304,
+    "success_count": 798,
+    "episode_count": 1090,
+    "elapsed_s": 193.002957789
+  },
+  {
+    "iteration": 88,
+    "transitions": 180224,
+    "mean_reward": 0.0934719666838646,
+    "mean_action_std": 0.2595353126525879,
+    "success_count": 812,
+    "episode_count": 1104,
+    "elapsed_s": 195.2120108829995
+  },
+  {
+    "iteration": 89,
+    "transitions": 182272,
+    "mean_reward": 0.09314882755279541,
+    "mean_action_std": 0.25747954845428467,
+    "success_count": 829,
+    "episode_count": 1122,
+    "elapsed_s": 197.4388450259994
+  },
+  {
+    "iteration": 90,
+    "transitions": 184320,
+    "mean_reward": 0.09084627032279968,
+    "mean_action_std": 0.25590279698371887,
+    "success_count": 843,
+    "episode_count": 1136,
+    "elapsed_s": 199.63602875200013
+  },
+  {
+    "iteration": 91,
+    "transitions": 186368,
+    "mean_reward": 0.09813310205936432,
+    "mean_action_std": 0.25446122884750366,
+    "success_count": 860,
+    "episode_count": 1153,
+    "elapsed_s": 201.84400175700011
+  },
+  {
+    "iteration": 92,
+    "transitions": 188416,
+    "mean_reward": 0.0983506515622139,
+    "mean_action_std": 0.2531185746192932,
+    "success_count": 878,
+    "episode_count": 1171,
+    "elapsed_s": 204.04927851699995
+  },
+  {
+    "iteration": 93,
+    "transitions": 190464,
+    "mean_reward": 0.10492748022079468,
+    "mean_action_std": 0.25052016973495483,
+    "success_count": 900,
+    "episode_count": 1193,
+    "elapsed_s": 206.28508504099955
+  },
+  {
+    "iteration": 94,
+    "transitions": 192512,
+    "mean_reward": 0.09734287858009338,
+    "mean_action_std": 0.24863745272159576,
+    "success_count": 915,
+    "episode_count": 1209,
+    "elapsed_s": 208.47072237599969
+  },
+  {
+    "iteration": 95,
+    "transitions": 194560,
+    "mean_reward": 0.10742059350013733,
+    "mean_action_std": 0.24687518179416656,
+    "success_count": 936,
+    "episode_count": 1230,
+    "elapsed_s": 210.61859829100013
+  },
+  {
+    "iteration": 96,
+    "transitions": 196608,
+    "mean_reward": 0.09688077867031097,
+    "mean_action_std": 0.24504457414150238,
+    "success_count": 953,
+    "episode_count": 1247,
+    "elapsed_s": 212.76216503700016
+  },
+  {
+    "iteration": 97,
+    "transitions": 198656,
+    "mean_reward": 0.09655340760946274,
+    "mean_action_std": 0.2437973916530609,
+    "success_count": 968,
+    "episode_count": 1262,
+    "elapsed_s": 214.92753945999993
+  },
+  {
+    "iteration": 98,
+    "transitions": 200704,
+    "mean_reward": 0.09403810650110245,
+    "mean_action_std": 0.24208417534828186,
+    "success_count": 983,
+    "episode_count": 1277,
+    "elapsed_s": 217.1276974980001
+  },
+  {
+    "iteration": 99,
+    "transitions": 202752,
+    "mean_reward": 0.10221369564533234,
+    "mean_action_std": 0.23985828459262848,
+    "success_count": 1004,
+    "episode_count": 1298,
+    "elapsed_s": 219.31600109600004
+  },
+  {
+    "iteration": 100,
+    "transitions": 204800,
+    "mean_reward": 0.11072331666946411,
+    "mean_action_std": 0.2375493347644806,
+    "success_count": 1026,
+    "episode_count": 1320,
+    "elapsed_s": 221.50526221899963
+  },
+  {
+    "iteration": 101,
+    "transitions": 206848,
+    "mean_reward": 0.09885996580123901,
+    "mean_action_std": 0.2351304292678833,
+    "success_count": 1042,
+    "episode_count": 1336,
+    "elapsed_s": 223.6656488509998
+  },
+  {
+    "iteration": 102,
+    "transitions": 208896,
+    "mean_reward": 0.09689316153526306,
+    "mean_action_std": 0.2332993894815445,
+    "success_count": 1058,
+    "episode_count": 1352,
+    "elapsed_s": 225.87867755800016
+  },
+  {
+    "iteration": 103,
+    "transitions": 210944,
+    "mean_reward": 0.10138136148452759,
+    "mean_action_std": 0.2319677770137787,
+    "success_count": 1076,
+    "episode_count": 1370,
+    "elapsed_s": 228.06831467199936
+  },
+  {
+    "iteration": 104,
+    "transitions": 212992,
+    "mean_reward": 0.11971890926361084,
+    "mean_action_std": 0.2300395518541336,
+    "success_count": 1102,
+    "episode_count": 1396,
+    "elapsed_s": 230.28704467999978
+  },
+  {
+    "iteration": 105,
+    "transitions": 215040,
+    "mean_reward": 0.09424740076065063,
+    "mean_action_std": 0.2285553216934204,
+    "success_count": 1115,
+    "episode_count": 1409,
+    "elapsed_s": 232.4953539449998
+  },
+  {
+    "iteration": 106,
+    "transitions": 217088,
+    "mean_reward": 0.10920880734920502,
+    "mean_action_std": 0.22667841613292694,
+    "success_count": 1137,
+    "episode_count": 1431,
+    "elapsed_s": 234.69874930700007
+  },
+  {
+    "iteration": 107,
+    "transitions": 219136,
+    "mean_reward": 0.10956352204084396,
+    "mean_action_std": 0.22499005496501923,
+    "success_count": 1159,
+    "episode_count": 1453,
+    "elapsed_s": 236.9023687150002
+  },
+  {
+    "iteration": 108,
+    "transitions": 221184,
+    "mean_reward": 0.10337062180042267,
+    "mean_action_std": 0.22417975962162018,
+    "success_count": 1176,
+    "episode_count": 1470,
+    "elapsed_s": 239.0792980489996
+  },
+  {
+    "iteration": 109,
+    "transitions": 223232,
+    "mean_reward": 0.1073165014386177,
+    "mean_action_std": 0.222946897149086,
+    "success_count": 1196,
+    "episode_count": 1490,
+    "elapsed_s": 241.25160252600017
+  },
+  {
+    "iteration": 110,
+    "transitions": 225280,
+    "mean_reward": 0.11583966761827469,
+    "mean_action_std": 0.22114485502243042,
+    "success_count": 1222,
+    "episode_count": 1516,
+    "elapsed_s": 243.4508878329998
+  },
+  {
+    "iteration": 111,
+    "transitions": 227328,
+    "mean_reward": 0.11692535132169724,
+    "mean_action_std": 0.21916742622852325,
+    "success_count": 1246,
+    "episode_count": 1540,
+    "elapsed_s": 245.65189818099952
+  },
+  {
+    "iteration": 112,
+    "transitions": 229376,
+    "mean_reward": 0.10738416016101837,
+    "mean_action_std": 0.21767233312129974,
+    "success_count": 1265,
+    "episode_count": 1559,
+    "elapsed_s": 247.85646169899974
+  },
+  {
+    "iteration": 113,
+    "transitions": 231424,
+    "mean_reward": 0.10208772122859955,
+    "mean_action_std": 0.21613742411136627,
+    "success_count": 1282,
+    "episode_count": 1576,
+    "elapsed_s": 250.04339381499994
+  },
+  {
+    "iteration": 114,
+    "transitions": 233472,
+    "mean_reward": 0.10816662758588791,
+    "mean_action_std": 0.21437814831733704,
+    "success_count": 1302,
+    "episode_count": 1596,
+    "elapsed_s": 252.23899826700017
+  },
+  {
+    "iteration": 115,
+    "transitions": 235520,
+    "mean_reward": 0.11805500835180283,
+    "mean_action_std": 0.21313047409057617,
+    "success_count": 1327,
+    "episode_count": 1621,
+    "elapsed_s": 254.433850206
+  },
+  {
+    "iteration": 116,
+    "transitions": 237568,
+    "mean_reward": 0.09211710095405579,
+    "mean_action_std": 0.21245187520980835,
+    "success_count": 1338,
+    "episode_count": 1632,
+    "elapsed_s": 256.60945695099963
+  },
+  {
+    "iteration": 117,
+    "transitions": 239616,
+    "mean_reward": 0.1261744648218155,
+    "mean_action_std": 0.21113218367099762,
+    "success_count": 1366,
+    "episode_count": 1660,
+    "elapsed_s": 258.8290656529998
+  },
+  {
+    "iteration": 118,
+    "transitions": 241664,
+    "mean_reward": 0.10164102166891098,
+    "mean_action_std": 0.209824800491333,
+    "success_count": 1382,
+    "episode_count": 1676,
+    "elapsed_s": 261.0374778969999
+  },
+  {
+    "iteration": 119,
+    "transitions": 243712,
+    "mean_reward": 0.10988381505012512,
+    "mean_action_std": 0.2091776579618454,
+    "success_count": 1403,
+    "episode_count": 1697,
+    "elapsed_s": 263.24232114200004
+  },
+  {
+    "iteration": 120,
+    "transitions": 245760,
+    "mean_reward": 0.1082691103219986,
+    "mean_action_std": 0.20831699669361115,
+    "success_count": 1422,
+    "episode_count": 1716,
+    "elapsed_s": 265.459403416
+  },
+  {
+    "iteration": 121,
+    "transitions": 247808,
+    "mean_reward": 0.1057826578617096,
+    "mean_action_std": 0.2074211835861206,
+    "success_count": 1441,
+    "episode_count": 1735,
+    "elapsed_s": 267.68749527
+  },
+  {
+    "iteration": 122,
+    "transitions": 249856,
+    "mean_reward": 0.11673721671104431,
+    "mean_action_std": 0.20648598670959473,
+    "success_count": 1464,
+    "episode_count": 1758,
+    "elapsed_s": 269.9318555279997
+  },
+  {
+    "iteration": 123,
+    "transitions": 251904,
+    "mean_reward": 0.10584042221307755,
+    "mean_action_std": 0.20543335378170013,
+    "success_count": 1482,
+    "episode_count": 1776,
+    "elapsed_s": 272.1348019719999
+  },
+  {
+    "iteration": 124,
+    "transitions": 253952,
+    "mean_reward": 0.11043325066566467,
+    "mean_action_std": 0.20400165021419525,
+    "success_count": 1503,
+    "episode_count": 1797,
+    "elapsed_s": 274.34737514399967
+  },
+  {
+    "iteration": 125,
+    "transitions": 256000,
+    "mean_reward": 0.10405206680297852,
+    "mean_action_std": 0.20304684340953827,
+    "success_count": 1520,
+    "episode_count": 1814,
+    "elapsed_s": 276.54009426599987
+  },
+  {
+    "iteration": 126,
+    "transitions": 258048,
+    "mean_reward": 0.11971892416477203,
+    "mean_action_std": 0.20160064101219177,
+    "success_count": 1545,
+    "episode_count": 1839,
+    "elapsed_s": 278.7145334939996
+  },
+  {
+    "iteration": 127,
+    "transitions": 260096,
+    "mean_reward": 0.11413414776325226,
+    "mean_action_std": 0.2007596492767334,
+    "success_count": 1567,
+    "episode_count": 1861,
+    "elapsed_s": 280.92798950199995
+  },
+  {
+    "iteration": 128,
+    "transitions": 262144,
+    "mean_reward": 0.11458808183670044,
+    "mean_action_std": 0.19976317882537842,
+    "success_count": 1589,
+    "episode_count": 1883,
+    "elapsed_s": 283.166105237
+  },
+  {
+    "iteration": 129,
+    "transitions": 264192,
+    "mean_reward": 0.112897589802742,
+    "mean_action_std": 0.19850584864616394,
+    "success_count": 1610,
+    "episode_count": 1904,
+    "elapsed_s": 285.3778109579998
+  },
+  {
+    "iteration": 130,
+    "transitions": 266240,
+    "mean_reward": 0.10499964654445648,
+    "mean_action_std": 0.19747790694236755,
+    "success_count": 1627,
+    "episode_count": 1921,
+    "elapsed_s": 287.58737104400007
+  },
+  {
+    "iteration": 131,
+    "transitions": 268288,
+    "mean_reward": 0.11136709898710251,
+    "mean_action_std": 0.19653677940368652,
+    "success_count": 1648,
+    "episode_count": 1942,
+    "elapsed_s": 289.77029089499956
+  },
+  {
+    "iteration": 132,
+    "transitions": 270336,
+    "mean_reward": 0.1180276870727539,
+    "mean_action_std": 0.19597133994102478,
+    "success_count": 1671,
+    "episode_count": 1965,
+    "elapsed_s": 292.0087198000001
+  },
+  {
+    "iteration": 133,
+    "transitions": 272384,
+    "mean_reward": 0.11372693628072739,
+    "mean_action_std": 0.19535666704177856,
+    "success_count": 1693,
+    "episode_count": 1987,
+    "elapsed_s": 294.23973707999994
+  },
+  {
+    "iteration": 134,
+    "transitions": 274432,
+    "mean_reward": 0.11756420880556107,
+    "mean_action_std": 0.19449788331985474,
+    "success_count": 1717,
+    "episode_count": 2011,
+    "elapsed_s": 296.44261712000025
+  },
+  {
+    "iteration": 135,
+    "transitions": 276480,
+    "mean_reward": 0.10816499590873718,
+    "mean_action_std": 0.19419889152050018,
+    "success_count": 1737,
+    "episode_count": 2031,
+    "elapsed_s": 298.63291342699995
+  },
+  {
+    "iteration": 136,
+    "transitions": 278528,
+    "mean_reward": 0.12151964008808136,
+    "mean_action_std": 0.19345255196094513,
+    "success_count": 1762,
+    "episode_count": 2056,
+    "elapsed_s": 300.89269425600014
+  },
+  {
+    "iteration": 137,
+    "transitions": 280576,
+    "mean_reward": 0.10800360143184662,
+    "mean_action_std": 0.19231043756008148,
+    "success_count": 1781,
+    "episode_count": 2075,
+    "elapsed_s": 303.11571722699955
+  },
+  {
+    "iteration": 138,
+    "transitions": 282624,
+    "mean_reward": 0.11903764307498932,
+    "mean_action_std": 0.1910763829946518,
+    "success_count": 1804,
+    "episode_count": 2098,
+    "elapsed_s": 305.3297012490002
+  },
+  {
+    "iteration": 139,
+    "transitions": 284672,
+    "mean_reward": 0.11833369731903076,
+    "mean_action_std": 0.1902163177728653,
+    "success_count": 1828,
+    "episode_count": 2122,
+    "elapsed_s": 307.5397974130001
+  },
+  {
+    "iteration": 140,
+    "transitions": 286720,
+    "mean_reward": 0.10165975987911224,
+    "mean_action_std": 0.18935126066207886,
+    "success_count": 1844,
+    "episode_count": 2138,
+    "elapsed_s": 309.7941743229994
+  },
+  {
+    "iteration": 141,
+    "transitions": 288768,
+    "mean_reward": 0.11096926033496857,
+    "mean_action_std": 0.18868888914585114,
+    "success_count": 1864,
+    "episode_count": 2158,
+    "elapsed_s": 312.04062024199993
+  },
+  {
+    "iteration": 142,
+    "transitions": 290816,
+    "mean_reward": 0.1153823584318161,
+    "mean_action_std": 0.18765543401241302,
+    "success_count": 1886,
+    "episode_count": 2180,
+    "elapsed_s": 314.30216324899993
+  },
+  {
+    "iteration": 143,
+    "transitions": 292864,
+    "mean_reward": 0.10421191155910492,
+    "mean_action_std": 0.1870347261428833,
+    "success_count": 1903,
+    "episode_count": 2197,
+    "elapsed_s": 316.52475984800003
+  },
+  {
+    "iteration": 144,
+    "transitions": 294912,
+    "mean_reward": 0.1224648654460907,
+    "mean_action_std": 0.18610116839408875,
+    "success_count": 1928,
+    "episode_count": 2222,
+    "elapsed_s": 318.8114715439997
+  },
+  {
+    "iteration": 145,
+    "transitions": 296960,
+    "mean_reward": 0.10075420141220093,
+    "mean_action_std": 0.1848590224981308,
+    "success_count": 1944,
+    "episode_count": 2238,
+    "elapsed_s": 321.02612241099996
+  },
+  {
+    "iteration": 146,
+    "transitions": 299008,
+    "mean_reward": 0.1364143192768097,
+    "mean_action_std": 0.18393242359161377,
+    "success_count": 1976,
+    "episode_count": 2270,
+    "elapsed_s": 323.2532056509999
+  },
+  {
+    "iteration": 147,
+    "transitions": 301056,
+    "mean_reward": 0.11195866763591766,
+    "mean_action_std": 0.18341101706027985,
+    "success_count": 1996,
+    "episode_count": 2290,
+    "elapsed_s": 325.51590239300003
+  },
+  {
+    "iteration": 148,
+    "transitions": 303104,
+    "mean_reward": 0.11554664373397827,
+    "mean_action_std": 0.18253585696220398,
+    "success_count": 2018,
+    "episode_count": 2312,
+    "elapsed_s": 327.7665285089997
+  },
+  {
+    "iteration": 149,
+    "transitions": 305152,
+    "mean_reward": 0.12387695908546448,
+    "mean_action_std": 0.181433767080307,
+    "success_count": 2044,
+    "episode_count": 2338,
+    "elapsed_s": 330.01403009299975
+  },
+  {
+    "iteration": 150,
+    "transitions": 307200,
+    "mean_reward": 0.1020723357796669,
+    "mean_action_std": 0.1811554878950119,
+    "success_count": 2060,
+    "episode_count": 2354,
+    "elapsed_s": 332.27350797300005
+  },
+  {
+    "iteration": 151,
+    "transitions": 309248,
+    "mean_reward": 0.12676063179969788,
+    "mean_action_std": 0.18097102642059326,
+    "success_count": 2087,
+    "episode_count": 2381,
+    "elapsed_s": 334.52151506799964
+  },
+  {
+    "iteration": 152,
+    "transitions": 311296,
+    "mean_reward": 0.11629365384578705,
+    "mean_action_std": 0.18050517141819,
+    "success_count": 2109,
+    "episode_count": 2403,
+    "elapsed_s": 336.77646315399943
+  },
+  {
+    "iteration": 153,
+    "transitions": 313344,
+    "mean_reward": 0.10586302727460861,
+    "mean_action_std": 0.17930962145328522,
+    "success_count": 2127,
+    "episode_count": 2421,
+    "elapsed_s": 339.0359921139998
+  },
+  {
+    "iteration": 154,
+    "transitions": 315392,
+    "mean_reward": 0.13037008047103882,
+    "mean_action_std": 0.1782880425453186,
+    "success_count": 2156,
+    "episode_count": 2450,
+    "elapsed_s": 341.30736653199983
+  },
+  {
+    "iteration": 155,
+    "transitions": 317440,
+    "mean_reward": 0.11903806775808334,
+    "mean_action_std": 0.17715585231781006,
+    "success_count": 2180,
+    "episode_count": 2474,
+    "elapsed_s": 343.49826864399984
+  },
+  {
+    "iteration": 156,
+    "transitions": 319488,
+    "mean_reward": 0.11178527772426605,
+    "mean_action_std": 0.1762835681438446,
+    "success_count": 2200,
+    "episode_count": 2494,
+    "elapsed_s": 345.7050043620002
+  },
+  {
+    "iteration": 157,
+    "transitions": 321536,
+    "mean_reward": 0.11971618980169296,
+    "mean_action_std": 0.17545296251773834,
+    "success_count": 2224,
+    "episode_count": 2518,
+    "elapsed_s": 347.94721384999957
+  },
+  {
+    "iteration": 158,
+    "transitions": 323584,
+    "mean_reward": 0.10950878262519836,
+    "mean_action_std": 0.17414025962352753,
+    "success_count": 2243,
+    "episode_count": 2537,
+    "elapsed_s": 350.1348016949996
+  },
+  {
+    "iteration": 159,
+    "transitions": 325632,
+    "mean_reward": 0.10968196392059326,
+    "mean_action_std": 0.173045814037323,
+    "success_count": 2262,
+    "episode_count": 2556,
+    "elapsed_s": 352.34679843399954
+  },
+  {
+    "iteration": 160,
+    "transitions": 327680,
+    "mean_reward": 0.11291616410017014,
+    "mean_action_std": 0.17198404669761658,
+    "success_count": 2283,
+    "episode_count": 2577,
+    "elapsed_s": 354.51475053299964
+  }
+]

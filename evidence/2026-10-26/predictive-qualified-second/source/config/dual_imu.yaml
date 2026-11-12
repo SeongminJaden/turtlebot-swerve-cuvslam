@@ -1,0 +1,23 @@
+dual_imu_fusion:
+  ros__parameters:
+    # Do not enable on hardware before chip location, firmware axes and clocks are verified.
+    geometry_verified: false
+    output_frame: base_link
+    output_topic: /imu/base/data_raw
+    imu1.topic: /opencr_1/imu
+    imu1.frame: opencr_front_imu
+    imu1.position_m: [0.05700028, -0.00001860, 0.16597000]
+    imu1.quaternion_xyzw: [0.0, 0.0, 0.0, 1.0] # SIM frame convention; hardware axes pending
+    imu2.topic: /opencr_2/imu
+    imu2.frame: opencr_rear_imu
+    imu2.position_m: [-0.05700028, 0.00001860, 0.16597000]
+    imu2.quaternion_xyzw: [0.0, 0.0, 1.0, 0.0] # SIM convention: rear board rotated pi
+    alpha_filter_tau_s: 0.03
+    interpolation_max_gap_s: 0.03
+    derivative_max_gap_s: 0.1
+    max_age_s: 0.1
+    gyro_difference_limit_rad_s: 0.35
+    accel_difference_limit_m_s2: 2.0
+    # Conservative placeholders until measured noise/bias calibration.
+    unknown_gyro_variance: 0.0004
+    unknown_accel_variance: 0.04

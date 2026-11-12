@@ -1,0 +1,4 @@
+{
+  "outcome": "controlled_abort",
+  "reason": "Launcher default kept cuda:0 despite intended CPU configuration. Explicit CPU default fixed for next run; stop duplicate GPU load during PPO training."
+}

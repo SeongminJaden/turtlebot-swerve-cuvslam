@@ -1,0 +1,22 @@
+{
+  "/opencr_1/imu": {
+    "count": 274,
+    "simulation_rate_hz": 199.99999999999997,
+    "wall_rate_hz": 27.4
+  },
+  "/opencr_2/imu": {
+    "count": 274,
+    "simulation_rate_hz": 199.99999999999997,
+    "wall_rate_hz": 27.4
+  },
+  "/imu/base/data_raw": {
+    "count": 274,
+    "simulation_rate_hz": 199.99999999999997,
+    "wall_rate_hz": 27.4
+  },
+  "/joint_states": {
+    "count": 274,
+    "simulation_rate_hz": 199.99999999999997,
+    "wall_rate_hz": 27.4
+  }
+}

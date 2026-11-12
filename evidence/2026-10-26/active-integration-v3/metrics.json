@@ -1,0 +1,36 @@
+{
+  "frames": 985,
+  "tracking_success_frames": 982,
+  "forbidden_drive_frames": 0,
+  "injected_drop_frames": 3,
+  "drive_during_injected_drop": 0,
+  "translation_error_m": {
+    "median": 40.14584101379498,
+    "p95": 40.41267583902336,
+    "max": 41.04631052795882
+  },
+  "rotation_error_deg": {
+    "median": 133.7408591526743,
+    "p95": 133.92743944641438,
+    "max": 138.90979150510847
+  },
+  "alignment": "single first-pose SE3 transform; no trajectory fitting or scale adjustment",
+  "per_segment": {
+    "front": {
+      "frames": 161,
+      "drive_frames": 47
+    },
+    "rear": {
+      "frames": 189,
+      "drive_frames": 36
+    },
+    "right": {
+      "frames": 342,
+      "drive_frames": 62
+    },
+    "left": {
+      "frames": 293,
+      "drive_frames": 51
+    }
+  }
+}

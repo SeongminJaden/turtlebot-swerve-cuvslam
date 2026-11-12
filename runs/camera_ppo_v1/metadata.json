@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "rl/train_camera.py",
+    "--iterations",
+    "160",
+    "--num-envs",
+    "16",
+    "--output",
+    "runs/camera_ppo_v1",
+    "--visualizer",
+    "none"
+  ],
+  "seed": 7,
+  "num_envs": 16,
+  "rollout_steps": 128,
+  "physics": "Isaac Sim PhysX",
+  "physics_dt": 0.016666666666666666,
+  "decimation": 4,
+  "source_hashes": {
+    "camera_env.py": "b1ba4cfa43c0a0b04c89a2eb038af43452e9cd55c3e863c4372fa3fbb50041e1",
+    "camera_policy.py": "f886737b70b4a2e3fed19f5855d92000a03301792552c91c61686efedd541a13",
+    "train_camera.py": "3157432de8b557aa653987e1a6f7104a54853012967853a338901f65ad8ba04e"
+  },
+  "git_commit": "184158ac641b5f6d0252dca96154ffefef67158d"
+}

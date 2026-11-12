@@ -1,0 +1,14 @@
+{
+  "costmap_stamp_ns": 36740000000,
+  "frame_id": "map",
+  "static_connected_radius_0_315": true,
+  "combined_connected": false,
+  "extra_lethal_cells": 6186,
+  "extra_lethal_distance_from_cad_m_quantiles": {
+    "min": 0.009999999776482582,
+    "median": 0.029999999329447746,
+    "p90": 0.05999999865889549,
+    "max": 0.06999999843537807
+  },
+  "scope": "offline grid comparison; distances are discrepancies, not measured sensor accuracy"
+}

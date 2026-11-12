@@ -1,0 +1,16 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-26-17-17-33-114796-ros-76795
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-1]: process started with pid [76896]
+[component_container-1] [INFO] [1793002653.513721370] [arm_cuvslam_container]: Load Library: /opt/ros/lyrical/lib/libisaac_ros_cuvslam_node.so
+[component_container-1] [INFO] [1793002653.561954715] [arm_cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793002653.562006641] [arm_cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793002653.900370130] [arm_visual_slam]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1793002653.900433871] [arm_visual_slam]: Tracking mode: Multicamera
+[component_container-1] [INFO] [1793002653.903612356] [arm_visual_slam]: Time taken by cuvslam::WarmUpGPU(): 0.003175
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/arm_visual_slam' in container '/arm_cuvslam_container'
+[component_container-1] [INFO] [1793002668.274638906] [arm_visual_slam]: Initializing cuVSLAM.
+[component_container-1] [INFO] [1793002668.274728936] [arm_visual_slam]: Use use_gpu: true
+[component_container-1] [INFO] [1793002668.274732890] [arm_visual_slam]: Enable IMU Fusion: false
+[component_container-1] [INFO] [1793002668.289825395] [arm_visual_slam]: Time taken by cuvslam::Odometry::Odometry(): 0.015089
+[component_container-1] [INFO] [1793002668.289865036] [arm_visual_slam]: cuVSLAM tracker was successfully initialized.
+[component_container-1] [WARN] [1793002685.178592365] [arm_visual_slam]: Delta between current and previous frame [266.666667 ms] is above threshold [100.000000 ms]

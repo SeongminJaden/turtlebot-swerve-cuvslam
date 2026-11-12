@@ -1,0 +1,12 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-27-09-20-09-676488-ros-12581
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-1]: process started with pid [12659]
+[component_container-1] [INFO] [1793060410.077788929] [arm_cuvslam_container]: Load Library: /opt/ros/lyrical/lib/libisaac_ros_cuvslam_node.so
+[component_container-1] [INFO] [1793060410.123461662] [arm_cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793060410.123525208] [arm_cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793060410.433105089] [arm_visual_slam]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1793060410.433166656] [arm_visual_slam]: Tracking mode: RGBD
+[component_container-1] [INFO] [1793060410.437557799] [arm_visual_slam]: Time taken by cuvslam::WarmUpGPU(): 0.004387
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/arm_visual_slam' in container '/arm_cuvslam_container'
+[component_container-1] [INFO] [1793060512.914752272] [rclcpp]: signal_handler(signum=2)
+[INFO] [component_container-1]: process has finished cleanly [pid 12659]

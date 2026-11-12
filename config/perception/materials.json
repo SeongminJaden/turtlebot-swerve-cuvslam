@@ -1,0 +1,32 @@
+{
+  "red": {
+    "manufacturer": "Bambu Lab",
+    "material": "PLA Basic",
+    "name": "Maroon Red",
+    "code": "10205",
+    "srgb_hex": "#9D2235",
+    "usd_linear_rgb": [
+      0.33716361504833037,
+      0.01599629336550963,
+      0.03560131487502034
+    ],
+    "source": "https://github.com/bambulab/BambuStudio/blob/master/resources/profiles/BBL/filament/filaments_color_codes.json",
+    "confirmed_by_user": true,
+    "note": "Manufacturer digital swatch, not measured surface reflectance; camera exposure/white balance/lighting affect appearance"
+  },
+  "green": {
+    "manufacturer": "Bambu Lab",
+    "material": "PLA Basic",
+    "name": "Bambu Green",
+    "code": "10501",
+    "srgb_hex": "#00AE42",
+    "usd_linear_rgb": [
+      0.0,
+      0.4232676699860717,
+      0.05448027644244237
+    ],
+    "source": "https://github.com/bambulab/BambuStudio/blob/master/resources/profiles/BBL/filament/filaments_color_codes.json",
+    "confirmed_by_user": true,
+    "note": "Manufacturer digital swatch, not measured surface reflectance; camera exposure/white balance/lighting affect appearance"
+  }
+}

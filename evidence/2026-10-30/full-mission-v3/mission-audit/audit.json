@@ -1,0 +1,652 @@
+{
+  "mission_complete": false,
+  "reachability": {
+    "status": "BLOCKED_UNREACHABLE",
+    "assumption": "level chassis at base Z=0; original joint limits; end-link AABB conservatively encloses all gripper geometry",
+    "puck_top_m": 0.13,
+    "analytic_min_height_lower_bound_m": 0.1856520651376723,
+    "optimized_aabb_min_height_m": 0.2130505722520506,
+    "optimizer_joint_rad": [
+      1.0070267342491013,
+      -0.3499999999544456,
+      -0.34999999986132263,
+      -0.349999999953289,
+      -0.3499999998555104
+    ],
+    "end_link_radius_bound_m": 0.161236122028722,
+    "gripper_actuated": false,
+    "physx_low_pose_aabb_min_z_m": 0.21184911080300134,
+    "physx_joint_readback_rad": {
+      "arm_joint1": 1.0070029497146606,
+      "arm_joint2": -0.3499866724014282,
+      "arm_joint3": -0.3499632179737091,
+      "arm_joint4": -0.34999874234199524,
+      "arm_joint5": -0.3499999940395355
+    },
+    "low_pose_targets_reached": true
+  },
+  "barcode": {
+    "observed": [
+      "P2-01"
+    ],
+    "expected": "P2-01",
+    "passed": true,
+    "evidence": "station-camera.png",
+    "dimensions_assumed_m": [
+      0.32,
+      0.16
+    ]
+  },
+  "signal_roi": [
+    610,
+    315,
+    119,
+    110
+  ],
+  "signal": {
+    "complete": true,
+    "sequence": [
+      "R",
+      "G",
+      "R",
+      "R",
+      "G",
+      "R",
+      "G",
+      "G",
+      "Y",
+      "G",
+      "Y",
+      "G"
+    ],
+    "error": null,
+    "passed": true,
+    "observations": [
+      {
+        "time_s": 0.0,
+        "observed": "R"
+      },
+      {
+        "time_s": 0.25,
+        "observed": "R"
+      },
+      {
+        "time_s": 0.5,
+        "observed": "R"
+      },
+      {
+        "time_s": 0.75,
+        "observed": "R"
+      },
+      {
+        "time_s": 1.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 1.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 1.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 1.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 2.0,
+        "observed": "G"
+      },
+      {
+        "time_s": 2.25,
+        "observed": "G"
+      },
+      {
+        "time_s": 2.5,
+        "observed": "G"
+      },
+      {
+        "time_s": 2.75,
+        "observed": "G"
+      },
+      {
+        "time_s": 3.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 3.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 3.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 3.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 4.0,
+        "observed": "R"
+      },
+      {
+        "time_s": 4.25,
+        "observed": "R"
+      },
+      {
+        "time_s": 4.5,
+        "observed": "R"
+      },
+      {
+        "time_s": 4.75,
+        "observed": "R"
+      },
+      {
+        "time_s": 5.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 5.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 5.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 5.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 6.0,
+        "observed": "R"
+      },
+      {
+        "time_s": 6.25,
+        "observed": "R"
+      },
+      {
+        "time_s": 6.5,
+        "observed": "R"
+      },
+      {
+        "time_s": 6.75,
+        "observed": "R"
+      },
+      {
+        "time_s": 7.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 7.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 7.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 7.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 8.0,
+        "observed": "G"
+      },
+      {
+        "time_s": 8.25,
+        "observed": "G"
+      },
+      {
+        "time_s": 8.5,
+        "observed": "G"
+      },
+      {
+        "time_s": 8.75,
+        "observed": "G"
+      },
+      {
+        "time_s": 9.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 9.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 9.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 9.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 10.0,
+        "observed": "R"
+      },
+      {
+        "time_s": 10.25,
+        "observed": "R"
+      },
+      {
+        "time_s": 10.5,
+        "observed": "R"
+      },
+      {
+        "time_s": 10.75,
+        "observed": "R"
+      },
+      {
+        "time_s": 11.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 11.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 11.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 11.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 12.0,
+        "observed": "G"
+      },
+      {
+        "time_s": 12.25,
+        "observed": "G"
+      },
+      {
+        "time_s": 12.5,
+        "observed": "G"
+      },
+      {
+        "time_s": 12.75,
+        "observed": "G"
+      },
+      {
+        "time_s": 13.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 13.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 13.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 13.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 14.0,
+        "observed": "G"
+      },
+      {
+        "time_s": 14.25,
+        "observed": "G"
+      },
+      {
+        "time_s": 14.5,
+        "observed": "G"
+      },
+      {
+        "time_s": 14.75,
+        "observed": "G"
+      },
+      {
+        "time_s": 15.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 15.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 15.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 15.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 16.0,
+        "observed": "Y"
+      },
+      {
+        "time_s": 16.25,
+        "observed": "Y"
+      },
+      {
+        "time_s": 16.5,
+        "observed": "Y"
+      },
+      {
+        "time_s": 16.75,
+        "observed": "Y"
+      },
+      {
+        "time_s": 17.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 17.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 17.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 17.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 18.0,
+        "observed": "G"
+      },
+      {
+        "time_s": 18.25,
+        "observed": "G"
+      },
+      {
+        "time_s": 18.5,
+        "observed": "G"
+      },
+      {
+        "time_s": 18.75,
+        "observed": "G"
+      },
+      {
+        "time_s": 19.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 19.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 19.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 19.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 20.0,
+        "observed": "Y"
+      },
+      {
+        "time_s": 20.25,
+        "observed": "Y"
+      },
+      {
+        "time_s": 20.5,
+        "observed": "Y"
+      },
+      {
+        "time_s": 20.75,
+        "observed": "Y"
+      },
+      {
+        "time_s": 21.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 21.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 21.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 21.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 22.0,
+        "observed": "G"
+      },
+      {
+        "time_s": 22.25,
+        "observed": "G"
+      },
+      {
+        "time_s": 22.5,
+        "observed": "G"
+      },
+      {
+        "time_s": 22.75,
+        "observed": "G"
+      },
+      {
+        "time_s": 23.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 23.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 23.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 23.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 24.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 24.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 24.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 24.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 25.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 25.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 25.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 25.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 26.0,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 26.25,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 26.5,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 26.75,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 27.0,
+        "observed": "OFF"
+      }
+    ],
+    "timestamp_basis": "4 Hz scheduled stimulus time; renderer held at delta_time=0; no moving-robot timing validation"
+  },
+  "observed_signal_plan": {
+    "evidence_kind": "planner_output_not_observation",
+    "sequence": [
+      "R",
+      "G",
+      "R",
+      "R",
+      "G",
+      "R",
+      "G",
+      "G",
+      "Y",
+      "G",
+      "Y",
+      "G"
+    ],
+    "counts": {
+      "R": 4,
+      "G": 6,
+      "Y": 2
+    },
+    "barcode": "P2-01",
+    "locations": [
+      {
+        "location": "L1",
+        "group": "Y",
+        "targets": [
+          {
+            "id": 0,
+            "center_m": [
+              3.61,
+              1.01,
+              0.1
+            ]
+          },
+          {
+            "id": 2,
+            "center_m": [
+              3.73,
+              0.8899999999999999,
+              0.1
+            ]
+          }
+        ]
+      },
+      {
+        "location": "L2",
+        "group": "R",
+        "targets": [
+          {
+            "id": 1,
+            "center_m": [
+              2.142,
+              3.7600000000000002,
+              0.1
+            ]
+          },
+          {
+            "id": 3,
+            "center_m": [
+              2.262,
+              3.7600000000000002,
+              0.1
+            ]
+          },
+          {
+            "id": 4,
+            "center_m": [
+              2.142,
+              3.64,
+              0.1
+            ]
+          },
+          {
+            "id": 5,
+            "center_m": [
+              2.262,
+              3.64,
+              0.1
+            ]
+          }
+        ]
+      },
+      {
+        "location": "L3",
+        "group": "G",
+        "targets": [
+          {
+            "id": 6,
+            "center_m": [
+              3.61,
+              5.414,
+              0.1
+            ]
+          },
+          {
+            "id": 7,
+            "center_m": [
+              3.61,
+              5.354,
+              0.1
+            ]
+          },
+          {
+            "id": 8,
+            "center_m": [
+              3.61,
+              5.2940000000000005,
+              0.1
+            ]
+          },
+          {
+            "id": 9,
+            "center_m": [
+              3.73,
+              5.414,
+              0.1
+            ]
+          },
+          {
+            "id": 10,
+            "center_m": [
+              3.73,
+              5.354,
+              0.1
+            ]
+          },
+          {
+            "id": 11,
+            "center_m": [
+              3.73,
+              5.2940000000000005,
+              0.1
+            ]
+          }
+        ]
+      }
+    ],
+    "inventory_source": "synthetic registered inventory, not camera perception"
+  },
+  "remaining": [
+    "camera puck IDs/color/shape",
+    "contact grasp with actuated gripper",
+    "sensor closed-loop navigation",
+    "dice placement and independent reinspection",
+    "whole-body return-zone containment"
+  ],
+  "status": "BLOCKED_FULL_MISSION"
+}

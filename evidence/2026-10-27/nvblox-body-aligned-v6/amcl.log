@@ -1,0 +1,65 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-27-11-46-20-873082-ros-40225
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [map_server-1]: process started with pid [40269]
+[INFO] [amcl-2]: process started with pid [40270]
+[INFO] [lifecycle_manager-3]: process started with pid [40273]
+[lifecycle_manager-3] [INFO] [1793069181.316286414] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-3] [INFO] [1793069181.316583517] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle publishers[0m[0m
+[lifecycle_manager-3] [INFO] [1793069181.317041560] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[amcl-2] [INFO] [1793069181.319337412] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-2] [INFO] [1793069181.319714080] [amcl]: Creating
+[map_server-1] [INFO] [1793069181.319956323] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1793069181.320029604] [map_server]: Creating
+[lifecycle_manager-3] [INFO] [1793069181.420376644] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service servers[0m[0m
+[map_server-1] [INFO] [1793069182.584422968] [map_server]: Configuring
+[map_server-1] [INFO] [1793069182.584513646] [map_io]: Loading yaml file: /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/maze/localization/maze.yaml
+[map_server-1] [INFO] [1793069182.584694510] [map_io]: resolution: 0.01
+[map_server-1] [INFO] [1793069182.584698258] [map_io]: origin[0]: -0.3
+[map_server-1] [INFO] [1793069182.584699896] [map_io]: origin[1]: -0.3
+[map_server-1] [INFO] [1793069182.584701581] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1793069182.584703221] [map_io]: free_thresh: 0.196
+[map_server-1] [INFO] [1793069182.584704830] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1793069182.584707231] [map_io]: mode: trinary
+[map_server-1] [INFO] [1793069182.584709473] [map_io]: negate: 0
+[map_server-1] [INFO] [1793069182.584975494] [map_io]: Loading image_file: /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/maze/localization/maze.pgm
+[map_server-1] [INFO] [1793069182.589067889] [map_io]: Read map /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/maze/localization/maze.pgm: 501 X 691 map @ 0.01 m/cell
+[map_server-1] [INFO] [1793069182.596891963] [map_server]: Activating
+[map_server-1] [INFO] [1793069182.597350990] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1793069182.600330869] [amcl]: Configuring
+[amcl-2] [INFO] [1793069182.600588361] [amcl]: initTransforms
+[amcl-2] [INFO] [1793069182.605194713] [amcl]: initPubSub
+[amcl-2] [INFO] [1793069182.612048168] [amcl]: Subscribed to map topic.
+[amcl-2] [INFO] [1793069182.615746150] [amcl]: Activating
+[amcl-2] [INFO] [1793069182.615775479] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1793069182.615828522] [amcl]: Setting pose (0.000000): 0.350 2.750 -0.785
+[amcl-2] [INFO] [1793069182.616096934] [amcl]: Creating bond (amcl) to lifecycle manager.
+[amcl-2] [INFO] [1793069182.622747954] [amcl]: Received a 501 X 691 map @ 0.010 m/pix
+[amcl-2] [INFO] [1793069189.769736293] [amcl]: createLaserObject
+[lifecycle_manager-3] [INFO] [1793069200.934816459] [rclcpp]: signal_handler(signum=2)
+[amcl-2] [INFO] [1793069200.934824246] [rclcpp]: signal_handler(signum=2)
+[amcl-2] [INFO] [1793069200.934907222] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[lifecycle_manager-3] [INFO] [1793069200.934897455] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[map_server-1] [INFO] [1793069200.934830968] [rclcpp]: signal_handler(signum=2)
+[map_server-1] [INFO] [1793069200.934905235] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-1] [INFO] [1793069200.934970105] [map_server]: Deactivating
+[map_server-1] [INFO] [1793069200.934979586] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1793069200.934971357] [amcl]: Deactivating
+[amcl-2] [INFO] [1793069200.934998255] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[lifecycle_manager-3] [INFO] [1793069200.940800403] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization
+[map_server-1] [INFO] [1793069200.945177928] [map_server]: Cleaning up
+[map_server-1] [INFO] [1793069200.945236844] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1793069200.945180575] [amcl]: Cleaning up
+[amcl-2] [INFO] [1793069200.948144600] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[map_server-1] [INFO] [1793069200.955221508] [map_server]: Destroying
+[map_server-1] [WARN] [1793069200.955259413] [rclcpp_lifecycle]: LifecycleNode is not shut down: Node still in state(1) in destructor
+[amcl-2] [INFO] [1793069200.959611079] [amcl]: Destroying
+[amcl-2] [WARN] [1793069200.959644573] [rclcpp_lifecycle]: LifecycleNode is not shut down: Node still in state(1) in destructor
+[INFO] [lifecycle_manager-3]: process has finished cleanly [pid 40273]
+[INFO] [map_server-1]: process has finished cleanly [pid 40269]
+[INFO] [amcl-2]: process has finished cleanly [pid 40270]

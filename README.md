@@ -1,5 +1,7 @@
 # TurtleBot 기반 스워브 로봇 — 개발과 강의 실습
 
+새 R12 및 주사위 기억 미션의 GUI 없는 개발: [실행법과 검증 상태](docs/MISSION_HEADLESS.md). 기존 M38 주행 결과와 별도로 검증합니다.
+
 Isaac Sim **6.1.0.0**, Isaac ROS **release-5.0**, Isaac Lab **3.0 계열 소스 스냅샷(78b12ae)** 기준.
 Jetson이나 실제 카메라 없이 Ubuntu PC에서 시뮬레이션을 준비하기 위한 URDF·USD와 가이드입니다.
 **제공 미로를 Isaac Sim PhysX로 구성하고 물리 주행, Isaac Lab PPO 학습·정책 평가를 실행했습니다. 결과는 실행별 보고서로 구분합니다. 최종 v5 정책 + 측정 센서 + RGBD cuVSLAM + EKF·AMCL 폐루프로 두 미로의 지정 경로를 완주했습니다. 최신 판정과 재현 명령은 docs/VALIDATION.md를 따릅니다.**

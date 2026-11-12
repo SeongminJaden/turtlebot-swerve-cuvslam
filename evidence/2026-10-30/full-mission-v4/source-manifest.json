@@ -1,0 +1,8 @@
+{
+  "scripts/mission_headless.py": "9dec0bee3effc2dba56f09d22d7aab735581aaf8554bea31441c178b53a931c0",
+  "scripts/mission_audit.py": "25292d7747c76f074a3bf10c9b84599f8d77df80e1ab3e2b06ba4848c5b4f3a0",
+  "turtlebot_swerve/dice_mission.py": "3068d7f6d6f733cbee66ad43ca2242b2e7f1a0030cfa8a1566d9519c72c0c7b9",
+  "turtlebot_swerve/mission_verification.py": "f5739354c7c20a271590d8068e0531ef29107e6a8278a6bf76bbcdeaf5924ddd",
+  "config/mission/practice.json": "a15632bc25f60a32a42296f3869878ea06828fa346765773208ffa23fd6ab749",
+  "config/mission/sources.json": "28e9d6d29371424b5dc4cc3579f193ee9c264ff78d98b4c487e1aefe9533c39b"
+}

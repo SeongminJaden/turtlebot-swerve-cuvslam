@@ -1,0 +1,19 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-26-18-19-26-615054-ros-95569
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-1]: process started with pid [95647]
+[component_container-1] [INFO] [1793006367.052176197] [arm_cuvslam_container]: Load Library: /opt/ros/lyrical/lib/libisaac_ros_cuvslam_node.so
+[component_container-1] [INFO] [1793006367.105478244] [arm_cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793006367.105534473] [arm_cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793006367.378931384] [arm_visual_slam]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1793006367.379000427] [arm_visual_slam]: Tracking mode: Multicamera
+[component_container-1] [INFO] [1793006367.382743520] [arm_visual_slam]: Time taken by cuvslam::WarmUpGPU(): 0.003738
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/arm_visual_slam' in container '/arm_cuvslam_container'
+[component_container-1] [INFO] [1793006388.342376804] [arm_visual_slam]: Initializing cuVSLAM.
+[component_container-1] [INFO] [1793006388.342480234] [arm_visual_slam]: Use use_gpu: true
+[component_container-1] [INFO] [1793006388.342485883] [arm_visual_slam]: Enable IMU Fusion: false
+[component_container-1] [INFO] [1793006388.363842710] [arm_visual_slam]: Time taken by cuvslam::Odometry::Odometry(): 0.021353
+[component_container-1] [INFO] [1793006388.363884846] [arm_visual_slam]: cuVSLAM tracker was successfully initialized.
+[component_container-1] [WARN] [1793006389.617820542] [arm_visual_slam]: Delta between current and previous frame [195.000000 ms] is above threshold [100.000000 ms]
+[component_container-1] [INFO] [1793006511.177558813] [rclcpp]: signal_handler(signum=2)
+[component_container-1] [INFO] [1793006511.187538946] [arm_visual_slam]: cuVSLAM odometry was destroyed
+[INFO] [component_container-1]: process has finished cleanly [pid 95647]

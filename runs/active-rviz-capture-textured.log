@@ -1,0 +1,4 @@
+X Error of failed request:  BadMatch (invalid parameter attributes)
+  Major opcode of failed request:  73 (X_GetImage)
+  Serial number of failed request:  16
+  Current serial number in output stream:  16

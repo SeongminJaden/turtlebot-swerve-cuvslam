@@ -1,0 +1,21 @@
+{
+  "official_source_commit": "68ec75d8a400949580ecf263e0105ea9743b878e",
+  "arduino_core": "OpenCR:OpenCR@1.5.3",
+  "compile": "PASS",
+  "program_bytes": 111320,
+  "dynamic_memory_bytes": 41160,
+  "hardware_flashed": false,
+  "physical_imu_verified": false,
+  "chip_identification": "Official BOM U9=MPU9250, XY U9 QFN24 3x3; corresponds to unique CAD QFN24 component on each OpenCR",
+  "source_hashes": {
+    "IMU.cpp": "c81f67b3efa9bbfe8b6fe3568f0fd62cc88e129a17b8d21656d9707ab02ac9fe",
+    "IMU.h": "ce75c249d738e4c17989915f5deab774cb2772c5f8718c1f57f177f843fd3136",
+    "ICM20648.cpp": "dc65d4e5bfead3edbd5811dfd6821b4b72526460f0e57b012d90a9cd10057289",
+    "MPU9250.cpp": "fce6f81f00190a7b17aaf1dfb684c5c88a6b625a001022ee416cdb018b4acec9",
+    "Define.h": "fc000cc7656479e4e315c8ef07ac4f135cc1cff16424ac4a21bae4dfa433dfe4",
+    "imu_selector.cpp": "39bfb390155402819b587f4dea90c8c4d9ba5000cb4bac78679d6d9efa308a36",
+    "turtlebot3_sensor.cpp": "8b0854641044fca60faba1b0c67a08cca08701ea12864d92e1fbf375f1c2655a",
+    "OpenCR_REVH_BOM.xls": "d2f2dc8011238de8638abb5852448a2d6fd9f37f105fbfe774b85ea8c38bd0ce",
+    "OpenCR_REVH_XY.xls": "5e49ecd9707e74d4fdbeb252db90deb02389a2547bef2e9c5863a5e3238b1b25"
+  }
+}

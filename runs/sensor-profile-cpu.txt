@@ -1,0 +1,53 @@
+         896144 function calls (895587 primitive calls) in 0.426 seconds
+
+   Ordered by: cumulative time
+   List reduced from 299 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     2860    0.017    0.000    0.157    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:11188(launch)
+      259    0.017    0.000    0.099    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/dual_imu.py:63(update)
+      260    0.000    0.000    0.085    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/rl/geared_env.py:22(_apply_action)
+      780    0.003    0.000    0.083    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_collection.py:826(_set_index)
+     5720    0.010    0.000    0.083    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:11323(pack_args)
+    19500    0.033    0.000    0.072    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:10272(pack_arg)
+      260    0.000    0.000    0.061    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/rl/maze_env.py:88(_apply_action)
+     2322    0.018    0.000    0.058    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py:1562(cross)
+      520    0.000    0.000    0.058    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_collection.py:715(set_position_index)
+      516    0.002    0.000    0.041    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/dual_imu.py:46(origin_force)
+      260    0.001    0.000    0.040    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/scene/interactive_scene.py:477(update)
+     6966    0.010    0.000    0.037    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py:1488(moveaxis)
+      260    0.000    0.000    0.034    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/actuator_control.py:114(submit_commands)
+      520    0.007    0.000    0.034    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/arm_kinematics.py:18(rig)
+      260    0.003    0.000    0.034    0.000 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:1827(set_dof_velocity_targets)
+      520    0.001    0.000    0.032    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/sensors/imu/imu.py:230(_launch_update)
+     3366    0.016    0.000    0.030    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/arm_kinematics.py:5(rotation)
+      260    0.000    0.000    0.025    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_collection.py:735(set_velocity_index)
+      260    0.000    0.000    0.024    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_collection.py:196(compute)
+      260    0.000    0.000    0.023    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_collection.py:665(launch)
+      260    0.000    0.000    0.022    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/utils/warp/launch_cache.py:16(launch)
+    13932    0.014    0.000    0.022    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py:1426(normalize_axis_tuple)
+      260    0.001    0.000    0.022    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/arm_kinematics.py:24(left_camera)
+      520    0.001    0.000    0.021    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/sensors/sensor_base.py:197(update)
+     2860    0.011    0.000    0.019    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:10552(invoke)
+      260    0.000    0.000    0.019    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation.py:297(update)
+      260    0.000    0.000    0.018    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:133(update)
+      260    0.001    0.000    0.018    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:1184(joint_acc)
+      780    0.001    0.000    0.016    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_control.py:385(resolve_joint_ids)
+      520    0.000    0.000    0.015    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/sensors/sensor_base.py:428(_mark_buffers_updated)
+      780    0.015    0.000    0.015    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation.py:4522(_resolve_joint_ids)
+      260    0.000    0.000    0.014    0.000 /home/seongmin/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/json/__init__.py:183(dumps)
+      260    0.000    0.000    0.014    0.000 /home/seongmin/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/json/encoder.py:183(encode)
+      260    0.013    0.000    0.013    0.000 /home/seongmin/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/json/encoder.py:205(iterencode)
+     8306    0.008    0.000    0.012    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/numpy/lib/_twodim_base_impl.py:178(eye)
+     5149    0.006    0.000    0.012    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2598(norm)
+   112263    0.011    0.000    0.012    0.000 {built-in method builtins.isinstance}
+     2860    0.002    0.000    0.011    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:11132(_build_launch_bounds_from_tuple)
+     1820    0.005    0.000    0.010    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/types.py:3119(array_ctype_from_interface)
+      258    0.004    0.000    0.009    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/imu_tilt.py:8(update)
+     2860    0.003    0.000    0.009    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:4648(load)
+    35880    0.009    0.000    0.009    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/config.py:68(__getattribute__)
+     9301    0.008    0.000    0.008    0.000 {built-in method numpy.array}
+      260    0.003    0.000    0.007    0.000 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:1794(set_dof_position_targets)
+     2860    0.003    0.000    0.007    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/types.py:2351(launch_bounds_t)
+
+

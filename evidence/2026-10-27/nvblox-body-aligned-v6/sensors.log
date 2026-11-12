@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/scripts/isaac_sensor_bridge.py", line 34, in <module>
+    dt=(ns-previous)/1e9 if previous>=0 else 0.;previous=ns;stamp=Time(sec=ns//10**9,nanosec=ns%10**9);clock.publish(Clock(clock=stamp))
+                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/lyrical/lib/python3.12/site-packages/rclpy/publisher.py", line 67, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:427

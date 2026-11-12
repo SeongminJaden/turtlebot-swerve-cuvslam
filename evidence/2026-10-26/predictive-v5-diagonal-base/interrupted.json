@@ -1,0 +1,4 @@
+{
+  "outcome": "controlled_test_abort",
+  "reason": "Zero-translation commands were unnecessarily changing steering for tiny yaw corrections; fix prepared. No completion claim."
+}

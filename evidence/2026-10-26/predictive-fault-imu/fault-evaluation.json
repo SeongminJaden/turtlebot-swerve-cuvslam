@@ -1,0 +1,12 @@
+{
+  "kind": "imu2",
+  "start_s": 4.0,
+  "duration_s": 2.0,
+  "invalid_rows": 26,
+  "stop_latency_s": 0.3550000000000004,
+  "recovery_motion": true,
+  "max_speed_m_s": 0.6673341393470764,
+  "peak_nonwheel_contact_force_N": 0.0,
+  "scope": "injected ROS measurement outage in simulation, not physical USB fault test",
+  "passed": true
+}

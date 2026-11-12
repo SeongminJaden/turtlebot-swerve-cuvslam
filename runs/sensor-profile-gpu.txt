@@ -1,0 +1,53 @@
+         730259 function calls (729702 primitive calls) in 6.979 seconds
+
+   Ordered by: cumulative time
+   List reduced from 314 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      520    1.586    0.003    2.607    0.005 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:3313(get_velocities)
+      260    0.001    0.000    1.587    0.006 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/actuator_control.py:114(submit_commands)
+      260    0.579    0.002    1.587    0.006 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:1827(set_dof_velocity_targets)
+      520    1.018    0.002    1.022    0.002 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:3286(get_transforms)
+      260    0.590    0.002    0.998    0.004 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:1794(set_dof_position_targets)
+     1300    0.524    0.000    0.524    0.000 {method 'cpu' of 'torch._C.TensorBase' objects}
+     1080    0.001    0.000    0.435    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:1081(_refresh_joint_state_user)
+      260    0.408    0.002    0.408    0.002 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:1763(set_dof_actuation_forces)
+      260    0.002    0.000    0.346    0.001 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/scene/interactive_scene.py:477(update)
+      260    0.001    0.000    0.312    0.001 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation.py:297(update)
+      260    0.001    0.000    0.311    0.001 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:133(update)
+      260    0.001    0.000    0.310    0.001 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:1184(joint_acc)
+      520    0.001    0.000    0.276    0.001 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:1163(joint_vel)
+      520    0.000    0.000    0.275    0.001 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:1174(_refresh_joint_vel)
+      260    0.274    0.001    0.274    0.001 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:1672(get_dof_velocities)
+     2080    0.048    0.000    0.179    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:11188(launch)
+      560    0.001    0.000    0.162    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:1153(_refresh_joint_pos)
+      260    0.160    0.001    0.160    0.001 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:1643(get_dof_positions)
+      259    0.029    0.000    0.151    0.001 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/dual_imu.py:63(update)
+      260    0.001    0.000    0.143    0.001 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/rl/geared_env.py:22(_apply_action)
+      780    0.006    0.000    0.140    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_collection.py:826(_set_index)
+       20    0.000    0.000    0.136    0.007 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/sim/simulation_context.py:500(_has_continuous_visualizers)
+       20    0.046    0.002    0.135    0.007 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/rl/geared_env.py:9(_pre_physics_step)
+      260    0.001    0.000    0.108    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/rl/maze_env.py:88(_apply_action)
+      520    0.001    0.000    0.103    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_collection.py:715(set_position_index)
+     2322    0.026    0.000    0.084    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py:1562(cross)
+     4160    0.009    0.000    0.079    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:11323(pack_args)
+       20    0.001    0.000    0.076    0.004 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/rl/maze_env.py:91(_get_observations)
+       20    0.000    0.000    0.072    0.004 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/assets/articulation/base_articulation_data.py:1374(root_vel_w)
+       20    0.000    0.000    0.071    0.004 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation_data.py:703(root_com_vel_w)
+       20    0.070    0.003    0.070    0.003 /home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py:1557(get_root_velocities)
+     9100    0.024    0.000    0.069    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/warp/_src/context.py:10272(pack_arg)
+      516    0.003    0.000    0.061    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/dual_imu.py:46(origin_force)
+       60    0.055    0.001    0.055    0.001 {built-in method torch.tensor}
+      520    0.012    0.000    0.054    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/arm_kinematics.py:18(rig)
+     6966    0.014    0.000    0.052    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py:1488(moveaxis)
+     3366    0.026    0.000    0.048    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/arm_kinematics.py:5(rotation)
+      260    0.000    0.000    0.038    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_collection.py:735(set_velocity_index)
+      260    0.002    0.000    0.034    0.000 /home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/turtlebot_swerve/arm_kinematics.py:24(left_camera)
+      520    0.001    0.000    0.032    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/sensors/sensor_base.py:197(update)
+    13932    0.019    0.000    0.031    0.000 /home/seongmin/IsaacLab/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py:1426(normalize_axis_tuple)
+      520    0.001    0.000    0.031    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/sensors/sensor_base.py:428(_mark_buffers_updated)
+      780    0.001    0.000    0.029    0.000 /home/seongmin/IsaacLab/source/isaaclab/isaaclab/actuators/actuator_control.py:385(resolve_joint_ids)
+      780    0.027    0.000    0.027    0.000 /home/seongmin/IsaacLab/source/isaaclab_physx/isaaclab_physx/assets/articulation/articulation.py:4522(_resolve_joint_ids)
+       20    0.027    0.001    0.027    0.001 {built-in method torch.isfinite}
+
+

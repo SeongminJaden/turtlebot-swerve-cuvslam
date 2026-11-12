@@ -1,0 +1,133 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793069230.996898   41758 descriptor_database.cc:633] File already exists in database: grpc/health/v1/health.proto
+W0000 00:00:1793069230.996952   41758 message.cc:301] Protobuf GeneratedMessageFactory: File is already registered: grpc/health/v1/health.proto
+Loading user config located at: '/home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/user.config.json'
+2026-10-27T02:47:11Z [0ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-10-27T02:47:11Z [0ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash] A crash has occurred.  If a debugger should be attached, please set the '/crashreporter/debuggerAttachTimeoutMs' setting to a timeout in milliseconds.  This can be used to allow the crash reporter to wait for up to that long for a debugger to attach before processing or sending the crash report.
+2026-10-27T02:47:11Z [123ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash] compressing 3 files into '/home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/3d733834-0822-44b8-3f305a8e-239e1610.dmp.zip' for upload.
+2026-10-27T02:47:11Z [224ms] [Error] [carb.crashreporter-breakpad.plugin] [crash] Wrote dump file '/home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/3d733834-0822-44b8-3f305a8e-239e1610.dmp.zip'
+2026-10-27T02:47:11Z [249ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash] Uploading minidump: file:'/home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/3d733834-0822-44b8-3f305a8e-239e1610.dmp.zip' svr:'https://services.nvidia.com/submit'
+2026-10-27T02:47:11Z [251ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash] Crash metadata for upload:
+2026-10-27T02:47:11Z [252ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'BuildGitlabJobID' = '413372077'
+2026-10-27T02:47:11Z [253ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'CarbSdkVersion' = '210.3.2+release.14366.2926fc80.gl'
+2026-10-27T02:47:11Z [255ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'CrashTime' = 'Tue Oct 27 02:47:11 2026 GMT'
+2026-10-27T02:47:11Z [256ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'DumpId' = '3d733834-0822-44b8-3f305a8e-239e1610'
+2026-10-27T02:47:11Z [257ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'GlibcVersion' = '2.39'
+2026-10-27T02:47:11Z [258ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'LastUploadStatus' = ''
+2026-10-27T02:47:11Z [259ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'ProductName' = 'OmniverseKit'
+2026-10-27T02:47:11Z [260ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'PythonTracebackStatus' = ''py-spy' successfully wrote info to '/home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/3d733834-0822-44b8-3f305a8e-239e1610.py.txt''
+2026-10-27T02:47:11Z [262ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'RetryCount' = '0'
+2026-10-27T02:47:11Z [263ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'StartupTime' = '1793069230'
+2026-10-27T02:47:11Z [264ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'UploadSuccessful' = '0'
+2026-10-27T02:47:11Z [266ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'UptimeSeconds' = '1'
+2026-10-27T02:47:11Z [267ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'UserEmail' = ''
+2026-10-27T02:47:11Z [268ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'UserStory' = ''
+2026-10-27T02:47:11Z [269ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'UserStoryStatus' = 'Running in headless mode; not gathering user story'
+2026-10-27T02:47:11Z [270ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'Version' = '110.3.0+feature.371399.00c488ae.gl'
+2026-10-27T02:47:11Z [272ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'appName' = 'IsaacLab'
+2026-10-27T02:47:11Z [274ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'appState' = 'startup'
+2026-10-27T02:47:11Z [275ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'appVersion' = '3.0.0'
+2026-10-27T02:47:11Z [276ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'autoloadExts' = ''
+2026-10-27T02:47:11Z [277ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildBranch' = 'feature'
+2026-10-27T02:47:11Z [278ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildCi' = 'gl'
+2026-10-27T02:47:11Z [280ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildConfig' = 'release'
+2026-10-27T02:47:11Z [281ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildGitlabJobName' = 'kit-build-release-linux-x86_64'
+2026-10-27T02:47:11Z [282ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildGitlabJobStage' = 'kit-build'
+2026-10-27T02:47:11Z [283ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildGitlabPipelineID' = '64742269'
+2026-10-27T02:47:11Z [284ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildHash' = '00c488ae'
+2026-10-27T02:47:11Z [286ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildMajor' = '110'
+2026-10-27T02:47:11Z [287ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildMinor' = '3'
+2026-10-27T02:47:11Z [288ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildNumber' = '371399'
+2026-10-27T02:47:11Z [289ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildPatch' = '0'
+2026-10-27T02:47:11Z [290ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'buildVersion' = '110.3.0'
+2026-10-27T02:47:11Z [292ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'commandLine' = '/home/<username>/IsaacLab/.venv/bin/python scripts/lab_python.py rl/run_predictive_async.py --output evidence/2026-10-27/nvblox-body-aligned-v7 --seconds 90 --checkpoint runs/predictive_checkpoints/v5-final.pt --visualizer none --use-ekf --use-amcl --nav2-path'
+2026-10-27T02:47:11Z [293ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'environmentName' = 'Individual'
+2026-10-27T02:47:11Z [294ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'experience' = 'Isaac Sim'
+2026-10-27T02:47:11Z [296ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'externalBuild' = '1'
+2026-10-27T02:47:11Z [297ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'graphicsApi' = 'vulkan'
+2026-10-27T02:47:11Z [298ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'memoryStats' = '(avail/total) RAM: 11.4961/30.7733GB, Swap: 7.99966/8GB, VM: 1.71799e+10/1.71799e+10GB'
+2026-10-27T02:47:11Z [299ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'portableMode' = '1'
+2026-10-27T02:47:11Z [300ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'runEnvironment' = 'Individual'
+2026-10-27T02:47:11Z [302ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'runningInContainer' = '0'
+2026-10-27T02:47:11Z [303ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'telemetrySessionId' = '17289193854550384555'
+2026-10-27T02:47:11Z [304ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'terminatedByAbort' = '0'
+2026-10-27T02:47:11Z [305ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'totalRamBareMetalMB' = '31511'
+2026-10-27T02:47:11Z [307ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'totalRamLimitedMB' = '31511'
+2026-10-27T02:47:11Z [308ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'totalSwapBareMetalMB' = '8191'
+2026-10-27T02:47:11Z [309ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'totalSwapLimitedMB' = '8191'
+2026-10-27T02:47:11Z [310ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'userId' = 'default'
+2026-10-27T02:47:11Z [312ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'workingDirectory' = '/home/<username>/ros2_ws/src/turtlebot-swerve-cuvslam'
+2026-10-27T02:47:11Z [313ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash] Crash report files for upload:
+2026-10-27T02:47:11Z [314ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]   'upload_file_minidump' = '/home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/3d733834-0822-44b8-3f305a8e-239e1610.dmp.zip'
+2026-10-27T02:47:13Z [1,531ms] [Error] [carb.crashreporter-breakpad.plugin] [crash] failed to upload minidump: file: '/home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/3d733834-0822-44b8-3f305a8e-239e1610.dmp.zip', code: 404, error: 'HTTP response code said error', response:
+2026-10-27T02:47:13Z [1,570ms] [Error] [carb.crashreporter-breakpad.plugin] [crash]      {status = SendFailed (5/0x00000005)}
+2026-10-27T02:47:13Z [1,572ms] [Error] [carb.crashreporter-breakpad.plugin] [crash]     404: Not Found.  The resource could not be found at the moment.  This will be automatically retried on the next run of an Omniverse app.
+2026-10-27T02:47:13Z [1,573ms] [Error] [carb.crashreporter-breakpad.plugin] [crash]     dump file size is 223366 bytes, file is readable.
+2026-10-27T02:47:13Z [1,574ms] [Fatal] [carb.crashreporter-breakpad.plugin] [crash] Crash detected in pid 41758 thread 41931
+2026-10-27T02:47:13Z [1,576ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash] Crash metadata:
+2026-10-27T02:47:13Z [1,577ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  BuildGitlabJobID = '413372077'
+2026-10-27T02:47:13Z [1,578ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  CarbSdkVersion = '210.3.2+release.14366.2926fc80.gl'
+2026-10-27T02:47:13Z [1,579ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  CrashTime = 'Tue Oct 27 02:47:11 2026 GMT'
+2026-10-27T02:47:13Z [1,580ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  DumpId = '3d733834-0822-44b8-3f305a8e-239e1610'
+2026-10-27T02:47:13Z [1,582ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  GlibcVersion = '2.39'
+2026-10-27T02:47:13Z [1,583ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  LastUploadStatus = '404'
+2026-10-27T02:47:13Z [1,584ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  ProductName = 'OmniverseKit'
+2026-10-27T02:47:13Z [1,585ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  PythonTracebackStatus = ''py-spy' successfully wrote info to '/home/seongmin/isaacsim6_venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/3d733834-0822-44b8-3f305a8e-239e1610.py.txt''
+2026-10-27T02:47:13Z [1,586ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  RetryCount = '0'
+2026-10-27T02:47:13Z [1,588ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  StartupTime = '1793069230'
+2026-10-27T02:47:13Z [1,589ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  UploadSuccessful = '0'
+2026-10-27T02:47:13Z [1,590ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  UptimeSeconds = '1'
+2026-10-27T02:47:13Z [1,592ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  UserEmail = ''
+2026-10-27T02:47:13Z [1,593ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  UserStory = ''
+2026-10-27T02:47:13Z [1,594ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  UserStoryStatus = 'Running in headless mode; not gathering user story'
+2026-10-27T02:47:13Z [1,595ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  Version = '110.3.0+feature.371399.00c488ae.gl'
+2026-10-27T02:47:13Z [1,596ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  appName = 'IsaacLab'
+2026-10-27T02:47:13Z [1,598ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  appState = 'startup'
+2026-10-27T02:47:13Z [1,599ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  appVersion = '3.0.0'
+2026-10-27T02:47:13Z [1,600ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  autoloadExts = ''
+2026-10-27T02:47:13Z [1,601ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildBranch = 'feature'
+2026-10-27T02:47:13Z [1,602ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildCi = 'gl'
+2026-10-27T02:47:13Z [1,604ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildConfig = 'release'
+2026-10-27T02:47:13Z [1,605ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildGitlabJobName = 'kit-build-release-linux-x86_64'
+2026-10-27T02:47:13Z [1,607ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildGitlabJobStage = 'kit-build'
+2026-10-27T02:47:13Z [1,609ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildGitlabPipelineID = '64742269'
+2026-10-27T02:47:13Z [1,610ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildHash = '00c488ae'
+2026-10-27T02:47:13Z [1,611ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildMajor = '110'
+2026-10-27T02:47:13Z [1,613ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildMinor = '3'
+2026-10-27T02:47:13Z [1,614ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildNumber = '371399'
+2026-10-27T02:47:13Z [1,615ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildPatch = '0'
+2026-10-27T02:47:13Z [1,616ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  buildVersion = '110.3.0'
+2026-10-27T02:47:13Z [1,618ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  commandLine = '/home/<username>/IsaacLab/.venv/bin/python scripts/lab_python.py rl/run_predictive_async.py --output evidence/2026-10-27/nvblox-body-aligned-v7 --seconds 90 --checkpoint runs/predictive_checkpoints/v5-final.pt --visualizer none --use-ekf --use-amcl --nav2-path'
+2026-10-27T02:47:13Z [1,619ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  environmentName = 'Individual'
+2026-10-27T02:47:13Z [1,620ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  experience = 'Isaac Sim'
+2026-10-27T02:47:13Z [1,621ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  externalBuild = '1'
+2026-10-27T02:47:13Z [1,622ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  graphicsApi = 'vulkan'
+2026-10-27T02:47:13Z [1,624ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  memoryStats = '(avail/total) RAM: 11.4961/30.7733GB, Swap: 7.99966/8GB, VM: 1.71799e+10/1.71799e+10GB'
+2026-10-27T02:47:13Z [1,625ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  portableMode = '1'
+2026-10-27T02:47:13Z [1,627ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  runEnvironment = 'Individual'
+2026-10-27T02:47:13Z [1,628ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  runningInContainer = '0'
+2026-10-27T02:47:13Z [1,629ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  telemetrySessionId = '17289193854550384555'
+2026-10-27T02:47:13Z [1,630ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  terminatedByAbort = '0'
+2026-10-27T02:47:13Z [1,631ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  totalRamBareMetalMB = '31511'
+2026-10-27T02:47:13Z [1,633ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  totalRamLimitedMB = '31511'
+2026-10-27T02:47:13Z [1,634ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  totalSwapBareMetalMB = '8191'
+2026-10-27T02:47:13Z [1,635ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  totalSwapLimitedMB = '8191'
+2026-10-27T02:47:13Z [1,636ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  userId = 'default'
+2026-10-27T02:47:13Z [1,637ms] [Warning] [carb.crashreporter-breakpad.plugin] [crash]  workingDirectory = '/home/<username>/ros2_ws/src/turtlebot-swerve-cuvslam'
+2026-10-27T02:47:13Z [1,638ms] [Fatal] [carb.crashreporter-breakpad.plugin] [crash] Thread 41931 backtrace follows:
+2026-10-27T02:47:13Z [1,647ms] [Fatal] [carb.crashreporter-breakpad.plugin] 000: libcarb.crashreporter-breakpad.plugin.so!google_breakpad::ExceptionHandler::SignalHandler(int, siginfo_t*, void*)+0x17d ***
+2026-10-27T02:47:13Z [1,791ms] [Fatal] [carb.crashreporter-breakpad.plugin] 001: libc.so.6!__sigaction+0x50 (libc_sigaction.c:?)
+2026-10-27T02:47:13Z [1,875ms] [Fatal] [carb.crashreporter-breakpad.plugin] 002: libc.so.6!getenv+0x56 (./stdlib/./stdlib/getenv.c:31)
+2026-10-27T02:47:13Z [1,919ms] [Fatal] [carb.crashreporter-breakpad.plugin] 003: libcarb.crashreporter-breakpad.plugin.so!std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_assertion()+0x20bd ***
+2026-10-27T02:47:13Z [1,954ms] [Fatal] [carb.crashreporter-breakpad.plugin] 004: libcarb.crashreporter-breakpad.plugin.so!carbOnPluginShutdown+0x4591 ***
+2026-10-27T02:47:13Z [1,960ms] [Fatal] [carb.crashreporter-breakpad.plugin] 005: libcarb.dictionary.plugin.so!void std::_V2::condition_variable_any::wait<std::unique_lock<carb::thread::mutex> >(std::unique_lock<carb::thread::mutex>&)+0x98e2 ***
+2026-10-27T02:47:13Z [1,963ms] [Fatal] [carb.crashreporter-breakpad.plugin] 006: libcarb.dictionary.plugin.so!void std::_V2::condition_variable_any::wait<std::unique_lock<carb::thread::mutex> >(std::unique_lock<carb::thread::mutex>&)+0x77e1 ***
+2026-10-27T02:47:13Z [1,967ms] [Fatal] [carb.crashreporter-breakpad.plugin] 007: libomni.kit.telemetry.plugin.so!std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_assertion()+0x263a ***
+2026-10-27T02:47:13Z [1,969ms] [Fatal] [carb.crashreporter-breakpad.plugin] 008: libomni.kit.telemetry.plugin.so!std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_assertion()+0x52e1 ***
+2026-10-27T02:47:13Z [1,972ms] [Fatal] [carb.crashreporter-breakpad.plugin] 009: libomni.kit.telemetry.plugin.so!std::bad_optional_access::~bad_optional_access()+0xa83 ***
+2026-10-27T02:47:13Z [1,975ms] [Fatal] [carb.crashreporter-breakpad.plugin] 010: libcarb.tasking.plugin.so!std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()+0x75a7 ***
+2026-10-27T02:47:13Z [1,978ms] [Fatal] [carb.crashreporter-breakpad.plugin] 011: libcarb.tasking.plugin.so!std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::resize(unsigned long, char)+0x1104c ***
+2026-10-27T02:47:13Z [1,981ms] [Fatal] [carb.crashreporter-breakpad.plugin] 012: libcarb.tasking.plugin.so!std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::resize(unsigned long, char)+0x1106f ***
+2026-10-27T02:47:13Z [1,984ms] [Fatal] [carb.crashreporter-breakpad.plugin] 013: libcarb.tasking.plugin.so!make_fcontext+0x39 ***
+2026-10-27T02:47:13Z [1,986ms] [Fatal] [carb.crashreporter-breakpad.plugin] [crash] NOTE: *** indicates a low-confidence frame, such as when symbols cannot be found
+2026-10-27T02:47:13Z [1,987ms] [Warning] [carb.crashreporter-breakpad.plugin] terminating this process with exit code 139.

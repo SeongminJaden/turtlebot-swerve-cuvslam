@@ -1,0 +1,834 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-27-11-47-55-664825-ros-42685
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [nvblox_node-1]: process started with pid [42711]
+[INFO] [python3-2]: process started with pid [42712]
+[INFO] [planner_server-3]: process started with pid [42713]
+[INFO] [lifecycle_manager-4]: process started with pid [42714]
+[nvblox_node-1] VBIPROXY_DEVICE environment variable not set - disabling proxy
+[planner_server-3] [INFO] [1793069276.171426976] [planner_server]: 
+[planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1793069276.171767105] [planner_server]: Creating
+[planner_server-3] [INFO] [1793069276.177429251] [global_costmap.global_costmap]: 
+[planner_server-3] 	global_costmap lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1793069276.177801930] [global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-4] [INFO] [1793069276.735212742] [lifecycle_manager_planning]: Creating
+[lifecycle_manager-4] [INFO] [1793069276.735480360] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle publishers[0m[0m
+[lifecycle_manager-4] [INFO] [1793069276.735899309] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[nvblox_node-1] [INFO] [1793069277.079344831] [nvblox_node]: Create nvblox cuda stream with type: kBlocking
+[nvblox_node-1] [INFO] [1793069277.079439805] [nvblox_node]: NvbloxNode::advertiseTopics()
+[nvblox_node-1] [INFO] [1793069277.083546046] [nvblox_node]: NvbloxNode::advertiseServices()
+[nvblox_node-1] [INFO] [1793069277.086679371] [nvblox_node]: NvbloxNode::subscribeToTopics()
+[nvblox_node-1] [INFO] [1793069277.086751111] [nvblox_node]: Subscribing input topics with QoS: SYSTEM_DEFAULT
+[nvblox_node-1] I20261027 11:47:57.125277 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.126015 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.145363 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.145532 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.161994 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.163164 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[lifecycle_manager-4] [INFO] [1793069277.174848259] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle service servers[0m[0m
+[nvblox_node-1] I20261027 11:47:57.181670 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.182488 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[lifecycle_manager-4] [INFO] [1793069277.183649998] [lifecycle_manager_planning]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-4] [INFO] [1793069277.183700322] [lifecycle_manager_planning]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-3] [INFO] [1793069277.184078966] [planner_server]: Configuring
+[planner_server-3] [INFO] [1793069277.184115709] [global_costmap.global_costmap]: Configuring
+[planner_server-3] [INFO] [1793069277.193286375] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-3] [INFO] [1793069277.198213507] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[nvblox_node-1] I20261027 11:47:57.199086 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.199745 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[planner_server-3] [INFO] [1793069277.200053494] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-3] [INFO] [1793069277.200074503] [global_costmap.global_costmap]: Using plugin "nvblox_layer"
+[planner_server-3] [INFO] [1793069277.205843822] [global_costmap.global_costmap]: Name: nvblox_layer Topic name: /navigation/map_slice Convert to binary costmap: 1 Max obstacle distance: 1
+[planner_server-3] [INFO] [1793069277.213666500] [global_costmap.global_costmap]: Initialized plugin "nvblox_layer"
+[planner_server-3] [INFO] [1793069277.213696998] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-3] [INFO] [1793069277.213830801] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[nvblox_node-1] I20261027 11:47:57.217671 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.217860 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.230774 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.231565 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232115 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.232273 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232283 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232288 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232292 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232297 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232303 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232307 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232311 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.232316 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[planner_server-3] [INFO] [1793069277.242375508] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 501 X 691 at 0.010000 m/pix
+[planner_server-3] [INFO] [1793069277.243180234] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[planner_server-3] [INFO] [1793069277.243232793] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1793069277.243809071] [planner_server]: Planner Server has GridBased  planners available.
+[nvblox_node-1] I20261027 11:47:57.250727 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.250969 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[lifecycle_manager-4] [INFO] [1793069277.262661566] [lifecycle_manager_planning]: [34m[1mActivating planner_server[0m[0m
+[planner_server-3] [INFO] [1793069277.262886515] [planner_server]: Activating
+[planner_server-3] [INFO] [1793069277.262937477] [global_costmap.global_costmap]: Activating
+[planner_server-3] [INFO] [1793069277.262947200] [global_costmap.global_costmap]: Checking transform
+[planner_server-3] [INFO] [1793069277.262992606] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 11:47:57.268277 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.268445 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.287556 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.287861 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.305932 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.306397 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.324052 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.324714 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.342098 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.342180 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.342742 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.343290 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.343861 42711 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:47:57.344403 42711 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.0125, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.344412 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.344416 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.344420 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.344424 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.344427 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.344430 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.344439 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:47:57.344444 42711 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[nvblox_node-1] [INFO] [1793069277.344899798] [nvblox_node]: Initialize Mapper:
+[nvblox_node-1] [INFO] [1793069277.344931263] [nvblox_node]: static_mapper.do_depth_preprocessing: 0
+[nvblox_node-1] [INFO] [1793069277.344937158] [nvblox_node]: static_mapper.depth_preprocessing_num_dilations: 4
+[nvblox_node-1] [INFO] [1793069277.344941457] [nvblox_node]: static_mapper.esdf_slice_min_height: 0.05
+[nvblox_node-1] [INFO] [1793069277.344945392] [nvblox_node]: static_mapper.esdf_slice_max_height: 0.65
+[nvblox_node-1] [INFO] [1793069277.344948936] [nvblox_node]: static_mapper.esdf_slice_height: 0.15
+[nvblox_node-1] [INFO] [1793069277.344954132] [nvblox_node]: static_mapper.slice_height_above_plane_m: 0
+[nvblox_node-1] [INFO] [1793069277.344957879] [nvblox_node]: static_mapper.slice_height_thickness_m: 0.1
+[nvblox_node-1] [INFO] [1793069277.344961169] [nvblox_node]: static_mapper.projective_integrator_max_integration_distance_m: 5
+[nvblox_node-1] [INFO] [1793069277.344965763] [nvblox_node]: static_mapper.lidar_projective_integrator_max_integration_distance_m: 10
+[nvblox_node-1] [INFO] [1793069277.344969352] [nvblox_node]: static_mapper.projective_integrator_truncation_distance_vox: 4
+[nvblox_node-1] [INFO] [1793069277.344973462] [nvblox_node]: static_mapper.projective_integrator_weighting_mode: kInverseSquareWeight
+[nvblox_node-1] [WARN] [1793069277.344976707] [nvblox_node]: Requested weighting function: "kInverseSquareWeight" not recognized. Defaulting to: kInverseSquareWeight
+[nvblox_node-1] [INFO] [1793069277.344981464] [nvblox_node]: static_mapper.projective_integrator_max_weight: 5
+[nvblox_node-1] [INFO] [1793069277.344985082] [nvblox_node]: static_mapper.projective_tsdf_integrator_invalid_depth_decay_factor: -1
+[nvblox_node-1] [INFO] [1793069277.344989834] [nvblox_node]: static_mapper.free_region_occupancy_probability: 0.3
+[nvblox_node-1] [INFO] [1793069277.344993549] [nvblox_node]: static_mapper.occupied_region_occupancy_probability: 0.7
+[nvblox_node-1] [INFO] [1793069277.344996977] [nvblox_node]: static_mapper.unobserved_region_occupancy_probability: 0.5
+[nvblox_node-1] [INFO] [1793069277.345000038] [nvblox_node]: static_mapper.occupied_region_half_width_m: 0.1
+[nvblox_node-1] [INFO] [1793069277.345002928] [nvblox_node]: static_mapper.raycast_subsampling_factor: 4
+[nvblox_node-1] [INFO] [1793069277.345006048] [nvblox_node]: static_mapper.workspace_bounds_type: height_bounds
+[nvblox_node-1] [INFO] [1793069277.345009872] [nvblox_node]: static_mapper.workspace_bounds_min_height_m: -0.1
+[nvblox_node-1] [INFO] [1793069277.345013022] [nvblox_node]: static_mapper.workspace_bounds_max_height_m: 1.5
+[nvblox_node-1] [INFO] [1793069277.345016015] [nvblox_node]: static_mapper.workspace_bounds_min_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793069277.345018929] [nvblox_node]: static_mapper.workspace_bounds_max_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793069277.345021797] [nvblox_node]: static_mapper.workspace_bounds_min_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793069277.345025059] [nvblox_node]: static_mapper.workspace_bounds_max_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793069277.345028158] [nvblox_node]: static_mapper.esdf_integrator_min_weight: 0.1
+[nvblox_node-1] [INFO] [1793069277.345031025] [nvblox_node]: static_mapper.esdf_integrator_max_site_distance_vox: 1
+[nvblox_node-1] [INFO] [1793069277.345034000] [nvblox_node]: static_mapper.esdf_integrator_max_distance_m: 2
+[nvblox_node-1] [INFO] [1793069277.345036780] [nvblox_node]: static_mapper.unobserved_esdf_policy: kIgnore
+[nvblox_node-1] [INFO] [1793069277.345039902] [nvblox_node]: static_mapper.add_negative_truncation_band_sites: 0
+[nvblox_node-1] [INFO] [1793069277.345043921] [nvblox_node]: static_mapper.mesh_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793069277.345046723] [nvblox_node]: static_mapper.mesh_integrator_weld_vertices: 1
+[nvblox_node-1] [INFO] [1793069277.345051303] [nvblox_node]: static_mapper.decay_integrator_deallocate_decayed_blocks: 1
+[nvblox_node-1] [INFO] [1793069277.345054935] [nvblox_node]: static_mapper.tsdf_decay_factor: 0.95
+[nvblox_node-1] [INFO] [1793069277.345058309] [nvblox_node]: static_mapper.tsdf_decayed_weight_threshold: 0.001
+[nvblox_node-1] [INFO] [1793069277.345061060] [nvblox_node]: static_mapper.tsdf_set_free_distance_on_decayed: 0
+[nvblox_node-1] [INFO] [1793069277.345086690] [nvblox_node]: static_mapper.tsdf_decayed_free_distance_vox: 4
+[nvblox_node-1] [INFO] [1793069277.345090292] [nvblox_node]: static_mapper.free_region_decay_probability: 0.55
+[nvblox_node-1] [INFO] [1793069277.345093310] [nvblox_node]: static_mapper.occupied_region_decay_probability: 0.4
+[nvblox_node-1] [INFO] [1793069277.345096086] [nvblox_node]: static_mapper.occupancy_decay_to_free: 0
+[nvblox_node-1] [INFO] [1793069277.345099095] [nvblox_node]: static_mapper.max_tsdf_distance_for_occupancy_m: 0.15
+[nvblox_node-1] [INFO] [1793069277.345105184] [nvblox_node]: static_mapper.max_unobserved_to_keep_consecutive_occupancy_ms: 200
+[nvblox_node-1] [INFO] [1793069277.345108506] [nvblox_node]: static_mapper.min_duration_since_occupied_for_freespace_ms: 1000
+[nvblox_node-1] [INFO] [1793069277.345111416] [nvblox_node]: static_mapper.min_consecutive_occupancy_duration_for_reset_ms: 2000
+[nvblox_node-1] [INFO] [1793069277.345114218] [nvblox_node]: static_mapper.check_neighborhood: 1
+[nvblox_node-1] [INFO] [1793069277.345117062] [nvblox_node]: static_mapper.initialize_to_high_confidence_freespace: 0
+[nvblox_node-1] [INFO] [1793069277.345119630] [nvblox_node]: Initialize Mapper:
+[nvblox_node-1] [INFO] [1793069277.345122956] [nvblox_node]: dynamic_mapper.do_depth_preprocessing: 0
+[nvblox_node-1] [INFO] [1793069277.345125914] [nvblox_node]: dynamic_mapper.depth_preprocessing_num_dilations: 4
+[nvblox_node-1] [INFO] [1793069277.345128923] [nvblox_node]: dynamic_mapper.esdf_slice_min_height: 0
+[nvblox_node-1] [INFO] [1793069277.345131909] [nvblox_node]: dynamic_mapper.esdf_slice_max_height: 1
+[nvblox_node-1] [INFO] [1793069277.345134645] [nvblox_node]: dynamic_mapper.esdf_slice_height: 1
+[nvblox_node-1] [INFO] [1793069277.345137476] [nvblox_node]: dynamic_mapper.slice_height_above_plane_m: 0
+[nvblox_node-1] [INFO] [1793069277.345140350] [nvblox_node]: dynamic_mapper.slice_height_thickness_m: 0.1
+[nvblox_node-1] [INFO] [1793069277.345143200] [nvblox_node]: dynamic_mapper.projective_integrator_max_integration_distance_m: 7
+[nvblox_node-1] [INFO] [1793069277.345146618] [nvblox_node]: dynamic_mapper.lidar_projective_integrator_max_integration_distance_m: 10
+[nvblox_node-1] [INFO] [1793069277.345149673] [nvblox_node]: dynamic_mapper.projective_integrator_truncation_distance_vox: 4
+[nvblox_node-1] [INFO] [1793069277.345153534] [nvblox_node]: dynamic_mapper.projective_integrator_weighting_mode: kInverseSquareWeight
+[nvblox_node-1] [WARN] [1793069277.345156126] [nvblox_node]: Requested weighting function: "kInverseSquareWeight" not recognized. Defaulting to: kInverseSquareWeight
+[nvblox_node-1] [INFO] [1793069277.345159924] [nvblox_node]: dynamic_mapper.projective_integrator_max_weight: 5
+[nvblox_node-1] [INFO] [1793069277.345163278] [nvblox_node]: dynamic_mapper.projective_tsdf_integrator_invalid_depth_decay_factor: -1
+[nvblox_node-1] [INFO] [1793069277.345167916] [nvblox_node]: dynamic_mapper.free_region_occupancy_probability: 0.3
+[nvblox_node-1] [INFO] [1793069277.345171009] [nvblox_node]: dynamic_mapper.occupied_region_occupancy_probability: 0.7
+[nvblox_node-1] [INFO] [1793069277.345173894] [nvblox_node]: dynamic_mapper.unobserved_region_occupancy_probability: 0.5
+[nvblox_node-1] [INFO] [1793069277.345176740] [nvblox_node]: dynamic_mapper.occupied_region_half_width_m: 0.1
+[nvblox_node-1] [INFO] [1793069277.345179356] [nvblox_node]: dynamic_mapper.raycast_subsampling_factor: 4
+[nvblox_node-1] [INFO] [1793069277.345182465] [nvblox_node]: dynamic_mapper.workspace_bounds_type: kUnbounded
+[nvblox_node-1] [WARN] [1793069277.345186161] [nvblox_node]: Requested workspace bounds type: "kUnbounded" not recognized. Defaulting to: kUnbounded
+[nvblox_node-1] [INFO] [1793069277.345189899] [nvblox_node]: dynamic_mapper.workspace_bounds_min_height_m: 0
+[nvblox_node-1] [INFO] [1793069277.345192785] [nvblox_node]: dynamic_mapper.workspace_bounds_max_height_m: 1
+[nvblox_node-1] [INFO] [1793069277.345195642] [nvblox_node]: dynamic_mapper.workspace_bounds_min_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793069277.345198288] [nvblox_node]: dynamic_mapper.workspace_bounds_max_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793069277.345200983] [nvblox_node]: dynamic_mapper.workspace_bounds_min_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793069277.345203601] [nvblox_node]: dynamic_mapper.workspace_bounds_max_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793069277.345206743] [nvblox_node]: dynamic_mapper.esdf_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793069277.345209569] [nvblox_node]: dynamic_mapper.esdf_integrator_max_site_distance_vox: 1
+[nvblox_node-1] [INFO] [1793069277.345212868] [nvblox_node]: dynamic_mapper.esdf_integrator_max_distance_m: 2
+[nvblox_node-1] [INFO] [1793069277.345215571] [nvblox_node]: dynamic_mapper.unobserved_esdf_policy: kIgnore
+[nvblox_node-1] [INFO] [1793069277.345223511] [nvblox_node]: dynamic_mapper.add_negative_truncation_band_sites: 0
+[nvblox_node-1] [INFO] [1793069277.345226776] [nvblox_node]: dynamic_mapper.mesh_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793069277.345229446] [nvblox_node]: dynamic_mapper.mesh_integrator_weld_vertices: 1
+[nvblox_node-1] [INFO] [1793069277.345232070] [nvblox_node]: dynamic_mapper.decay_integrator_deallocate_decayed_blocks: 1
+[nvblox_node-1] [INFO] [1793069277.345235105] [nvblox_node]: dynamic_mapper.tsdf_decay_factor: 0.95
+[nvblox_node-1] [INFO] [1793069277.345238200] [nvblox_node]: dynamic_mapper.tsdf_decayed_weight_threshold: 0.001
+[nvblox_node-1] [INFO] [1793069277.345241014] [nvblox_node]: dynamic_mapper.tsdf_set_free_distance_on_decayed: 0
+[nvblox_node-1] [INFO] [1793069277.345243849] [nvblox_node]: dynamic_mapper.tsdf_decayed_free_distance_vox: 4
+[nvblox_node-1] [INFO] [1793069277.345246700] [nvblox_node]: dynamic_mapper.free_region_decay_probability: 0.55
+[nvblox_node-1] [INFO] [1793069277.345249607] [nvblox_node]: dynamic_mapper.occupied_region_decay_probability: 0.4
+[nvblox_node-1] [INFO] [1793069277.345252276] [nvblox_node]: dynamic_mapper.occupancy_decay_to_free: 0
+[nvblox_node-1] [INFO] [1793069277.345255444] [nvblox_node]: dynamic_mapper.max_tsdf_distance_for_occupancy_m: 0.15
+[nvblox_node-1] [INFO] [1793069277.345258480] [nvblox_node]: dynamic_mapper.max_unobserved_to_keep_consecutive_occupancy_ms: 200
+[nvblox_node-1] [INFO] [1793069277.345261388] [nvblox_node]: dynamic_mapper.min_duration_since_occupied_for_freespace_ms: 1000
+[nvblox_node-1] [INFO] [1793069277.345264301] [nvblox_node]: dynamic_mapper.min_consecutive_occupancy_duration_for_reset_ms: 2000
+[nvblox_node-1] [INFO] [1793069277.345267150] [nvblox_node]: dynamic_mapper.check_neighborhood: 1
+[nvblox_node-1] [INFO] [1793069277.345273563] [nvblox_node]: dynamic_mapper.initialize_to_high_confidence_freespace: 0
+[nvblox_node-1] [INFO] [1793069277.345288842] [nvblox_node]: Initialize MultiMapper:
+[nvblox_node-1] [INFO] [1793069277.345292492] [nvblox_node]: multi_mapper.connected_mask_component_size_threshold: 2000
+[nvblox_node-1] [INFO] [1793069277.345295502] [nvblox_node]: multi_mapper.remove_small_connected_components: 1
+[nvblox_node-1] [INFO] [1793069277.345298445] [nvblox_node]: multi_mapper.experimental_use_ground_plane_estimation: 0
+[nvblox_node-1] [INFO] [1793069277.345301723] [nvblox_node]: multi_mapper.ground_points_candidates_min_z_m: -0.1
+[nvblox_node-1] [INFO] [1793069277.345304747] [nvblox_node]: multi_mapper.ground_points_candidates_max_z_m: 0.15
+[nvblox_node-1] [INFO] [1793069277.345307739] [nvblox_node]: multi_mapper.ransac_distance_threshold_m: 0.2
+[nvblox_node-1] [INFO] [1793069277.345310600] [nvblox_node]: multi_mapper.num_ransac_iterations: 1000
+[nvblox_node-1] [INFO] [1793069277.345328651] [nvblox_node]: NvbloxNode::setupTimers()
+[nvblox_node-1] [INFO] [1793069277.345358992] [nvblox_node]: Started up nvblox node in frame odom and voxel size 0.0125
+[nvblox_node-1] [INFO] [1793069277.345362844] [nvblox_node]: Mapping type: kStaticTsdf
+[nvblox_node-1] [INFO] [1793069277.345970673] [nvblox_node]: nvblox parameters:
+[nvblox_node-1] nvblox_node
+[nvblox_node-1]     cuda_stream_type: kBlocking
+[nvblox_node-1]     global_frame: odom
+[nvblox_node-1]     voxel_size: 0.012500
+[nvblox_node-1]     max_back_projection_distance: 5.000000
+[nvblox_node-1]     layer_visualization_min_tsdf_weight: 0.100000
+[nvblox_node-1]     layer_visualization_exclusion_height_m: 2.000000
+[nvblox_node-1]     layer_visualization_exclusion_radius_m: 5.000000
+[nvblox_node-1]     layer_streamer_bandwidth_limit_mbps: 30.000000
+[nvblox_node-1]     distance_map_unknown_value_optimistic: 1000.000000
+[nvblox_node-1]     distance_map_unknown_value_pessimistic: -1000.000000
+[nvblox_node-1]     esdf_mode: 2d
+[nvblox_node-1]     mapping_type: static_tsdf
+[nvblox_node-1]     pose_frame: base_link
+[nvblox_node-1]     map_clearing_frame_id: base_link
+[nvblox_node-1]     after_shutdown_map_save_path: 
+[nvblox_node-1]     esdf_slice_bounds_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     workspace_height_bounds_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     ground_plane_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     publish_esdf_distance_slice: 1
+[nvblox_node-1]     use_color: 0
+[nvblox_node-1]     use_depth: 1
+[nvblox_node-1]     use_segmentation: 0
+[nvblox_node-1]     use_lidar: 0
+[nvblox_node-1]     use_non_equal_vertical_fov_lidar_params: 0
+[nvblox_node-1]     print_timings_to_console: 0
+[nvblox_node-1]     print_rates_to_console: 0
+[nvblox_node-1]     print_queue_drops_to_console: 0
+[nvblox_node-1]     print_delays_to_console: 0
+[nvblox_node-1]     layer_visualization_undo_gamma_correction: 0
+[nvblox_node-1]     output_pessimistic_distance_map: 1
+[nvblox_node-1]     num_cameras: 1
+[nvblox_node-1]     lidar_width: 1800
+[nvblox_node-1]     lidar_height: 16
+[nvblox_node-1]     tick_period_ms: 10
+[nvblox_node-1]     print_statistics_on_console_period_ms: 10000
+[nvblox_node-1]     maximum_input_queue_length: 10
+[nvblox_node-1]     back_projection_subsampling: 1
+[nvblox_node-1]     lidar_vertical_fov_rad: 0.523599
+[nvblox_node-1]     lidar_min_valid_range_m: 0.100000
+[nvblox_node-1]     min_angle_below_zero_elevation_rad: 0.349066
+[nvblox_node-1]     max_angle_above_zero_elevation_rad: 0.261799
+[nvblox_node-1]     use_lidar_motion_compensation: 1
+[nvblox_node-1]     pointcloud2_timestamps_are_relative: 1
+[nvblox_node-1]     esdf_slice_bounds_visualization_side_length: 10.000000
+[nvblox_node-1]     workspace_height_bounds_visualization_side_length: 10.000000
+[nvblox_node-1]     ground_plane_visualization_side_length: 10.000000
+[nvblox_node-1]     integrate_depth_rate_hz: 15.000000
+[nvblox_node-1]     integrate_color_rate_hz: 5.000000
+[nvblox_node-1]     integrate_lidar_rate_hz: 40.000000
+[nvblox_node-1]     update_mesh_rate_hz: 2.000000
+[nvblox_node-1]     update_esdf_rate_hz: 10.000000
+[nvblox_node-1]     publish_layer_rate_hz: 2.000000
+[nvblox_node-1]     publish_debug_vis_rate_hz: 2.000000
+[nvblox_node-1]     decay_tsdf_rate_hz: 5.000000
+[nvblox_node-1]     decay_dynamic_occupancy_rate_hz: 10.000000
+[nvblox_node-1]     clear_map_outside_radius_rate_hz: 1.000000
+[nvblox_node-1]     map_clearing_radius_m: 6.000000
+[nvblox_node-1]     esdf_and_gradients_unobserved_value: -1000.000000
+[nvblox_node-1]     multi_mapper
+[nvblox_node-1]         connected_mask_component_size_threshold: 2000
+[nvblox_node-1]         background_mapper
+[nvblox_node-1]             voxel_size_m: 0.012500
+[nvblox_node-1]             projective_layer_type: kTsdf
+[nvblox_node-1]             esdf_mode: kUnset
+[nvblox_node-1]             do_depth_preprocessing: 0
+[nvblox_node-1]             depth_preprocessing_num_dilations: 4
+[nvblox_node-1]             camera_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                         workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                     workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                     workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             camera_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             esdf_integrator
+[nvblox_node-1]                 max_esdf_distance_m:: 2.000000
+[nvblox_node-1]                 max_tsdf_site_distance_vox:: 1.000000
+[nvblox_node-1]                 tsdf_min_weight:: 0.100000
+[nvblox_node-1]                 occupied_threshold_log_odds:: 0.000000
+[nvblox_node-1]                 esdf_slice_min_height:: 0.050000
+[nvblox_node-1]                 esdf_slice_max_height:: 0.650000
+[nvblox_node-1]                 esdf_slice_height:: 0.150000
+[nvblox_node-1]                 slice_height_above_plane_m:: 0.000000
+[nvblox_node-1]                 slice_height_thickness_m:: 0.100000
+[nvblox_node-1]                 unobserved_esdf_policy:: kIgnore
+[nvblox_node-1]                 add_negative_truncation_band_sites:: 0
+[nvblox_node-1]                 truncation_distance_vox:: 4.000000
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             color_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             feature_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             occupancy_decay_integrator
+[nvblox_node-1]                 free_space_decay_log_odds:: 0.200671
+[nvblox_node-1]                 occupied_space_decay_log_odds:: -0.405465
+[nvblox_node-1]                 decay_to_log_odds_:: 0.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             tsdf_decay_integrator
+[nvblox_node-1]                 decay_factor:: 0.950000
+[nvblox_node-1]                 decayed_weight_theshold:: 0.001000
+[nvblox_node-1]                 set_free_distance_on_decayed:: 0
+[nvblox_node-1]                 free_distance_vox:: 4.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             freespace_integrator
+[nvblox_node-1]                 max_tsdf_distance_for_occupancy_m:: 0.150000
+[nvblox_node-1]                 max_unobserved_to_keep_consecutive_occupancy_ms:: 200
+[nvblox_node-1]                 min_duration_since_occupied_for_freespace_ms:: 1000
+[nvblox_node-1]                 min_consecutive_occupancy_duration_for_reset_ms:: 2000
+[nvblox_node-1]                 check_neighborhood:: 1
+[nvblox_node-1]                 initialize_to_high_confidence_freespace:: 0
+[nvblox_node-1]         foreground_mapper
+[nvblox_node-1]             voxel_size_m: 0.012500
+[nvblox_node-1]             projective_layer_type: kNone
+[nvblox_node-1]             esdf_mode: kUnset
+[nvblox_node-1]             do_depth_preprocessing: 0
+[nvblox_node-1]             depth_preprocessing_num_dilations: 4
+[nvblox_node-1]             camera_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kUnbounded
+[nvblox_node-1]                     workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kUnbounded
+[nvblox_node-1]                     workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             camera_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             esdf_integrator
+[nvblox_node-1]                 max_esdf_distance_m:: 2.000000
+[nvblox_node-1]                 max_tsdf_site_distance_vox:: 1.000000
+[nvblox_node-1]                 tsdf_min_weight:: 0.000100
+[nvblox_node-1]                 occupied_threshold_log_odds:: 0.000000
+[nvblox_node-1]                 esdf_slice_min_height:: 0.000000
+[nvblox_node-1]                 esdf_slice_max_height:: 1.000000
+[nvblox_node-1]                 esdf_slice_height:: 1.000000
+[nvblox_node-1]                 slice_height_above_plane_m:: 0.000000
+[nvblox_node-1]                 slice_height_thickness_m:: 0.100000
+[nvblox_node-1]                 unobserved_esdf_policy:: kIgnore
+[nvblox_node-1]                 add_negative_truncation_band_sites:: 0
+[nvblox_node-1]                 truncation_distance_vox:: 4.000000
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             color_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             feature_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             occupancy_decay_integrator
+[nvblox_node-1]                 free_space_decay_log_odds:: 0.200671
+[nvblox_node-1]                 occupied_space_decay_log_odds:: -0.405465
+[nvblox_node-1]                 decay_to_log_odds_:: 0.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             tsdf_decay_integrator
+[nvblox_node-1]                 decay_factor:: 0.950000
+[nvblox_node-1]                 decayed_weight_theshold:: 0.001000
+[nvblox_node-1]                 set_free_distance_on_decayed:: 0
+[nvblox_node-1]                 free_distance_vox:: 4.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             freespace_integrator
+[nvblox_node-1]                 max_tsdf_distance_for_occupancy_m:: 0.150000
+[nvblox_node-1]                 max_unobserved_to_keep_consecutive_occupancy_ms:: 200
+[nvblox_node-1]                 min_duration_since_occupied_for_freespace_ms:: 1000
+[nvblox_node-1]                 min_consecutive_occupancy_duration_for_reset_ms:: 2000
+[nvblox_node-1]                 check_neighborhood:: 1
+[nvblox_node-1]                 initialize_to_high_confidence_freespace:: 0
+[nvblox_node-1]         image_masker
+[nvblox_node-1]             occlusion_threshold_m:: 0.250000
+[nvblox_node-1]         ground_plane_estimator
+[nvblox_node-1]             ground_points_candidates_min_z_m:: -0.100000
+[nvblox_node-1]             ground_points_candidates_max_z_m:: 0.150000
+[nvblox_node-1]             ransac_plane_fitter
+[nvblox_node-1]                 num_ransac_iterations:: 1000
+[nvblox_node-1]                 ransac_distance_threshold_m:: 0.200000
+[nvblox_node-1]             tsdf_zero_crossings_extractor
+[nvblox_node-1]                 min_tsdf_weight:: 0.100000
+[nvblox_node-1]                 max_crossings:: 360000
+[nvblox_node-1] 
+[planner_server-3] [INFO] [1793069277.763063388] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793069278.263044772] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793069278.763043412] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793069279.263062743] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793069279.763040977] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793069280.263039379] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793069280.763044522] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 11:48:01.225500 42875 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] [INFO] [1793069281.225871727] [nvblox_node]: Tried to clear map outside of radius but couldn't look up frame: base_link
+[nvblox_node-1] [INFO] [1793069281.226160153] [nvblox_node]: Lookup transform failed for frame base_link. Layer pointclouds not published
+[planner_server-3] [INFO] [1793069281.263033636] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 11:48:01.425475 42876 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 11:48:01.635519 42870 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-3] [INFO] [1793069281.763032980] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 11:48:01.835597 42862 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 11:48:02.045502 42867 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 11:48:02.094390 42882 gpu_layer_view_impl.cuh:100] Resizing GPU hash capacity from 4096 to 8192 in order to accomodate space for 3952 new elements.
+[nvblox_node-1] I20261027 11:48:02.094689 42882 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 8192 blocks. Real capacity: 8192
+[nvblox_node-1] I20261027 11:48:02.094974 42882 mapper_impl.h:64] Allocating space for last depth view for sensor type
+[planner_server-3] [INFO] [1793069282.263136382] [global_costmap.global_costmap]: start
+[planner_server-3] [INFO] [1793069282.513523808] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1793069282.515412483] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-4] [INFO] [1793069282.769782607] [lifecycle_manager_planning]: Server planner_server connected with bond.
+[lifecycle_manager-4] [INFO] [1793069282.769832050] [lifecycle_manager_planning]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-4] [INFO] [1793069282.769847081] [lifecycle_manager_planning]: [34m[1mCreating bond timer...[0m[0m
+[planner_server-3] [INFO] [1793069283.201266372] [planner_server]: Computing path to goal.
+[nvblox_node-1] I20261027 11:48:03.896535 42879 gpu_layer_view_impl.cuh:100] Resizing GPU hash capacity from 8192 to 16384 in order to accomodate space for 375 new elements.
+[nvblox_node-1] I20261027 11:48:03.896730 42879 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 16384 blocks. Real capacity: 16384
+[planner_server-3] [INFO] [1793069284.216405873] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069285.211128345] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069286.192266809] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069287.409653297] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069288.326402729] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069289.254126676] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069290.207055757] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069291.200526975] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069292.212508898] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069293.210461053] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069294.234221812] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069295.215720035] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069296.215316689] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069297.426336739] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069298.311559270] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069299.205329587] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069300.223726125] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069301.221220902] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069302.217203991] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069303.207126926] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069304.212934513] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069305.244616511] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069306.303635490] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069307.213691049] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069308.209516519] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069309.359006327] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069310.270507132] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069311.207940390] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069312.217989400] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069313.210070262] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069314.208408715] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069315.216580268] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069316.218157521] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069317.198802495] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069318.215802299] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069319.205898932] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069320.214802771] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069321.212191832] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069322.391932402] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069323.302120308] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069324.207593487] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069325.191111197] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069326.212881130] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069327.194966185] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069328.217237417] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069329.220122390] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069330.200828921] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069331.212705082] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069332.232944238] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069333.197749773] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069334.396266619] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069335.313149828] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069336.214965760] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069337.203459183] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069338.201728629] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069339.216971504] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069340.208804116] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069341.215842415] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069342.205834529] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069343.216145711] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069344.218865154] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069345.199803829] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069346.355714268] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069347.210785423] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069348.201233742] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069349.215036174] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069350.204427215] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069351.197373269] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069352.208844014] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069353.204034603] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069354.215633533] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069355.205572746] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069356.205096838] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069357.212632699] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069358.322673661] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069359.198463453] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069360.207851226] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069361.197262939] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069362.215556455] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069363.204001683] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069364.195446137] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069365.207599487] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069366.205269300] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069367.215558665] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069368.205099989] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069369.198244514] [planner_server]: Computing path to goal.
+[planner_server-3] [INFO] [1793069370.313289646] [planner_server]: Computing path to goal.
+[lifecycle_manager-4] [INFO] [1793069379.655715963] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-4] [INFO] [1793069379.655778431] [lifecycle_manager_planning]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_planning)
+[lifecycle_manager-4] [INFO] [1793069379.655808095] [lifecycle_manager_planning]: [34m[1mTerminating bond timer...[0m[0m
+[planner_server-3] [INFO] [1793069379.655836920] [rclcpp]: signal_handler(signum=2)
+[planner_server-3] [INFO] [1793069379.655877594] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-3] [INFO] [1793069379.655916765] [planner_server]: Deactivating
+[planner_server-3] [INFO] [1793069379.655949731] [global_costmap.global_costmap]: Deactivating
+[nvblox_node-1] [INFO] [1793069379.656453005] [rclcpp]: signal_handler(signum=2)
+[nvblox_node-1] [INFO] [1793069379.657553002] [nvblox_node]: Timing statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Timings (in seconds)
+[nvblox_node-1] namespace/tag - NumSamples - TotalTime - (Mean +- StdDev) - [Min,Max]
+[nvblox_node-1] -----------
+[nvblox_node-1] /esdf_slicer/get_aabb                         	    823	00.023872	(00.000029 +- 00.000016)	[00.000001,00.000143]
+[nvblox_node-1] /esdf_slicer/slice_layer                      	    815	00.261104	(00.000320 +- 00.000383)	[00.000037,00.001880]
+[nvblox_node-1] esdf/integrate/clear                          	    658	00.803719	(00.001221 +- 00.001298)	[00.000097,00.004647]
+[nvblox_node-1] esdf/integrate/clear/get_blocks               	    658	00.030503	(00.000046 +- 00.000011)	[00.000016,00.000146]
+[nvblox_node-1] esdf/integrate/compute/neighbor_bands         	   5526	04.781006	(00.000865 +- 00.000961)	[00.000035,00.004520]
+[nvblox_node-1] esdf/integrate/compute/neighbor_bands/gpu_view	   5526	01.975987	(00.000358 +- 00.000495)	[00.000001,00.002572]
+[nvblox_node-1] esdf/integrate/compute/swap                   	   5526	00.000886	(00.000000 +- 00.000000)	[00.000000,00.000001]
+[nvblox_node-1] esdf/integrate/compute/sweep                  	   5526	00.435844	(00.000079 +- 00.000254)	[00.000003,00.002141]
+[nvblox_node-1] esdf/integrate/mark_sites/pack_out            	    658	00.479467	(00.000729 +- 00.000772)	[00.000069,00.003110]
+[nvblox_node-1] esdf/integrate_slice                          	    823	07.296584	(00.008866 +- 00.008796)	[00.000000,00.046040]
+[nvblox_node-1] esdf/integrate_slice/compute                  	    658	05.234413	(00.007955 +- 00.007260)	[00.000063,00.042025]
+[nvblox_node-1] esdf/integrate_slice/mark_sites               	    658	01.256317	(00.001909 +- 00.001415)	[00.000255,00.010482]
+[nvblox_node-1] gpu_hash/flush_insertion_cache                	    585	00.144924	(00.000248 +- 00.000330)	[00.000034,00.003361]
+[nvblox_node-1] gpu_hash/flush_removal_cache                  	    668	00.452557	(00.000677 +- 00.000708)	[00.000033,00.003226]
+[nvblox_node-1] gpu_hash/transfer/reset                       	     16	00.151755	(00.009485 +- 00.004951)	[00.000406,00.020508]
+[nvblox_node-1] ros/clear_outside_radius                      	     90	00.000016	(00.000000 +- 00.000000)	[00.000000,00.000001]
+[nvblox_node-1] ros/decay_tsdf                                	    430	00.721728	(00.001678 +- 00.000982)	[00.000182,00.005747]
+[nvblox_node-1] ros/depth                                     	    561	00.504483	(00.000899 +- 00.000355)	[00.000002,00.011644]
+[nvblox_node-1] ros/depth/conversions                         	    509	00.125110	(00.000246 +- 00.000041)	[00.000121,00.001846]
+[nvblox_node-1] ros/depth/integrate                           	    509	00.371799	(00.000730 +- 00.000158)	[00.000341,00.011392]
+[nvblox_node-1] ros/depth/output/back_projected_depth         	    509	00.002439	(00.000005 +- 00.000001)	[00.000002,00.000697]
+[nvblox_node-1] ros/depth/transform                           	    561	00.003158	(00.000006 +- 00.000002)	[00.000001,00.000014]
+[nvblox_node-1] ros/depth_image_callback                      	    561	00.004441	(00.000008 +- 00.000002)	[00.000004,00.000223]
+[nvblox_node-1] ros/esdf                                      	    823	08.178259	(00.009937 +- 00.009068)	[00.000159,00.047478]
+[nvblox_node-1] ros/esdf/integrate                            	    823	07.451586	(00.009054 +- 00.008821)	[00.000053,00.046197]
+[nvblox_node-1] ros/esdf/slice_output                         	    823	00.725117	(00.000881 +- 00.000432)	[00.000102,00.002768]
+[nvblox_node-1] ros/idle                                      	   9971	92.670148	(00.009294 +- 00.000061)	[00.000005,00.016110]
+[nvblox_node-1] ros/process_queue                             	  29916	00.535622	(00.000018 +- 00.000000)	[00.000000,00.011677]
+[nvblox_node-1] ros/publish_layer                             	    175	00.039659	(00.000227 +- 00.000091)	[00.000058,00.000707]
+[nvblox_node-1] ros/publish_layer/serialize                   	    175	00.037815	(00.000216 +- 00.000091)	[00.000049,00.000698]
+[nvblox_node-1] ros/publish_layers                            	    176	00.045234	(00.000257 +- 00.000093)	[00.000023,00.000731]
+[nvblox_node-1] ros/push_onto_queue                           	    561	00.000607	(00.000001 +- 00.000001)	[00.000000,00.000032]
+[nvblox_node-1] ros/static/esdf/output/compute                	    823	00.314140	(00.000382 +- 00.000388)	[00.000038,00.001943]
+[nvblox_node-1] ros/static/esdf/output/slice                  	    823	00.396461	(00.000482 +- 00.000135)	[00.000048,00.001568]
+[nvblox_node-1] ros/tick                                      	   9972	09.599463	(00.000963 +- 00.000003)	[00.000002,00.047490]
+[nvblox_node-1] tsdf/integrate                                	    509	00.263120	(00.000517 +- 00.000109)	[00.000243,00.010744]
+[nvblox_node-1] tsdf/integrate/allocate_blocks                	    509	00.090265	(00.000177 +- 00.000034)	[00.000086,00.010285]
+[nvblox_node-1] tsdf/integrate/get_blocks_in_view             	    509	00.055459	(00.000109 +- 00.000041)	[00.000012,00.000968]
+[nvblox_node-1] tsdf/integrate/transfer_blocks                	    509	00.058291	(00.000115 +- 00.000026)	[00.000065,00.000325]
+[nvblox_node-1] tsdf/integrate/update_blocks                  	    509	00.055452	(00.000109 +- 00.000043)	[00.000052,00.001737]
+[nvblox_node-1] view_calculator/raycast                       	    509	00.054833	(00.000108 +- 00.000041)	[00.000011,00.000967]
+[nvblox_node-1] view_calculator/raycast/output                	    430	00.039564	(00.000092 +- 00.000027)	[00.000056,00.000275]
+[nvblox_node-1] view_calculator/raycast/raycast_pixels_kernel 	    430	00.004828	(00.000011 +- 00.000002)	[00.000007,00.000812]
+[nvblox_node-1] view_calculator/raycast/setup                 	    430	00.006898	(00.000016 +- 00.000002)	[00.000010,00.000028]
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[nvblox_node-1] [INFO] [1793069379.657577330] [nvblox_node]: Rates statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Rates (in Hz)
+[nvblox_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[nvblox_node-1] -----------
+[nvblox_node-1] ros/depth               	100    	5.4
+[nvblox_node-1] ros/depth_image_callback	100    	6.2
+[nvblox_node-1] ros/update_esdf         	100    	9.2
+[nvblox_node-1] ros/tick                	100    	0.0
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[nvblox_node-1] [INFO] [1793069379.657582958] [nvblox_node]: Delay statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Delays
+[nvblox_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[nvblox_node-1] -----------
+[nvblox_node-1] ros/esdf_integration       	100    	0.281
+[nvblox_node-1] ros/depth_image_integration	100    	0.145
+[nvblox_node-1] ros/depth_image_callback   	100    	0.143
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[lifecycle_manager-4] [INFO] [1793069379.758701508] [lifecycle_manager_planning]: Destroying lifecycle_manager_planning
+[INFO] [python3-2]: process has finished cleanly [pid 42712]
+[INFO] [lifecycle_manager-4]: process has finished cleanly [pid 42714]
+[INFO] [nvblox_node-1]: process has finished cleanly [pid 42711]

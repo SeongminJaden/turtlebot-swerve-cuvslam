@@ -1,0 +1,10 @@
+{
+  "capture": "actual X11 app window pixels",
+  "window_id": "0x160000d",
+  "fps": 5,
+  "seconds": 40.0,
+  "size": [
+    1280,
+    800
+  ]
+}

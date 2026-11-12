@@ -1,0 +1,809 @@
+{
+  "balanced": true,
+  "max_speed": 0.9499415755271912,
+  "max_wheel_rad_s": 30.977495193481445,
+  "max_yaw_rate": 0.01637773960828781,
+  "fusion_rejections": 0,
+  "rows": [
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.0,
+      "command": 0.0,
+      "speed": 0.0010553571628406644,
+      "yaw_rate": -0.001623519929125905,
+      "max_wheel_rad_s": 0.11478747427463531,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.05,
+      "command": 0.03,
+      "speed": 0.03000781498849392,
+      "yaw_rate": 0.0019161931704729795,
+      "max_wheel_rad_s": 1.0259168148040771,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.1,
+      "command": 0.06,
+      "speed": 0.059757065027952194,
+      "yaw_rate": -3.1379178835777566e-05,
+      "max_wheel_rad_s": 2.0441267490386963,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.15000000000000002,
+      "command": 0.09000000000000001,
+      "speed": 0.08983799070119858,
+      "yaw_rate": 0.0015427001053467393,
+      "max_wheel_rad_s": 2.9225637912750244,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.2,
+      "command": 0.12,
+      "speed": 0.12003622949123383,
+      "yaw_rate": 0.0020905572455376387,
+      "max_wheel_rad_s": 3.9017515182495117,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.25,
+      "command": 0.15,
+      "speed": 0.14988622069358826,
+      "yaw_rate": 0.001556748989969492,
+      "max_wheel_rad_s": 4.892756462097168,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.30000000000000004,
+      "command": 0.18000000000000002,
+      "speed": 0.1797117292881012,
+      "yaw_rate": 0.0032783278729766607,
+      "max_wheel_rad_s": 5.878643035888672,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.35000000000000003,
+      "command": 0.21000000000000002,
+      "speed": 0.21000367403030396,
+      "yaw_rate": -0.0009815659141167998,
+      "max_wheel_rad_s": 6.838438034057617,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.4,
+      "command": 0.24,
+      "speed": 0.23998695611953735,
+      "yaw_rate": 0.0004766930069308728,
+      "max_wheel_rad_s": 7.836498737335205,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.45,
+      "command": 0.27,
+      "speed": 0.26971474289894104,
+      "yaw_rate": 0.0013305076863616705,
+      "max_wheel_rad_s": 8.79537582397461,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.5,
+      "command": 0.3,
+      "speed": 0.29998084902763367,
+      "yaw_rate": 0.0018865024903789163,
+      "max_wheel_rad_s": 9.76307201385498,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.55,
+      "command": 0.33,
+      "speed": 0.3298830986022949,
+      "yaw_rate": 0.0022571515291929245,
+      "max_wheel_rad_s": 10.751459121704102,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.6000000000000001,
+      "command": 0.36000000000000004,
+      "speed": 0.3597481846809387,
+      "yaw_rate": 0.0003614171873778105,
+      "max_wheel_rad_s": 11.725720405578613,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.65,
+      "command": 0.39,
+      "speed": 0.38977059721946716,
+      "yaw_rate": 0.0033017692621797323,
+      "max_wheel_rad_s": 12.702893257141113,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.7000000000000001,
+      "command": 0.42000000000000004,
+      "speed": 0.4198296070098877,
+      "yaw_rate": 0.0014296317240223289,
+      "max_wheel_rad_s": 13.681120872497559,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.75,
+      "command": 0.44999999999999996,
+      "speed": 0.44973447918891907,
+      "yaw_rate": 0.0034474253188818693,
+      "max_wheel_rad_s": 14.67313289642334,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.8,
+      "command": 0.48,
+      "speed": 0.47966283559799194,
+      "yaw_rate": 0.002260755281895399,
+      "max_wheel_rad_s": 15.635725975036621,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.8500000000000001,
+      "command": 0.51,
+      "speed": 0.5099603533744812,
+      "yaw_rate": -6.331677286652848e-05,
+      "max_wheel_rad_s": 16.632272720336914,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.9,
+      "command": 0.54,
+      "speed": 0.539682924747467,
+      "yaw_rate": 0.001519284793175757,
+      "max_wheel_rad_s": 17.59215545654297,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 0.9500000000000001,
+      "command": 0.5700000000000001,
+      "speed": 0.5695384740829468,
+      "yaw_rate": -0.0009793015196919441,
+      "max_wheel_rad_s": 18.576141357421875,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.0,
+      "command": 0.6,
+      "speed": 0.5999964475631714,
+      "yaw_rate": 0.0012431215727701783,
+      "max_wheel_rad_s": 19.53997230529785,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.05,
+      "command": 0.63,
+      "speed": 0.6298131346702576,
+      "yaw_rate": 0.0006218889611773193,
+      "max_wheel_rad_s": 20.5151309967041,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.1,
+      "command": 0.66,
+      "speed": 0.6596400737762451,
+      "yaw_rate": 0.001081082271412015,
+      "max_wheel_rad_s": 21.501996994018555,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.1500000000000001,
+      "command": 0.6900000000000001,
+      "speed": 0.6899941563606262,
+      "yaw_rate": 0.002783984411507845,
+      "max_wheel_rad_s": 22.4907283782959,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.2000000000000002,
+      "command": 0.7200000000000001,
+      "speed": 0.719835102558136,
+      "yaw_rate": -0.0013447727542370558,
+      "max_wheel_rad_s": 23.47599220275879,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.25,
+      "command": 0.75,
+      "speed": 0.7495561838150024,
+      "yaw_rate": 0.000583861256018281,
+      "max_wheel_rad_s": 24.451004028320312,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.3,
+      "command": 0.78,
+      "speed": 0.7799831628799438,
+      "yaw_rate": 7.541131344623864e-05,
+      "max_wheel_rad_s": 25.43456268310547,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.35,
+      "command": 0.81,
+      "speed": 0.8098755478858948,
+      "yaw_rate": -0.001983496593311429,
+      "max_wheel_rad_s": 26.393468856811523,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.4000000000000001,
+      "command": 0.8400000000000001,
+      "speed": 0.8399427533149719,
+      "yaw_rate": -0.0017477171495556831,
+      "max_wheel_rad_s": 27.386150360107422,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.4500000000000002,
+      "command": 0.8700000000000001,
+      "speed": 0.8703441619873047,
+      "yaw_rate": -0.0006994446739554405,
+      "max_wheel_rad_s": 28.354990005493164,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.5,
+      "command": 0.8999999999999999,
+      "speed": 0.8995699286460876,
+      "yaw_rate": -0.0023017737548798323,
+      "max_wheel_rad_s": 29.330076217651367,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.55,
+      "command": 0.9299999999999999,
+      "speed": 0.9300093650817871,
+      "yaw_rate": -0.0014782070647925138,
+      "max_wheel_rad_s": 30.28342056274414,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.6,
+      "command": 0.95,
+      "speed": 0.9498251676559448,
+      "yaw_rate": -0.0032222566660493612,
+      "max_wheel_rad_s": 30.93584632873535,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.6500000000000001,
+      "command": 0.95,
+      "speed": 0.9497671127319336,
+      "yaw_rate": -0.00024057700647972524,
+      "max_wheel_rad_s": 30.954368591308594,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.7000000000000002,
+      "command": 0.95,
+      "speed": 0.9498546123504639,
+      "yaw_rate": -0.0011753573780879378,
+      "max_wheel_rad_s": 30.928321838378906,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.75,
+      "command": 0.95,
+      "speed": 0.9497659206390381,
+      "yaw_rate": -0.0007346263737417758,
+      "max_wheel_rad_s": 30.977495193481445,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.8,
+      "command": 0.95,
+      "speed": 0.9498423933982849,
+      "yaw_rate": -0.0037370019126683474,
+      "max_wheel_rad_s": 30.973051071166992,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.85,
+      "command": 0.95,
+      "speed": 0.9496868848800659,
+      "yaw_rate": 0.0004917670739814639,
+      "max_wheel_rad_s": 30.936748504638672,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.9000000000000001,
+      "command": 0.95,
+      "speed": 0.9498130679130554,
+      "yaw_rate": 0.0006215957691892982,
+      "max_wheel_rad_s": 30.952360153198242,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 1.9500000000000002,
+      "command": 0.95,
+      "speed": 0.9499415755271912,
+      "yaw_rate": -0.0013261751737445593,
+      "max_wheel_rad_s": 30.948284149169922,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.0,
+      "command": 0.95,
+      "speed": 0.9498717188835144,
+      "yaw_rate": -0.008435671217739582,
+      "max_wheel_rad_s": 30.950435638427734,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.0500000000000003,
+      "command": 0.9199999999999998,
+      "speed": 0.9195302724838257,
+      "yaw_rate": -0.006515066605061293,
+      "max_wheel_rad_s": 30.004623413085938,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.1,
+      "command": 0.8899999999999999,
+      "speed": 0.8902642130851746,
+      "yaw_rate": -0.009150909259915352,
+      "max_wheel_rad_s": 29.037826538085938,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.15,
+      "command": 0.86,
+      "speed": 0.8598331809043884,
+      "yaw_rate": -0.005054009612649679,
+      "max_wheel_rad_s": 28.058212280273438,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.2,
+      "command": 0.8299999999999998,
+      "speed": 0.8298603296279907,
+      "yaw_rate": -0.007391670718789101,
+      "max_wheel_rad_s": 27.118736267089844,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.25,
+      "command": 0.7999999999999999,
+      "speed": 0.8002538084983826,
+      "yaw_rate": -0.008663053624331951,
+      "max_wheel_rad_s": 26.12173843383789,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.3000000000000003,
+      "command": 0.7699999999999998,
+      "speed": 0.7698403000831604,
+      "yaw_rate": -0.008946751244366169,
+      "max_wheel_rad_s": 25.10075569152832,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.35,
+      "command": 0.7399999999999999,
+      "speed": 0.7404471039772034,
+      "yaw_rate": -0.010781471617519855,
+      "max_wheel_rad_s": 24.146928787231445,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.4000000000000004,
+      "command": 0.7099999999999997,
+      "speed": 0.7103325128555298,
+      "yaw_rate": -0.010444250889122486,
+      "max_wheel_rad_s": 23.18358612060547,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.45,
+      "command": 0.6799999999999999,
+      "speed": 0.6799171566963196,
+      "yaw_rate": -0.014199196361005306,
+      "max_wheel_rad_s": 22.226978302001953,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.5,
+      "command": 0.6499999999999999,
+      "speed": 0.6508007645606995,
+      "yaw_rate": -0.015319373458623886,
+      "max_wheel_rad_s": 21.25566864013672,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.5500000000000003,
+      "command": 0.6199999999999999,
+      "speed": 0.6201438903808594,
+      "yaw_rate": -0.015148945152759552,
+      "max_wheel_rad_s": 20.247339248657227,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.6,
+      "command": 0.5899999999999999,
+      "speed": 0.5897864103317261,
+      "yaw_rate": -0.01637773960828781,
+      "max_wheel_rad_s": 19.312192916870117,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.6500000000000004,
+      "command": 0.5599999999999998,
+      "speed": 0.5596633553504944,
+      "yaw_rate": -0.009494001045823097,
+      "max_wheel_rad_s": 18.308759689331055,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.7,
+      "command": 0.5299999999999998,
+      "speed": 0.5302063822746277,
+      "yaw_rate": -0.015493586659431458,
+      "max_wheel_rad_s": 17.353839874267578,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.75,
+      "command": 0.5,
+      "speed": 0.49992427229881287,
+      "yaw_rate": -0.013820575550198555,
+      "max_wheel_rad_s": 16.39391326904297,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.8000000000000003,
+      "command": 0.4699999999999998,
+      "speed": 0.47034338116645813,
+      "yaw_rate": -0.013774976134300232,
+      "max_wheel_rad_s": 15.531811714172363,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.85,
+      "command": 0.43999999999999995,
+      "speed": 0.44012001156806946,
+      "yaw_rate": -0.010386999696493149,
+      "max_wheel_rad_s": 14.399606704711914,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.9000000000000004,
+      "command": 0.4099999999999998,
+      "speed": 0.409770667552948,
+      "yaw_rate": -0.01332082599401474,
+      "max_wheel_rad_s": 13.389217376708984,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 2.95,
+      "command": 0.3799999999999999,
+      "speed": 0.3806680738925934,
+      "yaw_rate": -0.012040513567626476,
+      "max_wheel_rad_s": 12.446805953979492,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.0,
+      "command": 0.35,
+      "speed": 0.35023415088653564,
+      "yaw_rate": -0.005511419847607613,
+      "max_wheel_rad_s": 11.473450660705566,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.0500000000000003,
+      "command": 0.31999999999999984,
+      "speed": 0.319856733083725,
+      "yaw_rate": -0.009307056665420532,
+      "max_wheel_rad_s": 10.500566482543945,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.1,
+      "command": 0.2899999999999999,
+      "speed": 0.29025647044181824,
+      "yaw_rate": -0.007248359266668558,
+      "max_wheel_rad_s": 9.485977172851562,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.1500000000000004,
+      "command": 0.2599999999999998,
+      "speed": 0.2601628601551056,
+      "yaw_rate": -0.007409944199025631,
+      "max_wheel_rad_s": 8.524689674377441,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.2,
+      "command": 0.22999999999999987,
+      "speed": 0.2296016812324524,
+      "yaw_rate": -0.004256483633071184,
+      "max_wheel_rad_s": 7.769896030426025,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.25,
+      "command": 0.19999999999999996,
+      "speed": 0.2003791183233261,
+      "yaw_rate": -0.002908040303736925,
+      "max_wheel_rad_s": 6.538296222686768,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.3000000000000003,
+      "command": 0.16999999999999982,
+      "speed": 0.17013664543628693,
+      "yaw_rate": -0.0010267674224451184,
+      "max_wheel_rad_s": 5.539216995239258,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.35,
+      "command": 0.1399999999999999,
+      "speed": 0.1397506296634674,
+      "yaw_rate": -0.0019274948863312602,
+      "max_wheel_rad_s": 4.599464416503906,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.4000000000000004,
+      "command": 0.10999999999999976,
+      "speed": 0.11062983423471451,
+      "yaw_rate": -0.0008949365001171827,
+      "max_wheel_rad_s": 3.582979202270508,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.45,
+      "command": 0.07999999999999985,
+      "speed": 0.08016171306371689,
+      "yaw_rate": 0.0038847271353006363,
+      "max_wheel_rad_s": 2.6899313926696777,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.5,
+      "command": 0.050000000000000044,
+      "speed": 0.012849916703999043,
+      "yaw_rate": 0.002958916127681732,
+      "max_wheel_rad_s": 1.6813613176345825,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.5500000000000003,
+      "command": 0.019999999999999796,
+      "speed": 0.010088414885103703,
+      "yaw_rate": -0.0008760119089856744,
+      "max_wheel_rad_s": 0.4617885649204254,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.6,
+      "command": 0.0,
+      "speed": 0.0023565904702991247,
+      "yaw_rate": -0.0018578036688268185,
+      "max_wheel_rad_s": 0.26518309116363525,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.6500000000000004,
+      "command": 0.0,
+      "speed": 0.0030335383489727974,
+      "yaw_rate": 0.0020827073603868484,
+      "max_wheel_rad_s": 0.16780990362167358,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.7,
+      "command": 0.0,
+      "speed": 0.0033786501735448837,
+      "yaw_rate": 0.0019122154917567968,
+      "max_wheel_rad_s": 0.22672811150550842,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.75,
+      "command": 0.0,
+      "speed": 0.003384352894499898,
+      "yaw_rate": 0.004586759023368359,
+      "max_wheel_rad_s": 0.14369045197963715,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.8000000000000003,
+      "command": 0.0,
+      "speed": 0.0029504839330911636,
+      "yaw_rate": 0.006562869530171156,
+      "max_wheel_rad_s": 0.13655640184879303,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.85,
+      "command": 0.0,
+      "speed": 0.002407344290986657,
+      "yaw_rate": 0.007229897193610668,
+      "max_wheel_rad_s": 0.08586838096380234,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.9000000000000004,
+      "command": 0.0,
+      "speed": 0.0024412015918642282,
+      "yaw_rate": 0.008456356823444366,
+      "max_wheel_rad_s": 0.1443571001291275,
+      "fusion_error": null
+    },
+    {
+      "contact_body": "base_link",
+      "contact_force": 0.0,
+      "t": 3.95,
+      "command": 0.0,
+      "speed": 0.0023087712470442057,
+      "yaw_rate": 0.00928975734859705,
+      "max_wheel_rad_s": 0.11917290091514587,
+      "fusion_error": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+ekf_filter_node:
+  ros__parameters:
+    use_sim_time: true
+    frequency: 100.0
+    predict_to_current_time: true
+    sensor_timeout: 0.1
+    two_d_mode: true
+    publish_tf: false # Adapter owns TF until this optional estimator passes validation.
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom
+    # Swerve can move sideways: fuse vx AND vy; never impose vy = 0.
+    odom0: /wheel/odometry
+    odom0_config: [false, false, false, false, false, false,
+                   true, true, false, false, false, false,
+                   false, false, false]
+    odom0_queue_size: 100
+    odom0_differential: false
+    # Fused IMU has no absolute orientation. Fuse measured yaw rate only.
+    imu0: /imu/base/data_raw
+    imu0_config: [false, false, false, false, false, false,
+                  false, false, false, false, false, true,
+                  false, false, false]
+    imu0_queue_size: 100
+    imu0_differential: false
+    imu0_remove_gravitational_acceleration: false
+    # VO body pose must use image-time encoder FK and a justified covariance.
+    pose0: /active_camera/base_pose_covariance
+    pose0_config: [true, true, false, false, false, true,
+                   false, false, false, false, false, false,
+                   false, false, false]
+    pose0_queue_size: 50
+    pose0_differential: false
+    pose0_rejection_threshold: 5.0
+    smooth_lagged_data: true
+    history_length: 1.0
+    print_diagnostics: true

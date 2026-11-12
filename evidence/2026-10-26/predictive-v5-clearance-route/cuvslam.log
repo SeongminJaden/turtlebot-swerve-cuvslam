@@ -1,0 +1,20 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-26-19-20-12-229920-ros-119333
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-1]: process started with pid [119411]
+[component_container-1] [INFO] [1793010012.608700900] [arm_cuvslam_container]: Load Library: /opt/ros/lyrical/lib/libisaac_ros_cuvslam_node.so
+[component_container-1] [INFO] [1793010012.658887259] [arm_cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793010012.658937053] [arm_cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793010015.517647883] [arm_visual_slam]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1793010015.517692616] [arm_visual_slam]: Tracking mode: RGBD
+[component_container-1] [INFO] [1793010015.520300712] [arm_visual_slam]: Time taken by cuvslam::WarmUpGPU(): 0.002606
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/arm_visual_slam' in container '/arm_cuvslam_container'
+[component_container-1] [INFO] [1793010029.559149261] [arm_visual_slam]: Initializing cuVSLAM.
+[component_container-1] [INFO] [1793010029.559231512] [arm_visual_slam]: Use use_gpu: true
+[component_container-1] [INFO] [1793010029.559235941] [arm_visual_slam]: Enable IMU Fusion: false
+[component_container-1] [INFO] [1793010029.575308282] [arm_visual_slam]: Time taken by cuvslam::Odometry::Odometry(): 0.016069
+[component_container-1] [INFO] [1793010029.575343915] [arm_visual_slam]: cuVSLAM tracker was successfully initialized.
+[component_container-1] [WARN] [1793010030.154720576] [arm_visual_slam]: Delta between current and previous frame [585.000000 ms] is above threshold [200.000000 ms]
+[component_container-1] [WARN] [1793010031.342651904] [arm_visual_slam]: Delta between current and previous frame [260.000000 ms] is above threshold [200.000000 ms]
+[component_container-1] [INFO] [1793010035.737941663] [rclcpp]: signal_handler(signum=2)
+[component_container-1] [INFO] [1793010035.748017329] [arm_visual_slam]: cuVSLAM odometry was destroyed
+[INFO] [component_container-1]: process has finished cleanly [pid 119411]

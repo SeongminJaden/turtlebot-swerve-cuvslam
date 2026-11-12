@@ -1,0 +1,14 @@
+{
+  "maze.zip": {
+    "sha256": "1fdbee915b192401e0580c4b89cd16d112982bafc370c11e031c999ac8c2f5e7",
+    "size_bytes": 30989964
+  },
+  "R12_NO_USB_URDF_USD.zip": {
+    "sha256": "874aa3001b1560f555485886716dbea59c5dc4277c1806801e7a9cfc4aded549",
+    "size_bytes": 131312623
+  },
+  "mission.pdf": {
+    "sha256": "bc1defea1b8d80af2f868cc9d01eae7288170fafefbc29159d48e2e84ed997f1",
+    "size_bytes": 421978
+  }
+}

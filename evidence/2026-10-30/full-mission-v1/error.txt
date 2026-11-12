@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/scripts/mission_headless.py", line 121, in <module>
+    report['full_audit']=run(ROOT,stage,world,args.output/'mission-audit',practice)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/scripts/mission_audit.py", line 110, in run
+    if not writer.isOpened():raise RuntimeError('Video encoder unavailable')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Video encoder unavailable

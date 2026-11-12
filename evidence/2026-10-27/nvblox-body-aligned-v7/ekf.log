@@ -1,0 +1,4 @@
+[INFO] [1793069227.973899798] [ekf_filter_node]: Waiting for clock to start...
+[INFO] [1793069233.646346144] [rclcpp]: signal_handler(signum=2)
+terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+  what():  could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:409

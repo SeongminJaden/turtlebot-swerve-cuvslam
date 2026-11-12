@@ -1,0 +1,649 @@
+{
+  "balanced": false,
+  "max_speed": 1.0767803192138672,
+  "max_wheel_rad_s": 30.996461868286133,
+  "max_yaw_rate": 0.3160106837749481,
+  "fusion_rejections": 19,
+  "rows": [
+    {
+      "t": 0.0,
+      "command": 0.0,
+      "speed": 0.0002224090858362615,
+      "yaw_rate": 0.0005911925691179931,
+      "max_wheel_rad_s": 0.003448974806815386,
+      "fusion_error": null
+    },
+    {
+      "t": 0.05,
+      "command": 0.03,
+      "speed": 0.029803885146975517,
+      "yaw_rate": -9.02236297406489e-06,
+      "max_wheel_rad_s": 0.9860063195228577,
+      "fusion_error": null
+    },
+    {
+      "t": 0.1,
+      "command": 0.06,
+      "speed": 0.06031135469675064,
+      "yaw_rate": -0.0016793790273368359,
+      "max_wheel_rad_s": 1.967841625213623,
+      "fusion_error": null
+    },
+    {
+      "t": 0.15000000000000002,
+      "command": 0.09000000000000001,
+      "speed": 0.09058189392089844,
+      "yaw_rate": -0.0001569136802572757,
+      "max_wheel_rad_s": 2.9765284061431885,
+      "fusion_error": null
+    },
+    {
+      "t": 0.2,
+      "command": 0.12,
+      "speed": 0.12177151441574097,
+      "yaw_rate": -0.0015672529116272926,
+      "max_wheel_rad_s": 3.9362258911132812,
+      "fusion_error": null
+    },
+    {
+      "t": 0.25,
+      "command": 0.15,
+      "speed": 0.15320280194282532,
+      "yaw_rate": -0.0010224411962553859,
+      "max_wheel_rad_s": 4.935212135314941,
+      "fusion_error": null
+    },
+    {
+      "t": 0.30000000000000004,
+      "command": 0.18000000000000002,
+      "speed": 0.18582813441753387,
+      "yaw_rate": 0.00048166667693294585,
+      "max_wheel_rad_s": 5.88442850112915,
+      "fusion_error": null
+    },
+    {
+      "t": 0.35000000000000003,
+      "command": 0.21000000000000002,
+      "speed": 0.2169557809829712,
+      "yaw_rate": 0.00821380503475666,
+      "max_wheel_rad_s": 6.903998851776123,
+      "fusion_error": null
+    },
+    {
+      "t": 0.4,
+      "command": 0.24,
+      "speed": 0.24841807782649994,
+      "yaw_rate": 0.0027992110699415207,
+      "max_wheel_rad_s": 7.910984039306641,
+      "fusion_error": null
+    },
+    {
+      "t": 0.45,
+      "command": 0.27,
+      "speed": 0.2800101339817047,
+      "yaw_rate": -0.005621409043669701,
+      "max_wheel_rad_s": 8.759060859680176,
+      "fusion_error": null
+    },
+    {
+      "t": 0.5,
+      "command": 0.3,
+      "speed": 0.30665865540504456,
+      "yaw_rate": -0.0006392996292561293,
+      "max_wheel_rad_s": 9.736071586608887,
+      "fusion_error": null
+    },
+    {
+      "t": 0.55,
+      "command": 0.33,
+      "speed": 0.32898688316345215,
+      "yaw_rate": -0.0011978771071881056,
+      "max_wheel_rad_s": 10.771718978881836,
+      "fusion_error": null
+    },
+    {
+      "t": 0.6000000000000001,
+      "command": 0.36000000000000004,
+      "speed": 0.3483986556529999,
+      "yaw_rate": 0.0020117175299674273,
+      "max_wheel_rad_s": 11.83187198638916,
+      "fusion_error": null
+    },
+    {
+      "t": 0.65,
+      "command": 0.39,
+      "speed": 0.36749860644340515,
+      "yaw_rate": 0.003567199455574155,
+      "max_wheel_rad_s": 12.938446998596191,
+      "fusion_error": null
+    },
+    {
+      "t": 0.7000000000000001,
+      "command": 0.42000000000000004,
+      "speed": 0.40162134170532227,
+      "yaw_rate": -0.0037119900807738304,
+      "max_wheel_rad_s": 14.420984268188477,
+      "fusion_error": null
+    },
+    {
+      "t": 0.75,
+      "command": 0.44999999999999996,
+      "speed": 0.4322848320007324,
+      "yaw_rate": 0.09968069195747375,
+      "max_wheel_rad_s": 15.497456550598145,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 0.8,
+      "command": 0.48,
+      "speed": 0.4857040345668793,
+      "yaw_rate": 0.13657425343990326,
+      "max_wheel_rad_s": 15.589067459106445,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 0.8500000000000001,
+      "command": 0.51,
+      "speed": 0.5312955975532532,
+      "yaw_rate": -0.0837881863117218,
+      "max_wheel_rad_s": 20.082326889038086,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 0.9,
+      "command": 0.54,
+      "speed": 0.5751938223838806,
+      "yaw_rate": -0.010008886456489563,
+      "max_wheel_rad_s": 17.7558650970459,
+      "fusion_error": null
+    },
+    {
+      "t": 0.9500000000000001,
+      "command": 0.5700000000000001,
+      "speed": 0.5797795653343201,
+      "yaw_rate": 0.0009881096193566918,
+      "max_wheel_rad_s": 18.5119571685791,
+      "fusion_error": null
+    },
+    {
+      "t": 1.0,
+      "command": 0.6,
+      "speed": 0.5629262924194336,
+      "yaw_rate": 0.008713187649846077,
+      "max_wheel_rad_s": 19.98485565185547,
+      "fusion_error": null
+    },
+    {
+      "t": 1.05,
+      "command": 0.63,
+      "speed": 0.5944152474403381,
+      "yaw_rate": 0.008231483399868011,
+      "max_wheel_rad_s": 20.60399627685547,
+      "fusion_error": null
+    },
+    {
+      "t": 1.1,
+      "command": 0.66,
+      "speed": 0.6041907072067261,
+      "yaw_rate": 0.09093287587165833,
+      "max_wheel_rad_s": 21.525720596313477,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 1.1500000000000001,
+      "command": 0.6900000000000001,
+      "speed": 0.726932168006897,
+      "yaw_rate": 0.03830040618777275,
+      "max_wheel_rad_s": 22.501724243164062,
+      "fusion_error": null
+    },
+    {
+      "t": 1.2000000000000002,
+      "command": 0.7200000000000001,
+      "speed": 0.7864159345626831,
+      "yaw_rate": 0.006435568444430828,
+      "max_wheel_rad_s": 23.688825607299805,
+      "fusion_error": null
+    },
+    {
+      "t": 1.25,
+      "command": 0.75,
+      "speed": 0.7445412278175354,
+      "yaw_rate": 0.007077384740114212,
+      "max_wheel_rad_s": 24.61018943786621,
+      "fusion_error": null
+    },
+    {
+      "t": 1.3,
+      "command": 0.78,
+      "speed": 0.6899623870849609,
+      "yaw_rate": -0.03321106359362602,
+      "max_wheel_rad_s": 26.49582862854004,
+      "fusion_error": null
+    },
+    {
+      "t": 1.35,
+      "command": 0.81,
+      "speed": 0.7475895285606384,
+      "yaw_rate": 0.02411438152194023,
+      "max_wheel_rad_s": 26.42097282409668,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 1.4000000000000001,
+      "command": 0.8400000000000001,
+      "speed": 0.8737658262252808,
+      "yaw_rate": -0.1491980403661728,
+      "max_wheel_rad_s": 27.38738441467285,
+      "fusion_error": null
+    },
+    {
+      "t": 1.4500000000000002,
+      "command": 0.8700000000000001,
+      "speed": 0.9769132733345032,
+      "yaw_rate": 0.006944849621504545,
+      "max_wheel_rad_s": 28.29985237121582,
+      "fusion_error": null
+    },
+    {
+      "t": 1.5,
+      "command": 0.8999999999999999,
+      "speed": 0.8375299572944641,
+      "yaw_rate": 0.02221868373453617,
+      "max_wheel_rad_s": 30.223800659179688,
+      "fusion_error": null
+    },
+    {
+      "t": 1.55,
+      "command": 0.9299999999999999,
+      "speed": 0.8151817917823792,
+      "yaw_rate": 0.04406474158167839,
+      "max_wheel_rad_s": 30.236495971679688,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 1.6,
+      "command": 0.95,
+      "speed": 0.8590376377105713,
+      "yaw_rate": -0.0033057257533073425,
+      "max_wheel_rad_s": 30.957538604736328,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 1.6500000000000001,
+      "command": 0.95,
+      "speed": 1.0767803192138672,
+      "yaw_rate": 0.015496351756155491,
+      "max_wheel_rad_s": 30.980594635009766,
+      "fusion_error": null
+    },
+    {
+      "t": 1.7000000000000002,
+      "command": 0.95,
+      "speed": 0.9451194405555725,
+      "yaw_rate": 0.014039964415133,
+      "max_wheel_rad_s": 30.047935485839844,
+      "fusion_error": null
+    },
+    {
+      "t": 1.75,
+      "command": 0.95,
+      "speed": 0.7568589448928833,
+      "yaw_rate": -0.001968357479199767,
+      "max_wheel_rad_s": 30.920196533203125,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 1.8,
+      "command": 0.95,
+      "speed": 0.7452754378318787,
+      "yaw_rate": -0.2620267868041992,
+      "max_wheel_rad_s": 30.95753288269043,
+      "fusion_error": null
+    },
+    {
+      "t": 1.85,
+      "command": 0.95,
+      "speed": 1.0097637176513672,
+      "yaw_rate": -0.12044376879930496,
+      "max_wheel_rad_s": 30.996461868286133,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 1.9000000000000001,
+      "command": 0.95,
+      "speed": 1.0081946849822998,
+      "yaw_rate": -0.023205416277050972,
+      "max_wheel_rad_s": 28.548582077026367,
+      "fusion_error": null
+    },
+    {
+      "t": 1.9500000000000002,
+      "command": 0.95,
+      "speed": 0.8115231990814209,
+      "yaw_rate": 0.017275435850024223,
+      "max_wheel_rad_s": 30.834243774414062,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 2.0,
+      "command": 0.95,
+      "speed": 0.7782775163650513,
+      "yaw_rate": -0.039944179356098175,
+      "max_wheel_rad_s": 30.511037826538086,
+      "fusion_error": "IMU ADC saturated"
+    },
+    {
+      "t": 2.0500000000000003,
+      "command": 0.9199999999999998,
+      "speed": 0.9518830180168152,
+      "yaw_rate": -0.12613417208194733,
+      "max_wheel_rad_s": 30.0841064453125,
+      "fusion_error": null
+    },
+    {
+      "t": 2.1,
+      "command": 0.8899999999999999,
+      "speed": 1.0507621765136719,
+      "yaw_rate": 0.01958589442074299,
+      "max_wheel_rad_s": 29.287696838378906,
+      "fusion_error": null
+    },
+    {
+      "t": 2.15,
+      "command": 0.86,
+      "speed": 0.8449546694755554,
+      "yaw_rate": 0.02122560329735279,
+      "max_wheel_rad_s": 29.100841522216797,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 2.2,
+      "command": 0.8299999999999998,
+      "speed": 0.7355499863624573,
+      "yaw_rate": 0.07870829850435257,
+      "max_wheel_rad_s": 27.100025177001953,
+      "fusion_error": null
+    },
+    {
+      "t": 2.25,
+      "command": 0.7999999999999999,
+      "speed": 0.7820920348167419,
+      "yaw_rate": 0.3160106837749481,
+      "max_wheel_rad_s": 26.202638626098633,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 2.3000000000000003,
+      "command": 0.7699999999999998,
+      "speed": 0.870016872882843,
+      "yaw_rate": -0.009143134579062462,
+      "max_wheel_rad_s": 25.477128982543945,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 2.35,
+      "command": 0.7399999999999999,
+      "speed": 0.7625293135643005,
+      "yaw_rate": -0.04140441492199898,
+      "max_wheel_rad_s": 24.34015655517578,
+      "fusion_error": null
+    },
+    {
+      "t": 2.4000000000000004,
+      "command": 0.7099999999999997,
+      "speed": 0.645455539226532,
+      "yaw_rate": -0.022901926189661026,
+      "max_wheel_rad_s": 24.356403350830078,
+      "fusion_error": null
+    },
+    {
+      "t": 2.45,
+      "command": 0.6799999999999999,
+      "speed": 0.6214956045150757,
+      "yaw_rate": -0.1928938329219818,
+      "max_wheel_rad_s": 22.173919677734375,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 2.5,
+      "command": 0.6499999999999999,
+      "speed": 0.6486495137214661,
+      "yaw_rate": 0.16534356772899628,
+      "max_wheel_rad_s": 21.259628295898438,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 2.5500000000000003,
+      "command": 0.6199999999999999,
+      "speed": 0.6875151991844177,
+      "yaw_rate": 0.0041272626258432865,
+      "max_wheel_rad_s": 20.522367477416992,
+      "fusion_error": null
+    },
+    {
+      "t": 2.6,
+      "command": 0.5899999999999999,
+      "speed": 0.6316088438034058,
+      "yaw_rate": -0.017757389694452286,
+      "max_wheel_rad_s": 19.280935287475586,
+      "fusion_error": null
+    },
+    {
+      "t": 2.6500000000000004,
+      "command": 0.5599999999999998,
+      "speed": 0.5733617544174194,
+      "yaw_rate": -0.022547999396920204,
+      "max_wheel_rad_s": 18.48228645324707,
+      "fusion_error": null
+    },
+    {
+      "t": 2.7,
+      "command": 0.5299999999999998,
+      "speed": 0.501924455165863,
+      "yaw_rate": -0.013287094421684742,
+      "max_wheel_rad_s": 17.92904281616211,
+      "fusion_error": null
+    },
+    {
+      "t": 2.75,
+      "command": 0.5,
+      "speed": 0.4678869843482971,
+      "yaw_rate": -0.002972112037241459,
+      "max_wheel_rad_s": 17.1767578125,
+      "fusion_error": null
+    },
+    {
+      "t": 2.8000000000000003,
+      "command": 0.4699999999999998,
+      "speed": 0.446895569562912,
+      "yaw_rate": -0.08703204989433289,
+      "max_wheel_rad_s": 15.937232971191406,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 2.85,
+      "command": 0.43999999999999995,
+      "speed": 0.4248616099357605,
+      "yaw_rate": -0.04782138392329216,
+      "max_wheel_rad_s": 14.637731552124023,
+      "fusion_error": null
+    },
+    {
+      "t": 2.9000000000000004,
+      "command": 0.4099999999999998,
+      "speed": 0.4182223379611969,
+      "yaw_rate": -0.07819963246583939,
+      "max_wheel_rad_s": 13.621058464050293,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 2.95,
+      "command": 0.3799999999999999,
+      "speed": 0.39596879482269287,
+      "yaw_rate": -0.032778773456811905,
+      "max_wheel_rad_s": 13.56995964050293,
+      "fusion_error": "Corrected acceleration disagreement"
+    },
+    {
+      "t": 3.0,
+      "command": 0.35,
+      "speed": 0.37124884128570557,
+      "yaw_rate": -0.05561908334493637,
+      "max_wheel_rad_s": 11.557485580444336,
+      "fusion_error": null
+    },
+    {
+      "t": 3.0500000000000003,
+      "command": 0.31999999999999984,
+      "speed": 0.33323797583580017,
+      "yaw_rate": -0.02753046713769436,
+      "max_wheel_rad_s": 10.55738639831543,
+      "fusion_error": null
+    },
+    {
+      "t": 3.1,
+      "command": 0.2899999999999999,
+      "speed": 0.2956891655921936,
+      "yaw_rate": -0.008214721456170082,
+      "max_wheel_rad_s": 9.552533149719238,
+      "fusion_error": null
+    },
+    {
+      "t": 3.1500000000000004,
+      "command": 0.2599999999999998,
+      "speed": 0.2585916221141815,
+      "yaw_rate": -0.010308214463293552,
+      "max_wheel_rad_s": 8.592428207397461,
+      "fusion_error": null
+    },
+    {
+      "t": 3.2,
+      "command": 0.22999999999999987,
+      "speed": 0.2261824607849121,
+      "yaw_rate": -0.0034023933112621307,
+      "max_wheel_rad_s": 7.582050800323486,
+      "fusion_error": null
+    },
+    {
+      "t": 3.25,
+      "command": 0.19999999999999996,
+      "speed": 0.1958349198102951,
+      "yaw_rate": -0.0026884463150054216,
+      "max_wheel_rad_s": 6.599895477294922,
+      "fusion_error": null
+    },
+    {
+      "t": 3.3000000000000003,
+      "command": 0.16999999999999982,
+      "speed": 0.16546949744224548,
+      "yaw_rate": 0.0001034243541653268,
+      "max_wheel_rad_s": 5.579306602478027,
+      "fusion_error": null
+    },
+    {
+      "t": 3.35,
+      "command": 0.1399999999999999,
+      "speed": 0.13626322150230408,
+      "yaw_rate": 0.00021422687859740108,
+      "max_wheel_rad_s": 4.634034633636475,
+      "fusion_error": null
+    },
+    {
+      "t": 3.4000000000000004,
+      "command": 0.10999999999999976,
+      "speed": 0.10811197757720947,
+      "yaw_rate": 0.0025517449248582125,
+      "max_wheel_rad_s": 3.5845375061035156,
+      "fusion_error": null
+    },
+    {
+      "t": 3.45,
+      "command": 0.07999999999999985,
+      "speed": 0.0779133141040802,
+      "yaw_rate": 0.0021769702434539795,
+      "max_wheel_rad_s": 2.6230483055114746,
+      "fusion_error": null
+    },
+    {
+      "t": 3.5,
+      "command": 0.050000000000000044,
+      "speed": 0.007008636370301247,
+      "yaw_rate": 0.02829095534980297,
+      "max_wheel_rad_s": 1.5658154487609863,
+      "fusion_error": null
+    },
+    {
+      "t": 3.5500000000000003,
+      "command": 0.019999999999999796,
+      "speed": 0.007732548750936985,
+      "yaw_rate": 0.004105220083147287,
+      "max_wheel_rad_s": 0.462358683347702,
+      "fusion_error": null
+    },
+    {
+      "t": 3.6,
+      "command": 0.0,
+      "speed": 0.004573998041450977,
+      "yaw_rate": -0.00035570922773331404,
+      "max_wheel_rad_s": 0.1653299480676651,
+      "fusion_error": null
+    },
+    {
+      "t": 3.6500000000000004,
+      "command": 0.0,
+      "speed": 0.0047033606097102165,
+      "yaw_rate": 0.0009899473516270518,
+      "max_wheel_rad_s": 0.1649852842092514,
+      "fusion_error": null
+    },
+    {
+      "t": 3.7,
+      "command": 0.0,
+      "speed": 0.0047775860875844955,
+      "yaw_rate": 0.0018853568471968174,
+      "max_wheel_rad_s": 0.1703251302242279,
+      "fusion_error": null
+    },
+    {
+      "t": 3.75,
+      "command": 0.0,
+      "speed": 0.0047749183140695095,
+      "yaw_rate": 0.0025520429480820894,
+      "max_wheel_rad_s": 0.16721443831920624,
+      "fusion_error": null
+    },
+    {
+      "t": 3.8000000000000003,
+      "command": 0.0,
+      "speed": 0.004804708994925022,
+      "yaw_rate": 0.0035670725628733635,
+      "max_wheel_rad_s": 0.16422849893569946,
+      "fusion_error": null
+    },
+    {
+      "t": 3.85,
+      "command": 0.0,
+      "speed": 0.004703504033386707,
+      "yaw_rate": 0.004557325504720211,
+      "max_wheel_rad_s": 0.17032760381698608,
+      "fusion_error": null
+    },
+    {
+      "t": 3.9000000000000004,
+      "command": 0.0,
+      "speed": 0.004628023132681847,
+      "yaw_rate": 0.006483078468590975,
+      "max_wheel_rad_s": 0.17320837080478668,
+      "fusion_error": null
+    },
+    {
+      "t": 3.95,
+      "command": 0.0,
+      "speed": 0.004466824233531952,
+      "yaw_rate": 0.006333489902317524,
+      "max_wheel_rad_s": 0.17220014333724976,
+      "fusion_error": null
+    }
+  ]
+}

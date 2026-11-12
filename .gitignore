@@ -16,3 +16,18 @@ checks/*
 
 # Keep selected captures and GIFs; per-frame intermediates stay local.
 evidence/**/frames/
+
+# Original mission archives are reproduced with scripts/prepare_mission_assets.py.
+assets/mission/
+tmp/pdfs/
+runs/mission_headless/
+runs/mission-headless.log
+
+# Reproducible synthetic perception datasets and training checkpoints.
+runs/perception/
+runs/perception-*.log
+
+# Large raw logs are preserved as lossless .gz archives.
+/evidence/2026-10-26/predictive-v5-gui-repeat/tracking-frames.jsonl
+/evidence/2026-10-26/predictive-v5-gyro-heading/tracking-frames.jsonl
+/evidence/2026-10-26/predictive-v5-near-field/tracking-frames.jsonl

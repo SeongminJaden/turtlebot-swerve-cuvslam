@@ -1,0 +1,7 @@
+{
+  "scripts/mission_headless.py": "9efd1f863efed1ec00ebcce55e626ef9b7b56d6132894c81fbffbbf3cde51177",
+  "scripts/prepare_mission_assets.py": "77697a65f57104a223b9cbbcc6f9d501737674a4654fd3928ab831eb33ca0cff",
+  "turtlebot_swerve/dice_mission.py": "3068d7f6d6f733cbee66ad43ca2242b2e7f1a0030cfa8a1566d9519c72c0c7b9",
+  "config/mission/practice.json": "a15632bc25f60a32a42296f3869878ea06828fa346765773208ffa23fd6ab749",
+  "config/mission/sources.json": "28e9d6d29371424b5dc4cc3579f193ee9c264ff78d98b4c487e1aefe9533c39b"
+}

@@ -1,0 +1,1011 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-27-11-41-53-324097-ros-32166
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [nvblox_node-1]: process started with pid [32182]
+[INFO] [python3-2]: process started with pid [32185]
+[INFO] [planner_server-3]: process started with pid [32186]
+[INFO] [lifecycle_manager-4]: process started with pid [32187]
+[nvblox_node-1] VBIPROXY_DEVICE environment variable not set - disabling proxy
+[lifecycle_manager-4] [INFO] [1793068913.445451515] [lifecycle_manager_planning]: Creating
+[lifecycle_manager-4] [INFO] [1793068913.445849849] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle publishers[0m[0m
+[lifecycle_manager-4] [INFO] [1793068913.446423938] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[planner_server-3] [INFO] [1793068913.458777171] [planner_server]: 
+[planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1793068913.459234706] [planner_server]: Creating
+[planner_server-3] [INFO] [1793068913.466456028] [global_costmap.global_costmap]: 
+[planner_server-3] 	global_costmap lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1793068913.466913615] [global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-4] [INFO] [1793068913.549946345] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle service servers[0m[0m
+[lifecycle_manager-4] [INFO] [1793068913.560314763] [lifecycle_manager_planning]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-4] [INFO] [1793068913.560372341] [lifecycle_manager_planning]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-3] [INFO] [1793068913.560907882] [planner_server]: Configuring
+[planner_server-3] [INFO] [1793068913.560952176] [global_costmap.global_costmap]: Configuring
+[planner_server-3] [INFO] [1793068913.565906756] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-3] [INFO] [1793068913.570506261] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-3] [INFO] [1793068913.572178358] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-3] [INFO] [1793068913.572202464] [global_costmap.global_costmap]: Using plugin "nvblox_layer"
+[planner_server-3] [INFO] [1793068913.576640781] [global_costmap.global_costmap]: Name: nvblox_layer Topic name: /navigation/map_slice Convert to binary costmap: 1 Max obstacle distance: 1
+[planner_server-3] [INFO] [1793068913.584744230] [global_costmap.global_costmap]: Initialized plugin "nvblox_layer"
+[planner_server-3] [INFO] [1793068913.584773837] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-3] [INFO] [1793068913.584922959] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-3] [INFO] [1793068913.615405928] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[planner_server-3] [INFO] [1793068913.615459536] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1793068913.615626973] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-4] [INFO] [1793068913.628010733] [lifecycle_manager_planning]: [34m[1mActivating planner_server[0m[0m
+[planner_server-3] [INFO] [1793068913.628205896] [planner_server]: Activating
+[planner_server-3] [INFO] [1793068913.628257669] [global_costmap.global_costmap]: Activating
+[planner_server-3] [INFO] [1793068913.628266730] [global_costmap.global_costmap]: Checking transform
+[planner_server-3] [INFO] [1793068913.628324616] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068913.721359804] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 501 X 691 at 0.010000 m/pix
+[nvblox_node-1] [INFO] [1793068914.096412646] [nvblox_node]: Create nvblox cuda stream with type: kBlocking
+[nvblox_node-1] [INFO] [1793068914.096505273] [nvblox_node]: NvbloxNode::advertiseTopics()
+[nvblox_node-1] [INFO] [1793068914.100754567] [nvblox_node]: NvbloxNode::advertiseServices()
+[nvblox_node-1] [INFO] [1793068914.103555581] [nvblox_node]: NvbloxNode::subscribeToTopics()
+[nvblox_node-1] [INFO] [1793068914.103613683] [nvblox_node]: Subscribing input topics with QoS: SYSTEM_DEFAULT
+[planner_server-3] [INFO] [1793068914.128378456] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 11:41:54.131652 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.132078 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.149533 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.150466 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.167490 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.167724 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.185645 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.186012 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.202425 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.203677 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.218067 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.218739 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.233157 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.233958 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.234565 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.235083 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.235092 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.235096 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.235100 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.235106 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.235111 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.235114 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.235117 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.235121 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.250053 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.250252 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.266225 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.266484 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.283056 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.284050 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.299891 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.300453 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.315815 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.316704 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.332864 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.333082 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.343112 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.344695 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345618 32182 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 11:41:54.345758 32182 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345767 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345770 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345773 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345777 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345779 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345781 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345784 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[nvblox_node-1] I20261027 11:41:54.345788 32182 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[nvblox_node-1] [INFO] [1793068914.346188006] [nvblox_node]: Initialize Mapper:
+[nvblox_node-1] [INFO] [1793068914.346216582] [nvblox_node]: static_mapper.do_depth_preprocessing: 0
+[nvblox_node-1] [INFO] [1793068914.346222377] [nvblox_node]: static_mapper.depth_preprocessing_num_dilations: 4
+[nvblox_node-1] [INFO] [1793068914.346226443] [nvblox_node]: static_mapper.esdf_slice_min_height: 0.05
+[nvblox_node-1] [INFO] [1793068914.346230138] [nvblox_node]: static_mapper.esdf_slice_max_height: 0.65
+[nvblox_node-1] [INFO] [1793068914.346233307] [nvblox_node]: static_mapper.esdf_slice_height: 0.15
+[nvblox_node-1] [INFO] [1793068914.346238174] [nvblox_node]: static_mapper.slice_height_above_plane_m: 0
+[nvblox_node-1] [INFO] [1793068914.346241310] [nvblox_node]: static_mapper.slice_height_thickness_m: 0.1
+[nvblox_node-1] [INFO] [1793068914.346244280] [nvblox_node]: static_mapper.projective_integrator_max_integration_distance_m: 5
+[nvblox_node-1] [INFO] [1793068914.346248381] [nvblox_node]: static_mapper.lidar_projective_integrator_max_integration_distance_m: 10
+[nvblox_node-1] [INFO] [1793068914.346251407] [nvblox_node]: static_mapper.projective_integrator_truncation_distance_vox: 4
+[nvblox_node-1] [INFO] [1793068914.346254979] [nvblox_node]: static_mapper.projective_integrator_weighting_mode: kInverseSquareWeight
+[nvblox_node-1] [WARN] [1793068914.346257866] [nvblox_node]: Requested weighting function: "kInverseSquareWeight" not recognized. Defaulting to: kInverseSquareWeight
+[nvblox_node-1] [INFO] [1793068914.346262267] [nvblox_node]: static_mapper.projective_integrator_max_weight: 5
+[nvblox_node-1] [INFO] [1793068914.346265476] [nvblox_node]: static_mapper.projective_tsdf_integrator_invalid_depth_decay_factor: -1
+[nvblox_node-1] [INFO] [1793068914.346268725] [nvblox_node]: static_mapper.free_region_occupancy_probability: 0.3
+[nvblox_node-1] [INFO] [1793068914.346271751] [nvblox_node]: static_mapper.occupied_region_occupancy_probability: 0.7
+[nvblox_node-1] [INFO] [1793068914.346274587] [nvblox_node]: static_mapper.unobserved_region_occupancy_probability: 0.5
+[nvblox_node-1] [INFO] [1793068914.346277334] [nvblox_node]: static_mapper.occupied_region_half_width_m: 0.1
+[nvblox_node-1] [INFO] [1793068914.346280036] [nvblox_node]: static_mapper.raycast_subsampling_factor: 4
+[nvblox_node-1] [INFO] [1793068914.346282845] [nvblox_node]: static_mapper.workspace_bounds_type: height_bounds
+[nvblox_node-1] [INFO] [1793068914.346286368] [nvblox_node]: static_mapper.workspace_bounds_min_height_m: -0.1
+[nvblox_node-1] [INFO] [1793068914.346289094] [nvblox_node]: static_mapper.workspace_bounds_max_height_m: 1.5
+[nvblox_node-1] [INFO] [1793068914.346291691] [nvblox_node]: static_mapper.workspace_bounds_min_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793068914.346294471] [nvblox_node]: static_mapper.workspace_bounds_max_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793068914.346297197] [nvblox_node]: static_mapper.workspace_bounds_min_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793068914.346299796] [nvblox_node]: static_mapper.workspace_bounds_max_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793068914.346302501] [nvblox_node]: static_mapper.esdf_integrator_min_weight: 0.1
+[nvblox_node-1] [INFO] [1793068914.346305241] [nvblox_node]: static_mapper.esdf_integrator_max_site_distance_vox: 1
+[nvblox_node-1] [INFO] [1793068914.346307920] [nvblox_node]: static_mapper.esdf_integrator_max_distance_m: 2
+[nvblox_node-1] [INFO] [1793068914.346310479] [nvblox_node]: static_mapper.unobserved_esdf_policy: kIgnore
+[nvblox_node-1] [INFO] [1793068914.346313398] [nvblox_node]: static_mapper.add_negative_truncation_band_sites: 0
+[nvblox_node-1] [INFO] [1793068914.346316805] [nvblox_node]: static_mapper.mesh_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793068914.346319455] [nvblox_node]: static_mapper.mesh_integrator_weld_vertices: 1
+[nvblox_node-1] [INFO] [1793068914.346323361] [nvblox_node]: static_mapper.decay_integrator_deallocate_decayed_blocks: 1
+[nvblox_node-1] [INFO] [1793068914.346327984] [nvblox_node]: static_mapper.tsdf_decay_factor: 0.95
+[nvblox_node-1] [INFO] [1793068914.346331100] [nvblox_node]: static_mapper.tsdf_decayed_weight_threshold: 0.001
+[nvblox_node-1] [INFO] [1793068914.346333620] [nvblox_node]: static_mapper.tsdf_set_free_distance_on_decayed: 0
+[nvblox_node-1] [INFO] [1793068914.346359503] [nvblox_node]: static_mapper.tsdf_decayed_free_distance_vox: 4
+[nvblox_node-1] [INFO] [1793068914.346362717] [nvblox_node]: static_mapper.free_region_decay_probability: 0.55
+[nvblox_node-1] [INFO] [1793068914.346365687] [nvblox_node]: static_mapper.occupied_region_decay_probability: 0.4
+[nvblox_node-1] [INFO] [1793068914.346368329] [nvblox_node]: static_mapper.occupancy_decay_to_free: 0
+[nvblox_node-1] [INFO] [1793068914.346370996] [nvblox_node]: static_mapper.max_tsdf_distance_for_occupancy_m: 0.15
+[nvblox_node-1] [INFO] [1793068914.346374059] [nvblox_node]: static_mapper.max_unobserved_to_keep_consecutive_occupancy_ms: 200
+[nvblox_node-1] [INFO] [1793068914.346376846] [nvblox_node]: static_mapper.min_duration_since_occupied_for_freespace_ms: 1000
+[nvblox_node-1] [INFO] [1793068914.346379439] [nvblox_node]: static_mapper.min_consecutive_occupancy_duration_for_reset_ms: 2000
+[nvblox_node-1] [INFO] [1793068914.346381854] [nvblox_node]: static_mapper.check_neighborhood: 1
+[nvblox_node-1] [INFO] [1793068914.346384517] [nvblox_node]: static_mapper.initialize_to_high_confidence_freespace: 0
+[nvblox_node-1] [INFO] [1793068914.346386852] [nvblox_node]: Initialize Mapper:
+[nvblox_node-1] [INFO] [1793068914.346389662] [nvblox_node]: dynamic_mapper.do_depth_preprocessing: 0
+[nvblox_node-1] [INFO] [1793068914.346392213] [nvblox_node]: dynamic_mapper.depth_preprocessing_num_dilations: 4
+[nvblox_node-1] [INFO] [1793068914.346394801] [nvblox_node]: dynamic_mapper.esdf_slice_min_height: 0
+[nvblox_node-1] [INFO] [1793068914.346397326] [nvblox_node]: dynamic_mapper.esdf_slice_max_height: 1
+[nvblox_node-1] [INFO] [1793068914.346399805] [nvblox_node]: dynamic_mapper.esdf_slice_height: 1
+[nvblox_node-1] [INFO] [1793068914.346402216] [nvblox_node]: dynamic_mapper.slice_height_above_plane_m: 0
+[nvblox_node-1] [INFO] [1793068914.346404862] [nvblox_node]: dynamic_mapper.slice_height_thickness_m: 0.1
+[nvblox_node-1] [INFO] [1793068914.346407456] [nvblox_node]: dynamic_mapper.projective_integrator_max_integration_distance_m: 7
+[nvblox_node-1] [INFO] [1793068914.346410426] [nvblox_node]: dynamic_mapper.lidar_projective_integrator_max_integration_distance_m: 10
+[nvblox_node-1] [INFO] [1793068914.346413306] [nvblox_node]: dynamic_mapper.projective_integrator_truncation_distance_vox: 4
+[nvblox_node-1] [INFO] [1793068914.346416012] [nvblox_node]: dynamic_mapper.projective_integrator_weighting_mode: kInverseSquareWeight
+[nvblox_node-1] [WARN] [1793068914.346418365] [nvblox_node]: Requested weighting function: "kInverseSquareWeight" not recognized. Defaulting to: kInverseSquareWeight
+[nvblox_node-1] [INFO] [1793068914.346421635] [nvblox_node]: dynamic_mapper.projective_integrator_max_weight: 5
+[nvblox_node-1] [INFO] [1793068914.346424581] [nvblox_node]: dynamic_mapper.projective_tsdf_integrator_invalid_depth_decay_factor: -1
+[nvblox_node-1] [INFO] [1793068914.346427356] [nvblox_node]: dynamic_mapper.free_region_occupancy_probability: 0.3
+[nvblox_node-1] [INFO] [1793068914.346430036] [nvblox_node]: dynamic_mapper.occupied_region_occupancy_probability: 0.7
+[nvblox_node-1] [INFO] [1793068914.346433355] [nvblox_node]: dynamic_mapper.unobserved_region_occupancy_probability: 0.5
+[nvblox_node-1] [INFO] [1793068914.346436108] [nvblox_node]: dynamic_mapper.occupied_region_half_width_m: 0.1
+[nvblox_node-1] [INFO] [1793068914.346438542] [nvblox_node]: dynamic_mapper.raycast_subsampling_factor: 4
+[nvblox_node-1] [INFO] [1793068914.346441368] [nvblox_node]: dynamic_mapper.workspace_bounds_type: kUnbounded
+[nvblox_node-1] [WARN] [1793068914.346444486] [nvblox_node]: Requested workspace bounds type: "kUnbounded" not recognized. Defaulting to: kUnbounded
+[nvblox_node-1] [INFO] [1793068914.346447853] [nvblox_node]: dynamic_mapper.workspace_bounds_min_height_m: 0
+[nvblox_node-1] [INFO] [1793068914.346450511] [nvblox_node]: dynamic_mapper.workspace_bounds_max_height_m: 1
+[nvblox_node-1] [INFO] [1793068914.346453137] [nvblox_node]: dynamic_mapper.workspace_bounds_min_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793068914.346455815] [nvblox_node]: dynamic_mapper.workspace_bounds_max_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793068914.346458537] [nvblox_node]: dynamic_mapper.workspace_bounds_min_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793068914.346461021] [nvblox_node]: dynamic_mapper.workspace_bounds_max_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793068914.346463856] [nvblox_node]: dynamic_mapper.esdf_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793068914.346466434] [nvblox_node]: dynamic_mapper.esdf_integrator_max_site_distance_vox: 1
+[nvblox_node-1] [INFO] [1793068914.346469141] [nvblox_node]: dynamic_mapper.esdf_integrator_max_distance_m: 2
+[nvblox_node-1] [INFO] [1793068914.346471728] [nvblox_node]: dynamic_mapper.unobserved_esdf_policy: kIgnore
+[nvblox_node-1] [INFO] [1793068914.346478995] [nvblox_node]: dynamic_mapper.add_negative_truncation_band_sites: 0
+[nvblox_node-1] [INFO] [1793068914.346483359] [nvblox_node]: dynamic_mapper.mesh_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793068914.346486063] [nvblox_node]: dynamic_mapper.mesh_integrator_weld_vertices: 1
+[nvblox_node-1] [INFO] [1793068914.346488523] [nvblox_node]: dynamic_mapper.decay_integrator_deallocate_decayed_blocks: 1
+[nvblox_node-1] [INFO] [1793068914.346491356] [nvblox_node]: dynamic_mapper.tsdf_decay_factor: 0.95
+[nvblox_node-1] [INFO] [1793068914.346494193] [nvblox_node]: dynamic_mapper.tsdf_decayed_weight_threshold: 0.001
+[nvblox_node-1] [INFO] [1793068914.346496791] [nvblox_node]: dynamic_mapper.tsdf_set_free_distance_on_decayed: 0
+[nvblox_node-1] [INFO] [1793068914.346499350] [nvblox_node]: dynamic_mapper.tsdf_decayed_free_distance_vox: 4
+[nvblox_node-1] [INFO] [1793068914.346502059] [nvblox_node]: dynamic_mapper.free_region_decay_probability: 0.55
+[nvblox_node-1] [INFO] [1793068914.346504768] [nvblox_node]: dynamic_mapper.occupied_region_decay_probability: 0.4
+[nvblox_node-1] [INFO] [1793068914.346507323] [nvblox_node]: dynamic_mapper.occupancy_decay_to_free: 0
+[nvblox_node-1] [INFO] [1793068914.346510178] [nvblox_node]: dynamic_mapper.max_tsdf_distance_for_occupancy_m: 0.15
+[nvblox_node-1] [INFO] [1793068914.346512781] [nvblox_node]: dynamic_mapper.max_unobserved_to_keep_consecutive_occupancy_ms: 200
+[nvblox_node-1] [INFO] [1793068914.346515475] [nvblox_node]: dynamic_mapper.min_duration_since_occupied_for_freespace_ms: 1000
+[nvblox_node-1] [INFO] [1793068914.346518039] [nvblox_node]: dynamic_mapper.min_consecutive_occupancy_duration_for_reset_ms: 2000
+[nvblox_node-1] [INFO] [1793068914.346520648] [nvblox_node]: dynamic_mapper.check_neighborhood: 1
+[nvblox_node-1] [INFO] [1793068914.346529590] [nvblox_node]: dynamic_mapper.initialize_to_high_confidence_freespace: 0
+[nvblox_node-1] [INFO] [1793068914.346536127] [nvblox_node]: Initialize MultiMapper:
+[nvblox_node-1] [INFO] [1793068914.346539145] [nvblox_node]: multi_mapper.connected_mask_component_size_threshold: 2000
+[nvblox_node-1] [INFO] [1793068914.346541982] [nvblox_node]: multi_mapper.remove_small_connected_components: 1
+[nvblox_node-1] [INFO] [1793068914.346544612] [nvblox_node]: multi_mapper.experimental_use_ground_plane_estimation: 0
+[nvblox_node-1] [INFO] [1793068914.346547464] [nvblox_node]: multi_mapper.ground_points_candidates_min_z_m: -0.1
+[nvblox_node-1] [INFO] [1793068914.346550264] [nvblox_node]: multi_mapper.ground_points_candidates_max_z_m: 0.15
+[nvblox_node-1] [INFO] [1793068914.346553016] [nvblox_node]: multi_mapper.ransac_distance_threshold_m: 0.2
+[nvblox_node-1] [INFO] [1793068914.346555664] [nvblox_node]: multi_mapper.num_ransac_iterations: 1000
+[nvblox_node-1] [INFO] [1793068914.346573065] [nvblox_node]: NvbloxNode::setupTimers()
+[nvblox_node-1] [INFO] [1793068914.346602733] [nvblox_node]: Started up nvblox node in frame odom and voxel size 0.025
+[nvblox_node-1] [INFO] [1793068914.346606205] [nvblox_node]: Mapping type: kStaticTsdf
+[nvblox_node-1] [INFO] [1793068914.347156867] [nvblox_node]: nvblox parameters:
+[nvblox_node-1] nvblox_node
+[nvblox_node-1]     cuda_stream_type: kBlocking
+[nvblox_node-1]     global_frame: odom
+[nvblox_node-1]     voxel_size: 0.025000
+[nvblox_node-1]     max_back_projection_distance: 5.000000
+[nvblox_node-1]     layer_visualization_min_tsdf_weight: 0.100000
+[nvblox_node-1]     layer_visualization_exclusion_height_m: 2.000000
+[nvblox_node-1]     layer_visualization_exclusion_radius_m: 5.000000
+[nvblox_node-1]     layer_streamer_bandwidth_limit_mbps: 30.000000
+[nvblox_node-1]     distance_map_unknown_value_optimistic: 1000.000000
+[nvblox_node-1]     distance_map_unknown_value_pessimistic: -1000.000000
+[nvblox_node-1]     esdf_mode: 2d
+[nvblox_node-1]     mapping_type: static_tsdf
+[nvblox_node-1]     pose_frame: base_link
+[nvblox_node-1]     map_clearing_frame_id: base_link
+[nvblox_node-1]     after_shutdown_map_save_path: 
+[nvblox_node-1]     esdf_slice_bounds_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     workspace_height_bounds_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     ground_plane_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     publish_esdf_distance_slice: 1
+[nvblox_node-1]     use_color: 0
+[nvblox_node-1]     use_depth: 1
+[nvblox_node-1]     use_segmentation: 0
+[nvblox_node-1]     use_lidar: 0
+[nvblox_node-1]     use_non_equal_vertical_fov_lidar_params: 0
+[nvblox_node-1]     print_timings_to_console: 0
+[nvblox_node-1]     print_rates_to_console: 0
+[nvblox_node-1]     print_queue_drops_to_console: 0
+[nvblox_node-1]     print_delays_to_console: 0
+[nvblox_node-1]     layer_visualization_undo_gamma_correction: 0
+[nvblox_node-1]     output_pessimistic_distance_map: 1
+[nvblox_node-1]     num_cameras: 1
+[nvblox_node-1]     lidar_width: 1800
+[nvblox_node-1]     lidar_height: 16
+[nvblox_node-1]     tick_period_ms: 10
+[nvblox_node-1]     print_statistics_on_console_period_ms: 10000
+[nvblox_node-1]     maximum_input_queue_length: 10
+[nvblox_node-1]     back_projection_subsampling: 1
+[nvblox_node-1]     lidar_vertical_fov_rad: 0.523599
+[nvblox_node-1]     lidar_min_valid_range_m: 0.100000
+[nvblox_node-1]     min_angle_below_zero_elevation_rad: 0.349066
+[nvblox_node-1]     max_angle_above_zero_elevation_rad: 0.261799
+[nvblox_node-1]     use_lidar_motion_compensation: 1
+[nvblox_node-1]     pointcloud2_timestamps_are_relative: 1
+[nvblox_node-1]     esdf_slice_bounds_visualization_side_length: 10.000000
+[nvblox_node-1]     workspace_height_bounds_visualization_side_length: 10.000000
+[nvblox_node-1]     ground_plane_visualization_side_length: 10.000000
+[nvblox_node-1]     integrate_depth_rate_hz: 15.000000
+[nvblox_node-1]     integrate_color_rate_hz: 5.000000
+[nvblox_node-1]     integrate_lidar_rate_hz: 40.000000
+[nvblox_node-1]     update_mesh_rate_hz: 2.000000
+[nvblox_node-1]     update_esdf_rate_hz: 10.000000
+[nvblox_node-1]     publish_layer_rate_hz: 2.000000
+[nvblox_node-1]     publish_debug_vis_rate_hz: 2.000000
+[nvblox_node-1]     decay_tsdf_rate_hz: 5.000000
+[nvblox_node-1]     decay_dynamic_occupancy_rate_hz: 10.000000
+[nvblox_node-1]     clear_map_outside_radius_rate_hz: 1.000000
+[nvblox_node-1]     map_clearing_radius_m: 6.000000
+[nvblox_node-1]     esdf_and_gradients_unobserved_value: -1000.000000
+[nvblox_node-1]     multi_mapper
+[nvblox_node-1]         connected_mask_component_size_threshold: 2000
+[nvblox_node-1]         background_mapper
+[nvblox_node-1]             voxel_size_m: 0.025000
+[nvblox_node-1]             projective_layer_type: kTsdf
+[nvblox_node-1]             esdf_mode: kUnset
+[nvblox_node-1]             do_depth_preprocessing: 0
+[nvblox_node-1]             depth_preprocessing_num_dilations: 4
+[nvblox_node-1]             camera_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                         workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                     workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                     workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             camera_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             esdf_integrator
+[nvblox_node-1]                 max_esdf_distance_m:: 2.000000
+[nvblox_node-1]                 max_tsdf_site_distance_vox:: 1.000000
+[nvblox_node-1]                 tsdf_min_weight:: 0.100000
+[nvblox_node-1]                 occupied_threshold_log_odds:: 0.000000
+[nvblox_node-1]                 esdf_slice_min_height:: 0.050000
+[nvblox_node-1]                 esdf_slice_max_height:: 0.650000
+[nvblox_node-1]                 esdf_slice_height:: 0.150000
+[nvblox_node-1]                 slice_height_above_plane_m:: 0.000000
+[nvblox_node-1]                 slice_height_thickness_m:: 0.100000
+[nvblox_node-1]                 unobserved_esdf_policy:: kIgnore
+[nvblox_node-1]                 add_negative_truncation_band_sites:: 0
+[nvblox_node-1]                 truncation_distance_vox:: 4.000000
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             color_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             feature_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             occupancy_decay_integrator
+[nvblox_node-1]                 free_space_decay_log_odds:: 0.200671
+[nvblox_node-1]                 occupied_space_decay_log_odds:: -0.405465
+[nvblox_node-1]                 decay_to_log_odds_:: 0.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             tsdf_decay_integrator
+[nvblox_node-1]                 decay_factor:: 0.950000
+[nvblox_node-1]                 decayed_weight_theshold:: 0.001000
+[nvblox_node-1]                 set_free_distance_on_decayed:: 0
+[nvblox_node-1]                 free_distance_vox:: 4.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             freespace_integrator
+[nvblox_node-1]                 max_tsdf_distance_for_occupancy_m:: 0.150000
+[nvblox_node-1]                 max_unobserved_to_keep_consecutive_occupancy_ms:: 200
+[nvblox_node-1]                 min_duration_since_occupied_for_freespace_ms:: 1000
+[nvblox_node-1]                 min_consecutive_occupancy_duration_for_reset_ms:: 2000
+[nvblox_node-1]                 check_neighborhood:: 1
+[nvblox_node-1]                 initialize_to_high_confidence_freespace:: 0
+[nvblox_node-1]         foreground_mapper
+[nvblox_node-1]             voxel_size_m: 0.025000
+[nvblox_node-1]             projective_layer_type: kNone
+[nvblox_node-1]             esdf_mode: kUnset
+[nvblox_node-1]             do_depth_preprocessing: 0
+[nvblox_node-1]             depth_preprocessing_num_dilations: 4
+[nvblox_node-1]             camera_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kUnbounded
+[nvblox_node-1]                     workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kUnbounded
+[nvblox_node-1]                     workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             camera_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             esdf_integrator
+[nvblox_node-1]                 max_esdf_distance_m:: 2.000000
+[nvblox_node-1]                 max_tsdf_site_distance_vox:: 1.000000
+[nvblox_node-1]                 tsdf_min_weight:: 0.000100
+[nvblox_node-1]                 occupied_threshold_log_odds:: 0.000000
+[nvblox_node-1]                 esdf_slice_min_height:: 0.000000
+[nvblox_node-1]                 esdf_slice_max_height:: 1.000000
+[nvblox_node-1]                 esdf_slice_height:: 1.000000
+[nvblox_node-1]                 slice_height_above_plane_m:: 0.000000
+[nvblox_node-1]                 slice_height_thickness_m:: 0.100000
+[nvblox_node-1]                 unobserved_esdf_policy:: kIgnore
+[nvblox_node-1]                 add_negative_truncation_band_sites:: 0
+[nvblox_node-1]                 truncation_distance_vox:: 4.000000
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             color_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             feature_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             occupancy_decay_integrator
+[nvblox_node-1]                 free_space_decay_log_odds:: 0.200671
+[nvblox_node-1]                 occupied_space_decay_log_odds:: -0.405465
+[nvblox_node-1]                 decay_to_log_odds_:: 0.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             tsdf_decay_integrator
+[nvblox_node-1]                 decay_factor:: 0.950000
+[nvblox_node-1]                 decayed_weight_theshold:: 0.001000
+[nvblox_node-1]                 set_free_distance_on_decayed:: 0
+[nvblox_node-1]                 free_distance_vox:: 4.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             freespace_integrator
+[nvblox_node-1]                 max_tsdf_distance_for_occupancy_m:: 0.150000
+[nvblox_node-1]                 max_unobserved_to_keep_consecutive_occupancy_ms:: 200
+[nvblox_node-1]                 min_duration_since_occupied_for_freespace_ms:: 1000
+[nvblox_node-1]                 min_consecutive_occupancy_duration_for_reset_ms:: 2000
+[nvblox_node-1]                 check_neighborhood:: 1
+[nvblox_node-1]                 initialize_to_high_confidence_freespace:: 0
+[nvblox_node-1]         image_masker
+[nvblox_node-1]             occlusion_threshold_m:: 0.250000
+[nvblox_node-1]         ground_plane_estimator
+[nvblox_node-1]             ground_points_candidates_min_z_m:: -0.100000
+[nvblox_node-1]             ground_points_candidates_max_z_m:: 0.150000
+[nvblox_node-1]             ransac_plane_fitter
+[nvblox_node-1]                 num_ransac_iterations:: 1000
+[nvblox_node-1]                 ransac_distance_threshold_m:: 0.200000
+[nvblox_node-1]             tsdf_zero_crossings_extractor
+[nvblox_node-1]                 min_tsdf_weight:: 0.100000
+[nvblox_node-1]                 max_crossings:: 360000
+[nvblox_node-1] 
+[planner_server-3] [INFO] [1793068914.628361598] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068915.128531532] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068915.628364616] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068916.128361042] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068916.628359064] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068917.128364155] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068917.628361138] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068918.128345792] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-3] [INFO] [1793068918.628363068] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 11:41:59.066706 32182 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] [INFO] [1793068919.067253679] [nvblox_node]: Tried to clear map outside of radius but couldn't look up frame: base_link
+[nvblox_node-1] [INFO] [1793068919.067416298] [nvblox_node]: Lookup transform failed for frame base_link. Layer pointclouds not published
+[planner_server-3] [INFO] [1793068919.128337199] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 11:41:59.276679 32321 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 11:41:59.526714 32301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-3] [INFO] [1793068919.628354484] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 11:41:59.686729 32307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 11:41:59.910048 32321 mapper_impl.h:64] Allocating space for last depth view for sensor type
+[planner_server-3] [INFO] [1793068920.070555858] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068920.073532443] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068920.073567152] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068920.128446742] [global_costmap.global_costmap]: start
+[planner_server-3] [INFO] [1793068920.378615138] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1793068920.379849984] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-4] [INFO] [1793068920.635899230] [lifecycle_manager_planning]: Server planner_server connected with bond.
+[lifecycle_manager-4] [INFO] [1793068920.635939037] [lifecycle_manager_planning]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-4] [INFO] [1793068920.635957723] [lifecycle_manager_planning]: [34m[1mCreating bond timer...[0m[0m
+[planner_server-3] [INFO] [1793068921.041260217] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068921.044368654] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068921.044416781] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068922.057946397] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068922.059236922] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068922.059267939] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068923.046464638] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068923.047756386] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068923.047779375] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068924.051508086] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068924.052989250] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068924.053015946] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068925.230395057] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068925.231866175] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068925.231900346] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068926.045285526] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068926.047119533] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068926.047151807] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068927.064775750] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068927.066130781] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068927.066157422] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068928.048920392] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068928.050200875] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068928.050229929] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068929.045698083] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068929.047215767] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068929.047249729] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068930.088557503] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068930.089827452] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068930.089855212] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068931.048666654] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068931.049915096] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068931.049935499] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068932.046359378] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068932.047795860] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068932.047824932] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068933.142661971] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068933.145924500] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068933.145975627] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068934.064780860] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068934.066210985] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068934.066237833] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068935.273339818] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068935.275046861] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068935.275075516] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068936.081994763] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068936.083508264] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068936.083534791] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068937.037679178] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068937.039090056] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068937.039125226] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068938.052924968] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068938.054238755] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068938.054261756] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068939.046510811] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068939.047809170] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068939.047832701] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068940.061491647] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068940.062814939] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068940.062839021] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068941.055948700] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068941.057214130] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068941.057237681] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068942.039889917] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068942.041303504] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068942.041329620] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068943.057920023] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068943.059321779] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068943.059350107] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068944.054253016] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068944.055648944] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068944.055672695] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068945.245165304] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068945.246707213] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068945.246734250] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068946.052630269] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068946.053924173] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068946.053949614] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068947.042883556] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068947.044095823] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068947.044122366] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068948.060573650] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068948.061941335] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068948.061969708] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068949.050971714] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068949.052246027] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068949.052268133] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068950.043562793] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068950.045044153] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068950.045071477] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068951.056526332] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068951.057864199] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068951.057891893] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068952.052498968] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068952.053857240] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068952.053880422] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068953.061882177] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068953.063086526] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068953.063115525] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068954.049486851] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068954.050754627] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068954.050778842] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068955.230683589] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068955.232061807] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068955.232087785] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068956.060954973] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068956.062374299] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068956.062403537] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068957.046789289] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068957.048181364] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068957.048207915] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068958.044876103] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068958.046082976] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068958.046110600] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068959.091935841] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068959.093159430] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068959.093182568] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068960.050589034] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068960.051991427] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068960.052024735] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068961.060263688] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068961.061452107] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068961.061475441] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068962.049944280] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068962.051256767] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068962.051282463] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068963.046207232] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068963.047606770] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068963.047632471] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068964.058296386] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068964.059546745] [planner_server]: GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068964.059572534] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.35, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068965.238917122] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068965.240277199] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068965.240302183] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068966.086699190] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068966.088010443] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068966.088037263] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068967.052199979] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068967.053391772] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068967.053411707] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068968.059198514] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068968.060748120] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068968.060775701] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068969.056758141] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068969.058023515] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068969.058047123] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068970.060324372] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068970.061989094] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068970.062022288] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068971.041321191] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068971.042692107] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068971.042717823] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068972.052159631] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068972.053505446] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068972.053530082] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068973.047092356] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068973.048388415] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068973.048409815] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068974.058612630] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068974.059874578] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068974.059896803] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068975.245083431] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068975.246432803] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068975.246460169] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068976.065140540] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068976.066627672] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068976.066654303] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068977.079465681] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068977.080880200] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068977.080903278] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068978.047051952] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068978.048451869] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068978.048478457] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.38, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068979.062557311] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068979.063826113] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068979.063851436] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068980.058565003] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068980.059933357] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068980.059960709] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068981.048753610] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068981.050053356] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068981.050077474] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068982.058788073] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068982.060003331] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068982.060026246] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068983.046131673] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068983.047425481] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068983.047445803] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068984.036222954] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068984.037689627] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068984.037716775] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068985.247726880] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068985.249033862] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068985.249059203] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068986.067606707] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068986.068872493] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068986.068895819] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068987.061855886] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068987.063238545] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068987.063268744] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068988.056409646] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068988.057776581] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068988.057803345] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068989.042475388] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068989.043886344] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068989.043911362] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068990.090638510] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068990.092264918] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068990.092295835] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068991.049691834] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068991.051032648] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068991.051060268] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068992.063356783] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068992.064630721] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068992.064655287] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068993.064057111] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068993.065370034] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068993.065394772] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068994.051925157] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068994.053177107] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068994.053204820] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068995.290982560] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068995.292332491] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068995.292362299] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068996.276846946] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068996.278316081] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068996.278344875] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068997.264973266] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068997.266534017] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068997.266561791] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068998.319601498] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068998.321093737] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068998.321129946] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793068999.183911294] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793068999.185289188] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793068999.185318833] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069000.123751965] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069000.125061959] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069000.125090185] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069001.057957373] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069001.059343192] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069001.059374451] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069002.044808424] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069002.046278886] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069002.046307905] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069003.055099505] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069003.056361355] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069003.056387372] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069004.045882564] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069004.047095690] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069004.047129212] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069005.255589537] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069005.256770251] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069005.256792845] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069006.077459931] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069006.078834678] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069006.078861779] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069007.064061185] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069007.065430098] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069007.065458785] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069008.061143283] [planner_server]: Computing path to goal.
+[planner_server-3] [WARN] [1793069008.062701034] [planner_server]: GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"
+[planner_server-3] [WARN] [1793069008.062727953] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle. error_code:208, error_msg:'GridBasedplugin failed to plan from (0.34, 2.75) [q: 0.00, 0.00, -0.39, 0.92] (yaw: -0.79) to (0.35, 0.40) [q: 0.00, 0.00, 0.00, 1.00] (yaw: 0.00): "Failed to create plan with tolerance of: 0.050000"'.
+[planner_server-3] [INFO] [1793069017.576786170] [rclcpp]: signal_handler(signum=2)
+[planner_server-3] [INFO] [1793069017.576832752] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-3] [INFO] [1793069017.576888227] [planner_server]: Deactivating
+[planner_server-3] [INFO] [1793069017.576915555] [global_costmap.global_costmap]: Deactivating
+[lifecycle_manager-4] [INFO] [1793069017.576918736] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-4] [INFO] [1793069017.576965137] [lifecycle_manager_planning]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_planning)
+[lifecycle_manager-4] [INFO] [1793069017.576993649] [lifecycle_manager_planning]: [34m[1mTerminating bond timer...[0m[0m
+[nvblox_node-1] [INFO] [1793069017.576971871] [rclcpp]: signal_handler(signum=2)
+[nvblox_node-1] [INFO] [1793069017.578844551] [nvblox_node]: Timing statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Timings (in seconds)
+[nvblox_node-1] namespace/tag - NumSamples - TotalTime - (Mean +- StdDev) - [Min,Max]
+[nvblox_node-1] -----------
+[nvblox_node-1] /esdf_slicer/get_aabb                         	    822	00.006428	(00.000008 +- 00.000004)	[00.000000,00.000353]
+[nvblox_node-1] /esdf_slicer/slice_layer                      	    814	00.294683	(00.000362 +- 00.000400)	[00.000031,00.001918]
+[nvblox_node-1] esdf/integrate/clear                          	    651	00.753694	(00.001158 +- 00.001266)	[00.000063,00.005268]
+[nvblox_node-1] esdf/integrate/clear/get_blocks               	    651	00.013905	(00.000021 +- 00.000006)	[00.000010,00.000068]
+[nvblox_node-1] esdf/integrate/compute/neighbor_bands         	   2418	02.056684	(00.000851 +- 00.001082)	[00.000034,00.003828]
+[nvblox_node-1] esdf/integrate/compute/neighbor_bands/gpu_view	   2418	00.830500	(00.000343 +- 00.000502)	[00.000002,00.002132]
+[nvblox_node-1] esdf/integrate/compute/swap                   	   2418	00.000556	(00.000000 +- 00.000000)	[00.000000,00.000001]
+[nvblox_node-1] esdf/integrate/compute/sweep                  	   2418	00.340575	(00.000141 +- 00.000352)	[00.000003,00.002083]
+[nvblox_node-1] esdf/integrate/mark_sites/pack_out            	    651	00.400841	(00.000616 +- 00.000619)	[00.000026,00.002389]
+[nvblox_node-1] esdf/integrate_slice                          	    822	04.664163	(00.005674 +- 00.006516)	[00.000000,00.032583]
+[nvblox_node-1] esdf/integrate_slice/compute                  	    651	02.409280	(00.003701 +- 00.004826)	[00.000061,00.025451]
+[nvblox_node-1] esdf/integrate_slice/mark_sites               	    651	01.499634	(00.002304 +- 00.001894)	[00.000101,00.008731]
+[nvblox_node-1] gpu_hash/flush_insertion_cache                	    686	00.422662	(00.000616 +- 00.000798)	[00.000039,00.004852]
+[nvblox_node-1] gpu_hash/flush_removal_cache                  	    677	00.464862	(00.000687 +- 00.000701)	[00.000038,00.003705]
+[nvblox_node-1] gpu_hash/transfer/reset                       	     16	00.149682	(00.009355 +- 00.003557)	[00.000869,00.014955]
+[nvblox_node-1] ros/clear_outside_radius                      	     90	00.000016	(00.000000 +- 00.000000)	[00.000000,00.000000]
+[nvblox_node-1] ros/decay_tsdf                                	    430	00.820251	(00.001908 +- 00.001441)	[00.000210,00.005084]
+[nvblox_node-1] ros/depth                                     	    627	00.450466	(00.000718 +- 00.000372)	[00.000002,00.007642]
+[nvblox_node-1] ros/depth/conversions                         	    488	00.139702	(00.000286 +- 00.000033)	[00.000147,00.001943]
+[nvblox_node-1] ros/depth/integrate                           	    488	00.303301	(00.000622 +- 00.000236)	[00.000215,00.006582]
+[nvblox_node-1] ros/depth/output/back_projected_depth         	    488	00.002539	(00.000005 +- 00.000001)	[00.000002,00.000818]
+[nvblox_node-1] ros/depth/transform                           	    627	00.003067	(00.000005 +- 00.000002)	[00.000002,00.000024]
+[nvblox_node-1] ros/depth_image_callback                      	    627	00.004785	(00.000008 +- 00.000032)	[00.000004,00.000235]
+[nvblox_node-1] ros/esdf                                      	    822	05.313721	(00.006464 +- 00.006754)	[00.000103,00.033141]
+[nvblox_node-1] ros/esdf/integrate                            	    822	04.752066	(00.005781 +- 00.006526)	[00.000024,00.032695]
+[nvblox_node-1] ros/esdf/slice_output                         	    822	00.560300	(00.000682 +- 00.000415)	[00.000077,00.003092]
+[nvblox_node-1] ros/idle                                      	  10264	96.450112	(00.009397 +- 00.000028)	[00.000005,00.013424]
+[nvblox_node-1] ros/process_queue                             	  30795	00.485858	(00.000016 +- 00.000000)	[00.000000,00.007683]
+[nvblox_node-1] ros/publish_layer                             	    176	00.017807	(00.000101 +- 00.000026)	[00.000039,00.000184]
+[nvblox_node-1] ros/publish_layer/serialize                   	    176	00.016063	(00.000091 +- 00.000023)	[00.000033,00.000164]
+[nvblox_node-1] ros/publish_layers                            	    177	00.022867	(00.000129 +- 00.000030)	[00.000012,00.000210]
+[nvblox_node-1] ros/push_onto_queue                           	    627	00.000872	(00.000001 +- 00.000032)	[00.000000,00.000227]
+[nvblox_node-1] ros/static/esdf/output/compute                	    822	00.330183	(00.000402 +- 00.000402)	[00.000028,00.001948]
+[nvblox_node-1] ros/static/esdf/output/slice                  	    822	00.218131	(00.000265 +- 00.000115)	[00.000042,00.002926]
+[nvblox_node-1] ros/tick                                      	  10265	06.739536	(00.000657 +- 00.000002)	[00.000001,00.033153]
+[nvblox_node-1] tsdf/integrate                                	    488	00.182544	(00.000374 +- 00.000214)	[00.000129,00.003897]
+[nvblox_node-1] tsdf/integrate/allocate_blocks                	    488	00.068126	(00.000140 +- 00.000099)	[00.000034,00.001348]
+[nvblox_node-1] tsdf/integrate/get_blocks_in_view             	    488	00.007155	(00.000015 +- 00.000010)	[00.000007,00.000902]
+[nvblox_node-1] tsdf/integrate/transfer_blocks                	    488	00.060208	(00.000123 +- 00.000038)	[00.000043,00.001297]
+[nvblox_node-1] tsdf/integrate/update_blocks                  	    488	00.045138	(00.000092 +- 00.000163)	[00.000026,00.001406]
+[nvblox_node-1] view_calculator/raycast                       	    488	00.006570	(00.000013 +- 00.000010)	[00.000006,00.000900]
+[nvblox_node-1] view_calculator/raycast/output                	     10	00.001540	(00.000154 +- 00.000245)	[00.000037,00.000875]
+[nvblox_node-1] view_calculator/raycast/raycast_pixels_kernel 	     10	00.000870	(00.000087 +- 00.000233)	[00.000008,00.000787]
+[nvblox_node-1] view_calculator/raycast/setup                 	     10	00.000168	(00.000017 +- 00.000006)	[00.000011,00.000034]
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[nvblox_node-1] [INFO] [1793069017.578869687] [nvblox_node]: Rates statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Rates (in Hz)
+[nvblox_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[nvblox_node-1] -----------
+[nvblox_node-1] ros/depth               	100    	5.7
+[nvblox_node-1] ros/depth_image_callback	100    	6.9
+[nvblox_node-1] ros/update_esdf         	100    	9.3
+[nvblox_node-1] ros/tick                	100    	0.0
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[nvblox_node-1] [INFO] [1793069017.578875032] [nvblox_node]: Delay statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Delays
+[nvblox_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[nvblox_node-1] -----------
+[nvblox_node-1] ros/esdf_integration       	100    	0.239
+[nvblox_node-1] ros/depth_image_integration	100    	0.132
+[nvblox_node-1] ros/depth_image_callback   	100    	0.132
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[lifecycle_manager-4] [INFO] [1793069017.679232693] [lifecycle_manager_planning]: Destroying lifecycle_manager_planning
+[INFO] [python3-2]: process has finished cleanly [pid 32185]
+[INFO] [lifecycle_manager-4]: process has finished cleanly [pid 32187]
+[INFO] [nvblox_node-1]: process has finished cleanly [pid 32182]

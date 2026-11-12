@@ -1,0 +1,1022 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-27-09-18-45-956647-ros-11186
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [nvblox_node-1]: process started with pid [11198]
+[INFO] [planner_server-2]: process started with pid [11199]
+[INFO] [lifecycle_manager-3]: process started with pid [11200]
+[nvblox_node-1] VBIPROXY_DEVICE environment variable not set - disabling proxy
+[planner_server-2] [INFO] [1793060326.576537429] [planner_server]: 
+[planner_server-2] 	planner_server lifecycle node launched. 
+[planner_server-2] 	Waiting on external lifecycle transitions to activate
+[planner_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-2] [INFO] [1793060326.576849547] [planner_server]: Creating
+[planner_server-2] [INFO] [1793060326.584195259] [global_costmap.global_costmap]: 
+[planner_server-2] 	global_costmap lifecycle node launched. 
+[planner_server-2] 	Waiting on external lifecycle transitions to activate
+[planner_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-2] [INFO] [1793060326.584540311] [global_costmap.global_costmap]: Creating Costmap
+[nvblox_node-1] [INFO] [1793060326.757759562] [nvblox_node]: Create nvblox cuda stream with type: kBlocking
+[nvblox_node-1] [INFO] [1793060326.757848458] [nvblox_node]: NvbloxNode::advertiseTopics()
+[nvblox_node-1] [INFO] [1793060326.761683626] [nvblox_node]: NvbloxNode::advertiseServices()
+[nvblox_node-1] [INFO] [1793060326.765605115] [nvblox_node]: NvbloxNode::subscribeToTopics()
+[nvblox_node-1] [INFO] [1793060326.765675446] [nvblox_node]: Subscribing input topics with QoS: SYSTEM_DEFAULT
+[nvblox_node-1] I20261027 09:18:46.799646 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.799929 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.814929 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.815011 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.828087 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.828290 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.841524 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.841719 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.851850 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.851914 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.859788 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.859877 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867053 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.867115 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867604 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.867656 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867663 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867667 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867671 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867674 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867681 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867683 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867687 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.867690 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.873570 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.873634 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.881464 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.881501 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.889413 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.889461 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.896790 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.896837 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.902397 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.902438 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.909495 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.909538 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.909888 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.909921 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910506 11198 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[nvblox_node-1] I20261027 09:18:46.910543 11198 layer_cake_impl.h:34] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910550 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910554 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910557 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910561 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910564 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910567 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910570 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[nvblox_node-1] I20261027 09:18:46.910574 11198 layer_cake_streamer_impl.h:80] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[nvblox_node-1] [INFO] [1793060326.911062959] [nvblox_node]: Initialize Mapper:
+[nvblox_node-1] [INFO] [1793060326.911094282] [nvblox_node]: static_mapper.do_depth_preprocessing: 0
+[nvblox_node-1] [INFO] [1793060326.911100299] [nvblox_node]: static_mapper.depth_preprocessing_num_dilations: 4
+[nvblox_node-1] [INFO] [1793060326.911108304] [nvblox_node]: static_mapper.esdf_slice_min_height: 0.05
+[nvblox_node-1] [INFO] [1793060326.911112724] [nvblox_node]: static_mapper.esdf_slice_max_height: 0.65
+[nvblox_node-1] [INFO] [1793060326.911116554] [nvblox_node]: static_mapper.esdf_slice_height: 0.15
+[nvblox_node-1] [INFO] [1793060326.911122519] [nvblox_node]: static_mapper.slice_height_above_plane_m: 0
+[nvblox_node-1] [INFO] [1793060326.911126302] [nvblox_node]: static_mapper.slice_height_thickness_m: 0.1
+[nvblox_node-1] [INFO] [1793060326.911129906] [nvblox_node]: static_mapper.projective_integrator_max_integration_distance_m: 5
+[nvblox_node-1] [INFO] [1793060326.911134605] [nvblox_node]: static_mapper.lidar_projective_integrator_max_integration_distance_m: 10
+[nvblox_node-1] [INFO] [1793060326.911138232] [nvblox_node]: static_mapper.projective_integrator_truncation_distance_vox: 4
+[nvblox_node-1] [INFO] [1793060326.911142726] [nvblox_node]: static_mapper.projective_integrator_weighting_mode: kInverseSquareWeight
+[nvblox_node-1] [WARN] [1793060326.911146203] [nvblox_node]: Requested weighting function: "kInverseSquareWeight" not recognized. Defaulting to: kInverseSquareWeight
+[nvblox_node-1] [INFO] [1793060326.911151165] [nvblox_node]: static_mapper.projective_integrator_max_weight: 5
+[nvblox_node-1] [INFO] [1793060326.911155002] [nvblox_node]: static_mapper.projective_tsdf_integrator_invalid_depth_decay_factor: -1
+[nvblox_node-1] [INFO] [1793060326.911158813] [nvblox_node]: static_mapper.free_region_occupancy_probability: 0.3
+[nvblox_node-1] [INFO] [1793060326.911162619] [nvblox_node]: static_mapper.occupied_region_occupancy_probability: 0.7
+[nvblox_node-1] [INFO] [1793060326.911165994] [nvblox_node]: static_mapper.unobserved_region_occupancy_probability: 0.5
+[nvblox_node-1] [INFO] [1793060326.911169552] [nvblox_node]: static_mapper.occupied_region_half_width_m: 0.1
+[nvblox_node-1] [INFO] [1793060326.911172691] [nvblox_node]: static_mapper.raycast_subsampling_factor: 4
+[nvblox_node-1] [INFO] [1793060326.911175920] [nvblox_node]: static_mapper.workspace_bounds_type: height_bounds
+[nvblox_node-1] [INFO] [1793060326.911179895] [nvblox_node]: static_mapper.workspace_bounds_min_height_m: -0.1
+[nvblox_node-1] [INFO] [1793060326.911184119] [nvblox_node]: static_mapper.workspace_bounds_max_height_m: 1.5
+[nvblox_node-1] [INFO] [1793060326.911187594] [nvblox_node]: static_mapper.workspace_bounds_min_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793060326.911190704] [nvblox_node]: static_mapper.workspace_bounds_max_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793060326.911193831] [nvblox_node]: static_mapper.workspace_bounds_min_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793060326.911197022] [nvblox_node]: static_mapper.workspace_bounds_max_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793060326.911200492] [nvblox_node]: static_mapper.esdf_integrator_min_weight: 0.1
+[nvblox_node-1] [INFO] [1793060326.911203843] [nvblox_node]: static_mapper.esdf_integrator_max_site_distance_vox: 1
+[nvblox_node-1] [INFO] [1793060326.911207041] [nvblox_node]: static_mapper.esdf_integrator_max_distance_m: 2
+[nvblox_node-1] [INFO] [1793060326.911210459] [nvblox_node]: static_mapper.unobserved_esdf_policy: kIgnore
+[nvblox_node-1] [INFO] [1793060326.911214246] [nvblox_node]: static_mapper.add_negative_truncation_band_sites: 0
+[nvblox_node-1] [INFO] [1793060326.911218599] [nvblox_node]: static_mapper.mesh_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793060326.911221724] [nvblox_node]: static_mapper.mesh_integrator_weld_vertices: 1
+[nvblox_node-1] [INFO] [1793060326.911226484] [nvblox_node]: static_mapper.decay_integrator_deallocate_decayed_blocks: 1
+[nvblox_node-1] [INFO] [1793060326.911230121] [nvblox_node]: static_mapper.tsdf_decay_factor: 0.95
+[nvblox_node-1] [INFO] [1793060326.911233730] [nvblox_node]: static_mapper.tsdf_decayed_weight_threshold: 0.001
+[nvblox_node-1] [INFO] [1793060326.911236875] [nvblox_node]: static_mapper.tsdf_set_free_distance_on_decayed: 0
+[nvblox_node-1] [INFO] [1793060326.911261994] [nvblox_node]: static_mapper.tsdf_decayed_free_distance_vox: 4
+[nvblox_node-1] [INFO] [1793060326.911265768] [nvblox_node]: static_mapper.free_region_decay_probability: 0.55
+[nvblox_node-1] [INFO] [1793060326.911269168] [nvblox_node]: static_mapper.occupied_region_decay_probability: 0.4
+[nvblox_node-1] [INFO] [1793060326.911272131] [nvblox_node]: static_mapper.occupancy_decay_to_free: 0
+[nvblox_node-1] [INFO] [1793060326.911275494] [nvblox_node]: static_mapper.max_tsdf_distance_for_occupancy_m: 0.15
+[nvblox_node-1] [INFO] [1793060326.911279021] [nvblox_node]: static_mapper.max_unobserved_to_keep_consecutive_occupancy_ms: 200
+[nvblox_node-1] [INFO] [1793060326.911282208] [nvblox_node]: static_mapper.min_duration_since_occupied_for_freespace_ms: 1000
+[nvblox_node-1] [INFO] [1793060326.911285185] [nvblox_node]: static_mapper.min_consecutive_occupancy_duration_for_reset_ms: 2000
+[nvblox_node-1] [INFO] [1793060326.911288257] [nvblox_node]: static_mapper.check_neighborhood: 1
+[nvblox_node-1] [INFO] [1793060326.911291349] [nvblox_node]: static_mapper.initialize_to_high_confidence_freespace: 0
+[nvblox_node-1] [INFO] [1793060326.911294239] [nvblox_node]: Initialize Mapper:
+[nvblox_node-1] [INFO] [1793060326.911297783] [nvblox_node]: dynamic_mapper.do_depth_preprocessing: 0
+[nvblox_node-1] [INFO] [1793060326.911300880] [nvblox_node]: dynamic_mapper.depth_preprocessing_num_dilations: 4
+[nvblox_node-1] [INFO] [1793060326.911304033] [nvblox_node]: dynamic_mapper.esdf_slice_min_height: 0
+[nvblox_node-1] [INFO] [1793060326.911307208] [nvblox_node]: dynamic_mapper.esdf_slice_max_height: 1
+[nvblox_node-1] [INFO] [1793060326.911310328] [nvblox_node]: dynamic_mapper.esdf_slice_height: 1
+[nvblox_node-1] [INFO] [1793060326.911313530] [nvblox_node]: dynamic_mapper.slice_height_above_plane_m: 0
+[nvblox_node-1] [INFO] [1793060326.911316552] [nvblox_node]: dynamic_mapper.slice_height_thickness_m: 0.1
+[nvblox_node-1] [INFO] [1793060326.911319589] [nvblox_node]: dynamic_mapper.projective_integrator_max_integration_distance_m: 7
+[nvblox_node-1] [INFO] [1793060326.911323190] [nvblox_node]: dynamic_mapper.lidar_projective_integrator_max_integration_distance_m: 10
+[nvblox_node-1] [INFO] [1793060326.911326657] [nvblox_node]: dynamic_mapper.projective_integrator_truncation_distance_vox: 4
+[nvblox_node-1] [INFO] [1793060326.911331372] [nvblox_node]: dynamic_mapper.projective_integrator_weighting_mode: kInverseSquareWeight
+[nvblox_node-1] [WARN] [1793060326.911334133] [nvblox_node]: Requested weighting function: "kInverseSquareWeight" not recognized. Defaulting to: kInverseSquareWeight
+[nvblox_node-1] [INFO] [1793060326.911338096] [nvblox_node]: dynamic_mapper.projective_integrator_max_weight: 5
+[nvblox_node-1] [INFO] [1793060326.911341451] [nvblox_node]: dynamic_mapper.projective_tsdf_integrator_invalid_depth_decay_factor: -1
+[nvblox_node-1] [INFO] [1793060326.911344813] [nvblox_node]: dynamic_mapper.free_region_occupancy_probability: 0.3
+[nvblox_node-1] [INFO] [1793060326.911348136] [nvblox_node]: dynamic_mapper.occupied_region_occupancy_probability: 0.7
+[nvblox_node-1] [INFO] [1793060326.911351240] [nvblox_node]: dynamic_mapper.unobserved_region_occupancy_probability: 0.5
+[nvblox_node-1] [INFO] [1793060326.911354282] [nvblox_node]: dynamic_mapper.occupied_region_half_width_m: 0.1
+[nvblox_node-1] [INFO] [1793060326.911357085] [nvblox_node]: dynamic_mapper.raycast_subsampling_factor: 4
+[nvblox_node-1] [INFO] [1793060326.911360181] [nvblox_node]: dynamic_mapper.workspace_bounds_type: kUnbounded
+[nvblox_node-1] [WARN] [1793060326.911363878] [nvblox_node]: Requested workspace bounds type: "kUnbounded" not recognized. Defaulting to: kUnbounded
+[nvblox_node-1] [INFO] [1793060326.911367823] [nvblox_node]: dynamic_mapper.workspace_bounds_min_height_m: 0
+[nvblox_node-1] [INFO] [1793060326.911371868] [nvblox_node]: dynamic_mapper.workspace_bounds_max_height_m: 1
+[nvblox_node-1] [INFO] [1793060326.911374989] [nvblox_node]: dynamic_mapper.workspace_bounds_min_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793060326.911378034] [nvblox_node]: dynamic_mapper.workspace_bounds_max_corner_x_m: 0
+[nvblox_node-1] [INFO] [1793060326.911381279] [nvblox_node]: dynamic_mapper.workspace_bounds_min_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793060326.911384160] [nvblox_node]: dynamic_mapper.workspace_bounds_max_corner_y_m: 2
+[nvblox_node-1] [INFO] [1793060326.911387406] [nvblox_node]: dynamic_mapper.esdf_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793060326.911390446] [nvblox_node]: dynamic_mapper.esdf_integrator_max_site_distance_vox: 1
+[nvblox_node-1] [INFO] [1793060326.911393327] [nvblox_node]: dynamic_mapper.esdf_integrator_max_distance_m: 2
+[nvblox_node-1] [INFO] [1793060326.911396320] [nvblox_node]: dynamic_mapper.unobserved_esdf_policy: kIgnore
+[nvblox_node-1] [INFO] [1793060326.911404092] [nvblox_node]: dynamic_mapper.add_negative_truncation_band_sites: 0
+[nvblox_node-1] [INFO] [1793060326.911407478] [nvblox_node]: dynamic_mapper.mesh_integrator_min_weight: 0.0001
+[nvblox_node-1] [INFO] [1793060326.911410574] [nvblox_node]: dynamic_mapper.mesh_integrator_weld_vertices: 1
+[nvblox_node-1] [INFO] [1793060326.911413650] [nvblox_node]: dynamic_mapper.decay_integrator_deallocate_decayed_blocks: 1
+[nvblox_node-1] [INFO] [1793060326.911416984] [nvblox_node]: dynamic_mapper.tsdf_decay_factor: 0.95
+[nvblox_node-1] [INFO] [1793060326.911420381] [nvblox_node]: dynamic_mapper.tsdf_decayed_weight_threshold: 0.001
+[nvblox_node-1] [INFO] [1793060326.911423344] [nvblox_node]: dynamic_mapper.tsdf_set_free_distance_on_decayed: 0
+[nvblox_node-1] [INFO] [1793060326.911426346] [nvblox_node]: dynamic_mapper.tsdf_decayed_free_distance_vox: 4
+[nvblox_node-1] [INFO] [1793060326.911429393] [nvblox_node]: dynamic_mapper.free_region_decay_probability: 0.55
+[nvblox_node-1] [INFO] [1793060326.911432630] [nvblox_node]: dynamic_mapper.occupied_region_decay_probability: 0.4
+[nvblox_node-1] [INFO] [1793060326.911435619] [nvblox_node]: dynamic_mapper.occupancy_decay_to_free: 0
+[nvblox_node-1] [INFO] [1793060326.911438902] [nvblox_node]: dynamic_mapper.max_tsdf_distance_for_occupancy_m: 0.15
+[nvblox_node-1] [INFO] [1793060326.911441721] [nvblox_node]: dynamic_mapper.max_unobserved_to_keep_consecutive_occupancy_ms: 200
+[nvblox_node-1] [INFO] [1793060326.911444673] [nvblox_node]: dynamic_mapper.min_duration_since_occupied_for_freespace_ms: 1000
+[nvblox_node-1] [INFO] [1793060326.911447837] [nvblox_node]: dynamic_mapper.min_consecutive_occupancy_duration_for_reset_ms: 2000
+[nvblox_node-1] [INFO] [1793060326.911450800] [nvblox_node]: dynamic_mapper.check_neighborhood: 1
+[nvblox_node-1] [INFO] [1793060326.911458118] [nvblox_node]: dynamic_mapper.initialize_to_high_confidence_freespace: 0
+[nvblox_node-1] [INFO] [1793060326.911470663] [nvblox_node]: Initialize MultiMapper:
+[nvblox_node-1] [INFO] [1793060326.911474699] [nvblox_node]: multi_mapper.connected_mask_component_size_threshold: 2000
+[nvblox_node-1] [INFO] [1793060326.911478135] [nvblox_node]: multi_mapper.remove_small_connected_components: 1
+[nvblox_node-1] [INFO] [1793060326.911481197] [nvblox_node]: multi_mapper.experimental_use_ground_plane_estimation: 0
+[nvblox_node-1] [INFO] [1793060326.911484552] [nvblox_node]: multi_mapper.ground_points_candidates_min_z_m: -0.1
+[nvblox_node-1] [INFO] [1793060326.911487969] [nvblox_node]: multi_mapper.ground_points_candidates_max_z_m: 0.15
+[nvblox_node-1] [INFO] [1793060326.911491246] [nvblox_node]: multi_mapper.ransac_distance_threshold_m: 0.2
+[nvblox_node-1] [INFO] [1793060326.911494201] [nvblox_node]: multi_mapper.num_ransac_iterations: 1000
+[nvblox_node-1] [INFO] [1793060326.911512479] [nvblox_node]: NvbloxNode::setupTimers()
+[nvblox_node-1] [INFO] [1793060326.911544630] [nvblox_node]: Started up nvblox node in frame odom and voxel size 0.025
+[nvblox_node-1] [INFO] [1793060326.911548707] [nvblox_node]: Mapping type: kStaticTsdf
+[nvblox_node-1] [INFO] [1793060326.912198730] [nvblox_node]: nvblox parameters:
+[nvblox_node-1] nvblox_node
+[nvblox_node-1]     cuda_stream_type: kBlocking
+[nvblox_node-1]     global_frame: odom
+[nvblox_node-1]     voxel_size: 0.025000
+[nvblox_node-1]     max_back_projection_distance: 5.000000
+[nvblox_node-1]     layer_visualization_min_tsdf_weight: 0.100000
+[nvblox_node-1]     layer_visualization_exclusion_height_m: 2.000000
+[nvblox_node-1]     layer_visualization_exclusion_radius_m: 5.000000
+[nvblox_node-1]     layer_streamer_bandwidth_limit_mbps: 30.000000
+[nvblox_node-1]     distance_map_unknown_value_optimistic: 1000.000000
+[nvblox_node-1]     distance_map_unknown_value_pessimistic: -1000.000000
+[nvblox_node-1]     esdf_mode: 2d
+[nvblox_node-1]     mapping_type: static_tsdf
+[nvblox_node-1]     pose_frame: base_link
+[nvblox_node-1]     map_clearing_frame_id: base_link
+[nvblox_node-1]     after_shutdown_map_save_path: 
+[nvblox_node-1]     esdf_slice_bounds_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     workspace_height_bounds_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     ground_plane_visualization_attachment_frame_id: base_link
+[nvblox_node-1]     publish_esdf_distance_slice: 1
+[nvblox_node-1]     use_color: 0
+[nvblox_node-1]     use_depth: 1
+[nvblox_node-1]     use_segmentation: 0
+[nvblox_node-1]     use_lidar: 0
+[nvblox_node-1]     use_non_equal_vertical_fov_lidar_params: 0
+[nvblox_node-1]     print_timings_to_console: 0
+[nvblox_node-1]     print_rates_to_console: 0
+[nvblox_node-1]     print_queue_drops_to_console: 0
+[nvblox_node-1]     print_delays_to_console: 0
+[nvblox_node-1]     layer_visualization_undo_gamma_correction: 0
+[nvblox_node-1]     output_pessimistic_distance_map: 1
+[nvblox_node-1]     num_cameras: 1
+[nvblox_node-1]     lidar_width: 1800
+[nvblox_node-1]     lidar_height: 16
+[nvblox_node-1]     tick_period_ms: 10
+[nvblox_node-1]     print_statistics_on_console_period_ms: 10000
+[nvblox_node-1]     maximum_input_queue_length: 10
+[nvblox_node-1]     back_projection_subsampling: 1
+[nvblox_node-1]     lidar_vertical_fov_rad: 0.523599
+[nvblox_node-1]     lidar_min_valid_range_m: 0.100000
+[nvblox_node-1]     min_angle_below_zero_elevation_rad: 0.349066
+[nvblox_node-1]     max_angle_above_zero_elevation_rad: 0.261799
+[nvblox_node-1]     use_lidar_motion_compensation: 1
+[nvblox_node-1]     pointcloud2_timestamps_are_relative: 1
+[nvblox_node-1]     esdf_slice_bounds_visualization_side_length: 10.000000
+[nvblox_node-1]     workspace_height_bounds_visualization_side_length: 10.000000
+[nvblox_node-1]     ground_plane_visualization_side_length: 10.000000
+[nvblox_node-1]     integrate_depth_rate_hz: 15.000000
+[nvblox_node-1]     integrate_color_rate_hz: 5.000000
+[nvblox_node-1]     integrate_lidar_rate_hz: 40.000000
+[nvblox_node-1]     update_mesh_rate_hz: 2.000000
+[nvblox_node-1]     update_esdf_rate_hz: 10.000000
+[nvblox_node-1]     publish_layer_rate_hz: 2.000000
+[nvblox_node-1]     publish_debug_vis_rate_hz: 2.000000
+[nvblox_node-1]     decay_tsdf_rate_hz: 5.000000
+[nvblox_node-1]     decay_dynamic_occupancy_rate_hz: 10.000000
+[nvblox_node-1]     clear_map_outside_radius_rate_hz: 1.000000
+[nvblox_node-1]     map_clearing_radius_m: 6.000000
+[nvblox_node-1]     esdf_and_gradients_unobserved_value: -1000.000000
+[nvblox_node-1]     multi_mapper
+[nvblox_node-1]         connected_mask_component_size_threshold: 2000
+[nvblox_node-1]         background_mapper
+[nvblox_node-1]             voxel_size_m: 0.025000
+[nvblox_node-1]             projective_layer_type: kTsdf
+[nvblox_node-1]             esdf_mode: kUnset
+[nvblox_node-1]             do_depth_preprocessing: 0
+[nvblox_node-1]             depth_preprocessing_num_dilations: 4
+[nvblox_node-1]             camera_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                         workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                     workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kHeightBounds
+[nvblox_node-1]                     workspace_bounds_min_height_m: -0.100000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.500000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             camera_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 5.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             esdf_integrator
+[nvblox_node-1]                 max_esdf_distance_m:: 2.000000
+[nvblox_node-1]                 max_tsdf_site_distance_vox:: 1.000000
+[nvblox_node-1]                 tsdf_min_weight:: 0.100000
+[nvblox_node-1]                 occupied_threshold_log_odds:: 0.000000
+[nvblox_node-1]                 esdf_slice_min_height:: 0.050000
+[nvblox_node-1]                 esdf_slice_max_height:: 0.650000
+[nvblox_node-1]                 esdf_slice_height:: 0.150000
+[nvblox_node-1]                 slice_height_above_plane_m:: 0.000000
+[nvblox_node-1]                 slice_height_thickness_m:: 0.100000
+[nvblox_node-1]                 unobserved_esdf_policy:: kIgnore
+[nvblox_node-1]                 add_negative_truncation_band_sites:: 0
+[nvblox_node-1]                 truncation_distance_vox:: 4.000000
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             color_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             feature_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             occupancy_decay_integrator
+[nvblox_node-1]                 free_space_decay_log_odds:: 0.200671
+[nvblox_node-1]                 occupied_space_decay_log_odds:: -0.405465
+[nvblox_node-1]                 decay_to_log_odds_:: 0.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             tsdf_decay_integrator
+[nvblox_node-1]                 decay_factor:: 0.950000
+[nvblox_node-1]                 decayed_weight_theshold:: 0.001000
+[nvblox_node-1]                 set_free_distance_on_decayed:: 0
+[nvblox_node-1]                 free_distance_vox:: 4.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             freespace_integrator
+[nvblox_node-1]                 max_tsdf_distance_for_occupancy_m:: 0.150000
+[nvblox_node-1]                 max_unobserved_to_keep_consecutive_occupancy_ms:: 200
+[nvblox_node-1]                 min_duration_since_occupied_for_freespace_ms:: 1000
+[nvblox_node-1]                 min_consecutive_occupancy_duration_for_reset_ms:: 2000
+[nvblox_node-1]                 check_neighborhood:: 1
+[nvblox_node-1]                 initialize_to_high_confidence_freespace:: 0
+[nvblox_node-1]         foreground_mapper
+[nvblox_node-1]             voxel_size_m: 0.025000
+[nvblox_node-1]             projective_layer_type: kNone
+[nvblox_node-1]             esdf_mode: kUnset
+[nvblox_node-1]             do_depth_preprocessing: 0
+[nvblox_node-1]             depth_preprocessing_num_dilations: 4
+[nvblox_node-1]             camera_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_tsdf_integrator
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[nvblox_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 invalid_depth_decay_factor:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_threshold_m:: -1.000000
+[nvblox_node-1]                 dynamic_discrepancy_min_weight:: 2.000000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kUnbounded
+[nvblox_node-1]                     workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             projective_appearance_integrator
+[nvblox_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[nvblox_node-1]                 max_weight:: 5.000000
+[nvblox_node-1]                 measurement_weight:: 0.800000
+[nvblox_node-1]                 weighting_function_type:: kInverseSquareWeight
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]                 view_calculator
+[nvblox_node-1]                     raycast_subsampling_factor: 4
+[nvblox_node-1]                     workspace_bounds_type: kUnbounded
+[nvblox_node-1]                     workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             camera_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 7.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             lidar_occupancy_integrator
+[nvblox_node-1]                 free_region_log_odds:: -0.847298
+[nvblox_node-1]                 occupied_region_log_odds:: 0.847298
+[nvblox_node-1]                 unobserved_region_log_odds:: 0.000000
+[nvblox_node-1]                 occupied_region_half_width_m:: 0.100000
+[nvblox_node-1]                 projective_integrator
+[nvblox_node-1]                     truncation_distance_vox:: 4.000000
+[nvblox_node-1]                     max_integration_distance_m:: 10.000000
+[nvblox_node-1]                     view_calculator
+[nvblox_node-1]                         raycast_subsampling_factor: 4
+[nvblox_node-1]                         workspace_bounds_type: kUnbounded
+[nvblox_node-1]                         workspace_bounds_min_height_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_height_m: 1.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[nvblox_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[nvblox_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[nvblox_node-1]             esdf_integrator
+[nvblox_node-1]                 max_esdf_distance_m:: 2.000000
+[nvblox_node-1]                 max_tsdf_site_distance_vox:: 1.000000
+[nvblox_node-1]                 tsdf_min_weight:: 0.000100
+[nvblox_node-1]                 occupied_threshold_log_odds:: 0.000000
+[nvblox_node-1]                 esdf_slice_min_height:: 0.000000
+[nvblox_node-1]                 esdf_slice_max_height:: 1.000000
+[nvblox_node-1]                 esdf_slice_height:: 1.000000
+[nvblox_node-1]                 slice_height_above_plane_m:: 0.000000
+[nvblox_node-1]                 slice_height_thickness_m:: 0.100000
+[nvblox_node-1]                 unobserved_esdf_policy:: kIgnore
+[nvblox_node-1]                 add_negative_truncation_band_sites:: 0
+[nvblox_node-1]                 truncation_distance_vox:: 4.000000
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             mesh_integrator
+[nvblox_node-1]                 min_weight:: 0.000100
+[nvblox_node-1]                 cutoff_distance_vox:: 5.000000
+[nvblox_node-1]                 weld_vertices:: 1
+[nvblox_node-1]             color_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             feature_flat_mesh_integrator
+[nvblox_node-1]                 min_weight: 0.000100
+[nvblox_node-1]                 max_triangles: 2000000
+[nvblox_node-1]             occupancy_decay_integrator
+[nvblox_node-1]                 free_space_decay_log_odds:: 0.200671
+[nvblox_node-1]                 occupied_space_decay_log_odds:: -0.405465
+[nvblox_node-1]                 decay_to_log_odds_:: 0.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             tsdf_decay_integrator
+[nvblox_node-1]                 decay_factor:: 0.950000
+[nvblox_node-1]                 decayed_weight_theshold:: 0.001000
+[nvblox_node-1]                 set_free_distance_on_decayed:: 0
+[nvblox_node-1]                 free_distance_vox:: 4.000000
+[nvblox_node-1]                 decay_integrator
+[nvblox_node-1]                     deallocate_decayed_blocks:: 1
+[nvblox_node-1]             freespace_integrator
+[nvblox_node-1]                 max_tsdf_distance_for_occupancy_m:: 0.150000
+[nvblox_node-1]                 max_unobserved_to_keep_consecutive_occupancy_ms:: 200
+[nvblox_node-1]                 min_duration_since_occupied_for_freespace_ms:: 1000
+[nvblox_node-1]                 min_consecutive_occupancy_duration_for_reset_ms:: 2000
+[nvblox_node-1]                 check_neighborhood:: 1
+[nvblox_node-1]                 initialize_to_high_confidence_freespace:: 0
+[nvblox_node-1]         image_masker
+[nvblox_node-1]             occlusion_threshold_m:: 0.250000
+[nvblox_node-1]         ground_plane_estimator
+[nvblox_node-1]             ground_points_candidates_min_z_m:: -0.100000
+[nvblox_node-1]             ground_points_candidates_max_z_m:: 0.150000
+[nvblox_node-1]             ransac_plane_fitter
+[nvblox_node-1]                 num_ransac_iterations:: 1000
+[nvblox_node-1]                 ransac_distance_threshold_m:: 0.200000
+[nvblox_node-1]             tsdf_zero_crossings_extractor
+[nvblox_node-1]                 min_tsdf_weight:: 0.100000
+[nvblox_node-1]                 max_crossings:: 360000
+[nvblox_node-1] 
+[lifecycle_manager-3] [INFO] [1793060327.081560803] [lifecycle_manager_planning]: Creating
+[lifecycle_manager-3] [INFO] [1793060327.081831981] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle publishers[0m[0m
+[lifecycle_manager-3] [INFO] [1793060327.082239495] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-3] [INFO] [1793060328.181765722] [lifecycle_manager_planning]: [34m[1mCreating and initializing lifecycle service servers[0m[0m
+[lifecycle_manager-3] [INFO] [1793060328.189927372] [lifecycle_manager_planning]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-3] [INFO] [1793060328.189966569] [lifecycle_manager_planning]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-2] [INFO] [1793060328.190321477] [planner_server]: Configuring
+[planner_server-2] [INFO] [1793060328.190355789] [global_costmap.global_costmap]: Configuring
+[planner_server-2] [INFO] [1793060328.196142731] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-2] [INFO] [1793060328.202001817] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-2] [INFO] [1793060328.203757574] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-2] [INFO] [1793060328.203777817] [global_costmap.global_costmap]: Using plugin "nvblox_layer"
+[planner_server-2] [INFO] [1793060328.208042694] [global_costmap.global_costmap]: Name: nvblox_layer Topic name: /nvblox_node/static_map_slice Convert to binary costmap: 1 Max obstacle distance: 1
+[planner_server-2] [INFO] [1793060328.218964877] [global_costmap.global_costmap]: Initialized plugin "nvblox_layer"
+[planner_server-2] [INFO] [1793060328.218994616] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-2] [INFO] [1793060328.219138165] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-2] [INFO] [1793060328.246477200] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 501 X 691 at 0.010000 m/pix
+[planner_server-2] [INFO] [1793060328.246964383] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[planner_server-2] [INFO] [1793060328.246995855] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-2] [INFO] [1793060328.247758341] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-3] [INFO] [1793060328.264530018] [lifecycle_manager_planning]: [34m[1mActivating planner_server[0m[0m
+[planner_server-2] [INFO] [1793060328.264785719] [planner_server]: Activating
+[planner_server-2] [INFO] [1793060328.264833457] [global_costmap.global_costmap]: Activating
+[planner_server-2] [INFO] [1793060328.264842429] [global_costmap.global_costmap]: Checking transform
+[planner_server-2] [INFO] [1793060328.264886280] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060328.764949865] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060329.264935922] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060329.764938896] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060330.264937240] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060330.764938031] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060331.264931414] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060331.764959439] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060332.264956714] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060332.764955446] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060333.265717126] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060333.766483398] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060334.265131066] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060334.764953034] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060335.264945643] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060335.764962640] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060336.265188017] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060336.764928187] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [INFO] [1793060337.264951838] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:18:57.701754 11300 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] [INFO] [1793060337.702790679] [nvblox_node]: Tried to clear map outside of radius but couldn't look up frame: base_link
+[nvblox_node-1] [INFO] [1793060337.703129026] [nvblox_node]: Lookup transform failed for frame base_link. Layer pointclouds not published
+[planner_server-2] [WARN] [1793060337.703438790] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060337.764947303] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:18:58.091713 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060338.264948195] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:18:58.451743 11312 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060338.764972134] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:18:58.871769 11313 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:18:59.261785 11300 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060339.264945227] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:18:59.641717 11294 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060339.702322299] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060339.764951663] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:18:59.981766 11295 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060340.264951796] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:00.311724 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:00.641762 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060340.764954092] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:00.991734 11315 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060341.264940262] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:01.331717 11312 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060341.412180148] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:01.651749 11296 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060341.764949127] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:01.971735 11295 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060342.264942603] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:02.311748 11309 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:02.631716 11304 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060342.764948311] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:02.961974 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060343.092297520] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060343.264913031] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:03.271673 11302 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:03.601689 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060343.764948441] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:03.931715 11313 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:04.251730 11306 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060344.264937116] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:04.561726 11302 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060344.742295615] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060344.764942586] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:04.881734 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:05.192066 11198 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060345.264950731] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:05.521720 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060345.764953979] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:05.921749 11307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:06.241700 11295 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060346.265091530] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060346.472566115] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:06.581763 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060346.764951349] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:06.921749 11310 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:07.251737 11298 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060347.264939674] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:07.561718 11310 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060347.764964023] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:07.941861 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060348.252286168] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060348.264950877] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:08.301756 11312 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:08.641716 11311 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060348.764947419] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:08.971715 11295 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060349.264943755] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:09.291710 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:09.631686 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060349.764946467] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060349.943172617] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:09.951718 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060350.264947886] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:10.291952 11198 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:10.631705 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060350.764945698] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:10.951731 11296 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060351.264950003] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:11.271727 11311 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:11.591691 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060351.642223164] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060351.766117551] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:11.921717 11308 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:12.231714 11313 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060352.265491045] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:12.551700 11298 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060352.764937622] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:12.861711 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:13.131747 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060353.212088974] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060353.264948099] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:13.441696 11295 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:13.761718 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060353.764945070] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:14.061702 11299 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060354.264943434] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:14.361723 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:14.651721 11296 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060354.764939352] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060354.792218181] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:14.961704 11312 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060355.264940165] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:15.291704 11315 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:15.591691 11307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060355.764935727] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:15.901738 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:16.251713 11307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060356.264939246] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060356.442250032] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:16.591701 11198 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060356.764936427] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:16.941720 11313 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:17.241664 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060357.264945662] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:17.591811 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060357.764920996] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:17.921794 11309 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060358.162184447] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:18.231741 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060358.264947367] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:18.531724 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060358.765018420] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:18.831753 11309 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:19.121706 11295 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060359.264937304] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:19.431712 11307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060359.742267591] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:19.751718 11313 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060359.764913451] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:20.051707 11311 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060360.264941260] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:20.341717 11311 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:20.611766 11198 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060360.764942140] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:20.911655 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:21.181721 11309 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060361.212242665] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060361.264934072] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:21.431733 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:21.721706 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060361.764930864] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:21.991709 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:22.261837 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060362.264934025] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:22.511694 11315 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060362.572082246] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060362.764943728] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:22.791678 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:23.091737 11311 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060363.264946237] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:23.401698 11198 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:23.711737 11302 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060363.764944464] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:23.991698 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060364.112167756] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060364.264983475] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:24.281702 11306 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:24.601662 11312 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060364.765144589] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:24.931782 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:25.241734 11300 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060365.264944941] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:25.561707 11311 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060365.702251267] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060365.764949786] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:25.871693 11298 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:26.181744 11306 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060366.264943926] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:26.511700 11309 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060366.764947056] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:26.831705 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:27.131702 11307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060367.264940263] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060367.362350843] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:27.491703 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060367.764940861] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:27.801667 11315 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:28.121726 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060368.264914278] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:28.461762 11294 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:28.731698 11306 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060368.764940491] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060368.962284490] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:29.031739 11294 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060369.264936928] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:29.341699 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:29.671785 11299 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060369.764940755] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:29.991730 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060370.264950787] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:30.281694 11294 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060370.532122749] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:30.571681 11294 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060370.764958746] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:30.901700 11311 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060371.264959001] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:31.271736 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:31.561697 11302 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060371.765038845] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:31.871722 11313 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060372.142074259] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:32.151643 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060372.265086860] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:32.451742 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060372.764928240] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:32.781720 11298 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:33.071699 11308 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060373.264953967] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:33.391718 11311 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:33.741714 11198 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060373.764942448] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060373.792080904] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:34.021704 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060374.264946484] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:34.331676 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:34.621789 11296 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060374.764927248] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:34.921859 11312 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:35.201682 11313 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060375.264935407] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060375.272216170] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:35.481706 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060375.764942016] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:35.771715 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:36.061717 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060376.265031154] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:36.331687 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:36.621836 11295 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060376.732156402] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060376.765029402] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:36.881718 11301 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:37.181694 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060377.265129858] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:37.481700 11198 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060377.764943570] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:37.791695 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:38.131736 11300 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060378.264933170] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060378.332119287] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:38.431733 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:38.731633 11307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060378.764934557] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:39.041706 11298 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060379.264937523] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:39.371696 11294 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:39.701750 11310 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060379.765029298] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060379.942215482] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:40.021726 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060380.264938966] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:40.321722 11304 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:40.651726 11298 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060380.764945493] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:40.991711 11296 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060381.264906588] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:41.321732 11299 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060381.632290842] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:41.641707 11304 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060381.765125862] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:41.961740 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060382.264968141] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:42.301833 11314 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:42.611745 11300 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060382.764963393] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:42.931725 11299 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:43.231736 11309 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060383.262251391] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060383.264946959] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:43.541692 11300 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060383.764947776] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:43.841706 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:44.121697 11296 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060384.264951147] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:44.383985 11307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:44.661779 11304 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060384.712345673] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060384.764946032] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:44.921690 11308 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:45.171692 11306 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060385.264913538] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:45.461651 11308 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:45.751695 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060385.765016402] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:46.041750 11305 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060386.152242394] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[planner_server-2] [INFO] [1793060386.265072950] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:46.381699 11309 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:46.711723 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060386.764951003] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:47.061733 11295 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060387.264946560] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:47.381696 11307 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:47.671689 11316 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060387.764952341] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-2] [WARN] [1793060387.822300212] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:47.981726 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060388.264982630] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:48.371739 11306 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:48.731755 11298 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060388.764940560] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:49.031711 11297 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060389.264944293] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:49.331728 11300 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [WARN] [1793060389.512224741] [global_costmap.global_costmap]: [NvbloxCostmapLayer] Can't transform: map to odom. Error: "map" passed to lookupTransform argument target_frame does not exist. 
+[nvblox_node-1] I20261027 09:19:49.621714 11294 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060389.765985299] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:49.921738 11303 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[nvblox_node-1] I20261027 09:19:50.251741 11309 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060390.264941173] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:50.561745 11312 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060390.764939673] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] I20261027 09:19:50.881711 11304 mapper_impl.h:230] Last view not set for sensor type. Decaying all voxels
+[planner_server-2] [INFO] [1793060391.264946558] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[nvblox_node-1] [INFO] [1793060391.642962951] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-3] [INFO] [1793060391.643117297] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-3] [INFO] [1793060391.643222889] [lifecycle_manager_planning]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_planning)
+[planner_server-2] [INFO] [1793060391.643127923] [rclcpp]: signal_handler(signum=2)
+[planner_server-2] [INFO] [1793060391.643252723] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-2] [INFO] [1793060391.643311004] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-2] [INFO] [1793060391.644140563] [global_costmap.global_costmap]: start
+[planner_server-2] [ERROR] [1793060391.644213520] [global_costmap.global_costmap]: Failed to finish transition 3. Current state is now: active (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:427, at ./src/rcl_lifecycle.c:390)
+[planner_server-2] [ERROR] [1793060391.644227889] [planner_server]: Failed to finish transition 3. Current state is now: inactive (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:427, at ./src/rcl_lifecycle.c:390)
+[planner_server-2] [INFO] [1793060391.648912272] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[nvblox_node-1] [INFO] [1793060391.651986142] [nvblox_node]: Timing statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Timings (in seconds)
+[nvblox_node-1] namespace/tag - NumSamples - TotalTime - (Mean +- StdDev) - [Min,Max]
+[nvblox_node-1] -----------
+[nvblox_node-1] /esdf_slicer/get_aabb         	    330	00.000293	(00.000001 +- 00.000000)	[00.000001,00.000002]
+[nvblox_node-1] esdf/integrate_slice          	    330	00.000130	(00.000000 +- 00.000000)	[00.000000,00.000001]
+[nvblox_node-1] gpu_hash/transfer/reset       	     16	00.040300	(00.002519 +- 00.003047)	[00.000163,00.009532]
+[nvblox_node-1] ros/clear_outside_radius      	     35	00.000008	(00.000000 +- 00.000000)	[00.000000,00.000001]
+[nvblox_node-1] ros/decay_tsdf                	    170	00.052783	(00.000310 +- 00.000099)	[00.000211,00.001084]
+[nvblox_node-1] ros/esdf                      	    330	00.090283	(00.000274 +- 00.000052)	[00.000163,00.000552]
+[nvblox_node-1] ros/esdf/integrate            	    330	00.031351	(00.000095 +- 00.000034)	[00.000032,00.000306]
+[nvblox_node-1] ros/esdf/slice_output         	    330	00.058238	(00.000176 +- 00.000024)	[00.000128,00.000454]
+[nvblox_node-1] ros/idle                      	   6472	64.448283	(00.009958 +- 00.000033)	[00.005273,00.014494]
+[nvblox_node-1] ros/process_queue             	  19419	00.012252	(00.000001 +- 00.000000)	[00.000000,00.000013]
+[nvblox_node-1] ros/publish_layer             	     69	00.006501	(00.000094 +- 00.000020)	[00.000038,00.000185]
+[nvblox_node-1] ros/publish_layer/serialize   	     69	00.005887	(00.000085 +- 00.000020)	[00.000033,00.000176]
+[nvblox_node-1] ros/publish_layers            	     70	00.009506	(00.000136 +- 00.000023)	[00.000047,00.000241]
+[nvblox_node-1] ros/static/esdf/output/compute	    330	00.023357	(00.000071 +- 00.000011)	[00.000032,00.000226]
+[nvblox_node-1] ros/static/esdf/output/slice  	    330	00.031277	(00.000095 +- 00.000015)	[00.000062,00.000375]
+[nvblox_node-1] ros/tick                      	   6473	00.243391	(00.000038 +- 00.000002)	[00.000002,00.001462]
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[nvblox_node-1] [INFO] [1793060391.652063624] [nvblox_node]: Rates statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Rates (in Hz)
+[nvblox_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[nvblox_node-1] -----------
+[nvblox_node-1] ros/update_esdf	100    	9.5
+[nvblox_node-1] ros/tick       	100    	434.8
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[nvblox_node-1] [INFO] [1793060391.652075236] [nvblox_node]: Delay statistics: 
+[nvblox_node-1] 
+[nvblox_node-1] NVBlox Delays
+[nvblox_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[nvblox_node-1] -----------
+[nvblox_node-1] -----------
+[nvblox_node-1] 
+[planner_server-2] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[planner_server-2]          at line 127 in ./src/class_loader.cpp
+[planner_server-2] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[planner_server-2]          at line 127 in ./src/class_loader.cpp
+[planner_server-2] terminate called without an active exception
+[planner_server-2] Stack trace (most recent call last):
+[planner_server-2] #14   Object "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2", at 0xffffffffffffffff, in 
+[INFO] [nvblox_node-1]: process has finished cleanly [pid 11198]

@@ -1,0 +1,19 @@
+{
+  "mission_complete": false,
+  "reachability": {
+    "status": "BLOCKED_UNREACHABLE",
+    "assumption": "level chassis at base Z=0; original joint limits; end-link AABB conservatively encloses all gripper geometry",
+    "puck_top_m": 0.13,
+    "analytic_min_height_lower_bound_m": 0.1856520651376723,
+    "optimized_aabb_min_height_m": 0.2130505722520506,
+    "optimizer_joint_rad": [
+      1.0070267342491013,
+      -0.3499999999544456,
+      -0.34999999986132263,
+      -0.349999999953289,
+      -0.3499999998555104
+    ],
+    "end_link_radius_bound_m": 0.161236122028722,
+    "gripper_actuated": false
+  }
+}

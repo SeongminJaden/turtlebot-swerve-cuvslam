@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "rl/train_predictive.py",
+    "--environment",
+    "v5",
+    "--iterations",
+    "120",
+    "--num-envs",
+    "16",
+    "--warmstart",
+    "runs/predictive_ppo_v4/policy.pt",
+    "--output",
+    "runs/predictive_ppo_v5",
+    "--visualizer",
+    "none"
+  ],
+  "seed": 7,
+  "num_envs": 16,
+  "rollout_steps": 128,
+  "physics": "Isaac Sim PhysX",
+  "physics_dt": 0.016666666666666666,
+  "decimation": 4,
+  "source_hashes": {
+    "predictive_env.py": "458ab15d5867e9dca677934dfc71e6e24ad1d5e899750ded2a5f48bcaa3e1f90",
+    "predictive_env_v4.py": "17a013308b81e9e0e8f4f136fae156b94ae14125432bc7fe910241e7203646db",
+    "predictive_env_v5.py": "5e8736fbef21f7ffa43ddb220740fcedf4b23a28ef1274f922e7aebcc6242a83",
+    "robot_sensors.py": "8d3b72c584f9f886f55b249b180afaf3352cc9660ac871e9ae681de3d3d75271",
+    "predictive_policy.py": "d183163c11bb7c060e0f6c72258b67aea4310d7293b31362a4190f7aa5a09849",
+    "train_predictive.py": "436a144216bf4fa6130db65b6e0b14984e9de9573439882f65ca4ffff136b0f7",
+    "geared_env.py": "ef8eebac4d6e0dd9badd739c7ef4540524f463b83f5479b15e0e861f22c502ac"
+  },
+  "git_commit": "184158ac641b5f6d0252dca96154ffefef67158d"
+}

@@ -1,0 +1,13 @@
+{
+  "evidence/2026-10-26/active-integration-qualified/source/active_camera_bridge.py": "5b934e594224871d0c4fb31efa83675134d5823d82b1de5cb5c364eb29e29d40",
+  "evidence/2026-10-26/active-integration-qualified/source/pose_quality.py": "c8f729a7ef29afbc73c0cb6dce1e738e9dd4a91f4b3a59ab27a6e74d24fa7903",
+  "evidence/2026-10-26/active-integration-qualified/source/active_camera_renderer.py": "1e1dca4fc94be2676299de0de8925692b9959542581d10ed41d3a2f1923da6db",
+  "evidence/2026-10-26/active-integration-qualified/source/evaluate_active_camera.py": "b17df7069a8cbaa3812fbed25314cbd3e79c9e03d4bfd386df14f62081ccf80a",
+  "evidence/2026-10-26/active-integration-qualified/source/run_active_camera_demo.sh": "3a7c9ed6f56461677e2051fa37c4fb51de81f1e0b0ace56597e376956bae6b96",
+  "evidence/2026-10-26/active-integration-qualified/source/pose_math.py": "63f034443e90f98a62ef8fb6fb1b9e1d172bcfce0df4748cd8462f0220cc4d01",
+  "evidence/2026-10-26/active-integration-qualified/source/active_view.py": "2893e3df8b37de8999609ed53ddb2dbca67d99b8ce65e971e46640cc9f39c03a",
+  "evidence/2026-10-26/active-integration-qualified/source/camera_heading.py": "603fd8ada2e95ac4ebf219e94efb176d0944c87b96d630e928516ced70172254",
+  "assets/m38_active_camera_demo.usda": "fe6f5ccae9970a20156faf2f4d7c2e77b588545f08aac48abcabe1c58a6626d3",
+  "assets/maze/slam_floor_texture.png": "1e58183a043531d8f8c602295d5cdf7bcdf4425317b821276a7d45148318ee71",
+  "runs/camera_ppo_v1/policy.pt": "e30fa3ca1d06b26aad4e6d3c8ee72beda06b65afaf3e84950fc2113e337069b7"
+}

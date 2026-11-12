@@ -1,0 +1,13 @@
+{"valid": false, "frame_id": "map", "stamp_ns": 1005000000, "slice_stamp_ns": -1, "revision": 0, "points": [], "status": "waiting_for_fresh_nvblox", "requests": 0, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 2000000000, "slice_stamp_ns": -1, "revision": 0, "points": [], "status": "waiting_for_fresh_nvblox", "requests": 0, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 3005000000, "slice_stamp_ns": 2770000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 1, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 4000000000, "slice_stamp_ns": 3745000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 2, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 5000000000, "slice_stamp_ns": 4750000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 3, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 6000000000, "slice_stamp_ns": 5720000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 4, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 7000000000, "slice_stamp_ns": 6805000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 5, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 8000000000, "slice_stamp_ns": 7775000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 6, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 9000000000, "slice_stamp_ns": 8775000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 7, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 10000000000, "slice_stamp_ns": 9745000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 8, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 11000000000, "slice_stamp_ns": 10830000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 9, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 12000000000, "slice_stamp_ns": 11805000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 10, "successes": 0}
+{"valid": false, "frame_id": "map", "stamp_ns": 13010000000, "slice_stamp_ns": 12815000000, "revision": 0, "points": [], "status": "planner_status_6", "requests": 11, "successes": 0}

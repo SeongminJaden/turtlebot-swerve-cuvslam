@@ -1,0 +1,17 @@
+{
+  "rviz": {
+    "slide": "gui_rviz_video",
+    "time_s": 10.311435,
+    "duration_s": 20.062039,
+    "paused": false,
+    "readyState": 4
+  },
+  "isaac_sim": {
+    "slide": "gui_sim_video",
+    "time_s": 10.676082,
+    "duration_s": 20.062039,
+    "paused": false,
+    "readyState": 4
+  },
+  "method": "Google Slides presentation iframe HTMLVideoElement readback; actual recorded PhysX trajectory playback, not live arm-camera training"
+}

@@ -1,0 +1,21 @@
+{
+  "result": "timeout",
+  "completed_segments": 1,
+  "total_segments": 8,
+  "sim_s": 100.0,
+  "wall_s": 140.18719223900007,
+  "real_time_factor": 0.7133319271386335,
+  "camera_frames": 1139,
+  "max_measured_base_speed_m_s": 0.3459762930870056,
+  "max_measured_wheel_rad_s": 13.14619255065918,
+  "wheel_speed_limit_rad_s": 30.957533897313773,
+  "motor_speed_limit_rad_s": 7.739383474328443,
+  "post_gear_speed_limit_m_s": 0.95,
+  "gear_speed_multiplier": 4.0,
+  "motor_torque_assumption_Nm": 1.0,
+  "efficiency_assumption": 1.0,
+  "wheel_torque_limit_Nm": 0.25,
+  "navigation_pose": "actual cuVSLAM + same-image arm FK + known start prior",
+  "forbidden_drive_frames": 0,
+  "final_gt_goal_distance_m": 2.561428579037762
+}

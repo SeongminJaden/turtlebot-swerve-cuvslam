@@ -1,0 +1,8 @@
+{
+  "frames": 312,
+  "accepted": 312,
+  "position_p95_m": 0.10809251475246699,
+  "position_max_m": 0.10924107495667323,
+  "rotation_p95_deg": 13.503941210525493,
+  "scope": "all estimated frames including gate rejections; first-frame alignment only"
+}

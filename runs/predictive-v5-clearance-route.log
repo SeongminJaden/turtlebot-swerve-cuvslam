@@ -1,0 +1,3555 @@
+{
+  "outcome": "evaluation_contact_failure",
+  "checkpoint_sha256": "bf890ae456483a5f56c4ffd200293f133b9c26505da194e80f08ef91cac5d5c2",
+  "iteration": 120,
+  "robot_asset": "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/assets/m38_balanced_wheels.usda",
+  "navigation_estimator": "AMCL + robot_localization",
+  "physics_hz": 200,
+  "sensor_packets_sent": 1183,
+  "sensor_send_drops": 0,
+  "sim_seconds": 5.915,
+  "wall_seconds": 6.015859486000409,
+  "real_time_factor": 0.9832344012962536,
+  "route_index": 17,
+  "route_last_index": 164,
+  "post_gear_speed_limit_m_s": 0.95,
+  "wheel_command_linear_limit_m_s": 0.92,
+  "wheel_acceleration_guard_m_s2": 0.6,
+  "path_steering_rate_limit_rad_s": 0.6,
+  "path_braking_m_s2": 0.4,
+  "gear_speed_multiplier": 4.0,
+  "control_sensor_change": "v5 PPO + ROS quantized encoders/dual IMU; deployment posture and guards separately validated",
+  "cuvslam_tracking_mode": 2,
+  "motor_torque_assumption_Nm": 1.0,
+  "max_speed_m_s": 0.5754699110984802,
+  "physics_peak_speed_m_s": 0.5765267610549927,
+  "physics_peak_wheel_speed_rad_s": 24.525840759277344,
+  "peak_nonwheel_contact_force_N": 90.78577423095703,
+  "nonwheel_contact_samples": 7,
+  "peak_contact_body": "base_link",
+  "first_contact_stamp_ns": 6885000000,
+  "actual_goal_error_m": 2.390768716403227,
+  "max_actual_wheel_speed_rad_s": 24.44939613342285,
+  "fault_imu2_start_s": null,
+  "fault_camera_start_s": null,
+  "simultaneous_motion_fraction": 0.6483516483516484,
+  "rows": [
+    {
+      "sim_s": 0.065,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.35024920105934143,
+        2.749476432800293
+      ],
+      "base_quaternion": [
+        1.9571504594750877e-07,
+        2.5685514515316754e-07,
+        -0.003619483672082424,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": false,
+      "image_age_s": 1.000000001,
+      "sensor_age_s": null,
+      "sensor_ok": false,
+      "navigation_age_s": null,
+      "speed_m_s": 0.000728685175999999,
+      "actual_wheel_speed_max_rad_s": 0.019625676795840263,
+      "actual_yaw_rate_rad_s": -0.0003191671858076006,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.13,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.3502410352230072,
+        2.749476194381714
+      ],
+      "base_quaternion": [
+        3.6092930599807005e-07,
+        -2.3567990226069924e-08,
+        -0.003621671348810196,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": false,
+      "image_age_s": 1.065000001,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.00021393578208517283,
+      "actual_wheel_speed_max_rad_s": 0.017271192744374275,
+      "actual_yaw_rate_rad_s": -0.00019269809126853943,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.195,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.3502334654331207,
+        2.74947452545166
+      ],
+      "base_quaternion": [
+        1.4345047816277656e-07,
+        2.525423212773603e-07,
+        -0.003626242047175765,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.055,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 6.836107786512002e-05,
+      "actual_wheel_speed_max_rad_s": 0.01487194187939167,
+      "actual_yaw_rate_rad_s": 0.0004918092745356262,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.26,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.35022681951522827,
+        2.7494752407073975
+      ],
+      "base_quaternion": [
+        1.8284600855622557e-07,
+        1.589069000829113e-07,
+        -0.0036249279510229826,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.005,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.00036306268884800375,
+      "actual_wheel_speed_max_rad_s": 0.02150885760784149,
+      "actual_yaw_rate_rad_s": 0.0005804472602903843,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.325,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.35022005438804626,
+        2.7494752407073975
+      ],
+      "base_quaternion": [
+        2.5126689706667094e-07,
+        2.0159400548891426e-07,
+        -0.003624506527557969,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": true,
+      "image_age_s": 0.26,
+      "sensor_age_s": 0.01,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.00038922313251532614,
+      "actual_wheel_speed_max_rad_s": 0.012169260531663895,
+      "actual_yaw_rate_rad_s": 0.00026608267216943204,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.39,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.3502136170864105,
+        2.7494757175445557
+      ],
+      "base_quaternion": [
+        2.620056989144359e-07,
+        2.223627149078311e-07,
+        -0.0036248983815312386,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": false,
+      "image_age_s": 0.325,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.000850998389068991,
+      "actual_wheel_speed_max_rad_s": 0.026135850697755814,
+      "actual_yaw_rate_rad_s": 0.0015678408090025187,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.455,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.3502069413661957,
+        2.7494750022888184
+      ],
+      "base_quaternion": [
+        1.3215398553256819e-07,
+        2.1191522137087304e-07,
+        -0.003622648539021611,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": false,
+      "image_age_s": 0.39,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.0004465312522370368,
+      "actual_wheel_speed_max_rad_s": 0.14674648642539978,
+      "actual_yaw_rate_rad_s": 0.0007708001649007201,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.52,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.3502000868320465,
+        2.7494754791259766
+      ],
+      "base_quaternion": [
+        3.1035597203299403e-07,
+        6.300688681903921e-08,
+        -0.003623067634180188,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": false,
+      "image_age_s": 0.455,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.00031652182224206626,
+      "actual_wheel_speed_max_rad_s": 0.01787382736802101,
+      "actual_yaw_rate_rad_s": 0.00013151863822713494,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.585,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.35019248723983765,
+        2.749476194381714
+      ],
+      "base_quaternion": [
+        2.3270612814485503e-07,
+        3.120720464266924e-07,
+        -0.003625595010817051,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": false,
+      "image_age_s": 0.52,
+      "sensor_age_s": 0.055,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.00027097720885649323,
+      "actual_wheel_speed_max_rad_s": 0.015096085146069527,
+      "actual_yaw_rate_rad_s": -0.0005321477074176073,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.65,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.350185364484787,
+        2.749476194381714
+      ],
+      "base_quaternion": [
+        2.1039848263626482e-07,
+        2.485373329363938e-07,
+        -0.0036221107002347708,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": false,
+      "image_age_s": 0.585,
+      "sensor_age_s": 0.005,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.00020354293519631028,
+      "actual_wheel_speed_max_rad_s": 0.13444651663303375,
+      "actual_yaw_rate_rad_s": -0.000577092869207263,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.7150000000000001,
+      "route_index": 0,
+      "bootstrap_ready": false,
+      "base_xy": [
+        0.3501783311367035,
+        2.749476194381714
+      ],
+      "base_quaternion": [
+        1.169658574440291e-07,
+        2.1976151742819638e-07,
+        -0.0036217307206243277,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0,
+      "nav_speed_m_s": 0.0,
+      "nav_xy": null,
+      "tracking_fresh": false,
+      "image_age_s": 0.65,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": null,
+      "speed_m_s": 0.0003422411682549864,
+      "actual_wheel_speed_max_rad_s": 0.012574013322591782,
+      "actual_yaw_rate_rad_s": 0.001211197697557509,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.0,
+      "cross_track_m": 0.0
+    },
+    {
+      "sim_s": 0.78,
+      "route_index": 0,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.3501714766025543,
+        2.7494757175445557
+      ],
+      "base_quaternion": [
+        3.1067858685673855e-07,
+        2.132787670916514e-07,
+        -0.003624111181125045,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.00010652952779244275,
+      "nav_speed_m_s": 4.5097724802997163e-07,
+      "nav_xy": [
+        0.3498635759631536,
+        2.750000135687198
+      ],
+      "tracking_fresh": false,
+      "image_age_s": 0.65,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.0003143038193229586,
+      "actual_wheel_speed_max_rad_s": 0.020014896988868713,
+      "actual_yaw_rate_rad_s": 0.0004652409115806222,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": 0.0,
+      "actions": [
+        0.4818849563598633,
+        -0.048320114612579346
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.065,
+      "cross_track_m": 0.00013642410432359133
+    },
+    {
+      "sim_s": 0.845,
+      "route_index": 0,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.3501642942428589,
+        2.749476432800293
+      ],
+      "base_quaternion": [
+        1.7382339478899667e-07,
+        3.744421803730802e-07,
+        -0.0036250529810786247,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.0001331611386934384,
+      "nav_speed_m_s": 5.98251186422803e-07,
+      "nav_xy": [
+        0.3498635843469698,
+        2.750000135879499
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.03598969057202339,
+      "actual_wheel_speed_max_rad_s": 1.1757436990737915,
+      "actual_yaw_rate_rad_s": -0.00307969911955297,
+      "command_m_s": 0.03613443300127983,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.05113269292952133,
+      "actions": [
+        0.9265239238739014,
+        -0.428377628326416
+      ],
+      "known_clearance_m": 2.999999922227346,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.00013641572070295137
+    },
+    {
+      "sim_s": 0.91,
+      "route_index": 0,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.3523281216621399,
+        2.749462127685547
+      ],
+      "base_quaternion": [
+        2.2132036292532575e-07,
+        2.96678678068929e-07,
+        -0.0036169756203889847,
+        0.9999935030937195
+      ],
+      "nav_yaw": 0.00012250849433304012,
+      "nav_speed_m_s": 0.03494118808932221,
+      "nav_xy": [
+        0.3512936737640794,
+        2.749999804913962
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.07507934421300888,
+      "actual_wheel_speed_max_rad_s": 2.4420042037963867,
+      "actual_yaw_rate_rad_s": 0.000832918391097337,
+      "command_m_s": 0.07513443380594254,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.10226538585904266,
+      "actions": [
+        1.0,
+        -0.9257889986038208
+      ],
+      "known_clearance_m": 2.995457645548388,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.0012936737787888402
+    },
+    {
+      "sim_s": 0.9750000000000001,
+      "route_index": 0,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.3569493293762207,
+        2.7494425773620605
+      ],
+      "base_quaternion": [
+        5.688806368198129e-07,
+        1.0214363754812439e-07,
+        -0.0035552645567804575,
+        0.9999937415122986
+      ],
+      "nav_yaw": 0.00011185584997219777,
+      "nav_speed_m_s": 0.07508986891878074,
+      "nav_xy": [
+        0.355625810571472,
+        2.7500004707991117
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.11392709612846375,
+      "actual_wheel_speed_max_rad_s": 3.717679500579834,
+      "actual_yaw_rate_rad_s": -0.0013191290199756622,
+      "command_m_s": 0.11413443088531494,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.2556634646476067,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.9905768040686675,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.005625810591171534
+    },
+    {
+      "sim_s": 1.04,
+      "route_index": 0,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.3641107678413391,
+        2.7494022846221924
+      ],
+      "base_quaternion": [
+        2.5146948701149086e-07,
+        3.409496684980695e-07,
+        -0.003520672209560871,
+        0.9999938607215881
+      ],
+      "nav_yaw": 0.0001917506826747406,
+      "nav_speed_m_s": 0.11378253019539562,
+      "nav_xy": [
+        0.36161420311101344,
+        2.7500016028286756
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.15295015275478363,
+      "actual_wheel_speed_max_rad_s": 4.986683368682861,
+      "actual_yaw_rate_rad_s": 0.00207135290838778,
+      "command_m_s": 0.15313443541526794,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.2556634646476067,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.977812406611898,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.011614203221613325
+    },
+    {
+      "sim_s": 1.105,
+      "route_index": 0,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.37381839752197266,
+        2.7493467330932617
+      ],
+      "base_quaternion": [
+        -3.9701792076130005e-08,
+        1.9996778632958012e-07,
+        -0.003492020070552826,
+        0.9999939799308777
+      ],
+      "nav_yaw": 0.0002290349379365786,
+      "nav_speed_m_s": 0.15301239807786807,
+      "nav_xy": [
+        0.37130529110577853,
+        2.7500036832250725
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.19195356965065002,
+      "actual_wheel_speed_max_rad_s": 6.260101795196533,
+      "actual_yaw_rate_rad_s": 0.00154453597497195,
+      "command_m_s": 0.19213443994522095,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.980108388249877,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.021305291424153567
+    },
+    {
+      "sim_s": 1.17,
+      "route_index": 1,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.38606661558151245,
+        2.7492761611938477
+      ],
+      "base_quaternion": [
+        3.7969462596265657e-07,
+        1.536926674816641e-07,
+        -0.003460064297541976,
+        0.9999940991401672
+      ],
+      "nav_yaw": 0.0001289575620127249,
+      "nav_speed_m_s": 0.18487761459972066,
+      "nav_xy": [
+        0.37841800585813196,
+        2.7500578210159645
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.05,
+      "sensor_ok": true,
+      "navigation_age_s": 0.025,
+      "speed_m_s": 0.2308502048254013,
+      "actual_wheel_speed_max_rad_s": 7.550280570983887,
+      "actual_yaw_rate_rad_s": 0.003927130717784166,
+      "command_m_s": 0.23113444447517395,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.3579288505066468,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.9759659101020364,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.021582071596802626
+    },
+    {
+      "sim_s": 1.235,
+      "route_index": 1,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.4008677899837494,
+        2.749171257019043
+      ],
+      "base_quaternion": [
+        1.1741500571815777e-07,
+        1.5891974669557385e-07,
+        -0.003459875239059329,
+        0.9999940991401672
+      ],
+      "nav_yaw": 0.00020352607253506863,
+      "nav_speed_m_s": 0.2315737458263582,
+      "nav_xy": [
+        0.3974555816911013,
+        2.75006076491389
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.2698792815208435,
+      "actual_wheel_speed_max_rad_s": 8.804584503173828,
+      "actual_yaw_rate_rad_s": 0.0009074370027519763,
+      "command_m_s": 0.27013444900512695,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.10226538585904353,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.9698954130425737,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.0025451437887512645
+    },
+    {
+      "sim_s": 1.3,
+      "route_index": 1,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.41815897822380066,
+        2.74906849861145
+      ],
+      "base_quaternion": [
+        1.3312184421465645e-07,
+        2.3246487046435504e-07,
+        -0.003359501948580146,
+        0.9999943375587463
+      ],
+      "nav_yaw": -8.098964379657945e-05,
+      "nav_speed_m_s": 0.26999639571312395,
+      "nav_xy": [
+        0.41295042780471847,
+        2.749171528653243
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.30892160534858704,
+      "actual_wheel_speed_max_rad_s": 10.067512512207031,
+      "actual_yaw_rate_rad_s": -0.002090603578835726,
+      "command_m_s": 0.30913445353507996,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.2556634646476086,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.964900468557294,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.012976900442618105
+    },
+    {
+      "sim_s": 1.365,
+      "route_index": 2,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.43801507353782654,
+        2.7489490509033203
+      ],
+      "base_quaternion": [
+        2.579078852704697e-07,
+        3.0557018249055545e-07,
+        -0.0033530951477587223,
+        0.9999944567680359
+      ],
+      "nav_yaw": -0.0012492333682825913,
+      "nav_speed_m_s": 0.3093780228099057,
+      "nav_xy": [
+        0.4344285607299107,
+        2.748850766107358
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.3478797972202301,
+      "actual_wheel_speed_max_rad_s": 11.35008716583252,
+      "actual_yaw_rate_rad_s": -0.006766150705516338,
+      "command_m_s": 0.34813445806503296,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.2556634646476086,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.94479089707465,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.015613790682665055
+    },
+    {
+      "sim_s": 1.4300000000000002,
+      "route_index": 2,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.4604020416736603,
+        2.748825788497925
+      ],
+      "base_quaternion": [
+        4.189011519883934e-07,
+        2.1243640446755307e-07,
+        -0.003470462514087558,
+        0.9999939799308777
+      ],
+      "nav_yaw": -0.0014143493558660995,
+      "nav_speed_m_s": 0.3485891521033112,
+      "nav_xy": [
+        0.454543145205649,
+        2.748850653575565
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.3868510127067566,
+      "actual_wheel_speed_max_rad_s": 12.631911277770996,
+      "actual_yaw_rate_rad_s": -0.006780066527426243,
+      "command_m_s": 0.38713446259498596,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.9320251153398544,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.004686274166432507
+    },
+    {
+      "sim_s": 1.495,
+      "route_index": 3,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.48532480001449585,
+        2.7487010955810547
+      ],
+      "base_quaternion": [
+        3.962749417496525e-07,
+        3.340534604490131e-08,
+        -0.003697803011164069,
+        0.9999931454658508
+      ],
+      "nav_yaw": -0.00361305418437687,
+      "nav_speed_m_s": 0.3881425408601355,
+      "nav_xy": [
+        0.4812779638009572,
+        2.747273930376424
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.426155149936676,
+      "actual_wheel_speed_max_rad_s": 13.970701217651367,
+      "actual_yaw_rate_rad_s": -0.019002947956323624,
+      "command_m_s": 0.42613446712493896,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.9495414696881825,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.018919463391725753
+    },
+    {
+      "sim_s": 1.56,
+      "route_index": 3,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.5127841234207153,
+        2.748581647872925
+      ],
+      "base_quaternion": [
+        2.6934071684081573e-07,
+        3.689648906401999e-07,
+        -0.00414627930149436,
+        0.9999914765357971
+      ],
+      "nav_yaw": -0.005415735539239693,
+      "nav_speed_m_s": 0.42581373662510813,
+      "nav_xy": [
+        0.5067675551548579,
+        2.746792864831738
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.46502992510795593,
+      "actual_wheel_speed_max_rad_s": 15.297962188720703,
+      "actual_yaw_rate_rad_s": -0.030771132558584213,
+      "command_m_s": 0.46513447165489197,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.944644214238736,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.007489026556338803
+    },
+    {
+      "sim_s": 1.625,
+      "route_index": 4,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.5427849292755127,
+        2.748488664627075
+      ],
+      "base_quaternion": [
+        2.55603879395494e-07,
+        -1.2492299106270366e-07,
+        -0.004976378288120031,
+        0.9999876618385315
+      ],
+      "nav_yaw": -0.006945247327612562,
+      "nav_speed_m_s": 0.46460850456700925,
+      "nav_xy": [
+        0.5396474048312114,
+        2.746933842090527
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.504210889339447,
+      "actual_wheel_speed_max_rad_s": 16.592750549316406,
+      "actual_yaw_rate_rad_s": -0.03798762336373329,
+      "command_m_s": 0.504134476184845,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.25566346464760387,
+      "actions": [
+        1.0,
+        -0.9876327514648438
+      ],
+      "known_clearance_m": 2.9144446614418804,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.010797108458038643
+    },
+    {
+      "sim_s": 1.69,
+      "route_index": 4,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.5753105878829956,
+        2.748373508453369
+      ],
+      "base_quaternion": [
+        4.2502276187406096e-07,
+        1.2167259910711437e-07,
+        -0.0061491625383496284,
+        0.9999811053276062
+      ],
+      "nav_yaw": -0.011047015200141558,
+      "nav_speed_m_s": 0.5029534724138442,
+      "nav_xy": [
+        0.5705145005926521,
+        2.7451416795927415
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.5431848168373108,
+      "actual_wheel_speed_max_rad_s": 17.76201629638672,
+      "actual_yaw_rate_rad_s": -0.0642680749297142,
+      "command_m_s": 0.5419859290122986,
+      "path_speed_cap_m_s": 0.92,
+      "arm_speed_rad_s": -0.25566346464760953,
+      "actions": [
+        0.9705501794815063,
+        -0.8949667811393738
+      ],
+      "known_clearance_m": 2.3382639347065566,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.021081935673592813
+    },
+    {
+      "sim_s": 1.7550000000000001,
+      "route_index": 5,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.6103504300117493,
+        2.7482426166534424
+      ],
+      "base_quaternion": [
+        4.187664615074027e-07,
+        -2.5867481667773973e-07,
+        -0.007927270606160164,
+        0.9999686479568481
+      ],
+      "nav_yaw": -0.014786093370613368,
+      "nav_speed_m_s": 0.5422813179377742,
+      "nav_xy": [
+        0.607464031066483,
+        2.7450479190873027
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.26,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.5754699110984802,
+      "actual_wheel_speed_max_rad_s": 19.274805068969727,
+      "actual_yaw_rate_rad_s": -0.08157698065042496,
+      "command_m_s": 0.5743189454078674,
+      "path_speed_cap_m_s": 0.9165517731051601,
+      "arm_speed_rad_s": -0.25566346464760764,
+      "actions": [
+        0.8290515542030334,
+        -0.6933241486549377
+      ],
+      "known_clearance_m": 2.303015649040601,
+      "view_age_s": 0.26,
+      "cross_track_m": 0.008957391647534561
+    },
+    {
+      "sim_s": 1.82,
+      "route_index": 6,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.647592306137085,
+        2.7480642795562744
+      ],
+      "base_quaternion": [
+        3.0154222940836917e-07,
+        -4.6646482587675564e-07,
+        -0.010406489484012127,
+        0.999945878982544
+      ],
+      "nav_yaw": -0.019313467223748874,
+      "nav_speed_m_s": 0.5755798376045205,
+      "nav_xy": [
+        0.641284650575344,
+        2.744939150960652
+      ],
+      "tracking_fresh": false,
+      "image_age_s": 0.325,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.535740077495575,
+      "actual_wheel_speed_max_rad_s": 17.57807159423828,
+      "actual_yaw_rate_rad_s": -0.04268790781497955,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.892805127494602,
+      "arm_speed_rad_s": -0.1533980787885646,
+      "actions": [
+        0.14703889191150665,
+        -0.0389200784265995
+      ],
+      "known_clearance_m": 2.265602959596307,
+      "view_age_s": 0.325,
+      "cross_track_m": 0.010078169902959738
+    },
+    {
+      "sim_s": 1.885,
+      "route_index": 6,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.682687520980835,
+        2.7476272583007812
+      ],
+      "base_quaternion": [
+        4.0323422467736236e-07,
+        1.6337464785465272e-06,
+        -0.012252630665898323,
+        0.9999250173568726
+      ],
+      "nav_yaw": -0.0221417443014133,
+      "nav_speed_m_s": 0.5502897150618529,
+      "nav_xy": [
+        0.66364545725544,
+        2.744769416418739
+      ],
+      "tracking_fresh": false,
+      "image_age_s": 0.39,
+      "sensor_age_s": 0.05,
+      "sensor_ok": true,
+      "navigation_age_s": 0.03,
+      "speed_m_s": 0.49680668115615845,
+      "actual_wheel_speed_max_rad_s": 16.254056930541992,
+      "actual_yaw_rate_rad_s": -0.021650230512022972,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8950826073623137,
+      "arm_speed_rad_s": -0.05113269292952153,
+      "actions": [
+        -0.14048409461975098,
+        0.8256492614746094
+      ],
+      "known_clearance_m": 2.229834128117287,
+      "view_age_s": 0.39,
+      "cross_track_m": 0.01461360695757879
+    },
+    {
+      "sim_s": 1.9500000000000002,
+      "route_index": 7,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.7153376936912537,
+        2.7469708919525146
+      ],
+      "base_quaternion": [
+        4.024098814170429e-07,
+        1.0369509482188732e-06,
+        -0.013337735086679459,
+        0.9999110698699951
+      ],
+      "nav_yaw": -0.025800927639181237,
+      "nav_speed_m_s": 0.4997137428089834,
+      "nav_xy": [
+        0.7102610794025211,
+        2.74397698144769
+      ],
+      "tracking_fresh": false,
+      "image_age_s": 0.325,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.4581860601902008,
+      "actual_wheel_speed_max_rad_s": 14.988930702209473,
+      "actual_yaw_rate_rad_s": -0.008872631005942822,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8771236509529167,
+      "arm_speed_rad_s": 0.20453077171808612,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 2.197352734834703,
+      "view_age_s": 0.455,
+      "cross_track_m": 0.011898172254019119
+    },
+    {
+      "sim_s": 2.015,
+      "route_index": 8,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.7454307675361633,
+        2.7462520599365234
+      ],
+      "base_quaternion": [
+        2.616959591250634e-07,
+        6.101101348576776e-07,
+        -0.013956958428025246,
+        0.999902606010437
+      ],
+      "nav_yaw": -0.026130263180566198,
+      "nav_speed_m_s": 0.4587964144906715,
+      "nav_xy": [
+        0.7474631025489935,
+        2.738412513071646
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.4197724163532257,
+      "actual_wheel_speed_max_rad_s": 13.74193000793457,
+      "actual_yaw_rate_rad_s": -0.002378070028498769,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8577993681778153,
+      "arm_speed_rad_s": 0.25566346464760387,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 1.4493363784790807,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.01186194343232593
+    },
+    {
+      "sim_s": 2.08,
+      "route_index": 9,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.7730557918548584,
+        2.745058536529541
+      ],
+      "base_quaternion": [
+        4.070750492246589e-08,
+        2.2590099035824096e-07,
+        -0.014294630847871304,
+        0.9998978972434998
+      ],
+      "nav_yaw": -0.026646999806092635,
+      "nav_speed_m_s": 0.4212364021657578,
+      "nav_xy": [
+        0.775955551073563,
+        2.734806402337082
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.3816526234149933,
+      "actual_wheel_speed_max_rad_s": 12.491315841674805,
+      "actual_yaw_rate_rad_s": -0.001319035654887557,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8377237817374116,
+      "arm_speed_rad_s": 0.2556634646476057,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 1.4219560123383064,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.02844259014433573
+    },
+    {
+      "sim_s": 2.145,
+      "route_index": 9,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.79817795753479,
+        2.7429311275482178
+      ],
+      "base_quaternion": [
+        -5.2085887602970615e-08,
+        2.05684159482189e-07,
+        -0.014481495134532452,
+        0.9998952150344849
+      ],
+      "nav_yaw": -0.026913315915099927,
+      "nav_speed_m_s": 0.37982747316968796,
+      "nav_xy": [
+        0.8034038448442578,
+        2.733673823540306
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.3428577184677124,
+      "actual_wheel_speed_max_rad_s": 11.19405460357666,
+      "actual_yaw_rate_rad_s": 0.0033403923735022545,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8416575789813274,
+      "arm_speed_rad_s": 0.25566346464760387,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 1.3526546020430315,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.016677235907572936
+    },
+    {
+      "sim_s": 2.21,
+      "route_index": 9,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.8206901550292969,
+        2.7398362159729004
+      ],
+      "base_quaternion": [
+        4.9330026286042994e-08,
+        2.068425715151534e-07,
+        -0.014638897031545639,
+        0.9998928904533386
+      ],
+      "nav_yaw": -0.029958978868826938,
+      "nav_speed_m_s": 0.3420138304730229,
+      "nav_xy": [
+        0.8245365512932554,
+        2.731737221045892
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.30349767208099365,
+      "actual_wheel_speed_max_rad_s": 9.905610084533691,
+      "actual_yaw_rate_rad_s": 0.0019370265072211623,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8452498284557506,
+      "arm_speed_rad_s": 0.2556634646476086,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 1.2011859968700331,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.030587112392201365
+    },
+    {
+      "sim_s": 2.275,
+      "route_index": 10,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.8405191898345947,
+        2.7359092235565186
+      ],
+      "base_quaternion": [
+        2.1603538868930627e-07,
+        5.4468209498281794e-08,
+        -0.014716102741658688,
+        0.9998917579650879
+      ],
+      "nav_yaw": -0.029441770477111225,
+      "nav_speed_m_s": 0.3270618279045741,
+      "nav_xy": [
+        0.8362320990355571,
+        2.7293719509448486
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.05,
+      "sensor_ok": true,
+      "navigation_age_s": 0.04,
+      "speed_m_s": 0.2637067139148712,
+      "actual_wheel_speed_max_rad_s": 8.644755363464355,
+      "actual_yaw_rate_rad_s": 0.001715044490993023,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8227048812563887,
+      "arm_speed_rad_s": 0.35792885050664636,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 1.1212349413610156,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.02480063516905247
+    },
+    {
+      "sim_s": 2.34,
+      "route_index": 10,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.8575329780578613,
+        2.731426954269409
+      ],
+      "base_quaternion": [
+        2.713968854095583e-07,
+        2.6244032724775934e-08,
+        -0.014686317183077335,
+        0.9998922348022461
+      ],
+      "nav_yaw": -0.028250387346592194,
+      "nav_speed_m_s": 0.2627098860572617,
+      "nav_xy": [
+        0.8658785628277523,
+        2.724746632042946
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.22421009838581085,
+      "actual_wheel_speed_max_rad_s": 7.34360408782959,
+      "actual_yaw_rate_rad_s": 0.001879300456494093,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8289983416247637,
+      "arm_speed_rad_s": 0.10226538585904399,
+      "actions": [
+        -0.8801267147064209,
+        1.0
+      ],
+      "known_clearance_m": 1.0718175631275586,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.029830543921444547
+    },
+    {
+      "sim_s": 2.4050000000000002,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.8719043731689453,
+        2.7266666889190674
+      ],
+      "base_quaternion": [
+        3.582592000839213e-08,
+        2.3880085109340143e-07,
+        -0.014764413237571716,
+        0.9998911023139954
+      ],
+      "nav_yaw": -0.024880231449249297,
+      "nav_speed_m_s": 0.21901900536387836,
+      "nav_xy": [
+        0.8828296085278909,
+        2.7210788871248175
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.18353961408138275,
+      "actual_wheel_speed_max_rad_s": 6.119044780731201,
+      "actual_yaw_rate_rad_s": 0.0016237356467172503,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.808821821247628,
+      "arm_speed_rad_s": 0.2556634646476086,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 1.0575813277789066,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.033634106398781095
+    },
+    {
+      "sim_s": 2.47,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.8835198879241943,
+        2.721970558166504
+      ],
+      "base_quaternion": [
+        1.6441543948531034e-07,
+        1.2375419089494244e-07,
+        -0.014774927869439125,
+        0.9998908638954163
+      ],
+      "nav_yaw": -0.02465595177965576,
+      "nav_speed_m_s": 0.1798967813933894,
+      "nav_xy": [
+        0.892925244472123,
+        2.7160979876339435
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.14196112751960754,
+      "actual_wheel_speed_max_rad_s": 4.86308479309082,
+      "actual_yaw_rate_rad_s": 0.003283429192379117,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8126478777583259,
+      "arm_speed_rad_s": 0.2556634646476086,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 1.0215331746922403,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.03463233472129011
+    },
+    {
+      "sim_s": 2.535,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.8924252986907959,
+        2.7176833152770996
+      ],
+      "base_quaternion": [
+        5.941020830846355e-08,
+        2.582447962140577e-07,
+        -0.01478670071810484,
+        0.9998907446861267
+      ],
+      "nav_yaw": -0.024570730624773465,
+      "nav_speed_m_s": 0.13746881931070284,
+      "nav_xy": [
+        0.9030056045832127,
+        2.7133780309230633
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.10099230706691742,
+      "actual_wheel_speed_max_rad_s": 3.4684081077575684,
+      "actual_yaw_rate_rad_s": 0.001668828772380948,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.816797227260659,
+      "arm_speed_rad_s": 0.2556634646476048,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 0.9773649498664061,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.03674509869333238
+    },
+    {
+      "sim_s": 2.6,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.8987645506858826,
+        2.7141079902648926
+      ],
+      "base_quaternion": [
+        1.472073876129798e-07,
+        2.3539838878150476e-07,
+        -0.014778814278542995,
+        0.9998908638954163
+      ],
+      "nav_yaw": -0.02389367142389417,
+      "nav_speed_m_s": 0.09984827628761934,
+      "nav_xy": [
+        0.9070733417241456,
+        2.710574015602499
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.06055842712521553,
+      "actual_wheel_speed_max_rad_s": 2.239093542098999,
+      "actual_yaw_rate_rad_s": 0.0022492108400911093,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.820476423097737,
+      "arm_speed_rad_s": 0.2556634646476048,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 0.9437786740729538,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.040055466653860373
+    },
+    {
+      "sim_s": 2.665,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9026546478271484,
+        2.711571216583252
+      ],
+      "base_quaternion": [
+        -6.563940058157414e-09,
+        1.6573912375861255e-07,
+        -0.014770492911338806,
+        0.9998909831047058
+      ],
+      "nav_yaw": -0.023846150029035423,
+      "nav_speed_m_s": 0.05963451540192675,
+      "nav_xy": [
+        0.9117437088622498,
+        2.708965848062514
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.035,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.020994238555431366,
+      "actual_wheel_speed_max_rad_s": 0.9581856727600098,
+      "actual_yaw_rate_rad_s": -0.0001724445610307157,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8244092292125533,
+      "arm_speed_rad_s": 0.4601942363656952,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 0.912631719975308,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.04268156889185262
+    },
+    {
+      "sim_s": 2.73,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9043005704879761,
+        2.710346221923828
+      ],
+      "base_quaternion": [
+        -3.5971162049008854e-08,
+        1.539923744076077e-07,
+        -0.014751475304365158,
+        0.9998912215232849
+      ],
+      "nav_yaw": -0.02387010840403101,
+      "nav_speed_m_s": 0.02400217523852777,
+      "nav_xy": [
+        0.9134472400095569,
+        2.7072608242438427
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.0014053910272195935,
+      "actual_wheel_speed_max_rad_s": 0.2272818386554718,
+      "actual_yaw_rate_rad_s": 0.025503570213913918,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8278939837391982,
+      "arm_speed_rad_s": 0.2045307717180838,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 0.8825589670299685,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.04480474760770699
+    },
+    {
+      "sim_s": 2.795,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9045106172561646,
+        2.7101218700408936
+      ],
+      "base_quaternion": [
+        9.229716368963636e-08,
+        2.2073696470670257e-07,
+        -0.014092603698372841,
+        0.9999006986618042
+      ],
+      "nav_yaw": -0.022591791080793882,
+      "nav_speed_m_s": 0.0027244922012197264,
+      "nav_xy": [
+        0.9138490084771386,
+        2.706999560128804
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.0010234820656478405,
+      "actual_wheel_speed_max_rad_s": 0.21365733444690704,
+      "actual_yaw_rate_rad_s": 0.02854730188846588,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8299748883876371,
+      "arm_speed_rad_s": 0.2556634646476086,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 0.8823818750368893,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.045175578191277196
+    },
+    {
+      "sim_s": 2.8600000000000003,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9044891595840454,
+        2.710111618041992
+      ],
+      "base_quaternion": [
+        1.7161713117275212e-07,
+        2.2094768326041958e-07,
+        -0.013386021368205547,
+        0.9999104738235474
+      ],
+      "nav_yaw": -0.021995242996616468,
+      "nav_speed_m_s": 0.002259717300938767,
+      "nav_xy": [
+        0.9136922791827732,
+        2.7075459977587504
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.065,
+      "sensor_age_s": 0.05,
+      "sensor_ok": true,
+      "navigation_age_s": 0.025,
+      "speed_m_s": 0.0004951043520122766,
+      "actual_wheel_speed_max_rad_s": 0.3373011350631714,
+      "actual_yaw_rate_rad_s": 0.021501973271369934,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8300203422205934,
+      "arm_speed_rad_s": 0.3067961575771257,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 0.7853082815106683,
+      "view_age_s": 0.065,
+      "cross_track_m": 0.04460740763056096
+    },
+    {
+      "sim_s": 2.9250000000000003,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9044746160507202,
+        2.7100789546966553
+      ],
+      "base_quaternion": [
+        1.2122930570512835e-07,
+        1.7012546038586152e-07,
+        -0.012570692226290703,
+        0.9999210238456726
+      ],
+      "nav_yaw": -0.01955578743810436,
+      "nav_speed_m_s": 0.0028371434981568234,
+      "nav_xy": [
+        0.913585711378224,
+        2.7075076221394183
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.005,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.00033115310361608863,
+      "actual_wheel_speed_max_rad_s": 0.22444386780261993,
+      "actual_yaw_rate_rad_s": 0.028318068012595177,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.829963871370087,
+      "arm_speed_rad_s": 0.1022653858590434,
+      "actions": [
+        -0.7644710540771484,
+        1.0
+      ],
+      "known_clearance_m": 0.7851238671832882,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.044611363237395625
+    },
+    {
+      "sim_s": 2.99,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9045020937919617,
+        2.7100443840026855
+      ],
+      "base_quaternion": [
+        1.6118198686854157e-07,
+        2.272995942576017e-07,
+        -0.011896423064172268,
+        0.9999292492866516
+      ],
+      "nav_yaw": -0.01831475437012773,
+      "nav_speed_m_s": 0.0027643299054597114,
+      "nav_xy": [
+        0.9135334907331045,
+        2.7074433832189944
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.0004791831597685814,
+      "actual_wheel_speed_max_rad_s": 0.353119432926178,
+      "actual_yaw_rate_rad_s": 0.026277456432580948,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.82997099235893,
+      "arm_speed_rad_s": 0.2556634646476086,
+      "actions": [
+        -0.938252329826355,
+        1.0
+      ],
+      "known_clearance_m": 0.7849441857394334,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.04465670166132283
+    },
+    {
+      "sim_s": 3.055,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9045102596282959,
+        2.710028648376465
+      ],
+      "base_quaternion": [
+        1.6066998398400756e-07,
+        1.1690300283362376e-07,
+        -0.011093623004853725,
+        0.9999385476112366
+      ],
+      "nav_yaw": -0.016530436439775233,
+      "nav_speed_m_s": 0.0025991834818047945,
+      "nav_xy": [
+        0.9134703355184816,
+        2.7073784513608
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.00014100248517934233,
+      "actual_wheel_speed_max_rad_s": 0.13378755748271942,
+      "actual_yaw_rate_rad_s": 0.023794008418917656,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8299871432697249,
+      "arm_speed_rad_s": 0.2556634646476046,
+      "actions": [
+        -0.965246319770813,
+        1.0
+      ],
+      "known_clearance_m": 0.7473531789405603,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.044699511713039354
+    },
+    {
+      "sim_s": 3.12,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9045243263244629,
+        2.7100067138671875
+      ],
+      "base_quaternion": [
+        1.4229053135750291e-07,
+        7.418912417733736e-08,
+        -0.010381964035332203,
+        0.9999461770057678
+      ],
+      "nav_yaw": -0.015204182216915425,
+      "nav_speed_m_s": 0.002090647774114566,
+      "nav_xy": [
+        0.9134288028115051,
+        2.7073454946935365
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.00042141973972320557,
+      "actual_wheel_speed_max_rad_s": 0.2348504364490509,
+      "actual_yaw_rate_rad_s": 0.021318448707461357,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8300368768011518,
+      "arm_speed_rad_s": 0.2629681350661087,
+      "actions": [
+        -0.9537068605422974,
+        1.0
+      ],
+      "known_clearance_m": 0.6980335516978936,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.04471844773568743
+    },
+    {
+      "sim_s": 3.185,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9045448303222656,
+        2.7099812030792236
+      ],
+      "base_quaternion": [
+        -4.028042610570992e-08,
+        2.818150619532389e-07,
+        -0.00977922510355711,
+        0.9999522566795349
+      ],
+      "nav_yaw": -0.013845970060975746,
+      "nav_speed_m_s": 0.00367055259736778,
+      "nav_xy": [
+        0.9133467733998435,
+        2.7072666122418756
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.0006625227979384363,
+      "actual_wheel_speed_max_rad_s": 0.20982778072357178,
+      "actual_yaw_rate_rad_s": 0.014288789592683315,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8298823660264103,
+      "arm_speed_rad_s": 0.2556634646476048,
+      "actions": [
+        -0.9152414798736572,
+        1.0
+      ],
+      "known_clearance_m": 0.6296383639777149,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.04476917231168099
+    },
+    {
+      "sim_s": 3.25,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9045678973197937,
+        2.7099552154541016
+      ],
+      "base_quaternion": [
+        4.8011891351507074e-08,
+        1.9111077165234747e-07,
+        -0.009312081150710583,
+        0.9999566674232483
+      ],
+      "nav_yaw": -0.012945821612529643,
+      "nav_speed_m_s": 0.002397070466790732,
+      "nav_xy": [
+        0.9133073838128961,
+        2.7072480034477735
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.0004714143869932741,
+      "actual_wheel_speed_max_rad_s": 0.1492065042257309,
+      "actual_yaw_rate_rad_s": 0.01180807501077652,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8300069094215053,
+      "arm_speed_rad_s": 0.26296813506611544,
+      "actions": [
+        -0.8914676904678345,
+        1.0
+      ],
+      "known_clearance_m": 0.6181730517302002,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.044775212709101814
+    },
+    {
+      "sim_s": 3.315,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9045882821083069,
+        2.7099297046661377
+      ],
+      "base_quaternion": [
+        1.4173602735922941e-08,
+        2.1279198847423686e-07,
+        -0.008943644352257252,
+        0.9999600052833557
+      ],
+      "nav_yaw": -0.012146873285505547,
+      "nav_speed_m_s": 0.002850273697274868,
+      "nav_xy": [
+        0.9132623716223455,
+        2.706972327379678
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.0005383614334277809,
+      "actual_wheel_speed_max_rad_s": 0.1595645695924759,
+      "actual_yaw_rate_rad_s": 0.010136930271983147,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8299625872691663,
+      "arm_speed_rad_s": 0.2556634646476048,
+      "actions": [
+        -0.8577474355697632,
+        1.0
+      ],
+      "known_clearance_m": 0.6179877839398773,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.04502522750826253
+    },
+    {
+      "sim_s": 3.38,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9046139717102051,
+        2.709904670715332
+      ],
+      "base_quaternion": [
+        6.768372173837633e-08,
+        1.560402438371966e-07,
+        -0.00869836937636137,
+        0.9999622702598572
+      ],
+      "nav_yaw": -0.011225293918378877,
+      "nav_speed_m_s": 0.001729285625705561,
+      "nav_xy": [
+        0.9129366136117526,
+        2.7083073828904163
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.0002933210344053805,
+      "actual_wheel_speed_max_rad_s": 0.059446580708026886,
+      "actual_yaw_rate_rad_s": 0.007407786324620247,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8300722171233605,
+      "arm_speed_rad_s": 0.2556634646476048,
+      "actions": [
+        -0.8138166666030884,
+        0.9621344804763794
+      ],
+      "known_clearance_m": 0.6145687843730615,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.04365352555276758
+    },
+    {
+      "sim_s": 3.4450000000000003,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9046417474746704,
+        2.70987868309021
+      ],
+      "base_quaternion": [
+        1.243341927192887e-07,
+        2.865380679395457e-07,
+        -0.008497034199535847,
+        0.9999639391899109
+      ],
+      "nav_yaw": -0.011033546319892597,
+      "nav_speed_m_s": 0.0021415582470803926,
+      "nav_xy": [
+        0.9129650816791763,
+        2.7082446229943757
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.05,
+      "sensor_ok": true,
+      "navigation_age_s": 0.03,
+      "speed_m_s": 0.0003080006572417915,
+      "actual_wheel_speed_max_rad_s": 0.13406825065612793,
+      "actual_yaw_rate_rad_s": 0.004598949570208788,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8300318978831154,
+      "arm_speed_rad_s": 0.35792885050664636,
+      "actions": [
+        -0.9302263259887695,
+        0.8018749952316284
+      ],
+      "known_clearance_m": 0.6149869819655098,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.04372190357051629
+    },
+    {
+      "sim_s": 3.5100000000000002,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.904640257358551,
+        2.7098805904388428
+      ],
+      "base_quaternion": [
+        1.0660401983386691e-07,
+        2.5538835757288325e-07,
+        -0.008256741799414158,
+        0.9999659657478333
+      ],
+      "nav_yaw": -0.010277208570309206,
+      "nav_speed_m_s": 0.001832137240025084,
+      "nav_xy": [
+        0.9129445085377327,
+        2.7083282229299037
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.0006258261855691671,
+      "actual_wheel_speed_max_rad_s": 0.0929495096206665,
+      "actual_yaw_rate_rad_s": 0.004062044899910688,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8300621584904746,
+      "arm_speed_rad_s": 0.10226538585904155,
+      "actions": [
+        -0.43901556730270386,
+        0.7529661655426025
+      ],
+      "known_clearance_m": 0.6148678930449082,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.04363596344144625
+    },
+    {
+      "sim_s": 3.575,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9046661853790283,
+        2.7098522186279297
+      ],
+      "base_quaternion": [
+        -6.299073618265538e-08,
+        1.1565141733171913e-07,
+        -0.008213499560952187,
+        0.9999663233757019
+      ],
+      "nav_yaw": -0.010117418904905454,
+      "nav_speed_m_s": 0.000895829189368647,
+      "nav_xy": [
+        0.9129186490205697,
+        2.708316820123414
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.0009650287101976573,
+      "actual_wheel_speed_max_rad_s": 0.13782088458538055,
+      "actual_yaw_rate_rad_s": 0.003921729978173971,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8301537270964908,
+      "arm_speed_rad_s": 0.21914011255509075,
+      "actions": [
+        -0.4439374804496765,
+        0.5456386804580688
+      ],
+      "known_clearance_m": 0.6148998443640198,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.04363919083966254
+    },
+    {
+      "sim_s": 3.64,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9046648740768433,
+        2.7098560333251953
+      ],
+      "base_quaternion": [
+        3.4684987326727423e-08,
+        4.4943522681251125e-08,
+        -0.008064674213528633,
+        0.9999675154685974
+      ],
+      "nav_yaw": -0.009835123829358009,
+      "nav_speed_m_s": 0.001076760146130366,
+      "nav_xy": [
+        0.912913787617092,
+        2.708370848846791
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.0009802206186577678,
+      "actual_wheel_speed_max_rad_s": 0.12560954689979553,
+      "actual_yaw_rate_rad_s": 0.006962087005376816,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.8301360324974919,
+      "arm_speed_rad_s": 0.10226538585904248,
+      "actions": [
+        -0.0657854676246643,
+        0.2702763080596924
+      ],
+      "known_clearance_m": 0.6149066582148467,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.04358614615168534
+    },
+    {
+      "sim_s": 3.705,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9046487808227539,
+        2.7098727226257324
+      ],
+      "base_quaternion": [
+        1.5803524888724496e-07,
+        2.1081608281292574e-07,
+        -0.007834671065211296,
+        0.9999693036079407
+      ],
+      "nav_yaw": -0.00953152346508888,
+      "nav_speed_m_s": 0.0011048021233103571,
+      "nav_xy": [
+        0.9128691620226767,
+        2.7084135915893968
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.05,
+      "sensor_ok": true,
+      "navigation_age_s": 0.02,
+      "speed_m_s": 0.0011777934851124883,
+      "actual_wheel_speed_max_rad_s": 0.2194816768169403,
+      "actual_yaw_rate_rad_s": 0.013809699565172195,
+      "command_m_s": 0.005497475154697895,
+      "path_speed_cap_m_s": 0.8301332900616466,
+      "arm_speed_rad_s": 0.15339807878856326,
+      "actions": [
+        0.1409609019756317,
+        -0.26685482263565063
+      ],
+      "known_clearance_m": 0.614827159029186,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.043532111086638
+    },
+    {
+      "sim_s": 3.77,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9045968651771545,
+        2.709930181503296
+      ],
+      "base_quaternion": [
+        1.3139533905359713e-07,
+        2.9169939352868823e-07,
+        -0.007173897698521614,
+        0.9999743700027466
+      ],
+      "nav_yaw": -0.008205269242229064,
+      "nav_speed_m_s": 0.0007890151119689545,
+      "nav_xy": [
+        0.9129050952342376,
+        2.7084026905436125
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.003833527211099863,
+      "actual_wheel_speed_max_rad_s": 0.9490243196487427,
+      "actual_yaw_rate_rad_s": 0.018354251980781555,
+      "command_m_s": 0.044497475028038025,
+      "path_speed_cap_m_s": 0.8301641732484422,
+      "arm_speed_rad_s": -0.10226538585904248,
+      "actions": [
+        1.0,
+        -0.8915367126464844
+      ],
+      "known_clearance_m": 0.6147201156049757,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.043553158748995506
+    },
+    {
+      "sim_s": 3.835,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9047178030014038,
+        2.709941864013672
+      ],
+      "base_quaternion": [
+        3.178416534410644e-07,
+        3.955050260628923e-07,
+        -0.006169165950268507,
+        0.9999809861183167
+      ],
+      "nav_yaw": -0.006357035445714623,
+      "nav_speed_m_s": 0.008758431420460063,
+      "nav_xy": [
+        0.9132995696415505,
+        2.7086372221482993
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.006110947113484144,
+      "actual_wheel_speed_max_rad_s": 1.8590812683105469,
+      "actual_yaw_rate_rad_s": 0.02723708376288414,
+      "command_m_s": 0.08349747955799103,
+      "path_speed_cap_m_s": 0.8293847840916149,
+      "arm_speed_rad_s": -0.26296813506611544,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.6141508175626459,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.043448336495884296
+    },
+    {
+      "sim_s": 3.9000000000000004,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9048853516578674,
+        2.710308790206909
+      ],
+      "base_quaternion": [
+        2.5160053951367445e-07,
+        5.69418034501723e-07,
+        -0.00512180058285594,
+        0.9999869465827942
+      ],
+      "nav_yaw": -0.004721854536406367,
+      "nav_speed_m_s": 0.02128013284933054,
+      "nav_xy": [
+        0.9143131411781676,
+        2.70913093691817
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.013744140043854713,
+      "actual_wheel_speed_max_rad_s": 3.1464717388153076,
+      "actual_yaw_rate_rad_s": -0.014342683367431164,
+      "command_m_s": 0.12249748408794403,
+      "path_speed_cap_m_s": 0.8281601927362491,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.6093343884679341,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.04330295980152787
+    },
+    {
+      "sim_s": 3.9650000000000003,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9053207039833069,
+        2.711625099182129
+      ],
+      "base_quaternion": [
+        1.3889366812236403e-07,
+        1.1105263411081978e-06,
+        -0.004686369560658932,
+        0.9999890923500061
+      ],
+      "nav_yaw": -0.0030227577609352814,
+      "nav_speed_m_s": 0.0313454288772515,
+      "nav_xy": [
+        0.9153955753591737,
+        2.709606796578461
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.055,
+      "sensor_ok": true,
+      "navigation_age_s": 0.03,
+      "speed_m_s": 0.06464875489473343,
+      "actual_wheel_speed_max_rad_s": 3.868023633956909,
+      "actual_yaw_rate_rad_s": -0.08299312740564346,
+      "command_m_s": 0.16149748861789703,
+      "path_speed_cap_m_s": 0.8271758317390631,
+      "arm_speed_rad_s": -0.3067961575771275,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.6094291180602864,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.04322770666243848
+    },
+    {
+      "sim_s": 4.03,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9063582420349121,
+        2.7140870094299316
+      ],
+      "base_quaternion": [
+        3.077094277159631e-07,
+        7.885668082963093e-07,
+        -0.005329602863639593,
+        0.9999858140945435
+      ],
+      "nav_yaw": -0.004631307059342539,
+      "nav_speed_m_s": 0.05324630868252105,
+      "nav_xy": [
+        0.9194206302442031,
+        2.7108023908097802
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.11685512959957123,
+      "actual_wheel_speed_max_rad_s": 5.601037979125977,
+      "actual_yaw_rate_rad_s": -0.17049944400787354,
+      "command_m_s": 0.20049749314785004,
+      "path_speed_cap_m_s": 0.8250339799917755,
+      "arm_speed_rad_s": -0.10226538585904155,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.6067488990881719,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.043744867645373546
+    },
+    {
+      "sim_s": 4.095,
+      "route_index": 11,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9090190529823303,
+        2.71890926361084
+      ],
+      "base_quaternion": [
+        -9.07688956885977e-07,
+        2.1148241557966685e-06,
+        -0.007550546433776617,
+        0.9999715089797974
+      ],
+      "nav_yaw": -0.009382386444044634,
+      "nav_speed_m_s": 0.07703219017743115,
+      "nav_xy": [
+        0.9243311840165701,
+        2.7123808531069846
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.1548970341682434,
+      "actual_wheel_speed_max_rad_s": 6.8673553466796875,
+      "actual_yaw_rate_rad_s": -0.1803928017616272,
+      "command_m_s": 0.23949749767780304,
+      "path_speed_cap_m_s": 0.822707779752624,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.6017418067266388,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.04480186077169628
+    },
+    {
+      "sim_s": 4.16,
+      "route_index": 12,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9135137796401978,
+        2.7263166904449463
+      ],
+      "base_quaternion": [
+        -1.468841333007731e-06,
+        2.9139494017726975e-06,
+        -0.011422895826399326,
+        0.9999348521232605
+      ],
+      "nav_yaw": -0.016554664312061255,
+      "nav_speed_m_s": 0.10069600911807332,
+      "nav_xy": [
+        0.92830384950134,
+        2.7149576246715403
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.18114517629146576,
+      "actual_wheel_speed_max_rad_s": 8.188055038452148,
+      "actual_yaw_rate_rad_s": -0.13510748744010925,
+      "command_m_s": 0.27849748730659485,
+      "path_speed_cap_m_s": 0.7956358326793669,
+      "arm_speed_rad_s": -0.2629681350661087,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.599768265541226,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.0412151794260458
+    },
+    {
+      "sim_s": 4.2250000000000005,
+      "route_index": 12,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9193598628044128,
+        2.734976291656494
+      ],
+      "base_quaternion": [
+        -1.987021732929861e-06,
+        3.448644520176458e-06,
+        -0.01428074762225151,
+        0.9998980760574341
+      ],
+      "nav_yaw": -0.023658731745752323,
+      "nav_speed_m_s": 0.12761141177561872,
+      "nav_xy": [
+        0.9360528389823937,
+        2.7177282155268707
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.2104007452726364,
+      "actual_wheel_speed_max_rad_s": 9.178129196166992,
+      "actual_yaw_rate_rad_s": -0.04326644539833069,
+      "command_m_s": 0.31749749183654785,
+      "path_speed_cap_m_s": 0.7929211653151982,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.5882140875825898,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.03515666897661312
+    },
+    {
+      "sim_s": 4.29,
+      "route_index": 12,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.926678478717804,
+        2.7447118759155273
+      ],
+      "base_quaternion": [
+        -1.9702963527379325e-06,
+        3.158539811920491e-06,
+        -0.014756851829588413,
+        0.9998912215232849
+      ],
+      "nav_yaw": -0.025036258249591267,
+      "nav_speed_m_s": 0.15260766136628845,
+      "nav_xy": [
+        0.9438052611709882,
+        2.7223547107204604
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.23014742136001587,
+      "actual_wheel_speed_max_rad_s": 10.336241722106934,
+      "actual_yaw_rate_rad_s": 0.0907054916024208,
+      "command_m_s": 0.35649749636650085,
+      "path_speed_cap_m_s": 0.7904000622927477,
+      "arm_speed_rad_s": -0.2629681350661158,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.812122746172332,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.028330845531136108
+    },
+    {
+      "sim_s": 4.355,
+      "route_index": 12,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9356062412261963,
+        2.755336284637451
+      ],
+      "base_quaternion": [
+        -1.5972019582477515e-06,
+        2.3030361262499355e-06,
+        -0.011988354846835136,
+        0.9999281764030457
+      ],
+      "nav_yaw": -0.02304419422196363,
+      "nav_speed_m_s": 0.17149209300390073,
+      "nav_xy": [
+        0.9507721151566983,
+        2.724108730612137
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.055,
+      "sensor_ok": true,
+      "navigation_age_s": 0.03,
+      "speed_m_s": 0.03750230744481087,
+      "actual_wheel_speed_max_rad_s": 12.401567459106445,
+      "actual_yaw_rate_rad_s": 0.4644116759300232,
+      "command_m_s": 0.39549750089645386,
+      "path_speed_cap_m_s": 0.7884953926539627,
+      "arm_speed_rad_s": -0.3579288505066468,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.8146715105180747,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.025902779625555324
+    },
+    {
+      "sim_s": 4.42,
+      "route_index": 12,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9421465396881104,
+        2.7617597579956055
+      ],
+      "base_quaternion": [
+        -4.313286353863077e-06,
+        2.705836777749937e-06,
+        -0.003376657608896494,
+        0.9999943971633911
+      ],
+      "nav_yaw": -0.004339993966329412,
+      "nav_speed_m_s": 0.21426277290803283,
+      "nav_xy": [
+        0.9642679430622063,
+        2.7319715163116003
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.005,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.05264344438910484,
+      "actual_wheel_speed_max_rad_s": 13.66552734375,
+      "actual_yaw_rate_rad_s": 0.39440006017684937,
+      "command_m_s": 0.43449750542640686,
+      "path_speed_cap_m_s": 0.7841815738953752,
+      "arm_speed_rad_s": -0.17531209004407702,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.8007444302790526,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.02299131190970299
+    },
+    {
+      "sim_s": 4.485,
+      "route_index": 13,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9447810649871826,
+        2.763512372970581
+      ],
+      "base_quaternion": [
+        -1.661382952988788e-06,
+        5.280590357870096e-06,
+        0.010622630827128887,
+        0.9999436140060425
+      ],
+      "nav_yaw": 0.026009427349177296,
+      "nav_speed_m_s": 0.24735138099014004,
+      "nav_xy": [
+        0.9753697065096874,
+        2.742730463676491
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.051674582064151764,
+      "actual_wheel_speed_max_rad_s": 14.94096565246582,
+      "actual_yaw_rate_rad_s": 0.31620490550994873,
+      "command_m_s": 0.47349750995635986,
+      "path_speed_cap_m_s": 0.7547962238734245,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.9464099436285034,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.025680683709312653
+    },
+    {
+      "sim_s": 4.55,
+      "route_index": 13,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9481118321418762,
+        2.76554799079895
+      ],
+      "base_quaternion": [
+        -1.1978097518294817e-06,
+        4.396826170705026e-06,
+        0.023309551179409027,
+        0.9997283220291138
+      ],
+      "nav_yaw": 0.050739541231653106,
+      "nav_speed_m_s": 0.26464057338422564,
+      "nav_xy": [
+        0.9875149126984453,
+        2.7493933148656615
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.1320389211177826,
+      "actual_wheel_speed_max_rad_s": 16.381607055664062,
+      "actual_yaw_rate_rad_s": 0.47255295515060425,
+      "command_m_s": 0.5124974846839905,
+      "path_speed_cap_m_s": 0.7529395891863979,
+      "arm_speed_rad_s": -0.25566346464760475,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.219304441652744,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.012499818869874496
+    },
+    {
+      "sim_s": 4.615,
+      "route_index": 13,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9540504813194275,
+        2.768660545349121
+      ],
+      "base_quaternion": [
+        -1.6448391306767007e-06,
+        1.1497086234157905e-06,
+        0.037405844777822495,
+        0.9993002414703369
+      ],
+      "nav_yaw": 0.08114048068984256,
+      "nav_speed_m_s": 0.2578186861437358,
+      "nav_xy": [
+        0.9927401792640975,
+        2.7557711573884927
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.14679798483848572,
+      "actual_wheel_speed_max_rad_s": 17.49978256225586,
+      "actual_yaw_rate_rad_s": 0.6456297039985657,
+      "command_m_s": 0.5514974594116211,
+      "path_speed_cap_m_s": 0.7536760700370383,
+      "arm_speed_rad_s": -0.2556634646476046,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.2240119029874614,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.009274225289488763
+    },
+    {
+      "sim_s": 4.68,
+      "route_index": 13,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9616407752037048,
+        2.773711681365967
+      ],
+      "base_quaternion": [
+        -2.4998730623337906e-06,
+        -1.6928557897699648e-06,
+        0.057001274079084396,
+        0.9983741641044617
+      ],
+      "nav_yaw": 0.09784382704682046,
+      "nav_speed_m_s": 0.2749713033736493,
+      "nav_xy": [
+        1.0014136650347223,
+        2.7574070927634406
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.045,
+      "sensor_ok": true,
+      "navigation_age_s": 0.035,
+      "speed_m_s": 0.15795640647411346,
+      "actual_wheel_speed_max_rad_s": 18.711576461791992,
+      "actual_yaw_rate_rad_s": 0.591536819934845,
+      "command_m_s": 0.5904974341392517,
+      "path_speed_cap_m_s": 0.7518242988653868,
+      "arm_speed_rad_s": -0.3579288505066466,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.2187345694998886,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.0075407872292361615
+    },
+    {
+      "sim_s": 4.745,
+      "route_index": 13,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9704450964927673,
+        2.7782201766967773
+      ],
+      "base_quaternion": [
+        -9.470334703109984e-07,
+        -1.8530614624978625e-06,
+        0.07605879008769989,
+        0.9971033930778503
+      ],
+      "nav_yaw": 0.15744219259760908,
+      "nav_speed_m_s": 0.2953160449861775,
+      "nav_xy": [
+        1.0154584727949987,
+        2.7657095670169287
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.12725403904914856,
+      "actual_wheel_speed_max_rad_s": 19.572450637817383,
+      "actual_yaw_rate_rad_s": 0.46428045630455017,
+      "command_m_s": 0.6294974088668823,
+      "path_speed_cap_m_s": 0.7496279106694749,
+      "arm_speed_rad_s": -0.17531209004407236,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.199539026575787,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.022039847481620394
+    },
+    {
+      "sim_s": 4.8100000000000005,
+      "route_index": 13,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9785968065261841,
+        2.7827746868133545
+      ],
+      "base_quaternion": [
+        1.1846909728774335e-06,
+        -2.857335630324087e-06,
+        0.09382940828800201,
+        0.9955883622169495
+      ],
+      "nav_yaw": 0.19114183303147192,
+      "nav_speed_m_s": 0.3015275302090499,
+      "nav_xy": [
+        1.024508288274133,
+        2.7677707819848947
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.08950954675674438,
+      "actual_wheel_speed_max_rad_s": 21.291696548461914,
+      "actual_yaw_rate_rad_s": 0.3875977694988251,
+      "command_m_s": 0.6684973835945129,
+      "path_speed_cap_m_s": 0.7489573279173107,
+      "arm_speed_rad_s": -0.3067961575771256,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.2177965846857872,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.03027303893702549
+    },
+    {
+      "sim_s": 4.875,
+      "route_index": 14,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9852157235145569,
+        2.7854766845703125
+      ],
+      "base_quaternion": [
+        1.8243005115436972e-06,
+        6.157854954835784e-07,
+        0.10746508836746216,
+        0.9942089319229126
+      ],
+      "nav_yaw": 0.2221271836144618,
+      "nav_speed_m_s": 0.29651057505470957,
+      "nav_xy": [
+        1.033906565613713,
+        2.776331821367253
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.05821432173252106,
+      "actual_wheel_speed_max_rad_s": 22.562440872192383,
+      "actual_yaw_rate_rad_s": 0.2856473922729492,
+      "command_m_s": 0.7074973583221436,
+      "path_speed_cap_m_s": 0.722315725682169,
+      "arm_speed_rad_s": -0.3067961575771345,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.2197120591804054,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.03086038636930307
+    },
+    {
+      "sim_s": 4.94,
+      "route_index": 14,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9897130727767944,
+        2.786668062210083
+      ],
+      "base_quaternion": [
+        3.104600409642444e-06,
+        3.979193024861161e-06,
+        0.11813708394765854,
+        0.9929972887039185
+      ],
+      "nav_yaw": 0.24221651158175794,
+      "nav_speed_m_s": 0.2792905637882126,
+      "nav_xy": [
+        1.0362735322275163,
+        2.7842711256232264
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.17761877179145813,
+      "actual_wheel_speed_max_rad_s": 23.020870208740234,
+      "actual_yaw_rate_rad_s": -0.0770944133400917,
+      "command_m_s": 0.7242464490600073,
+      "path_speed_cap_m_s": 0.7242464490600073,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.2185683056417176,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.03691782725177646
+    },
+    {
+      "sim_s": 5.005,
+      "route_index": 14,
+      "bootstrap_ready": true,
+      "base_xy": [
+        0.9952750205993652,
+        2.7867414951324463
+      ],
+      "base_quaternion": [
+        -1.0592802937026136e-06,
+        3.7964180137350922e-06,
+        0.12291441112756729,
+        0.9924173355102539
+      ],
+      "nav_yaw": 0.25287448226425563,
+      "nav_speed_m_s": 0.316185987409764,
+      "nav_xy": [
+        1.0505288016526086,
+        2.783715418933487
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.055,
+      "sensor_ok": true,
+      "navigation_age_s": 0.03,
+      "speed_m_s": 0.24032770097255707,
+      "actual_wheel_speed_max_rad_s": 24.233739852905273,
+      "actual_yaw_rate_rad_s": -0.2897750735282898,
+      "command_m_s": 0.7201097004935315,
+      "path_speed_cap_m_s": 0.7201097004935315,
+      "arm_speed_rad_s": -0.3067961575771275,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.2066688198201188,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.033719565611797724
+    },
+    {
+      "sim_s": 5.07,
+      "route_index": 14,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.0101659297943115,
+        2.7833964824676514
+      ],
+      "base_quaternion": [
+        2.192108013332472e-06,
+        9.44331259233877e-06,
+        0.11635451018810272,
+        0.9932077527046204
+      ],
+      "nav_yaw": 0.24044057228672638,
+      "nav_speed_m_s": 0.2672917178766267,
+      "nav_xy": [
+        1.0435373818923923,
+        2.785702575559263
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.24672818183898926,
+      "actual_wheel_speed_max_rad_s": 24.237852096557617,
+      "actual_yaw_rate_rad_s": -0.1767079085111618,
+      "command_m_s": 0.7255917706135218,
+      "path_speed_cap_m_s": 0.7255917706135218,
+      "arm_speed_rad_s": -0.10226538585904248,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.2029341203494246,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.03628276911110381
+    },
+    {
+      "sim_s": 5.135,
+      "route_index": 14,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.022233486175537,
+        2.7752182483673096
+      ],
+      "base_quaternion": [
+        4.5582754637507605e-07,
+        1.2285286175028887e-06,
+        0.10926847904920578,
+        0.9940123558044434
+      ],
+      "nav_yaw": 0.22318361237467557,
+      "nav_speed_m_s": 0.3513113162820584,
+      "nav_xy": [
+        1.0671108622350924,
+        2.7808128406030583
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.37018540501594543,
+      "actual_wheel_speed_max_rad_s": 24.44939613342285,
+      "actual_yaw_rate_rad_s": -0.29808536171913147,
+      "command_m_s": 0.7161714165656954,
+      "path_speed_cap_m_s": 0.7161714165656954,
+      "arm_speed_rad_s": -0.2556634646476048,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.1800988847910907,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.03524503869281156
+    },
+    {
+      "sim_s": 5.2,
+      "route_index": 15,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.0369952917099,
+        2.7618534564971924
+      ],
+      "base_quaternion": [
+        1.0149689160243724e-06,
+        1.3706538766200538e-06,
+        0.10188957303762436,
+        0.9947957396507263
+      ],
+      "nav_yaw": 0.21020869154380994,
+      "nav_speed_m_s": 0.3602100680208385,
+      "nav_xy": [
+        1.0750098410547646,
+        2.7770943149262397
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.4111466109752655,
+      "actual_wheel_speed_max_rad_s": 23.252084732055664,
+      "actual_yaw_rate_rad_s": -0.3012739419937134,
+      "command_m_s": 0.6866271705196362,
+      "path_speed_cap_m_s": 0.6866271705196362,
+      "arm_speed_rad_s": -0.2629681350661087,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.139710112419594,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.036859326437557
+    },
+    {
+      "sim_s": 5.265000000000001,
+      "route_index": 15,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.0569063425064087,
+        2.745147228240967
+      ],
+      "base_quaternion": [
+        3.2901912163652014e-06,
+        6.338890443657874e-07,
+        0.0918656662106514,
+        0.9957714080810547
+      ],
+      "nav_yaw": 0.1988028400779828,
+      "nav_speed_m_s": 0.3851915078356406,
+      "nav_xy": [
+        1.0835647603173306,
+        2.774258867143593
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.035,
+      "sensor_ok": true,
+      "navigation_age_s": 0.04,
+      "speed_m_s": 0.43780502676963806,
+      "actual_wheel_speed_max_rad_s": 23.13288116455078,
+      "actual_yaw_rate_rad_s": -0.4062018394470215,
+      "command_m_s": 0.6837092025296436,
+      "path_speed_cap_m_s": 0.6837092025296436,
+      "arm_speed_rad_s": -0.46019423636568885,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 1.1323728707602458,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.029302043248164305
+    },
+    {
+      "sim_s": 5.33,
+      "route_index": 15,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.0794193744659424,
+        2.728060007095337
+      ],
+      "base_quaternion": [
+        2.6721859285316896e-06,
+        1.2303215726205963e-06,
+        0.08008915930986404,
+        0.9967877268791199
+      ],
+      "nav_yaw": 0.16120819025989366,
+      "nav_speed_m_s": 0.4159902817619572,
+      "nav_xy": [
+        1.1120061981917362,
+        2.761257958130094
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.44789403676986694,
+      "actual_wheel_speed_max_rad_s": 22.878463745117188,
+      "actual_yaw_rate_rad_s": -0.6179851293563843,
+      "command_m_s": 0.6801117382876204,
+      "path_speed_cap_m_s": 0.6801117382876204,
+      "arm_speed_rad_s": -0.2191401125550971,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 2.9459212633709457,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.016458748928098902
+    },
+    {
+      "sim_s": 5.3950000000000005,
+      "route_index": 16,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.103594183921814,
+        2.7114017009735107
+      ],
+      "base_quaternion": [
+        1.6891225413928623e-06,
+        1.3277125390231959e-06,
+        0.06347407400608063,
+        0.9979835152626038
+      ],
+      "nav_yaw": 0.12366461589099535,
+      "nav_speed_m_s": 0.4304946251590129,
+      "nav_xy": [
+        1.1262995674752119,
+        2.7433512995122937
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.39968112111091614,
+      "actual_wheel_speed_max_rad_s": 21.60843849182129,
+      "actual_yaw_rate_rad_s": -0.6746561527252197,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.6482548961604424,
+      "arm_speed_rad_s": -0.2556634646476057,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.02461535537093192
+    },
+    {
+      "sim_s": 5.46,
+      "route_index": 16,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.125704288482666,
+        2.696152448654175
+      ],
+      "base_quaternion": [
+        5.0942585403390694e-06,
+        8.175540642696433e-06,
+        0.044798675924539566,
+        0.9989960789680481
+      ],
+      "nav_yaw": 0.08924121704890192,
+      "nav_speed_m_s": 0.4387670028710967,
+      "nav_xy": [
+        1.144742508452484,
+        2.716083614274385
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.331756591796875,
+      "actual_wheel_speed_max_rad_s": 20.334999084472656,
+      "actual_yaw_rate_rad_s": -0.8881298303604126,
+      "command_m_s": 0.039000000804662704,
+      "path_speed_cap_m_s": 0.6472445795920022,
+      "arm_speed_rad_s": -0.2629681350661146,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.6652782909102116,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.034321457400013015
+    },
+    {
+      "sim_s": 5.525,
+      "route_index": 16,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.143766164779663,
+        2.6835525035858154
+      ],
+      "base_quaternion": [
+        3.919768914784072e-06,
+        5.591167337115621e-06,
+        0.02041100524365902,
+        0.9997917413711548
+      ],
+      "nav_yaw": 0.058464327928927924,
+      "nav_speed_m_s": 0.4100760956326814,
+      "nav_xy": [
+        1.1513164759465828,
+        2.7049337408699192
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.055,
+      "sensor_ok": true,
+      "navigation_age_s": 0.03,
+      "speed_m_s": 0.26576656103134155,
+      "actual_wheel_speed_max_rad_s": 19.06519889831543,
+      "actual_yaw_rate_rad_s": -1.1237661838531494,
+      "command_m_s": 0.07800000160932541,
+      "path_speed_cap_m_s": 0.6507486385162231,
+      "arm_speed_rad_s": -0.3067961575771265,
+      "actions": [
+        1.0,
+        -1.0
+      ],
+      "known_clearance_m": 0.94668970630475,
+      "view_age_s": 0.13,
+      "cross_track_m": 0.04508548348301834
+    },
+    {
+      "sim_s": 5.59,
+      "route_index": 17,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.158353328704834,
+        2.674004077911377
+      ],
+      "base_quaternion": [
+        3.3978542433033e-06,
+        4.710971552412957e-06,
+        -0.01258893683552742,
+        0.9999208450317383
+      ],
+      "nav_yaw": -0.026616421755523652,
+      "nav_speed_m_s": 0.39295291098148044,
+      "nav_xy": [
+        1.1823269557032516,
+        2.6945486314194427
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.23535723984241486,
+      "actual_wheel_speed_max_rad_s": 17.795730590820312,
+      "actual_yaw_rate_rad_s": -0.9284154772758484,
+      "command_m_s": 0.11431989073753357,
+      "path_speed_cap_m_s": 0.6214309884654974,
+      "arm_speed_rad_s": -0.10226538585904155,
+      "actions": [
+        0.9312793016433716,
+        -0.8125580549240112
+      ],
+      "known_clearance_m": 0.9211477670909538,
+      "view_age_s": 0.195,
+      "cross_track_m": 0.0581995770789759
+    },
+    {
+      "sim_s": 5.655,
+      "route_index": 17,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.1714402437210083,
+        2.665426015853882
+      ],
+      "base_quaternion": [
+        4.948819878336508e-07,
+        -3.5446200854494236e-06,
+        -0.043441809713840485,
+        0.9990560412406921
+      ],
+      "nav_yaw": -0.0954540466828157,
+      "nav_speed_m_s": 0.3630371318310581,
+      "nav_xy": [
+        1.2037576057672692,
+        2.6787752896176213
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.1960100531578064,
+      "actual_wheel_speed_max_rad_s": 16.5250244140625,
+      "actual_yaw_rate_rad_s": -0.8309094309806824,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.6252679827042223,
+      "arm_speed_rad_s": -0.20453077171808495,
+      "actions": [
+        0.6223439574241638,
+        0.26686596870422363
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.26,
+      "cross_track_m": 0.07132376160969028
+    },
+    {
+      "sim_s": 5.720000000000001,
+      "route_index": 17,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.1823900938034058,
+        2.657258987426758
+      ],
+      "base_quaternion": [
+        7.146048119466286e-06,
+        5.860068995389156e-06,
+        -0.07215278595685959,
+        0.9973936080932617
+      ],
+      "nav_yaw": -0.15375481726444484,
+      "nav_speed_m_s": 0.3291271630978108,
+      "nav_xy": [
+        1.2150656549124987,
+        2.666290370894892
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.195,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.005,
+      "speed_m_s": 0.1611173301935196,
+      "actual_wheel_speed_max_rad_s": 15.253181457519531,
+      "actual_yaw_rate_rad_s": -0.686547577381134,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.6296172712188415,
+      "arm_speed_rad_s": 0.05113269292952077,
+      "actions": [
+        -0.6340488791465759,
+        1.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.325,
+      "cross_track_m": 0.08505454698519772
+    },
+    {
+      "sim_s": 5.785,
+      "route_index": 17,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.1912132501602173,
+        2.649630308151245
+      ],
+      "base_quaternion": [
+        6.2484787122230045e-06,
+        6.060659870854579e-06,
+        -0.09738383442163467,
+        0.995246946811676
+      ],
+      "nav_yaw": -0.2094730050990356,
+      "nav_speed_m_s": 0.2922285850292611,
+      "nav_xy": [
+        1.2207927777536243,
+        2.6503339140507363
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.0,
+      "sensor_ok": true,
+      "navigation_age_s": 0.0,
+      "speed_m_s": 0.13481590151786804,
+      "actual_wheel_speed_max_rad_s": 13.982671737670898,
+      "actual_yaw_rate_rad_s": -0.5438485145568848,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.6343498784076526,
+      "arm_speed_rad_s": 0.30679615757712597,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.39,
+      "cross_track_m": 0.10181192609492089
+    },
+    {
+      "sim_s": 5.8500000000000005,
+      "route_index": 17,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.1983503103256226,
+        2.642719030380249
+      ],
+      "base_quaternion": [
+        3.249380142733571e-06,
+        5.558726115850732e-06,
+        -0.11762610077857971,
+        0.9930580258369446
+      ],
+      "nav_yaw": -0.21646113979940307,
+      "nav_speed_m_s": 0.30073450640065363,
+      "nav_xy": [
+        1.2230950566200647,
+        2.6424193795081705
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.065,
+      "sensor_age_s": 0.05,
+      "sensor_ok": true,
+      "navigation_age_s": 0.055,
+      "speed_m_s": 0.17306965589523315,
+      "actual_wheel_speed_max_rad_s": 12.711947441101074,
+      "actual_yaw_rate_rad_s": -0.3611483573913574,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.633258909954751,
+      "arm_speed_rad_s": 0.3579288505066473,
+      "actions": [
+        -1.0,
+        1.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.455,
+      "cross_track_m": 0.11003168428089714
+    },
+    {
+      "sim_s": 5.915,
+      "route_index": 17,
+      "bootstrap_ready": true,
+      "base_xy": [
+        1.2038869857788086,
+        2.6344752311706543
+      ],
+      "base_quaternion": [
+        1.073691464625881e-06,
+        4.02778323405073e-06,
+        -0.1324029266834259,
+        0.9911960363388062
+      ],
+      "nav_yaw": -0.23634962682011434,
+      "nav_speed_m_s": 0.28081646835204294,
+      "nav_xy": [
+        1.2301893118190574,
+        2.639599528364014
+      ],
+      "tracking_fresh": true,
+      "image_age_s": 0.13,
+      "sensor_age_s": 0.115,
+      "sensor_ok": false,
+      "navigation_age_s": 0.09,
+      "speed_m_s": 0.05059674009680748,
+      "actual_wheel_speed_max_rad_s": 11.516796112060547,
+      "actual_yaw_rate_rad_s": -0.16297948360443115,
+      "command_m_s": 0.0,
+      "path_speed_cap_m_s": 0.6358135951212293,
+      "arm_speed_rad_s": 0.1314840675330573,
+      "actions": [
+        0.0,
+        0.0
+      ],
+      "known_clearance_m": 0.0,
+      "view_age_s": 0.455,
+      "cross_track_m": 0.0
+    }
+  ],
+  "validated_success": false
+}

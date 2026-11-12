@@ -1,0 +1,138 @@
+{
+  "family": "tag36h11",
+  "black_border_size_m": 0.016,
+  "including_white_margin_m": 0.02,
+  "object_frame": "geometric center; Z is 60mm height",
+  "cube_faces": [
+    "pz",
+    "nz",
+    "px",
+    "nx",
+    "py",
+    "ny"
+  ],
+  "cylinder_faces": [
+    "pz",
+    "nz",
+    "side"
+  ],
+  "cylinder_side": "conformal curved sticker on +X side; not planar PnP",
+  "id_rule": "same puck ID 0..11 on each of its faces; destination IDs 12..14",
+  "classes": [
+    "red_cylinder",
+    "red_cuboid",
+    "green_cylinder",
+    "green_cuboid",
+    "box",
+    "apriltag"
+  ],
+  "box_sizes_m": [
+    [
+      0.205,
+      0.205,
+      0.07
+    ]
+  ],
+  "physical_tag_configuration_confirmed": true,
+  "training_seed_base": 9050000,
+  "source_reused_from": "/home/seongmin/Projects/yolov8-ubuntu24-practice",
+  "centerpose": "TAO DLA34 custom 128px crop; symmetry-aware corners and scale-normalized metric depth; not native TAO export",
+  "dataset": "runs/perception/data-v11-domain",
+  "centerpose_targets": [
+    "puck",
+    "box"
+  ],
+  "split_frames": {
+    "train": 800,
+    "val": 100,
+    "test": 100
+  },
+  "box_appearance": "Procedural Bambu cardboard approximation with inward dents, top sag and compression; physical box dimensions unconfirmed",
+  "box_center_tag": {
+    "ids": [
+      12,
+      13,
+      14
+    ],
+    "black_size_m": 0.048,
+    "white_size_m": 0.06
+  },
+  "placement": "random within top surface, footprint fully supported, non-overlapping; all 6 cuboid resting faces",
+  "gui": true,
+  "marker_register": {
+    "path": "/home/seongmin/Downloads/marker-barcode-register (1).png",
+    "sha256": "a3cbdcecf6c2d805d3fe95baf79820dd41fc8bf4ca0249f65da474432be7cfb9",
+    "decoded_tag_family": "tag36h11",
+    "decoded_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "decoded_barcodes": [
+      "P2-01",
+      "P2-02",
+      "P2-03",
+      "P2-04"
+    ]
+  },
+  "confirmation_scope": "tag family, IDs and sizes from user supplied register; box appearance/dimensions remain provisional",
+  "annotation": "single textured tag surface + visible instance masks + physical surface containment checks",
+  "run": "runs/perception/train-v11-domain",
+  "selected_training": {
+    "yolo_additional_epochs": 40,
+    "yolo_selected_epoch": 40,
+    "yolo_batch": 8,
+    "yolo_imgsz": 800,
+    "yolo_lr": 0.0002,
+    "centerpose_additional_epochs": 40,
+    "centerpose_selected_epoch": 20,
+    "centerpose_batch": 32,
+    "centerpose_lr": 8e-05,
+    "test_map50": 0.9662041066593532,
+    "test_yolo_plus_pose_median_mm": 8.7048474771989,
+    "test_all_objects_within_10mm": 0.523936170212766
+  },
+  "test_seed_base": 9050900,
+  "inference": {
+    "imgsz": 800,
+    "pose_views": "scale3_median",
+    "detector_confidence": 0.25,
+    "pose_confidence": 0.25,
+    "box_dimensions_m": [
+      0.205,
+      0.205,
+      0.07
+    ],
+    "box_dimensions_confirmed": false,
+    "selection_split": "val",
+    "nonrigid_boxes": "detection only; excluded from rigid-pose evaluation"
+  },
+  "next_dataset_materials": "config/perception/materials.json",
+  "real_red_filament": {
+    "name": "Bambu Lab PLA Basic Maroon Red",
+    "code": "10205",
+    "srgb_hex": "#9D2235",
+    "current_v9_weights_trained_on_this_color": false,
+    "current_v11_weights_trained_on_this_color": true
+  },
+  "real_green_filament": {
+    "name": "Bambu Lab PLA Basic Bambu Green",
+    "code": "10501",
+    "srgb_hex": "#00AE42",
+    "current_v9_weights_trained_on_this_color": false,
+    "current_v11_weights_trained_on_this_color": true
+  },
+  "pose_evaluation_exclusions": "Deformed nonrigid boxes remain detection targets but are excluded from rigid pose ground truth"
+}

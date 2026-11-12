@@ -1,0 +1,116 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-26-18-10-50-001121-ros-90295
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-1]: process started with pid [90396]
+[component_container-1] [INFO] [1793005850.383013258] [arm_cuvslam_container]: Load Library: /opt/ros/lyrical/lib/libisaac_ros_cuvslam_node.so
+[component_container-1] [INFO] [1793005850.429530429] [arm_cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793005850.429579352] [arm_cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793005850.671939302] [arm_visual_slam]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1793005850.671987672] [arm_visual_slam]: Tracking mode: Multicamera
+[component_container-1] [INFO] [1793005850.690647690] [arm_visual_slam]: Time taken by cuvslam::WarmUpGPU(): 0.018657
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/arm_visual_slam' in container '/arm_cuvslam_container'
+[component_container-1] [INFO] [1793005863.186362256] [arm_visual_slam]: Initializing cuVSLAM.
+[component_container-1] [INFO] [1793005863.186474291] [arm_visual_slam]: Use use_gpu: true
+[component_container-1] [INFO] [1793005863.186478176] [arm_visual_slam]: Enable IMU Fusion: false
+[component_container-1] [INFO] [1793005863.201680912] [arm_visual_slam]: Time taken by cuvslam::Odometry::Odometry(): 0.015200
+[component_container-1] [INFO] [1793005863.201716411] [arm_visual_slam]: cuVSLAM tracker was successfully initialized.
+[component_container-1] [WARN] [1793005863.834078507] [arm_visual_slam]: Delta between current and previous frame [466.666666 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005863.951814899] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005864.521633521] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005864.960914274] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005865.545704063] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005865.849439810] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005866.245775589] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005866.714938125] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005867.112591166] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005867.547856547] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005867.875328116] [arm_visual_slam]: Delta between current and previous frame [333.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005868.175294555] [arm_visual_slam]: Delta between current and previous frame [200.000000 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005868.581376545] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005869.035551278] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005869.452175083] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005869.918274352] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005870.315404954] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005870.770219855] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005871.197003392] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005871.764826574] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005872.062678371] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005872.487319586] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005872.788119092] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005873.215663326] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005873.779138604] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005874.219758033] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005874.637521561] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005874.928709759] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005875.510889277] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005875.936070936] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005876.979106611] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005877.260963828] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005877.846089019] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005878.259560054] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005878.701237933] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005879.119553904] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005879.718231475] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005879.980088041] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005880.547795853] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005881.005870769] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005881.530635190] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005881.959018344] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005882.393726995] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005882.829738471] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005883.245031811] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005883.677295193] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005884.110531759] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005884.673568747] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005884.987796513] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005885.399861843] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005885.535576793] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [INFO] [1793005885.548799516] [arm_cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793005885.548827035] [arm_cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [WARN] [1793005885.548953082] [rcl.logging_rosout]: Publisher already registered for node name: 'arm_visual_slam'. If this is due to multiple nodes with the same name then all logs for the logger named 'arm_visual_slam' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container-1] [INFO] [1793005885.557739824] [arm_visual_slam]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1793005885.557760380] [arm_visual_slam]: Tracking mode: Multicamera
+[component_container-1] [INFO] [1793005885.558702477] [arm_visual_slam]: Time taken by cuvslam::WarmUpGPU(): 0.000939
+[component_container-1] [INFO] [1793005885.849857481] [arm_visual_slam]: Initializing cuVSLAM.
+[component_container-1] [INFO] [1793005885.849932653] [arm_visual_slam]: Use use_gpu: true
+[component_container-1] [INFO] [1793005885.849937944] [arm_visual_slam]: Enable IMU Fusion: false
+[component_container-1] [INFO] [1793005885.903767673] [arm_visual_slam]: Time taken by cuvslam::Odometry::Odometry(): 0.053823
+[component_container-1] [INFO] [1793005885.903821575] [arm_visual_slam]: cuVSLAM tracker was successfully initialized.
+[component_container-1] [WARN] [1793005886.002999323] [arm_visual_slam]: Delta between current and previous frame [200.000000 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005886.462442549] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005886.467525584] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005887.207382782] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005887.208884715] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005887.358745601] [arm_visual_slam]: Delta between current and previous frame [800.000000 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005887.361716649] [arm_visual_slam]: Delta between current and previous frame [800.000000 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005887.462551852] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005887.467937780] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005887.724294317] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005887.732099778] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005888.257246299] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005888.259615131] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005888.391746053] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005888.396825854] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005888.508804413] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005888.518123772] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005888.821626441] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005888.826503000] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005889.128902321] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005889.135288572] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005889.699317432] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005889.705261960] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005890.029653670] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005890.036360832] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005890.302154542] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005890.310710731] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005890.720689413] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005890.726234431] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005891.163242441] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005891.172458341] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005891.725785175] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005891.734109924] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005892.311837641] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005892.322545340] [arm_visual_slam]: Delta between current and previous frame [133.333333 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005892.748094147] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005892.753229510] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005893.467092486] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]
+[component_container-1] [WARN] [1793005893.476468579] [arm_visual_slam]: Delta between current and previous frame [133.333334 ms] is above threshold [100.000000 ms]

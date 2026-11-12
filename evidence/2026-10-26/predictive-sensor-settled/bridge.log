@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/seongmin/ros2_ws/src/turtlebot-swerve-cuvslam/scripts/active_camera_bridge.py", line 49, in <module>
+    server=socket.socket();server.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1);server.bind(('127.0.0.1',a.port));server.listen(1)
+                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use

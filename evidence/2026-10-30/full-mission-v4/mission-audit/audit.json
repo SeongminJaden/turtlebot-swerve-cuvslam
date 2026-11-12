@@ -1,0 +1,652 @@
+{
+  "mission_complete": false,
+  "reachability": {
+    "status": "BLOCKED_UNREACHABLE",
+    "assumption": "level chassis at base Z=0; original joint limits; end-link AABB conservatively encloses all gripper geometry",
+    "puck_top_m": 0.13,
+    "analytic_min_height_lower_bound_m": 0.1856520651376723,
+    "optimized_aabb_min_height_m": 0.2130505722520506,
+    "optimizer_joint_rad": [
+      1.0070267342491013,
+      -0.3499999999544456,
+      -0.34999999986132263,
+      -0.349999999953289,
+      -0.3499999998555104
+    ],
+    "end_link_radius_bound_m": 0.161236122028722,
+    "gripper_actuated": false,
+    "physx_low_pose_aabb_min_z_m": 0.21184911080300134,
+    "physx_joint_readback_rad": {
+      "arm_joint1": 1.0070029497146606,
+      "arm_joint2": -0.3499866724014282,
+      "arm_joint3": -0.3499632179737091,
+      "arm_joint4": -0.34999874234199524,
+      "arm_joint5": -0.3499999940395355
+    },
+    "low_pose_targets_reached": true
+  },
+  "barcode": {
+    "observed": [
+      "P2-01"
+    ],
+    "expected": "P2-01",
+    "passed": true,
+    "evidence": "station-camera.png",
+    "dimensions_assumed_m": [
+      0.32,
+      0.16
+    ]
+  },
+  "signal_roi": [
+    610,
+    315,
+    119,
+    110
+  ],
+  "signal": {
+    "complete": true,
+    "sequence": [
+      "R",
+      "G",
+      "R",
+      "R",
+      "G",
+      "R",
+      "G",
+      "G",
+      "Y",
+      "G",
+      "Y",
+      "G"
+    ],
+    "error": null,
+    "passed": true,
+    "observations": [
+      {
+        "time_s": 0.0,
+        "observed": "R"
+      },
+      {
+        "time_s": 0.25000001303851604,
+        "observed": "R"
+      },
+      {
+        "time_s": 0.5000000260770321,
+        "observed": "R"
+      },
+      {
+        "time_s": 0.7500000391155481,
+        "observed": "R"
+      },
+      {
+        "time_s": 1.0000000521540642,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 1.2500000651925802,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 1.5000000782310963,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 1.7500000912696123,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 2.0000001043081284,
+        "observed": "G"
+      },
+      {
+        "time_s": 2.2500001173466444,
+        "observed": "G"
+      },
+      {
+        "time_s": 2.5000001303851604,
+        "observed": "G"
+      },
+      {
+        "time_s": 2.7500001434236765,
+        "observed": "G"
+      },
+      {
+        "time_s": 3.0000001564621925,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 3.2500001695007086,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 3.5000001825392246,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 3.7500001955777407,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 4.000000208616257,
+        "observed": "R"
+      },
+      {
+        "time_s": 4.250000221654773,
+        "observed": "R"
+      },
+      {
+        "time_s": 4.500000234693289,
+        "observed": "R"
+      },
+      {
+        "time_s": 4.750000247731805,
+        "observed": "R"
+      },
+      {
+        "time_s": 5.000000260770321,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 5.250000273808837,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 5.500000286847353,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 5.750000299885869,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 6.000000312924385,
+        "observed": "R"
+      },
+      {
+        "time_s": 6.250000325962901,
+        "observed": "R"
+      },
+      {
+        "time_s": 6.500000339001417,
+        "observed": "R"
+      },
+      {
+        "time_s": 6.750000352039933,
+        "observed": "R"
+      },
+      {
+        "time_s": 7.000000365078449,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 7.250000378116965,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 7.500000391155481,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 7.750000404193997,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 8.000000417232513,
+        "observed": "G"
+      },
+      {
+        "time_s": 8.25000043027103,
+        "observed": "G"
+      },
+      {
+        "time_s": 8.500000443309546,
+        "observed": "G"
+      },
+      {
+        "time_s": 8.750000456348062,
+        "observed": "G"
+      },
+      {
+        "time_s": 9.000000469386578,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 9.250000482425094,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 9.50000049546361,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 9.750000508502126,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 10.000000521540642,
+        "observed": "R"
+      },
+      {
+        "time_s": 10.250000534579158,
+        "observed": "R"
+      },
+      {
+        "time_s": 10.500000547617674,
+        "observed": "R"
+      },
+      {
+        "time_s": 10.75000056065619,
+        "observed": "R"
+      },
+      {
+        "time_s": 11.000000573694706,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 11.250000586733222,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 11.500000599771738,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 11.750000612810254,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 12.00000062584877,
+        "observed": "G"
+      },
+      {
+        "time_s": 12.250000638887286,
+        "observed": "G"
+      },
+      {
+        "time_s": 12.500000651925802,
+        "observed": "G"
+      },
+      {
+        "time_s": 12.750000664964318,
+        "observed": "G"
+      },
+      {
+        "time_s": 13.000000678002834,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 13.25000069104135,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 13.500000704079866,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 13.750000717118382,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 14.000000730156898,
+        "observed": "G"
+      },
+      {
+        "time_s": 14.250000743195415,
+        "observed": "G"
+      },
+      {
+        "time_s": 14.50000075623393,
+        "observed": "G"
+      },
+      {
+        "time_s": 14.750000769272447,
+        "observed": "G"
+      },
+      {
+        "time_s": 15.000000782310963,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 15.250000795349479,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 15.500000808387995,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 15.75000082142651,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 16.000000834465027,
+        "observed": "Y"
+      },
+      {
+        "time_s": 16.250000847503543,
+        "observed": "Y"
+      },
+      {
+        "time_s": 16.50000086054206,
+        "observed": "Y"
+      },
+      {
+        "time_s": 16.750000873580575,
+        "observed": "Y"
+      },
+      {
+        "time_s": 17.00000088661909,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 17.250000899657607,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 17.500000912696123,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 17.75000092573464,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 18.000000938773155,
+        "observed": "G"
+      },
+      {
+        "time_s": 18.25000095181167,
+        "observed": "G"
+      },
+      {
+        "time_s": 18.500000964850187,
+        "observed": "G"
+      },
+      {
+        "time_s": 18.750000977888703,
+        "observed": "G"
+      },
+      {
+        "time_s": 19.00000099092722,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 19.250001003965735,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 19.50000101700425,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 19.750001030042768,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 20.000001043081284,
+        "observed": "Y"
+      },
+      {
+        "time_s": 20.2500010561198,
+        "observed": "Y"
+      },
+      {
+        "time_s": 20.500001069158316,
+        "observed": "Y"
+      },
+      {
+        "time_s": 20.75000108219683,
+        "observed": "Y"
+      },
+      {
+        "time_s": 21.000001095235348,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 21.250001108273864,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 21.50000112131238,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 21.750001134350896,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 22.000001147389412,
+        "observed": "G"
+      },
+      {
+        "time_s": 22.250001160427928,
+        "observed": "G"
+      },
+      {
+        "time_s": 22.500001173466444,
+        "observed": "G"
+      },
+      {
+        "time_s": 22.75000118650496,
+        "observed": "G"
+      },
+      {
+        "time_s": 23.000001199543476,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 23.250001212581992,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 23.500001225620508,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 23.750001238659024,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 24.00000125169754,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 24.250001264736056,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 24.500001277774572,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 24.75000129081309,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 25.000001303851604,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 25.25000131689012,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 25.500001329928637,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 25.750001342967153,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 26.00000135600567,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 26.250001369044185,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 26.5000013820827,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 26.750001395121217,
+        "observed": "OFF"
+      },
+      {
+        "time_s": 27.000001408159733,
+        "observed": "OFF"
+      }
+    ],
+    "timestamp_basis": "actual World simulation clock, 30 physics steps per 4 Hz camera sample; static robot; render delta_time=0"
+  },
+  "observed_signal_plan": {
+    "evidence_kind": "planner_output_not_observation",
+    "sequence": [
+      "R",
+      "G",
+      "R",
+      "R",
+      "G",
+      "R",
+      "G",
+      "G",
+      "Y",
+      "G",
+      "Y",
+      "G"
+    ],
+    "counts": {
+      "R": 4,
+      "G": 6,
+      "Y": 2
+    },
+    "barcode": "P2-01",
+    "locations": [
+      {
+        "location": "L1",
+        "group": "Y",
+        "targets": [
+          {
+            "id": 0,
+            "center_m": [
+              3.61,
+              1.01,
+              0.1
+            ]
+          },
+          {
+            "id": 2,
+            "center_m": [
+              3.73,
+              0.8899999999999999,
+              0.1
+            ]
+          }
+        ]
+      },
+      {
+        "location": "L2",
+        "group": "R",
+        "targets": [
+          {
+            "id": 1,
+            "center_m": [
+              2.142,
+              3.7600000000000002,
+              0.1
+            ]
+          },
+          {
+            "id": 3,
+            "center_m": [
+              2.262,
+              3.7600000000000002,
+              0.1
+            ]
+          },
+          {
+            "id": 4,
+            "center_m": [
+              2.142,
+              3.64,
+              0.1
+            ]
+          },
+          {
+            "id": 5,
+            "center_m": [
+              2.262,
+              3.64,
+              0.1
+            ]
+          }
+        ]
+      },
+      {
+        "location": "L3",
+        "group": "G",
+        "targets": [
+          {
+            "id": 6,
+            "center_m": [
+              3.61,
+              5.414,
+              0.1
+            ]
+          },
+          {
+            "id": 7,
+            "center_m": [
+              3.61,
+              5.354,
+              0.1
+            ]
+          },
+          {
+            "id": 8,
+            "center_m": [
+              3.61,
+              5.2940000000000005,
+              0.1
+            ]
+          },
+          {
+            "id": 9,
+            "center_m": [
+              3.73,
+              5.414,
+              0.1
+            ]
+          },
+          {
+            "id": 10,
+            "center_m": [
+              3.73,
+              5.354,
+              0.1
+            ]
+          },
+          {
+            "id": 11,
+            "center_m": [
+              3.73,
+              5.2940000000000005,
+              0.1
+            ]
+          }
+        ]
+      }
+    ],
+    "inventory_source": "synthetic registered inventory, not camera perception"
+  },
+  "remaining": [
+    "camera puck IDs/color/shape",
+    "contact grasp with actuated gripper",
+    "sensor closed-loop navigation",
+    "dice placement and independent reinspection",
+    "whole-body return-zone containment"
+  ],
+  "status": "BLOCKED_FULL_MISSION"
+}

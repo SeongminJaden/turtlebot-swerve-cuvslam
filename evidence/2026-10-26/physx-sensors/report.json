@@ -1,0 +1,19 @@
+{
+  "physics_simulated_seconds": 10.0,
+  "sample_rate_hz": 15.0,
+  "max_fk_translation_error_m": 0.0003993709134382984,
+  "joint_count": 13,
+  "valid_fusion_count": 147,
+  "fusion_errors": [
+    "Corrected acceleration disagreement",
+    "IMU ADC saturated"
+  ],
+  "rest_accel_mean": [
+    0.001722418808457951,
+    -0.0020927651792045816,
+    9.810492708665857
+  ],
+  "encoder_changed": true,
+  "max_actual_speed": 0.12119341641664505,
+  "scope": "PhysX sensor smoke test, not full maze or hardware validation"
+}

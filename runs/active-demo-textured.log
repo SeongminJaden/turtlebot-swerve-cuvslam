@@ -1,0 +1,13 @@
+{
+  "result": "all_manoeuvres_completed",
+  "completed_segments": 4,
+  "total_segments": 4,
+  "steps": 985,
+  "sim_s": 65.66666666666667,
+  "wall_s": 156.39340891900065,
+  "tracking_success_frames": 982,
+  "drive_frames": 196,
+  "checkpoint_sha256": "e30fa3ca1d06b26aad4e6d3c8ee72beda06b65afaf3e84950fc2113e337069b7",
+  "scope": "Live synchronous co-simulation: PhysX + stereo render + actual cuVSLAM status; yaw PPO, base proportional controller using simulator pose; not Nav2 or visual-quality RL.",
+  "forbidden_drive_frames": 0
+}

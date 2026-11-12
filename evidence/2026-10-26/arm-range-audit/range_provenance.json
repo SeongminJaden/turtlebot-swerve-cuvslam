@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-26",
+  "identified_assembly": "OpenMANIPULATOR-X-derived custom WristRoll arm; custom links and extra fifth rotary joint",
+  "cad_evidence": "design/scripts/r36_m20_inspect_arm.py imports Project2_OMX_WristRoll_Assembly.f3d; m38_arm_prepare.py maps OMX components",
+  "original_export_limits": {
+    "lower_rad": -0.35,
+    "upper_rad": 0.35,
+    "meaning": "software test window, explicitly NOT mechanical limits"
+  },
+  "official_reference_commit": "ee9a720bcc45acda9c0df8fe689b1182844307db",
+  "official_reference_url": "https://github.com/ROBOTIS-GIT/open_manipulator/blob/ee9a720bcc45acda9c0df8fe689b1182844307db/open_manipulator_description/urdf/open_manipulator_x/open_manipulator_x.urdf",
+  "official_stock_limits_rad": {
+    "joint1": [
+      -3.141592653589793,
+      3.141592653589793
+    ],
+    "joint2": [
+      -1.5,
+      1.5
+    ],
+    "joint3": [
+      -1.5,
+      1.4
+    ],
+    "joint4": [
+      -1.7,
+      1.97
+    ]
+  },
+  "mapping_warning": "Custom joint2/3/4 axes are -Y vs official +Y and link lengths differ; zero/sign must be mapped before applying stock limits. Extra wrist joint5 is custom, no stock limit available.",
+  "training_active_joint": "arm_joint1",
+  "training_limits_rad": [
+    -3.141592653589793,
+    3.141592653589793
+  ],
+  "training_scope": "Simulation yaw-only alignment; other arm joints held at zero. Base yaw stock reference plus sampled CAD clearance screen, not hardware cable qualification.",
+  "camera_identification": "CAD contains RealSense_D435_1 and Gripper_CameraMount_D435_1 on wrist; synthetic render calibration is not measured D435 calibration."
+}

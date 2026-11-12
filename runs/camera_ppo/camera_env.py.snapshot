@@ -1,0 +1,71 @@
+"""PhysX arm-yaw alignment curriculum. Geometry proxy, not cuVSLAM training."""
+import math
+from pathlib import Path
+import torch
+import isaaclab.sim as sim_utils
+from isaaclab.assets import ArticulationCfg, AssetBaseCfg
+from isaaclab.actuators import ImplicitActuatorCfg
+from isaaclab.envs import DirectRLEnv, DirectRLEnvCfg
+from isaaclab.scene import InteractiveSceneCfg
+from isaaclab_physx.physics import PhysxCfg
+from isaaclab.utils import configclass
+ROOT=Path(__file__).resolve().parents[1]
+@configclass
+class CameraSceneCfg(InteractiveSceneCfg):
+    ground=AssetBaseCfg(prim_path='/World/Ground',spawn=sim_utils.GroundPlaneCfg())
+    robot=ArticulationCfg(prim_path='{ENV_REGEX_NS}/Robot',
+        spawn=sim_utils.UsdFileCfg(usd_path=str(ROOT/'assets/m38_active_camera_demo.usda'),fix_root_link=True),
+        init_state=ArticulationCfg.InitialStateCfg(pos=(0.,0.,.015)),
+        actuators={'all':ImplicitActuatorCfg(joint_names_expr=['.*'],joint_effort_limit=2.,joint_velocity_limit=.5,stiffness=150.,damping=8.)})
+@configclass
+class CameraEnvCfg(DirectRLEnvCfg):
+    decimation=4
+    episode_length_s=18.
+    action_space=1
+    observation_space=6
+    state_space=0
+    sim=sim_utils.SimulationCfg(dt=1/60,render_interval=4,device='cuda:0',physics=PhysxCfg())
+    scene=CameraSceneCfg(num_envs=16,env_spacing=2.,replicate_physics=True,clone_in_fabric=False)
+class CameraEnv(DirectRLEnv):
+    def __init__(self,cfg,**kw):
+        super().__init__(cfg,**kw)
+        self.robot=self.scene['robot'];self.j=self.robot.joint_names.index('arm_joint1')
+        self.target=torch.zeros(self.num_envs,device=self.device)
+        self.actions=torch.zeros((self.num_envs,1),device=self.device)
+        self.previous_action=torch.zeros_like(self.actions)
+        self.command=self.robot.data.default_joint_pos.torch.clone()
+        self.previous_error=torch.zeros(self.num_envs,device=self.device)
+        self.dwell=torch.zeros(self.num_envs,device=self.device)
+        self.success=torch.zeros(self.num_envs,dtype=torch.bool,device=self.device)
+        self.evaluation=False;self.success_count=0;self.episode_count=0
+    def error(self):return self.target-self.robot.data.joint_pos.torch[:,self.j]
+    def _pre_physics_step(self,actions):
+        self.previous_action=self.actions.clone();self.actions=actions.clamp(-1,1)
+        self.command[:,self.j]=(self.robot.data.joint_pos.torch[:,self.j]+.5*self.actions[:,0]*self.step_dt).clamp(-math.pi,math.pi)
+    def _apply_action(self):self.robot.actuators.target_command.set_position_index(value=self.command)
+    def _get_observations(self):
+        q=self.robot.data.joint_pos.torch[:,self.j];v=self.robot.data.joint_vel.torch[:,self.j]
+        return {'policy':torch.stack([self.target/math.pi,q/math.pi,v/.5,self.error()/math.pi,self.actions[:,0],1-self.episode_length_buf/self.max_episode_length],-1)}
+    def _get_rewards(self):
+        e=self.error().abs();v=self.robot.data.joint_vel.torch[:,self.j].abs()
+        self.dwell=torch.where((e<.12)&(v<.07),self.dwell+self.step_dt,0.)
+        self.success=self.dwell>=.5
+        r=3*(self.previous_error-e)+.2*torch.exp(-10*e**2)*self.step_dt-.01*self.actions[:,0]**2*self.step_dt-.005*(self.actions[:,0]-self.previous_action[:,0])**2-.02*self.step_dt+5*self.success.float()
+        self.previous_error=e.detach().clone();return r
+    def _get_dones(self):
+        # This is a finite-horizon task; remaining time is observable.
+        timeout=self.episode_length_buf>=self.max_episode_length-1
+        return self.success.clone() if not self.evaluation else torch.zeros_like(self.success),timeout
+    def _reset_idx(self,ids):
+        if ids is None:ids=self.robot._ALL_INDICES
+        super()._reset_idx(ids)
+        if hasattr(self,'target'):
+            self.success_count+=int(self.success[ids].sum());self.episode_count+=len(ids)
+            n=len(ids);q=self.robot.data.default_joint_pos.torch[ids].clone()
+            q[:,self.j]=(torch.rand(n,device=self.device)*2-1)*2.8
+            self.robot.write_joint_position_to_sim_index(position=q,env_ids=ids)
+            self.robot.write_joint_velocity_to_sim_index(velocity=torch.zeros_like(q),env_ids=ids)
+            self.command[ids]=q;self.target[ids]=(torch.rand(n,device=self.device)*2-1)*3.
+            self.previous_error[ids]=(self.target[ids]-q[:,self.j]).abs()
+            self.actions[ids]=0;self.previous_action[ids]=0;self.dwell[ids]=0;self.success[ids]=False
+            self.robot.reset(ids)

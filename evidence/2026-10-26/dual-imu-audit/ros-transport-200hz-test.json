@@ -1,0 +1,14 @@
+{
+  "scope": "ROS2 + two PTY serial OpenCR emulators; not physical OpenCR or Isaac sensor",
+  "poll_hz": 200,
+  "valid_messages": 399,
+  "max_force_error_m_s2": 2.044949197843756e-07,
+  "expected_force": [
+    0.2,
+    -0.1,
+    9.80665
+  ],
+  "uncorrected_force_z_m_s2": 9.640649999999999,
+  "corrupt_second_imu_stops_output": true,
+  "stale_diagnostic": true
+}

@@ -1,0 +1,21 @@
+[INFO] [launch]: All log files can be found below /home/seongmin/.ros/log/2026-10-26-19-16-37-054768-ros-117436
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-1]: process started with pid [117514]
+[component_container-1] [INFO] [1793009797.432912308] [arm_cuvslam_container]: Load Library: /opt/ros/lyrical/lib/libisaac_ros_cuvslam_node.so
+[component_container-1] [INFO] [1793009797.484235535] [arm_cuvslam_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793009797.484286437] [arm_cuvslam_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::visual_slam::VisualSlamNode>
+[component_container-1] [INFO] [1793009800.339807103] [arm_visual_slam]: cuVSLAM version: 15.0.0+33da606
+[component_container-1] [INFO] [1793009800.339854633] [arm_visual_slam]: Tracking mode: RGBD
+[component_container-1] [INFO] [1793009800.345790535] [arm_visual_slam]: Time taken by cuvslam::WarmUpGPU(): 0.005933
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/arm_visual_slam' in container '/arm_cuvslam_container'
+[component_container-1] [INFO] [1793009814.357919413] [arm_visual_slam]: Initializing cuVSLAM.
+[component_container-1] [INFO] [1793009814.358010187] [arm_visual_slam]: Use use_gpu: true
+[component_container-1] [INFO] [1793009814.358015450] [arm_visual_slam]: Enable IMU Fusion: false
+[component_container-1] [INFO] [1793009814.376998585] [arm_visual_slam]: Time taken by cuvslam::Odometry::Odometry(): 0.018979
+[component_container-1] [INFO] [1793009814.377037191] [arm_visual_slam]: cuVSLAM tracker was successfully initialized.
+[component_container-1] [WARN] [1793009814.937849391] [arm_visual_slam]: Delta between current and previous frame [520.000000 ms] is above threshold [200.000000 ms]
+[component_container-1] [WARN] [1793009816.207765368] [arm_visual_slam]: Delta between current and previous frame [325.000000 ms] is above threshold [200.000000 ms]
+[component_container-1] [WARN] [1793009822.234416706] [arm_visual_slam]: Delta between current and previous frame [325.000000 ms] is above threshold [200.000000 ms]
+[component_container-1] [INFO] [1793009825.409702843] [rclcpp]: signal_handler(signum=2)
+[component_container-1] [INFO] [1793009825.419937208] [arm_visual_slam]: cuVSLAM odometry was destroyed
+[INFO] [component_container-1]: process has finished cleanly [pid 117514]
